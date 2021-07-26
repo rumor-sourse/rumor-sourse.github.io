@@ -303,7 +303,21 @@
 </a>
         
     </nav>
-
+    <div id="tp-weather-widget"></div>
+    <script>
+      (function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));
+      window.SeniverseWeatherWidget('show', {
+        flavor: "bubble",
+        location: "WW92M43YCQG0",
+        geolocation: true,
+        language: "zh-Hans",
+        unit: "c",
+        theme: "auto",
+        token: "2ee46d07-e99c-4227-925e-461574e6469c",
+        hover: "enabled",
+        container: "tp-weather-widget"
+      })
+    </script>
 </header>
 
     <div class="bg-cover pd-header about-cover">
@@ -544,6 +558,74 @@
                     <i class="fas fa-address-book"></i>&nbsp;&nbsp;友情链接
                 </div>
                 <article id="friends-link">
+                    
+                    
+                    <div class="row tags-posts friend-all">
+                        
+                        
+                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
+                            <div class="card frind-card1">
+                                <div class="frind-ship">
+                                    <div class="title">
+                                        <img src="https://avatar.csdnimg.cn/3/3/E/1_qq_51996925_1603798690.jpg" alt="img">
+                                        <div>
+                                            <h1 class="friend-name">Blog</h1>
+                                            <p style="position: relative;top: -35px;">CSDN社区</p>
+                                        </div>
+                                    </div>
+                                    <div class="friend-button">
+                                        <a href="https://blog.csdn.net/qq_51996925?spm=1018.2226.3001.5343" target="_blank"
+                                            class="button button-glow button-rounded button-caution">
+                                            CSDN
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
+                            <div class="card frind-card2">
+                                <div class="frind-ship">
+                                    <div class="title">
+                                        <img src="https://pic.cnblogs.com/avatar/2479838/20210726190713.png" alt="img">
+                                        <div>
+                                            <h1 class="friend-name">Blog</h1>
+                                            <p style="position: relative;top: -35px;">博客园</p>
+                                        </div>
+                                    </div>
+                                    <div class="friend-button">
+                                        <a href="https://home.cnblogs.com/u/2479838" target="_blank"
+                                            class="button button-glow button-rounded button-caution">
+                                            博客园
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
+                            <div class="card frind-card3">
+                                <div class="frind-ship">
+                                    <div class="title">
+                                        <img src="https://avatars.githubusercontent.com/u/73290302?v=4" alt="img">
+                                        <div>
+                                            <h1 class="friend-name">github</h1>
+                                            <p style="position: relative;top: -35px;">github</p>
+                                        </div>
+                                    </div>
+                                    <div class="friend-button">
+                                        <a href="https://github.com/rumor-sourse" target="_blank"
+                                            class="button button-glow button-rounded button-caution">
+                                            github
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
                     
                 </article>
             </div>
@@ -1148,6 +1230,14 @@ $(function () {
     <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
     <script src="/js/matery.js"></script>
 
+    <script type="text/javascript">
+        //只在桌面版网页启用特效
+        var windowWidth = $(window).width();
+        if (windowWidth > 768) {
+            document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+        }
+    </script>
+       
     <!-- Baidu Analytics -->
 
     <!-- Baidu Push -->
@@ -1193,32 +1283,7 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-    <script type="text/javascript">
-        //只在桌面版网页启用特效
-        var windowWidth = $(window).width();
-        if (windowWidth > 768) {
-            document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
-        }
-    </script>
-
-<div id="tp-weather-widget"></div>
-<script>
-  (function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));
-  window.SeniverseWeatherWidget('show', {
-    flavor: "slim",
-    location: "WX4FBXXFKE4F",
-    geolocation: false,
-    language: "zh-Hans",
-    unit: "c",
-    theme: "auto",
-    token: "2ee46d07-e99c-4227-925e-461574e6469c",
-    hover: "enabled",
-    container: "tp-weather-widget"
-  })
-</script>
-
-    
-       
+ 
 </body>
 
 </html>
