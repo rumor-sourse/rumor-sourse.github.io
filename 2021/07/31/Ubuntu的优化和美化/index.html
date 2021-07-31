@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="hexo-matery博客搭建, wck&#39;s blog">
+    <meta name="keywords" content="Ubuntu的优化和美化, wck&#39;s blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>hexo-matery博客搭建 | wck&#39;s blog</title>
+    <title>Ubuntu的优化和美化 | wck&#39;s blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -326,12 +326,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">hexo-matery博客搭建</h1>
+                    <h1 class="description center-align post-title">Ubuntu的优化和美化</h1>
                 </div>
             </div>
         </div>
@@ -447,8 +447,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/hexo-github-git/">
-                                <span class="chip bg-color">hexo,github,git</span>
+                            <a href="/tags/linux-Ubuntu/">
+                                <span class="chip bg-color">linux Ubuntu</span>
                             </a>
                         
                     </div>
@@ -459,8 +459,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/blog/" class="post-category">
-                                blog
+                            <a href="/categories/linux/" class="post-category">
+                                linux
                             </a>
                         
                     </div>
@@ -472,28 +472,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-07-29
+                    2021-07-31
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-07-29
+                    2021-07-31
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    620
+                    3.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    17 分
                 </div>
                 
 
@@ -513,36 +513,68 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="前提准备"><a href="#前提准备" class="headerlink" title="前提准备"></a>前提准备</h1><p>1、有自己的github账户</p>
-<p>没有的移步 <a target="_blank" rel="noopener" href="https://github.com/">https://github.com/</a></p>
-<p>2、安装了git工具</p>
-<p>没有的移步csdn教程@青云ing <a target="_blank" rel="noopener" href="https://blog.csdn.net/shuikanshui/article/details/118295952">https://blog.csdn.net/shuikanshui/article/details/118295952</a></p>
-<h1 id="安装流程"><a href="#安装流程" class="headerlink" title="安装流程"></a>安装流程</h1><h2 id="一、nodejs的安装"><a href="#一、nodejs的安装" class="headerlink" title="一、nodejs的安装"></a>一、nodejs的安装</h2><p>hexo需要nodejs的支持，因此我们需要先安装nodejs ，进入官网 <a target="_blank" rel="noopener" href="https://nodejs.org/en/">https://nodejs.org/en/</a></p>
-<p>安装LTS版本，一直点下一步即可</p>
-<h2 id="二、hexo-博客的搭建"><a href="#二、hexo-博客的搭建" class="headerlink" title="二、hexo 博客的搭建"></a>二、hexo 博客的搭建</h2><p>windows+R输入cmd打开命令行解释器</p>
-<h3 id="1、cnpm的下载"><a href="#1、cnpm的下载" class="headerlink" title="1、cnpm的下载"></a>1、cnpm的下载</h3><p>由于国内的npm下载速度堪忧，因此我们用淘宝镜像的cnpm下载，</p>
-<p>即输入 <em>npm install -g cnpm –registry.npm.taobao.org</em></p>
-<h3 id="2、hexo博客框架的安装"><a href="#2、hexo博客框架的安装" class="headerlink" title="2、hexo博客框架的安装"></a>2、hexo博客框架的安装</h3><p>输入  <em>cnpm install -g hexo-cli</em></p>
-<p><em>hexo -v</em> 验证安装完成</p>
-<h3 id="3、创建blog文件"><a href="#3、创建blog文件" class="headerlink" title="3、创建blog文件"></a>3、创建blog文件</h3><p>假如在D盘建立名为blog的文件夹    输入  <em>mkdir D:\blog</em>  后边的我们搭建的所有博客的内容都是存放于blog中，因此如果你有什么不满意难以修改的，完全可以删掉blog重来</p>
-<h3 id="4、利用git工具进行blog的搭建"><a href="#4、利用git工具进行blog的搭建" class="headerlink" title="4、利用git工具进行blog的搭建"></a>4、利用git工具进行blog的搭建</h3><p>进入blog文件夹中，右键点击Git Bash Here进入git窗口   </p>
-<p>输入<em>hexo init</em>初始化博客</p>
-<p><em>如果遇到问题 fatal: unable to access ‘<a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-starter.git/&#39;">https://github.com/hexojs/hexo-starter.git/&#39;</a>: OpenSSL SSL_read: Connection was reset, errno 10054是因为服务器的SSL整数没有经过第三方机构的签署，可输入git config –global http.sslVerify “false”解决</em></p>
-<p>输入<em>dir -l</em>查看生成的文件</p>
-<p>输入<em>hexo start(s)</em> 启动博客，一般是<em>localhost:4000</em>端口</p>
-<p>输入hexo new(n) “文章的名字”创建文章，用vscode可以打开该文章进行编辑</p>
-<p>输入<em>hexo clean</em>清理缓存</p>
-<p>输入<em>hexo generate(g)</em> 生成文章，再重新<em>hexo start</em>即可看到文章</p>
-<h3 id="5、github建立存储仓库"><a href="#5、github建立存储仓库" class="headerlink" title="5、github建立存储仓库"></a>5、github建立存储仓库</h3><p>github右上角”+”号处有个New repository新建仓库，Repository name必须为 <em>用户名.github.io</em>，Description可以随意写，之后Create repository</p>
-<h3 id="6、部署推到远端"><a href="#6、部署推到远端" class="headerlink" title="6、部署推到远端"></a>6、部署推到远端</h3><p>输入<em>cnpm install –save hexo-deployer-git</em>安装git插件</p>
-<p>用vscode打开_config.yml文件,最底部type: 后写git，下一行写repo: “仓库地址”,再下一行写main: master，如下图：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/deploy.png"></p>
-<p>输入git config –global user.email “你的邮箱”<br>输入git config –global user.name “你的用户名”</p>
-<p>输入*hexo deploy(d)*部署，可能会有无法连接到远端的情况，耐心多试几次即可</p>
-<h3 id="7、访问"><a href="#7、访问" class="headerlink" title="7、访问"></a>7、访问</h3><p>https://你的用户名.github.io即是你的博客网址</p>
-<h2 id="三、matery博客主题的修改"><a href="#三、matery博客主题的修改" class="headerlink" title="三、matery博客主题的修改"></a>三、matery博客主题的修改</h2><p>下载matery主题压缩包，如图：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/theme.png"></p>
-<p>将主题包解压到themes文件夹中重新部署即可</p>
+                <h1 id="一、Ubuntu的优化"><a href="#一、Ubuntu的优化" class="headerlink" title="一、Ubuntu的优化"></a>一、Ubuntu的优化</h1><h2 id="1、软件的卸载"><a href="#1、软件的卸载" class="headerlink" title="1、软件的卸载"></a>1、软件的卸载</h2><h3 id="1-1、卸载亚马逊链接"><a href="#1-1、卸载亚马逊链接" class="headerlink" title="1.1、卸载亚马逊链接"></a>1.1、卸载亚马逊链接</h3><p><code>sudo apt-get remove unity-webapps-common</code></p>
+<h3 id="1-2、卸载libreOffice更换为WPS"><a href="#1-2、卸载libreOffice更换为WPS" class="headerlink" title="1.2、卸载libreOffice更换为WPS"></a>1.2、卸载libreOffice更换为WPS</h3><p>libreoffice是ubuntu自带的开源office软件，体验效果不好，改为wps</p>
+<p>卸载：<code>sudo apt-get remove libreoffice-common</code></p>
+<p>wps的安装：</p>
+<p>1、官网<a target="_blank" rel="noopener" href="https://linux.wps.cn/">https://linux.wps.cn/</a>下载最新版本，选择deb for x64</p>
+<p>2、输入<code>sudo dpkg -i wps-office_11.1.0.10161_amd64.deb</code>（根据版本不同命令不同）</p>
+<p>3、启动wps后显示“系统缺失字体”</p>
+<p>/1  进入C:\Windows\Fonts将所有字体压缩到Fonts压缩包中，将压缩包拷贝到ubuntu中，解压</p>
+<p>（直接拷贝字体可能会出错）</p>
+<p>/2 将Fonts文件夹在终端中打开，输入 <code>sudo cp * /usr/share/fonts/wps-office</code></p>
+<p>/3 生成字体索引信息  <code>sudo mkfontscale</code>       <code> sudo mkfontdir</code></p>
+<p>/4 更新字体缓存 <code>sudo fc-cache</code></p>
+<p>/5 重启wps即可</p>
+<h3 id="1-3、谷歌浏览器，搜狗拼音，vscode的安装"><a href="#1-3、谷歌浏览器，搜狗拼音，vscode的安装" class="headerlink" title="1.3、谷歌浏览器，搜狗拼音，vscode的安装"></a>1.3、谷歌浏览器，搜狗拼音，vscode的安装</h3><p>参照上一篇文章 《在虚拟机中安装Ubuntu与基本环境的配置》</p>
+<h2 id="2、vim配置"><a href="#2、vim配置" class="headerlink" title="2、vim配置"></a>2、vim配置</h2><p>下载安装vim  <code>sudo apt-get install vim</code></p>
+<p>打开vim配置文件  <code>sudo vim /etc/vim/vimrc</code></p>
+<p>添加以下代码到文件尾：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br></pre></td><td class="code"><pre><span class="line">&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;</span><br><span class="line">&quot; 显示相关  </span><br><span class="line">&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;</span><br><span class="line">set shortmess=atI   &quot; 启动的时候不显示那个援助乌干达儿童的提示  </span><br><span class="line">winpos 5 5         &quot; 设定窗口位置  </span><br><span class="line">set lines=30 columns=85    &quot; 设定窗口大小  </span><br><span class="line">set nu              &quot; 显示行号  </span><br><span class="line">set go=             &quot; 不要图形按钮  </span><br><span class="line">&quot;color asmanian2     &quot; 设置背景主题  </span><br><span class="line">set guifont=Courier_New:h10:cANSI   &quot; 设置字体  </span><br><span class="line">syntax on           &quot; 语法高亮  </span><br><span class="line">autocmd InsertLeave * se nocul  &quot; 用浅色高亮当前行  </span><br><span class="line">autocmd InsertEnter * se cul    &quot; 用浅色高亮当前行  </span><br><span class="line">set ruler           &quot; 显示标尺  </span><br><span class="line">set showcmd         &quot; 输入的命令显示出来，看的清楚些  </span><br><span class="line">set cmdheight=1     &quot; 命令行（在状态行下）的高度，设置为1  </span><br><span class="line">&quot;set whichwrap+=&lt;,&gt;,h,l   &quot; 允许backspace和光标键跨越行边界(不建议)  </span><br><span class="line">set scrolloff=3     &quot; 光标移动到buffer的顶部和底部时保持3行距离  </span><br><span class="line">set novisualbell    &quot; 不要闪烁(不明白)  </span><br><span class="line">set statusline=%F%m%r%h%w\ [FORMAT=%&#123;&amp;ff&#125;]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %&#123;strftime(\&quot;%d/%m/%y\ -\ %H:%M\&quot;)&#125;   &quot;状态行显示的内容  </span><br><span class="line">set laststatus=1    &quot; 启动显示状态行(1),总是显示状态行(2)  </span><br><span class="line">set foldenable      &quot; 允许折叠  </span><br><span class="line">set foldmethod=manual   &quot; 手动折叠  </span><br><span class="line">set background=dark &quot;背景使用黑色 </span><br><span class="line">set nocompatible  &quot;去掉讨厌的有关vi一致性模式，避免以前版本的一些bug和局限  </span><br><span class="line">&quot; 显示中文帮助</span><br><span class="line">if version &gt;= 603</span><br><span class="line">    set helplang=cn</span><br><span class="line">    set encoding=utf-8</span><br><span class="line">endif</span><br><span class="line">&quot; 设置配色方案</span><br><span class="line">&quot;colorscheme murphy</span><br><span class="line">&quot;字体 </span><br><span class="line">&quot;if (has(&quot;gui_running&quot;)) </span><br><span class="line">&quot;   set guifont=Bitstream\ Vera\ Sans\ Mono\ 10 </span><br><span class="line">&quot;endif </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">set fencs=utf-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936</span><br><span class="line">set termencoding=utf-8</span><br><span class="line">set encoding=utf-8</span><br><span class="line">set fileencodings=ucs-bom,utf-8,cp936</span><br><span class="line">set fileencoding=utf-8</span><br><span class="line"></span><br><span class="line">&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;</span><br><span class="line">&quot;&quot;&quot;&quot;&quot;新文件标题&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;</span><br><span class="line">&quot;新建.c,.h,.sh,.java文件，自动插入文件头 </span><br><span class="line">autocmd BufNewFile *.cpp,*.[ch],*.sh,*.java exec &quot;:call SetTitle()&quot; </span><br><span class="line">&quot;&quot;定义函数SetTitle，自动插入文件头 </span><br><span class="line">func SetTitle() </span><br><span class="line">    &quot;如果文件类型为.sh文件 </span><br><span class="line">    if &amp;filetype == &#x27;sh&#x27; </span><br><span class="line">        call setline(1,&quot;\#########################################################################&quot;) </span><br><span class="line">        call append(line(&quot;.&quot;), &quot;\# File Name     : &quot;.expand(&quot;%&quot;)) </span><br><span class="line">        call append(line(&quot;.&quot;)+1, &quot;\# Author        : enjoy5512&quot;) </span><br><span class="line">        call append(line(&quot;.&quot;)+2, &quot;\# mail          : enjoy5512@163.com&quot;) </span><br><span class="line">        call append(line(&quot;.&quot;)+3, &quot;\# Created Time  : &quot;.strftime(&quot;%c&quot;)) </span><br><span class="line">        call append(line(&quot;.&quot;)+4, &quot;\#########################################################################&quot;) </span><br><span class="line">        call append(line(&quot;.&quot;)+5, &quot;&quot;) </span><br><span class="line">        call append(line(&quot;.&quot;)+6, &quot;\#!/bin/bash&quot;) </span><br><span class="line">    call append(line(&quot;.&quot;)+7, &quot;&quot;)</span><br><span class="line">    call append(line(&quot;.&quot;)+8, &quot;&quot;)</span><br><span class="line">    else </span><br><span class="line">        call setline(1, &quot;/*************************************************************************&quot;) </span><br><span class="line">        call append(line(&quot;.&quot;), &quot;    &gt; File Name       : &quot;.expand(&quot;%&quot;)) </span><br><span class="line">        call append(line(&quot;.&quot;)+1, &quot;    &gt; Author          : enjoy5512&quot;) </span><br><span class="line">        call append(line(&quot;.&quot;)+2, &quot;    &gt; Mail            : enjoy5512@163.com &quot;) </span><br><span class="line">        call append(line(&quot;.&quot;)+3, &quot;    &gt; Created Time    : &quot;.strftime(&quot;%c&quot;)) </span><br><span class="line">        call append(line(&quot;.&quot;)+4, &quot; ************************************************************************/&quot;) </span><br><span class="line">        call append(line(&quot;.&quot;)+5, &quot;&quot;)</span><br><span class="line">    endif</span><br><span class="line">    if &amp;filetype == &#x27;cpp&#x27;</span><br><span class="line">        call append(line(&quot;.&quot;)+6, &quot;#include&lt;iostream&gt;&quot;)</span><br><span class="line">    call append(line(&quot;.&quot;)+7, &quot;&quot;)</span><br><span class="line">        call append(line(&quot;.&quot;)+8, &quot;using namespace std;&quot;)</span><br><span class="line">        call append(line(&quot;.&quot;)+9, &quot;&quot;)</span><br><span class="line">        call append(line(&quot;.&quot;)+10, &quot;int main(int argc,char *argv[])&quot;)</span><br><span class="line">        call append(line(&quot;.&quot;)+11, &quot;&#123;&quot;)</span><br><span class="line">        call append(line(&quot;.&quot;)+12, &quot;     &quot;)</span><br><span class="line">        call append(line(&quot;.&quot;)+13, &quot;    return 0;&quot;)</span><br><span class="line">        call append(line(&quot;.&quot;)+14, &quot;&#125;&quot;)</span><br><span class="line">    endif</span><br><span class="line">    if &amp;filetype == &#x27;c&#x27;</span><br><span class="line">        call append(line(&quot;.&quot;)+6, &quot;#include&lt;stdio.h&gt;&quot;)</span><br><span class="line">        call append(line(&quot;.&quot;)+7, &quot;&quot;)</span><br><span class="line">        call append(line(&quot;.&quot;)+8, &quot;int main(int argc,char *argv[])&quot;)</span><br><span class="line">        call append(line(&quot;.&quot;)+9, &quot;&#123;&quot;)</span><br><span class="line">        call append(line(&quot;.&quot;)+10, &quot;     &quot;)</span><br><span class="line">        call append(line(&quot;.&quot;)+11, &quot;    return 0;&quot;)</span><br><span class="line">        call append(line(&quot;.&quot;)+12, &quot;&#125;&quot;)</span><br><span class="line">    autocmd BufNewFile * 12 j</span><br><span class="line">    endif</span><br><span class="line">endfunc</span><br><span class="line">&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;</span><br><span class="line">&quot;键盘命令</span><br><span class="line">&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;</span><br><span class="line">&quot;C，C++ 按F5编译运行</span><br><span class="line">map &lt;F5&gt; :call CompileRunGcc()&lt;CR&gt;</span><br><span class="line">func! CompileRunGcc()</span><br><span class="line">    exec &quot;w&quot;</span><br><span class="line">    if &amp;filetype == &#x27;c&#x27;</span><br><span class="line">        exec &quot;!gcc % -o %&lt;&quot;</span><br><span class="line">        exec &quot;! ./%&lt;&quot;</span><br><span class="line">    elseif &amp;filetype == &#x27;cpp&#x27;</span><br><span class="line">        exec &quot;!g++ % -o %&lt;&quot;</span><br><span class="line">        exec &quot;! ./%&lt;&quot;</span><br><span class="line">    elseif &amp;filetype == &#x27;sh&#x27;</span><br><span class="line">        :!./%</span><br><span class="line">    endif</span><br><span class="line">endfunc</span><br><span class="line">&quot;C,C++的调试</span><br><span class="line">map &lt;C-F5&gt; :call Rungdb()&lt;CR&gt;</span><br><span class="line">func! Rungdb()</span><br><span class="line">    exec &quot;w&quot;</span><br><span class="line">    if &amp;filetype == &#x27;c&#x27;</span><br><span class="line">        exec &quot;!gcc % -g -o %&lt;&quot;</span><br><span class="line">        exec &quot;!gdb -tui ./%&lt;&quot;</span><br><span class="line">    elseif &amp;filetype == &#x27;cpp&#x27;</span><br><span class="line">        exec &quot;!g++ % -g -o %&lt;&quot;</span><br><span class="line">        exec &quot;!gdb -tui ./%&lt;&quot;</span><br><span class="line">    endif</span><br><span class="line">endfunc</span><br><span class="line">&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;</span><br><span class="line">&quot;&quot;实用设置</span><br><span class="line">&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;</span><br><span class="line">&quot; 设置当文件被改动时自动载入</span><br><span class="line">set autoread</span><br><span class="line">&quot; quickfix模式</span><br><span class="line">autocmd FileType c,cpp map &lt;buffer&gt; &lt;leader&gt;&lt;space&gt; :w&lt;cr&gt;:make&lt;cr&gt;</span><br><span class="line">&quot;代码补全 </span><br><span class="line">set completeopt=preview,menu </span><br><span class="line">&quot;允许插件  </span><br><span class="line">filetype plugin on</span><br><span class="line">&quot;共享剪贴板  </span><br><span class="line">set clipboard+=unnamed </span><br><span class="line">&quot;从不备份  </span><br><span class="line">set nobackup</span><br><span class="line">&quot;自动保存</span><br><span class="line">set autowrite</span><br><span class="line">set ruler                   &quot; 打开状态栏标尺</span><br><span class="line">set cursorline              &quot; 突出显示当前行</span><br><span class="line">set magic                   &quot; 设置魔术</span><br><span class="line">set guioptions-=T           &quot; 隐藏工具栏</span><br><span class="line">set guioptions-=m           &quot; 隐藏菜单栏</span><br><span class="line">set foldcolumn=0</span><br><span class="line">set foldmethod=indent </span><br><span class="line">set foldlevel=3 </span><br><span class="line">set foldenable              &quot; 开始折叠</span><br><span class="line">&quot; 不要使用vi的键盘模式，而是vim自己的</span><br><span class="line">set nocompatible</span><br><span class="line">&quot; 语法高亮</span><br><span class="line">set syntax=on</span><br><span class="line">&quot; 去掉输入错误的提示声音</span><br><span class="line">set noeb</span><br><span class="line">&quot; 在处理未保存或只读文件的时候，弹出确认</span><br><span class="line">set confirm</span><br><span class="line">&quot; 自动缩进</span><br><span class="line">set autoindent</span><br><span class="line">set cindent</span><br><span class="line">&quot; Tab键的宽度</span><br><span class="line">set tabstop=4</span><br><span class="line">&quot; 统一缩进为4</span><br><span class="line">set softtabstop=4</span><br><span class="line">set shiftwidth=4</span><br><span class="line">&quot;禁止生成临时文件</span><br><span class="line">set nobackup</span><br><span class="line">set noswapfile</span><br><span class="line">&quot;搜索忽略大小写</span><br><span class="line">set ignorecase</span><br><span class="line">&quot;搜索逐字符高亮</span><br><span class="line">set hlsearch</span><br><span class="line">set incsearch</span><br><span class="line">&quot;行内替换</span><br><span class="line">set gdefault</span><br><span class="line">&quot;编码设置</span><br><span class="line">set enc=utf-8</span><br><span class="line">set fencs=utf-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936</span><br><span class="line">&quot;语言设置</span><br><span class="line">set langmenu=zh_CN.UTF-8</span><br><span class="line">set helplang=cn</span><br><span class="line">&quot; 我的状态行显示的内容（包括文件类型和解码）</span><br><span class="line">set statusline=%F%m%r%h%w\ [FORMAT=%&#123;&amp;ff&#125;]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %&#123;strftime(\&quot;%d/%m/%y\ -\ %H:%M\&quot;)&#125;</span><br><span class="line">&quot;set statusline=[%F]%y%r%m%*%=[Line:%l/%L,Column:%c][%p%%]</span><br><span class="line">&quot;set statusline=\ %&lt;%F[%1*%M%*%n%R%H]%=\ %y\ %0(%&#123;&amp;fileformat&#125;\ %&#123;&amp;encoding&#125;\ %c:%l/%L%)\</span><br><span class="line">&quot; 总是显示状态行</span><br><span class="line">set laststatus=2</span><br><span class="line">&quot; 命令行（在状态行下）的高度，默认为1，这里是2</span><br><span class="line">set cmdheight=2</span><br><span class="line">&quot; 侦测文件类型</span><br><span class="line">filetype on</span><br><span class="line">&quot; 载入文件类型插件</span><br><span class="line">filetype plugin on</span><br><span class="line">&quot; 为特定文件类型载入相关缩进文件</span><br><span class="line">filetype indent on</span><br><span class="line">&quot; 保存全局变量</span><br><span class="line">set viminfo+=!</span><br><span class="line">&quot; 在被分割的窗口间显示空白，便于阅读</span><br><span class="line">set fillchars=vert:\ ,stl:\ ,stlnc:\</span><br><span class="line">&quot; 高亮显示匹配的括号</span><br><span class="line">set showmatch</span><br><span class="line">&quot; 匹配括号高亮的时间（单位是十分之一秒）</span><br><span class="line">set matchtime=1</span><br><span class="line">&quot; 光标移动到buffer的顶部和底部时保持3行距离</span><br><span class="line">set scrolloff=3</span><br><span class="line">&quot; 为C程序提供自动缩进</span><br><span class="line">set smartindent</span><br><span class="line">&quot; 高亮显示普通txt文件（需要txt.vim脚本）</span><br><span class="line">au BufRead,BufNewFile *  setfiletype txt</span><br><span class="line">&quot;自动补全</span><br><span class="line">&quot;:inoremap ( ()&lt;ESC&gt;i</span><br><span class="line">&quot;:inoremap ) &lt;c-r&gt;=ClosePair(&#x27;)&#x27;)&lt;CR&gt;</span><br><span class="line">:inoremap &#123; &#123;&lt;CR&gt;&#125;&lt;ESC&gt;O</span><br><span class="line">:inoremap &#125; &lt;c-r&gt;=ClosePair(&#x27;&#125;&#x27;)&lt;CR&gt;</span><br><span class="line">&quot;:inoremap [ []&lt;ESC&gt;i</span><br><span class="line">&quot;:inoremap ] &lt;c-r&gt;=ClosePair(&#x27;]&#x27;)&lt;CR&gt;</span><br><span class="line">&quot;:inoremap &quot; &quot;&quot;&lt;ESC&gt;i</span><br><span class="line">&quot;:inoremap &#x27; &#x27;&#x27;&lt;ESC&gt;i</span><br><span class="line">function! ClosePair(char)</span><br><span class="line">    if getline(&#x27;.&#x27;)[col(&#x27;.&#x27;) - 1] == a:char</span><br><span class="line">        return &quot;\&lt;Right&gt;&quot;</span><br><span class="line">    else</span><br><span class="line">        return a:char</span><br><span class="line">    endif</span><br><span class="line">endfunction</span><br><span class="line">filetype plugin indent on </span><br><span class="line">&quot;打开文件类型检测, 加了这句才可以用智能补全</span><br><span class="line">set completeopt=longest,menu</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="3、菜单栏位置"><a href="#3、菜单栏位置" class="headerlink" title="3、菜单栏位置"></a>3、菜单栏位置</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">放到底部（终端输入以下）：</span><br><span class="line">gsettings set com.canonical.Unity.Launcher launcher-position Bottom</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">放到左侧（终端输入以下）：</span><br><span class="line">gsettings set com.canonical.Unity.Launcher launcher-position Left</span><br></pre></td></tr></table></figure>
+
+<h1 id="二、美化Ubuntu"><a href="#二、美化Ubuntu" class="headerlink" title="二、美化Ubuntu"></a>二、美化Ubuntu</h1><h2 id="1、主题"><a href="#1、主题" class="headerlink" title="1、主题"></a>1、主题</h2><h3 id="1-1、安装unity-tweak-tool"><a href="#1-1、安装unity-tweak-tool" class="headerlink" title="1.1、安装unity-tweak-tool:"></a>1.1、安装unity-tweak-tool:</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install unity-tweak-tool</span><br></pre></td></tr></table></figure>
+
+<p>调整 Unity 桌面环境，还是推荐使用Unity Tweak Tool，这是一个非常好用的 Unity 图形化管理工具，可以修改工作区数量、热区等。</p>
+<p>在安装后，输入unity-tweak-tool，遇到一直报错打不开的问题，解决方法：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install unity-lens-applications </span><br><span class="line">sudo apt-get install unity-lens-files</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-2-、Flatabulous主题"><a href="#1-2-、Flatabulous主题" class="headerlink" title="1.2 、Flatabulous主题"></a>1.2 、Flatabulous主题</h3><p>通过源码安装时，一直报错类似于仓库没有release文件，于是放弃源码安装</p>
+<p><em>若遇到该问题，解决方法：</em></p>
+<p><em>1、输入命令<code>cd /etc/apt/sources.list.d</code>进入到对应的ppa目录</em></p>
+<p><em>2、ls看到对应无法下载的list</em></p>
+<p><em>3、通过<code>sudo rm &lt;....list&gt;</code>删除命令删除</em></p>
+<p><em>虽然问题解决了，但是主题仍未下载成功.</em></p>
+<p>遂采用deb格式文件下载</p>
+<p><code>wget https://github.com/anmoljagetia/Flatabulous/releases/download/16.04.1/Flatabulous-Theme.deb</code>下载flatabulous主题</p>
+<p><code>sudo dpkg -i Flatabulous-Theme.deb</code>安装</p>
+<p>安装完成后，打开unity-tweak-tool软件，进入主题 ，修改为Flatabulous </p>
+<h2 id="2、终端"><a href="#2、终端" class="headerlink" title="2、终端"></a>2、终端</h2><h3 id="2-1、安装zsh"><a href="#2-1、安装zsh" class="headerlink" title="2.1、安装zsh"></a>2.1、安装zsh</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install zsh  #安装zsh</span><br><span class="line">chsh -s /bin/zsh      #将zsh设置默认为shell</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-2、安装oh-my-zsh"><a href="#2-2、安装oh-my-zsh" class="headerlink" title="2.2、安装oh my zsh"></a>2.2、安装oh my zsh</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install git #git的安装</span><br><span class="line">sh -c $(curl -fsSL https://gitee.com/shmhlsy/oh-my-zsh-install.sh/raw/master/install.sh) #oh my zsh的安装</span><br></pre></td></tr></table></figure>
+
+<p>重启即可</p>
+<h3 id="2-3、更换主题"><a href="#2-3、更换主题" class="headerlink" title="2.3、更换主题"></a>2.3、更换主题</h3><p>进入theme官网 <a target="_blank" rel="noopener" href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes">https://github.com/ohmyzsh/ohmyzsh/wiki/Themes</a>选择你想要的主题，以avit为例</p>
+<h3 id="2-4、安装插件"><a href="#2-4、安装插件" class="headerlink" title="2.4、安装插件"></a>2.4、安装插件</h3><h4 id="zsh-syntax-highlighting"><a href="#zsh-syntax-highlighting" class="headerlink" title="zsh-syntax-highlighting"></a>zsh-syntax-highlighting</h4><p>命令行高亮插件</p>
+<p>执行以下命令</p>
+<p><code>git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $&#123;ZSH_CUSTOM:-~/.oh-my-zsh/custom&#125;/plugins/zsh-syntax-highlighting</code></p>
+<h4 id="zsh-autosuggestions"><a href="#zsh-autosuggestions" class="headerlink" title="zsh-autosuggestions"></a>zsh-autosuggestions</h4><p>命令行命令键入时的历史命令建议插件</p>
+<p>执行以下命令</p>
+<p><code>git clone https://github.com/zsh-users/zsh-autosuggestions $&#123;ZSH_CUSTOM:-~/.oh-my-zsh/custom&#125;/plugins/zsh-autosuggestions</code></p>
+<h4 id="文件修改"><a href="#文件修改" class="headerlink" title="文件修改"></a>文件修改</h4><p><code>ls -a</code>   #查看文件</p>
+<p><code>vim .zshrc</code> #编辑.zshrc配置文件</p>
+<p>#输入i进入编辑模式</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 使用的zsh 主题</span></span><br><span class="line">ZSH_THEME=&quot;avit&quot;</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 启用已安装的插件</span></span><br><span class="line">plugins=(</span><br><span class="line">  git zsh-autosuggestions zsh-syntax-highlighting</span><br><span class="line">)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>#esc退出编辑模式，:wq退出vim</p>
+<p>即更换好主题和添加好插件</p>
+<h3 id="2-5、更换背景"><a href="#2-5、更换背景" class="headerlink" title="2.5、更换背景"></a>2.5、更换背景</h3><p>/1、<code>sudo apt-get update</code>  更新系统资源</p>
+<p>/2、<code>sudo apt-get  install  xfce4-terminal</code>   安装xfce4终端</p>
+<p>/3、打开xfce4终端</p>
+<p>/4、菜单栏编辑-&gt;首选项-&gt;外观-&gt;背景图片选择你想要的壁纸  样式改为拉伸</p>
 
                 
             </div>
@@ -569,7 +601,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/07/29/hexo-matery%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">http://example.com/2021/07/29/hexo-matery%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</a>
+                    <a href="http://example.com/2021/07/31/Ubuntu%E7%9A%84%E4%BC%98%E5%8C%96%E5%92%8C%E7%BE%8E%E5%8C%96/">http://example.com/2021/07/31/Ubuntu%E7%9A%84%E4%BC%98%E5%8C%96%E5%92%8C%E7%BE%8E%E5%8C%96/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -607,8 +639,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/hexo-github-git/">
-                                    <span class="chip bg-color">hexo,github,git</span>
+                                <a href="/tags/linux-Ubuntu/">
+                                    <span class="chip bg-color">linux Ubuntu</span>
                                 </a>
                             
                         </div>
@@ -1097,9 +1129,60 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2021/07/31/Ubuntu%E7%9A%84%E4%BC%98%E5%8C%96%E5%92%8C%E7%BE%8E%E5%8C%96/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Ubuntu的优化和美化">
+                        
+                        <span class="card-title">Ubuntu的优化和美化</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            有关Ubuntu的美化和优化
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-31
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/linux/" class="post-category">
+                                    linux
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/linux-Ubuntu/">
+                        <span class="chip bg-color">linux Ubuntu</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2021/07/30/%E5%9C%A8VMware%E4%B8%AD%E5%AE%89%E8%A3%85Ubuntu%E4%B8%8E%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE/">
                     <div class="card-image">
@@ -1117,9 +1200,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-30
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-30
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1139,43 +1222,6 @@
                         <span class="chip bg-color">ubuntu linux vmware</span>
                     </a>
                     
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/07/24/%E5%91%A8%E9%9D%99I-LOVE-YOU/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="周静I LOVE YOU">
-                        
-                        <span class="card-title">周静I LOVE YOU</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-24
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            wck
-                            
-                        </span>
-                    </div>
                 </div>
                 
             </div>
