@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="周静I LOVE YOU, wck&#39;s blog">
+    <meta name="keywords" content="鸟哥私房菜学习（二）, wck&#39;s blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>周静I LOVE YOU | wck&#39;s blog</title>
+    <title>鸟哥私房菜学习（二） | wck&#39;s blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -326,12 +326,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">周静I LOVE YOU</h1>
+                    <h1 class="description center-align post-title">鸟哥私房菜学习（二）</h1>
                 </div>
             </div>
         </div>
@@ -445,12 +445,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Linux-%E5%86%85%E6%A0%B8-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">
+                                <span class="chip bg-color">Linux 内核 操作系统</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Linux/" class="post-category">
+                                Linux
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -459,28 +472,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-07-24
+                    2021-08-08
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-07-24
+                    2021-08-08
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    1.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    5 分
                 </div>
                 
 
@@ -500,7 +513,59 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h1 id="一、Linux是什么"><a href="#一、Linux是什么" class="headerlink" title="一、Linux是什么"></a>一、Linux是什么</h1><p>Linux是个<strong>操作系统</strong></p>
+<p>如果能够参考硬件的功能函数并以此修改你的操作系统程序代码，那经过改版后的操作系统就能够在另一个硬件平台上运行，这个过程我们通常被称为“<strong>软件移植</strong>”</p>
+<p>Linux提供了一个操作系统中最底层的硬件控制与资源管理的完整结构，这个架构是继承了UNIX良好的传统而来，所以相当的稳定且功能强大</p>
+<h1 id="二、Linux的背景和历史"><a href="#二、Linux的背景和历史" class="headerlink" title="二、Linux的背景和历史"></a>二、Linux的背景和历史</h1><p>早期计算机输入设备只有读卡机，输出设备只有打印机，用户也无法与操作系统互动（<strong>批处理型操作系统</strong>）</p>
+<p>20世纪60年代初期MIT发展了<strong>兼容分时系统</strong>，它可以让大型主机通过多个终端以连接进入主机，利用主机的资源进行运算工作</p>
+<p>在1965前后，Bell实验室，MIT，通用电气公司（GE）共同发起了<strong>Multics计划</strong></p>
+<p>1969年，Ken Thompson用汇编语言写了一组内核程序，同时包括一些内核工具程序，以及一个小小的文件系统，这个系统就是<strong>UNIX的原型</strong>，称为Unics</p>
+<p>文件系统有两个重要概念：</p>
+<p>1、所有的程序或系统设备都是文件</p>
+<p>2、不管程序本身还是附属文件，所写的程序只有一个目标，且要有效的完成目标</p>
+<p>1973年，Ritchie等人用c语言写出<strong>第一版正式UNIX内核</strong>，UNIX正式诞生</p>
+<p>1977年，伯克利大学的Bill Joy在取得了UNIX的内源代码后，着手修改成适合自己机器的版本，并且同时增加了很多工具软件和编译器，最终命名为<strong>BSD</strong>（Berkeley Software Distribution），BSD是UNIX很重要的一个分支</p>
+<p>由于操作系统的内核必须要跟硬件配合，与提供及控制硬件的资源进行良好的工作，所以早先每一个计算机公司都要为自己的硬件开发出合适的UNIX系统，早先的UNIX只能和服务器或是大型工作站划上等号。</p>
+<p>1979年，AT&amp;T推出了<strong>System V架构和版权说明</strong>，情况有所改善</p>
+<p>1984年，Tanenbaum教授编写了<strong>Minix</strong>这个UNIX-like的内核程序，完全没有参照UNIX的内核源代码，并且强调Minix必须能够与UNIX兼容，该程序可以移植到x86上面</p>
+<p>1984年，斯托曼发起<strong>GNU计划</strong>，目的是：建立一个自由，开放的UNIX操作系统</p>
+<p>同时，他借着<strong>Emacs</strong>（一种程序编辑器，可以在用户编写程序的过程中就进行语法的检验）以磁带的方式出售，赚的钱成立了自由软件基金会，借此最终完成了<strong>gcc</strong>编辑器，此外，还编写了<strong>C函数库</strong>，可以被用来运行操作系统的基本接口<strong>Bash shell</strong>,都在1990年左右完成</p>
+<p>1985年，为了避免GNU所开发的自由软件被其他人利用成为专利软件，所以与律师草拟了有名的<strong>通用公共许可证</strong>（General Public License,<strong>GPL</strong>）</p>
+<p>鉴于图形用户接口（GUI）的需求日益高涨，1984年MIT与第三方发表了<strong>X window System</strong>，在1988年成立了非营利性组织<strong>XFree86</strong>（X Window System +Free +x86）</p>
+<h1 id="三、托瓦兹与LInux的发展"><a href="#三、托瓦兹与LInux的发展" class="headerlink" title="三、托瓦兹与LInux的发展"></a>三、托瓦兹与LInux的发展</h1><p>托瓦兹拿到Minux，安装到了386计算机上，通过GNU计划提供的bash以及gcc编译器等自由软件，顺利的编写了能与386紧紧结合在一起的内核程序，同时将内核程序发布到了网络上，希望得到更多人的建议与反馈</p>
+<p>为了让所有的软件都可以在Linux上执行，托瓦兹参考了标准的<strong>POSIX规范</strong>，来修改Linux</p>
+<p><em>POSIX是可移植操作系统接口的缩写，重点在于规范内核与应用程序之间的接口，这是美国电器与电子工程师学会（IEEE）所发布的一项标准</em></p>
+<h2 id="Linux虚拟团队的产生和发展"><a href="#Linux虚拟团队的产生和发展" class="headerlink" title="Linux虚拟团队的产生和发展"></a>Linux虚拟团队的产生和发展</h2><p>1、单个人维护阶段</p>
+<p>2、广大黑客志愿者加入阶段</p>
+<p>3、内核功能详细分工与发展阶段</p>
+<h2 id="Linux的内核版本"><a href="#Linux的内核版本" class="headerlink" title="Linux的内核版本"></a>Linux的内核版本</h2><p>3.10.0-123.e17.x86-64</p>
+<p>主版本.次版本.发布版本-修改版本</p>
+<p>2.6x版本以前：主次版本为<strong>奇数：开发中版本</strong>，主次版本为<strong>偶数：稳定版本</strong></p>
+<p>3.0开始：主线版本，长期维护版本</p>
+<h2 id="Linux发行版本"><a href="#Linux发行版本" class="headerlink" title="Linux发行版本"></a>Linux发行版本</h2><p>Linux是一个操作系统最底层的内核及其提供的内核工具，是GNU GPL授权模式</p>
+<p>“<strong>Linux +各种软件</strong>”就是一个相当完整的操作系统</p>
+<p>为了让用户能够接触到Linux，很多商业公司或非营利团体，就将Linux内核及其工具与可运行的软件整合起来，加上自己具有创意的工具程序，这个工具程序可以让用户以CD/DVD或通过网络直接安装、管理Linux系统。这个“<strong>内核+软件+工具+可完全安装程序</strong>“的东西，我们称之为Linux distribution，一般中文翻译为<strong>Linux发行版</strong>，或Linux发布商套件等。</p>
+<p>各大Linux发行版的主要异同：支持标准</p>
+<h1 id="四、Linux当前角色"><a href="#四、Linux当前角色" class="headerlink" title="四、Linux当前角色"></a>四、Linux当前角色</h1><h2 id="企业环境的使用"><a href="#企业环境的使用" class="headerlink" title="企业环境的使用"></a>企业环境的使用</h2><h2 id="个人环境的使用"><a href="#个人环境的使用" class="headerlink" title="个人环境的使用"></a>个人环境的使用</h2><p>桌面计算机</p>
+<p>手持系统（PDA，手机）：Android就是Linux内核的分支，只是专门用来针对手机或者平板这类的ARM机器所设计的</p>
+<p>嵌入式系统</p>
+<h2 id="云端"><a href="#云端" class="headerlink" title="云端"></a>云端</h2><p>云程序</p>
+<p><strong>虚拟化</strong>指的是：在一台物理主机上面模拟出多个逻辑上完全独立的硬件，这个假的虚拟出来的硬件主机，可以用来安装一台逻辑上完全独立的操作系统</p>
+<p>终端设备</p>
+<h1 id="五、Linux该如何学习"><a href="#五、Linux该如何学习" class="headerlink" title="五、Linux该如何学习"></a>五、Linux该如何学习</h1><p>1、计算机概论与硬件相关知识</p>
+<p>2、先从Linux的安装与命令开始学起</p>
+<p>3、Linux操作系统的基础技能</p>
+<p>4、务必学会vi文本编辑器</p>
+<p>5、shell（命令行模式）与shell脚本的学习</p>
+<p>6、一定要学会软件管理</p>
+<p>7、网络基础的建立</p>
+<p>8、网站的建立</p>
+<hr>
+<p>参考网站：</p>
+<p>鸟哥网站：<a target="_blank" rel="noopener" href="http://linux.vbird.org/Searching.php">http://linux.vbird.org/Searching.php</a></p>
+<p>酷学院讨论区：<a target="_blank" rel="noopener" href="http://phorum.study-area.org/">http://phorum.study-area.org</a></p>
+<p>鸟哥的私房菜馆讨论区：<a target="_blank" rel="noopener" href="http://phorum.vbird.org/">http://phorum.vbird.org</a></p>
+
                 
             </div>
             <hr/>
@@ -526,7 +591,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/07/24/%E5%91%A8%E9%9D%99I-LOVE-YOU/">http://example.com/2021/07/24/%E5%91%A8%E9%9D%99I-LOVE-YOU/</a>
+                    <a href="http://example.com/2021/08/08/%E9%B8%9F%E5%93%A5%E7%A7%81%E6%88%BF%E8%8F%9C%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%BA%8C%EF%BC%89/">http://example.com/2021/08/08/%E9%B8%9F%E5%93%A5%E7%A7%81%E6%88%BF%E8%8F%9C%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%BA%8C%EF%BC%89/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -563,7 +628,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/Linux-%E5%86%85%E6%A0%B8-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">
+                                    <span class="chip bg-color">Linux 内核 操作系统</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1050,46 +1119,48 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/07/29/hexo-matery%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+                <a href="/2021/08/08/%E9%B8%9F%E5%93%A5%E7%A7%81%E6%88%BF%E8%8F%9C%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%BA%8C%EF%BC%89/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="hexo-matery博客搭建">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="鸟哥私房菜学习（二）">
                         
-                        <span class="card-title">hexo-matery博客搭建</span>
+                        <span class="card-title">鸟哥私房菜学习（二）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            关于我的hexo-matery博客的搭建
+                            Linux是什么与如何学习
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-29
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-08
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/blog/" class="post-category">
-                                    blog
+                            <a href="/categories/Linux/" class="post-category">
+                                    Linux
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/hexo-github-git/">
-                        <span class="chip bg-color">hexo,github,git</span>
+                    <a href="/tags/Linux-%E5%86%85%E6%A0%B8-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">
+                        <span class="chip bg-color">Linux 内核 操作系统</span>
                     </a>
                     
                 </div>
@@ -1103,32 +1174,44 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/07/24/hello-world/">
+                <a href="/2021/08/06/%E9%B8%9F%E5%93%A5%E7%A7%81%E6%88%BF%E8%8F%9C%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="鸟哥私房菜学习（一）">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">鸟哥私房菜学习（一）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            计算机概论学习
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-24
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-06
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            wck
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/" class="post-category">
+                                    计算机系统
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%94%B5%E8%84%91%E7%A1%AC%E4%BB%B6/">
+                        <span class="chip bg-color">电脑硬件</span>
+                    </a>
+                    
                 </div>
                 
             </div>
