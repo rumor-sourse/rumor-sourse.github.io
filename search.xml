@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>鸟哥私房菜学习（四）</title>
+      <link href="/2021/08/11/%E9%B8%9F%E5%93%A5%E7%A7%81%E6%88%BF%E8%8F%9C%E5%AD%A6%E4%B9%A0%EF%BC%88%E5%9B%9B%EF%BC%89/"/>
+      <url>/2021/08/11/%E9%B8%9F%E5%93%A5%E7%A7%81%E6%88%BF%E8%8F%9C%E5%AD%A6%E4%B9%A0%EF%BC%88%E5%9B%9B%EF%BC%89/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、练习机的规划"><a href="#一、练习机的规划" class="headerlink" title="一、练习机的规划"></a>一、练习机的规划</h1><p>最重要的是磁盘分区的配置</p><table><thead><tr><th>所需目录/设备</th><th>磁盘容量</th><th>文件系统</th><th>分区格式</th></tr></thead><tbody><tr><td>BIOS boot</td><td>2MB</td><td>系统自定义</td><td>主要分区</td></tr><tr><td>/boot</td><td>1GB</td><td>xfs</td><td>主要分区</td></tr><tr><td>/</td><td>10GB</td><td>xfs</td><td>LVM方式</td></tr><tr><td>/home</td><td>5GB</td><td>xfs</td><td>LVM方式</td></tr><tr><td>交换分区</td><td>1GB</td><td>swap</td><td>LVM方式</td></tr></tbody></table><h1 id="二、开始安装CentOS-7"><a href="#二、开始安装CentOS-7" class="headerlink" title="二、开始安装CentOS 7"></a>二、开始安装CentOS 7</h1><h2 id="在VMware安装CentOS-7"><a href="#在VMware安装CentOS-7" class="headerlink" title="在VMware安装CentOS 7"></a>在VMware安装CentOS 7</h2><p>由于教材中使用的是虚拟机来做这个练习，而我使用的是VMware安装的CentOS 7，因此我先演示如何在VMware安装CentOS 7</p><p>1、找到CentOS 7的镜像网站（我用的是中科大的镜像站<a href="http://centos.ustc.edu.cn/centos/7/isos/">http://centos.ustc.edu.cn/centos/7/isos/</a>）</p><p>2、下载<strong>everything版本</strong>，文件较大，可能会出现下载失败的情况，多试几次</p><p>3、打开VMware，创建新的虚拟机，选择<strong>自定义配置</strong></p><p>4、按照如下的步骤逐步进行设置</p><p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/install1.png"></p><p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/install2.png"></p><p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/install3.png"></p><p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/install4.png"></p><p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/install5.png"></p><p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/install6.png"></p><p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/install7.png"></p><p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/install8.png"></p><p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/install9.png"></p><p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/install10.png"></p><p>全部进行完后点完成即可</p><h2 id="选择安装模式与启动"><a href="#选择安装模式与启动" class="headerlink" title="选择安装模式与启动"></a>选择安装模式与启动</h2><p>由于教材上的安装较为繁琐，这里简约说明，未提及的说明是不用管的，若未看懂的参考教材</p><p><strong>加入强制使用GPT分区的安装参数</strong></p><p>1、使用箭头键，将光标移动到【Install CentOS 7】选项</p><p>2、按下键盘的【Tab】按键，让光标移动到界面最下方输入额外的内核参数</p><p>3、在出现的界面中输入以下参数</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vmlinuz initrd=initrd img inst.stage2=hd:LABEL=CentOS\x207\x20x86_64 rd.live.check quiet inst.gpt</span><br></pre></td></tr></table></figure><p>按下回车</p><p>等待会后，进入安装流程选择中文，按下【继续】</p><h3 id="设置日期，时间和键盘布局"><a href="#设置日期，时间和键盘布局" class="headerlink" title="设置日期，时间和键盘布局"></a>设置日期，时间和键盘布局</h3><ul><li>进入【日期和时间】项目，城市选择上海，若时间不正确自行调整</li><li>进入【键盘】项目，键盘布局右侧点击【选项】，找到Ctrl+Shift，选中，点击【确定】</li></ul><h3 id="安装源设置与软件选择"><a href="#安装源设置与软件选择" class="headerlink" title="安装源设置与软件选择"></a>安装源设置与软件选择</h3><ul><li>进入【安装源】项目，确定已有自动检测的安装介质</li><li>进入【软件选择】项目，选中【带GUI的服务器】</li></ul><h3 id="磁盘分区与文件系统设置（重点）"><a href="#磁盘分区与文件系统设置（重点）" class="headerlink" title="磁盘分区与文件系统设置（重点）"></a>磁盘分区与文件系统设置（重点）</h3><p>进入【安装位置】项目，选中硬盘，点击下方【我要配置分区】，点击【完成】</p><h4 id="BIOS-Boot"><a href="#BIOS-Boot" class="headerlink" title="BIOS Boot"></a>BIOS Boot</h4><p>点击【+】符号，挂载点选择【biosboot】，期望容量输入【2M】</p><h4 id="boot"><a href="#boot" class="headerlink" title="/boot"></a>/boot</h4><p>点击【+】符号，挂载点选择【/boot】，期望容量输入【1G】</p><h4 id=""><a href="#" class="headerlink" title="/"></a>/</h4><p>点击【+】符号，挂载点选择【/】，期望容量输入【10G】，设备类型改为【LVM】，点击【修改】</p><p>大小策略改为【大小固定】，输入【30G】</p><h4 id="home"><a href="#home" class="headerlink" title="/home"></a>/home</h4><p>点击【+】符号，挂载点选择【/home】，期望容量输入【5G】，设备类型改为【LVM】</p><h4 id="swap"><a href="#swap" class="headerlink" title="/swap"></a>/swap</h4><p>点击【+】符号，挂载点选择【/swap】，期望容量输入【1G】，设备类型改为【LVM】</p><p>全部修改完成后，左下方可用空间应为9209.97MiB，点击【完成】，点击【接受更改】</p><p><em>内存交换分区的功能为：党有数据被存放在物理内存里面，但是这些数据又不是常被CPU所使用时，那么这些不常被使用的数据将会被扔到硬盘的交换分区当中，而将速度较快的物理内存空间释放出来给真正需要的程序使用</em></p><h3 id="内核管理与网络设置"><a href="#内核管理与网络设置" class="headerlink" title="内核管理与网络设置"></a>内核管理与网络设置</h3><p>【KDUMP】是处理当Linux系统因为内核问题导致的宕机事件时会将宕机事件的内存中的数据保存的一项功能，主要偏向内核开发者除错用，可以开启可以不开</p><p>进入【网络和主机名】项目，右上角选择【开启】，点击【配置】选项，点击【常规】，选中【可用时自动链接到这个网络】，点击【IPV4设置】</p><p>方法改为【手动】，点击【添加】，输入地址与子网掩码，点击【保存】，修改主机名</p><p>未取得IP的情况下，可以套用如下的IP参数：</p><ul><li>是否使用DHCP：无</li><li>IP：192.168.1.100</li><li>子网掩码：255.255.255.0</li><li>主机名：study.centos.vbird</li></ul><h3 id="开始安装、设置root密码与新增可切换身份之一般用户"><a href="#开始安装、设置root密码与新增可切换身份之一般用户" class="headerlink" title="开始安装、设置root密码与新增可切换身份之一般用户"></a>开始安装、设置root密码与新增可切换身份之一般用户</h3><p>点击【开始安装】</p><p>点击【ROOT密码】，设置root密码</p><p>点击【创建用户】，创立一般用户，需要勾选【将此用户做为管理员】，可以使这个账号在需要时用自己的root密码来切换身份成为root，而不知道root的密码</p><h3 id="准备使用系统前的授权同意"><a href="#准备使用系统前的授权同意" class="headerlink" title="准备使用系统前的授权同意"></a>准备使用系统前的授权同意</h3><p>重启进入系统后，需要点击【许可信息】，勾选【同意许可协议】，即可进入CentOS 7系统</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux centos </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>鸟哥私房菜学习（三）</title>
       <link href="/2021/08/10/%E9%B8%9F%E5%93%A5%E7%A7%81%E6%88%BF%E8%8F%9C%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%89%EF%BC%89/"/>
       <url>/2021/08/10/%E9%B8%9F%E5%93%A5%E7%A7%81%E6%88%BF%E8%8F%9C%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%89%EF%BC%89/</url>
