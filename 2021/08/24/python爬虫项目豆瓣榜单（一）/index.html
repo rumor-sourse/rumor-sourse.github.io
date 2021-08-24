@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, wck&#39;s blog">
+    <meta name="keywords" content="python爬虫项目豆瓣榜单（一）, wck&#39;s blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | wck&#39;s blog</title>
+    <title>python爬虫项目豆瓣榜单（一） | wck&#39;s blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -326,12 +326,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">python爬虫项目豆瓣榜单（一）</h1>
                 </div>
             </div>
         </div>
@@ -445,12 +445,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/python/">
+                                <span class="chip bg-color">python</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/python/" class="post-category">
+                                python
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -459,28 +472,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-07-24
+                    2021-08-24
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-07-24
+                    2021-08-24
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    75
+                    963
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
 
@@ -500,19 +513,12 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+                <h1 id="项目概述"><a href="#项目概述" class="headerlink" title="项目概述"></a>项目概述</h1><p>在豆瓣电影Top250<a target="_blank" rel="noopener" href="http://movie.douban.com/top250?start=">http://movie.douban.com/top250?start=</a>上爬取每部电影的详情，图片链接，影片中文名，外国名，评分，评价数，概况，相关信息</p>
+<p>结果如下：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/top250.png"></p>
+<h1 id="完整代码"><a href="#完整代码" class="headerlink" title="完整代码"></a>完整代码</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> urllib.request,urllib.error</span><br><span class="line"><span class="keyword">import</span> xlwt</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span>():</span></span><br><span class="line">    baseurl=<span class="string">&quot;http://movie.douban.com/top250?start=&quot;</span></span><br><span class="line">    <span class="comment">#1.爬取网页</span></span><br><span class="line">    datalist = getData(baseurl)</span><br><span class="line">    <span class="comment">#2.解析数据</span></span><br><span class="line">    savepath=<span class="string">&quot;.\\豆瓣电影Top250.xls&quot;</span></span><br><span class="line">    <span class="comment">#3.保存数据</span></span><br><span class="line">    saveData(datalist,savepath)</span><br><span class="line"><span class="comment">#影片详情链接的规则</span></span><br><span class="line">findLink = re.<span class="built_in">compile</span>(<span class="string">r&#x27;&lt;a href=&quot;(.*?)&quot;&gt;&#x27;</span>) <span class="comment">#创建正则表达式，表示规则（字符串的模式）</span></span><br><span class="line"><span class="comment">#影片图片</span></span><br><span class="line">findImgSrc = re.<span class="built_in">compile</span>(<span class="string">r&#x27;&lt;img.*src=&quot;(.*?)&quot;&#x27;</span>,re.S)</span><br><span class="line"><span class="comment">#影片片名</span></span><br><span class="line">findTitle = re.<span class="built_in">compile</span>(<span class="string">r&#x27;&lt;span class=&quot;title&quot;&gt;(.*)&lt;/span&gt;&#x27;</span>)</span><br><span class="line"><span class="comment">#影片评分</span></span><br><span class="line">findRating = re.<span class="built_in">compile</span>(<span class="string">r&#x27;&lt;span class=&quot;rating_num&quot; property=&quot;v:average&quot;&gt;(.*)&lt;/span&gt;&#x27;</span>)</span><br><span class="line"><span class="comment">#找到评价人数</span></span><br><span class="line">findJudge = re.<span class="built_in">compile</span>(<span class="string">r&#x27;&lt;span&gt;(\d*)人评价&lt;/span&gt;&#x27;</span>)</span><br><span class="line"><span class="comment">#找到概况</span></span><br><span class="line">findInq = re.<span class="built_in">compile</span>(<span class="string">r&#x27;&lt;span class=&quot;inq&quot;&gt;(.*)&lt;/span&gt;&#x27;</span>)</span><br><span class="line"><span class="comment">#找到影片的相关内容</span></span><br><span class="line">findBd = re.<span class="built_in">compile</span>(<span class="string">r&#x27;&lt;p class=&quot;&quot;&gt;(.*?)&lt;/p&gt;&#x27;</span>,re.S)</span><br><span class="line"><span class="comment">#爬取网页</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getData</span>(<span class="params">baseurl</span>):</span></span><br><span class="line">    datalist=[]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,<span class="number">10</span>):            <span class="comment">#调用获取页面信息的函数10次</span></span><br><span class="line">        url = baseurl + <span class="built_in">str</span>(i*<span class="number">25</span>)</span><br><span class="line">        html = askURL(url)    <span class="comment">#保存获取到的网页源码</span></span><br><span class="line">        <span class="comment">#逐一解析数据</span></span><br><span class="line">        soup = BeautifulSoup(html,<span class="string">&quot;html.parser&quot;</span>)</span><br><span class="line">        <span class="keyword">for</span> item <span class="keyword">in</span> soup.find_all(<span class="string">&#x27;div&#x27;</span>,class_=<span class="string">&quot;item&quot;</span>):   <span class="comment">#查找符合要求的字符串</span></span><br><span class="line">             <span class="comment">#print(item)   #测试：查看item电影全部信息</span></span><br><span class="line">             data = []    <span class="comment">#保存一部电影的所有信息</span></span><br><span class="line">             item = <span class="built_in">str</span>(item)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">             <span class="comment">#影片详情的链接</span></span><br><span class="line">             link = re.findall(findLink,item)[<span class="number">0</span>]   <span class="comment">#re库用来通过正则表达式查找指定的字符串</span></span><br><span class="line">             data.append(link)                     <span class="comment">#添加链接</span></span><br><span class="line">             imgSrc = re.findall(findImgSrc,item)[<span class="number">0</span>]</span><br><span class="line">             data.append(imgSrc)                   <span class="comment">#添加图片</span></span><br><span class="line">             titles = re.findall(findTitle,item)   <span class="comment">#片名可能只有一个中文名，没有外国名</span></span><br><span class="line">             <span class="keyword">if</span>(<span class="built_in">len</span>(titles) == <span class="number">2</span>):</span><br><span class="line">                 ctitle = titles[<span class="number">0</span>]</span><br><span class="line">                 data.append(ctitle)</span><br><span class="line">                 otitle = titles[<span class="number">1</span>].replace(<span class="string">&quot;/&quot;</span>,<span class="string">&quot;&quot;</span>) <span class="comment">#去掉无关的符号</span></span><br><span class="line">                 data.append(otitle)                <span class="comment">#添加外国名</span></span><br><span class="line">             <span class="keyword">else</span>:</span><br><span class="line">                data.append(titles[<span class="number">0</span>])</span><br><span class="line">                data.append(<span class="string">&#x27;&#x27;</span>)             <span class="comment">#外国名字留空</span></span><br><span class="line"></span><br><span class="line">             rating = re.findall(findRating,item)[<span class="number">0</span>]</span><br><span class="line">             data.append(rating)     <span class="comment">#添加评分</span></span><br><span class="line">             judgeNum = re.findall(findJudge,item)[<span class="number">0</span>]</span><br><span class="line">             data.append(judgeNum)      <span class="comment">#添加评价人数</span></span><br><span class="line">             inq = re.findall(findInq,item)</span><br><span class="line">             <span class="keyword">if</span> <span class="built_in">len</span>(inq) != <span class="number">0</span>:</span><br><span class="line">                inq = inq[<span class="number">0</span>].replace(<span class="string">&quot;。&quot;</span>,<span class="string">&quot;&quot;</span>)    <span class="comment">#去掉句号</span></span><br><span class="line">                data.append(inq)                    <span class="comment">#添加概述</span></span><br><span class="line">             <span class="keyword">else</span>:</span><br><span class="line">                data.append(<span class="string">&quot; &quot;</span>)                <span class="comment">#留空</span></span><br><span class="line">             bd = re.findall(findBd,item)[<span class="number">0</span>]</span><br><span class="line">             bd = re.sub(<span class="string">&#x27;&lt;br(\s+)?/&gt;(\s+)?&#x27;</span>,<span class="string">&quot;&quot;</span>,bd)  <span class="comment">#去掉&lt;br/&gt;</span></span><br><span class="line">             bd = re.sub(<span class="string">&#x27;/&#x27;</span>,<span class="string">&quot;&quot;</span>,bd)    <span class="comment">#替换/</span></span><br><span class="line">             data.append(bd.strip())     <span class="comment">#去掉前后的空格</span></span><br><span class="line"></span><br><span class="line">             datalist.append(data)   <span class="comment">#把处理好的一部信息放入datalist</span></span><br><span class="line">    <span class="keyword">return</span> datalist</span><br><span class="line"><span class="comment">#得到指定一个URL的网页内容</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">askURL</span>(<span class="params">url</span>):</span></span><br><span class="line">    head = &#123;            <span class="comment">#模拟浏览器信息，向豆瓣服务器发送信息</span></span><br><span class="line">        <span class="string">&quot;User-Agent&quot;</span>:<span class="string">&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36 Edg/92.0.902.73&quot;</span></span><br><span class="line">    &#125;<span class="comment">#用户代理，告诉豆瓣我们是浏览器，本质上是伪装，告诉服务器我们可以接受什么样的文件</span></span><br><span class="line">    request = urllib.request.Request(url,headers=head)</span><br><span class="line">    html = <span class="string">&quot;&quot;</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        response = urllib.request.urlopen(request)</span><br><span class="line">        html = response.read().decode(<span class="string">&quot;utf-8&quot;</span>)</span><br><span class="line">    <span class="keyword">except</span> urllib.error.URLError <span class="keyword">as</span> e:</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">hasattr</span>(e,<span class="string">&quot;code&quot;</span>):</span><br><span class="line">            <span class="built_in">print</span>(e.code)</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">hasattr</span>(e,<span class="string">&quot;reason&quot;</span>):</span><br><span class="line">            <span class="built_in">print</span>(e.reason)</span><br><span class="line">    <span class="keyword">return</span> html</span><br><span class="line"><span class="comment">#保存数据</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">saveData</span>(<span class="params">datalist,savepath</span>):</span></span><br><span class="line">    book = xlwt.Workbook(encoding=<span class="string">&quot;utf-8&quot;</span>,style_compression=<span class="number">0</span>)</span><br><span class="line">    sheet = book.add_sheet(<span class="string">&#x27;豆瓣电影Top250&#x27;</span>,cell_overwrite_ok = <span class="literal">True</span>)</span><br><span class="line">    col = (<span class="string">&quot;电影详情链接&quot;</span>,<span class="string">&quot;图片链接&quot;</span>,<span class="string">&quot;影片中文名&quot;</span>,<span class="string">&quot;影片外国名&quot;</span>,<span class="string">&quot;评分&quot;</span>,<span class="string">&quot;评价数&quot;</span>,<span class="string">&quot;概况&quot;</span>,<span class="string">&quot;相关信息&quot;</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,<span class="number">8</span>):</span><br><span class="line">        sheet.write(<span class="number">0</span>,i,col[i])  <span class="comment">#列名</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,<span class="number">250</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;第%d条&quot;</span> %(i+<span class="number">1</span>))</span><br><span class="line">        data = datalist[i]</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,<span class="number">8</span>):</span><br><span class="line">            sheet.write(i+<span class="number">1</span>,j,data[j])</span><br><span class="line">    book.save(savepath)</span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    <span class="comment">#调用函数</span></span><br><span class="line">    main()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;爬取完毕！&quot;</span>)</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h1 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h1><p>这只是将结果输出到excel表中，教程上还有有关MySQL的输出，可以在学习MySQL后进行补充</p>
 
                 
             </div>
@@ -539,7 +545,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/07/24/hello-world/">http://example.com/2021/07/24/hello-world/</a>
+                    <a href="http://example.com/2021/08/24/python%E7%88%AC%E8%99%AB%E9%A1%B9%E7%9B%AE%E8%B1%86%E7%93%A3%E6%A6%9C%E5%8D%95%EF%BC%88%E4%B8%80%EF%BC%89/">http://example.com/2021/08/24/python%E7%88%AC%E8%99%AB%E9%A1%B9%E7%9B%AE%E8%B1%86%E7%93%A3%E6%A6%9C%E5%8D%95%EF%BC%88%E4%B8%80%EF%BC%89/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -576,7 +582,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/python/">
+                                    <span class="chip bg-color">python</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1063,36 +1073,50 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/07/24/%E5%91%A8%E9%9D%99I-LOVE-YOU/">
+                <a href="/2021/08/24/python%E7%88%AC%E8%99%AB%E9%A1%B9%E7%9B%AE%E8%B1%86%E7%93%A3%E6%A6%9C%E5%8D%95%EF%BC%88%E4%B8%80%EF%BC%89/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="周静I LOVE YOU">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="python爬虫项目豆瓣榜单（一）">
                         
-                        <span class="card-title">周静I LOVE YOU</span>
+                        <span class="card-title">python爬虫项目豆瓣榜单（一）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            有关python爬虫的项目，从豆瓣Top250的榜单上爬取信息
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-24
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-24
+                            </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            wck
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/python/" class="post-category">
+                                    python
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1101,37 +1125,48 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/07/24/hello-world/">
+                <a href="/2021/08/17/python%E7%BC%96%E7%A8%8B%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5%E7%AC%AC%E4%BA%8C%E7%89%88%E9%A1%B9%E7%9B%AE%E5%AE%9E%E8%B7%B5%EF%BC%88%E4%B8%80%EF%BC%89%E3%80%8A%E5%A4%96%E6%98%9F%E4%BA%BA%E5%85%A5%E4%BE%B5%E3%80%8B%E5%AE%8C%E6%95%B4%E4%BB%A3%E7%A0%81/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="python编程从入门到实践第二版项目实践（一）《外星人入侵》完整代码">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">python编程从入门到实践第二版项目实践（一）《外星人入侵》完整代码</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            小游戏《外星人入侵》的完整代码
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-24
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-17
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            wck
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/python/" class="post-category">
+                                    python
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
