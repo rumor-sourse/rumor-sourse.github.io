@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="hexo-matery博客搭建, wck&#39;s blog">
+    <meta name="keywords" content="MySQL学习笔记（二）, wck&#39;s blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>hexo-matery博客搭建 | wck&#39;s blog</title>
+    <title>MySQL学习笔记（二） | wck&#39;s blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -326,12 +326,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">hexo-matery博客搭建</h1>
+                    <h1 class="description center-align post-title">MySQL学习笔记（二）</h1>
                 </div>
             </div>
         </div>
@@ -447,8 +447,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/hexo-github-git/">
-                                <span class="chip bg-color">hexo,github,git</span>
+                            <a href="/tags/mysql-%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                                <span class="chip bg-color">mysql 数据库</span>
                             </a>
                         
                     </div>
@@ -459,8 +459,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/blog/" class="post-category">
-                                blog
+                            <a href="/categories/mysql/" class="post-category">
+                                mysql
                             </a>
                         
                     </div>
@@ -472,28 +472,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-07-29
+                    2021-09-05
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-07-29
+                    2021-09-05
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    620
+                    3.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    14 分
                 </div>
                 
 
@@ -513,36 +513,104 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="前提准备"><a href="#前提准备" class="headerlink" title="前提准备"></a>前提准备</h1><p>1、有自己的github账户</p>
-<p>没有的移步 <a target="_blank" rel="noopener" href="https://github.com/">https://github.com/</a></p>
-<p>2、安装了git工具</p>
-<p>没有的移步csdn教程@青云ing <a target="_blank" rel="noopener" href="https://blog.csdn.net/shuikanshui/article/details/118295952">https://blog.csdn.net/shuikanshui/article/details/118295952</a></p>
-<h1 id="安装流程"><a href="#安装流程" class="headerlink" title="安装流程"></a>安装流程</h1><h2 id="一、nodejs的安装"><a href="#一、nodejs的安装" class="headerlink" title="一、nodejs的安装"></a>一、nodejs的安装</h2><p>hexo需要nodejs的支持，因此我们需要先安装nodejs ，进入官网 <a target="_blank" rel="noopener" href="https://nodejs.org/en/">https://nodejs.org/en/</a></p>
-<p>安装LTS版本，一直点下一步即可</p>
-<h2 id="二、hexo-博客的搭建"><a href="#二、hexo-博客的搭建" class="headerlink" title="二、hexo 博客的搭建"></a>二、hexo 博客的搭建</h2><p>windows+R输入cmd打开命令行解释器</p>
-<h3 id="1、cnpm的下载"><a href="#1、cnpm的下载" class="headerlink" title="1、cnpm的下载"></a>1、cnpm的下载</h3><p>由于国内的npm下载速度堪忧，因此我们用淘宝镜像的cnpm下载，</p>
-<p>即输入 <em>npm install -g cnpm –registry.npm.taobao.org</em></p>
-<h3 id="2、hexo博客框架的安装"><a href="#2、hexo博客框架的安装" class="headerlink" title="2、hexo博客框架的安装"></a>2、hexo博客框架的安装</h3><p>输入  <em>cnpm install -g hexo-cli</em></p>
-<p><em>hexo -v</em> 验证安装完成</p>
-<h3 id="3、创建blog文件"><a href="#3、创建blog文件" class="headerlink" title="3、创建blog文件"></a>3、创建blog文件</h3><p>假如在D盘建立名为blog的文件夹    输入  <em>mkdir D:\blog</em>  后边的我们搭建的所有博客的内容都是存放于blog中，因此如果你有什么不满意难以修改的，完全可以删掉blog重来</p>
-<h3 id="4、利用git工具进行blog的搭建"><a href="#4、利用git工具进行blog的搭建" class="headerlink" title="4、利用git工具进行blog的搭建"></a>4、利用git工具进行blog的搭建</h3><p>进入blog文件夹中，右键点击Git Bash Here进入git窗口   </p>
-<p>输入<em>hexo init</em>初始化博客</p>
-<p><em>如果遇到问题 fatal: unable to access ‘<a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-starter.git/&#39;">https://github.com/hexojs/hexo-starter.git/&#39;</a>: OpenSSL SSL_read: Connection was reset, errno 10054是因为服务器的SSL整数没有经过第三方机构的签署，可输入git config –global http.sslVerify “false”解决</em></p>
-<p>输入<em>dir -l</em>查看生成的文件</p>
-<p>输入<em>hexo start(s)</em> 启动博客，一般是<em>localhost:4000</em>端口</p>
-<p>输入hexo new(n) “文章的名字”创建文章，用vscode可以打开该文章进行编辑</p>
-<p>输入<em>hexo clean</em>清理缓存</p>
-<p>输入<em>hexo generate(g)</em> 生成文章，再重新<em>hexo start</em>即可看到文章</p>
-<h3 id="5、github建立存储仓库"><a href="#5、github建立存储仓库" class="headerlink" title="5、github建立存储仓库"></a>5、github建立存储仓库</h3><p>github右上角”+”号处有个New repository新建仓库，Repository name必须为 <em>用户名.github.io</em>，Description可以随意写，之后Create repository</p>
-<h3 id="6、部署推到远端"><a href="#6、部署推到远端" class="headerlink" title="6、部署推到远端"></a>6、部署推到远端</h3><p>输入<em>cnpm install –save hexo-deployer-git</em>安装git插件</p>
-<p>用vscode打开_config.yml文件,最底部type: 后写git，下一行写repo: “仓库地址”,再下一行写main: master，如下图：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/deploy.png"></p>
-<p>输入git config –global user.email “你的邮箱”<br>输入git config –global user.name “你的用户名”</p>
-<p>输入*hexo deploy(d)*部署，可能会有无法连接到远端的情况，耐心多试几次即可</p>
-<h3 id="7、访问"><a href="#7、访问" class="headerlink" title="7、访问"></a>7、访问</h3><p>https://你的用户名.github.io即是你的博客网址</p>
-<h2 id="三、matery博客主题的修改"><a href="#三、matery博客主题的修改" class="headerlink" title="三、matery博客主题的修改"></a>三、matery博客主题的修改</h2><p>下载matery主题压缩包，如图：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/theme.png"></p>
-<p>将主题包解压到themes文件夹中重新部署即可</p>
+                <h1 id="MySQL学习（二）"><a href="#MySQL学习（二）" class="headerlink" title="MySQL学习（二）"></a>MySQL学习（二）</h1><h2 id="导入准备好的数据"><a href="#导入准备好的数据" class="headerlink" title="导入准备好的数据"></a>导入准备好的数据</h2><p>bjpowernode.sql  为准备好的数据库表</p>
+<p>输入create database bjpownode 创建数据库</p>
+<p>输入use bjpowernode 使用数据库</p>
+<p>输入以下导入数据</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source  D:\BaiduNetdiskDownload\learn_mysql\document\bjpowernode.sql #没有分号！</span><br></pre></td></tr></table></figure>
+
+<p>source后面是准备数据的路径</p>
+<h2 id="关于导入的表"><a href="#关于导入的表" class="headerlink" title="关于导入的表"></a>关于导入的表</h2><p>dept：部门表 ；emp：员工表；salgrade：工资等级表</p>
+<h2 id="查看表中的数据"><a href="#查看表中的数据" class="headerlink" title="查看表中的数据"></a>查看表中的数据</h2><p>select  * from 表名  </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select * from emp; #查看员工表所有数据</span><br><span class="line">select * from dept;</span><br><span class="line">select * from salgrade;</span><br></pre></td></tr></table></figure>
+
+<h2 id="查看表的结构"><a href="#查看表的结构" class="headerlink" title="查看表的结构"></a>查看表的结构</h2><p>desc 表名</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">desc emp;</span><br><span class="line">desc dept;</span><br><span class="line">desc salgrade;</span><br></pre></td></tr></table></figure>
+
+<h2 id="mysql常用命令（续一）"><a href="#mysql常用命令（续一）" class="headerlink" title="mysql常用命令（续一）"></a>mysql常用命令（续一）</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">exit; #退出数据库</span><br><span class="line">show databases; #查看所有数据库</span><br><span class="line">use test; #使用test数据库</span><br><span class="line">create database bjpowernode; #创建名叫bjpowernode的数据库</span><br><span class="line">show tables; #查看数据库下有哪些表</span><br><span class="line">select version();  #查看mysql数据库的版本号</span><br><span class="line">select databse();  #查看当前使用的数据库</span><br><span class="line">#mysql中不见分号不执行，分号表示结束</span><br><span class="line">#\c可以终止命令输入，或者ctrl+C</span><br></pre></td></tr></table></figure>
+
+<h2 id="mysql语句学习"><a href="#mysql语句学习" class="headerlink" title="mysql语句学习"></a>mysql语句学习</h2><h3 id="简单查询"><a href="#简单查询" class="headerlink" title="简单查询"></a>简单查询</h3><p><strong>查询一个字段</strong> <strong>：</strong> select 字段名 from 表名;</p>
+<p>注意：select和from都是关键字，字段名和表名都是标识符</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select dname from dept;</span><br></pre></td></tr></table></figure>
+
+<p><strong>查询两个或多个字段</strong> <strong>：</strong>select 字段名1,字段名2…   from 表名</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select deptno,dname from dept;</span><br></pre></td></tr></table></figure>
+
+<p><strong>查询所有字段：</strong>一、把每个字段都写上；二、使用*（效率低，可读性差，实际开发中不建议）</p>
+<p><strong>给查询的列起别名：</strong>使用as关键字起别名（或者直接省略）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select deptno,dname as deptname from dept;</span><br></pre></td></tr></table></figure>
+
+<p>注：1、只是查询结果起了别名，原表不改，select语句不会进行修改操作</p>
+<p>​        2、如果起别名的时候别名里有空格会报错，或者可以使用单引号或者双引号括起来（建议使用单引             号，因为单引号是标准，在oracle中就不能使用双引号，只能使用单引号）</p>
+<p><strong>计算员工年薪：</strong>字段中可以使用数学表达式</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select ename,sal*12 as yearsal from emp;</span><br><span class="line">select ename,sal*12 as &#x27;年薪&#x27; from emp;</span><br></pre></td></tr></table></figure>
+
+<h3 id="条件查询"><a href="#条件查询" class="headerlink" title="条件查询"></a>条件查询</h3><p>查询出符合条件的数据</p>
+<p><strong>语法格式</strong>：</p>
+<p>select    字段1,字段2,字段3…    from    表名    where     条件;</p>
+<p><strong>所有条件</strong>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"># = 等于</span><br><span class="line">select empno,ename from emp where sal = 800; #查询薪资等于800的员工姓名和编号</span><br><span class="line">select empno,sal from emp where ename = &#x27;SMITH&#x27;; #查询SMITH的编号和薪资</span><br><span class="line"># &lt;&gt;或!= 不等于</span><br><span class="line">select empno,ename from emp where sal != 800; #查询薪资不等于800的员工姓名和编号</span><br><span class="line">select empno,ename from emp where sal &lt;&gt; 800; #小于号和大于号组成的不等号</span><br><span class="line"># &lt; 小于</span><br><span class="line">select empno,ename,sal from emp where sal &lt; 2000; #查询薪资小于2000的员工姓名和编号</span><br><span class="line"># &lt;= 小于等于</span><br><span class="line">select empno,ename,sal from emp where sal &lt;= 3000; #查询薪资小于等于3000的员工姓名和编号</span><br><span class="line"># &gt; 大于</span><br><span class="line">select empno,ename,sal from emp where sal &gt; 3000; #查询薪资大于3000的员工姓名和编号</span><br><span class="line"># &gt;= 大于等于</span><br><span class="line">select empno,ename,sal from emp where sal &gt;= 3000; #查询薪资大于等于3000的员工姓名和编号</span><br><span class="line">select empno,ename,sal from emp where sal &gt;= 2450 and sal &lt;= 3000; </span><br><span class="line">#查询薪资在2450和3000之间的员工信息？包括2450和3000</span><br><span class="line"># between … and …. 两个值之间, 等同于 &gt;= and &lt;=</span><br><span class="line">select empno,ename,sal from emp where sal between 2450 and 3000; </span><br><span class="line">#使用between,and必须遵循左小右大，闭区间，包括两端的值</span><br><span class="line"># is null 为 null（is not null 不为空）</span><br><span class="line">#select empno,ename,sal,comm from emp where comm = null; </span><br><span class="line">#该语句不行，不能使用=，null表示什么也没有，不能用等号衡量</span><br><span class="line">select empno,ename,sal,comm from emp where comm is null; #查询哪些员工的津贴/补助为null</span><br><span class="line">select empno,ename,sal,comm from emp where comm is not null; #查询哪些员工的津贴/补助不为null</span><br><span class="line"># and 并且</span><br><span class="line">select empno,ename,job from emp where job = &#x27;MANAGER&#x27; and sal&gt;2500; </span><br><span class="line">#查询工作岗位是MANAGER并且工资大于2500的员工信息</span><br><span class="line"># or 或者</span><br><span class="line">select empno,ename,job from emp where job = &#x27;MANAGER&#x27; or job = &#x27;SALESMAN&#x27;;#查询工作岗位是MANAGER和SALESMAN的员工</span><br><span class="line">select * from emp where sal &gt; 2500 and deptno = 10 or deptno = 20;</span><br><span class="line">#因为and优先级比or高，所以以上语句会先执行and，然后执行or，即将工资大于2500并且部门编号为10的员工，或者20部门所有员工找出来。</span><br><span class="line">select * from emp where sal &gt; 2500 and (deptno = 10 or deptno = 20); #带括号让or先执行</span><br><span class="line"># in 包含，相当于多个 or （not in 不在这个范围中），in不是个区间，in后面是具体的值</span><br><span class="line">select empno,ename,job from emp where job in(&#x27;MANAGER&#x27;, &#x27;SALESMAN&#x27;); #查询工作岗位是MANAGER和SALESMAN的员工</span><br><span class="line">select ename,sal from emp where sal in(800, 5000); #不是表示800到5000，而是800和5000</span><br><span class="line">select ename,sal from emp where sal not in(800, 5000, 3000);#不在800,5000,3000中的数据</span><br><span class="line">#not 可以取非，主要用在 is 或 in 中</span><br></pre></td></tr></table></figure>
+
+<h3 id="模糊查询"><a href="#模糊查询" class="headerlink" title="模糊查询"></a>模糊查询</h3><p>like，支持%或下划线匹配</p>
+<p>%匹配任意多个字符，下划线匹配任意一个字符，%和_都是特殊符号</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">select ename from emp where ename like &#x27;%O%&#x27;; #找出名字里含O的</span><br><span class="line">select ename from emp where ename like &#x27;%T&#x27;;  #找出名字以T结尾的</span><br><span class="line">select ename from emp where ename like &#x27;K%&#x27;;  #找出名字以K开始的</span><br><span class="line">select ename from emp where ename like &#x27;_A%&#x27;; #找出第二个字每是A的</span><br><span class="line">select ename from emp where ename like &#x27;__R%&#x27;; #找出第三个字母是R的</span><br><span class="line">mysql&gt; select name from t_student where name like &#x27;%\_%&#x27;; #找出名字里含有下划线的，\转义字符</span><br></pre></td></tr></table></figure>
+
+<h3 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h3><p><strong>按单个字段排序：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select ename,sal from emp order by sal; #默认是升序</span><br><span class="line">select ename,sal from emp order by sal asc;   #指定升序</span><br><span class="line">select ename,sal from emp order by sal desc;  #指定降序</span><br></pre></td></tr></table></figure>
+
+<p><strong>按两个或多个字段排序：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select ename,sal from emp order by sal asc, ename asc;</span><br><span class="line">#查询员工名字和薪资，要求按照薪资升序，如果薪资一样的话，再按照名字升序排列。</span><br><span class="line">select ename,sal from emp order by 2; #2表示第二列sal，即按薪资排序，不建议在开发中这样写</span><br></pre></td></tr></table></figure>
+
+<h3 id="综合案例"><a href="#综合案例" class="headerlink" title="综合案例"></a>综合案例</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select ename,sal from emp where sal between 1250 and 3000 order by sal desc;</span><br><span class="line">#找出工资在1250到3000之间的员工信息，要求按照薪资降序排列。</span><br></pre></td></tr></table></figure>
+
+<p>第一步：from    第二步：where    第三步：select    第四步：order by（排序总是在最后执行！）</p>
+<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><h3 id="数据处理函数"><a href="#数据处理函数" class="headerlink" title="数据处理函数"></a>数据处理函数</h3><p>数据处理函数又被称为<strong>单行处理函数</strong>，特点：一个输入对应一个输出</p>
+<p>与单行处理函数相对的是：<strong>多行处理函数</strong>，多个输入对应一个输出</p>
+<h4 id="单行处理函数"><a href="#单行处理函数" class="headerlink" title="单行处理函数"></a>单行处理函数</h4><p>常见的单行处理函数：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"># lower 转换小写</span><br><span class="line">select lower(ename) as ename from emp;</span><br><span class="line"># upper 转换大写</span><br><span class="line">select upper(name) as name from t_student;</span><br><span class="line"># substr 取子串（substr( 被截取的字符串, 起始下标,截取的长度)）</span><br><span class="line">select substr(ename, 1, 1) as ename from emp; #下标从1开始，没有0</span><br><span class="line"># 找出员工名字第一个字母是A的员工信息</span><br><span class="line"># 第一种方法：模糊查询</span><br><span class="line">select ename from emp where ename like &#x27;A%&#x27;;</span><br><span class="line"># 第二种方式：substr函数</span><br><span class="line">select ename from emp where substr(ename,1,1) = &#x27;A&#x27;;</span><br><span class="line"># concat函数进行字符串的拼接</span><br><span class="line">select concat(empno,ename) from emp;</span><br><span class="line">select concat(upper(substr(name,1,1)),substr(name,2,length(name) - 1)) as result from t_student;</span><br><span class="line">#首字母大写</span><br><span class="line"># length 取长度</span><br><span class="line">select length(ename) enamelength from emp;</span><br><span class="line"># trim 去空格</span><br><span class="line">select * from emp where ename = trim(&#x27;   KING&#x27;);</span><br><span class="line"># str_to_date 将字符串转换成日期</span><br><span class="line"># date_format 格式化日期</span><br><span class="line"># format 设置千分位</span><br><span class="line"># case..when..then..when..then..else..end</span><br><span class="line">select ename,job, sal as oldsal,(case job when &#x27;MANAGER&#x27; then sal*1.1 when &#x27;SALESMAN&#x27; then sal*1.5 else sal end) as newsal from emp;</span><br><span class="line">#当员工的工作岗位是MANAGER的时候，工资上调10%，当工作岗位是SALESMAN的时候，工资上调50%,其它正常</span><br><span class="line">#不修改数据库，只是将查询结果显示为工资上调	</span><br><span class="line"># round 四舍五入</span><br><span class="line">select round(1236.567, 0) as result from emp; #0表示保留到整数位</span><br><span class="line">select round(1236.567, 1) as result from emp; #保留1位小数</span><br><span class="line">select round(1236.567, 2) as result from emp; #保留2位小数</span><br><span class="line">select round(1236.567, -1) as result from emp; #保留到十位</span><br><span class="line"># rand() 生成随机数</span><br><span class="line">select rand() from emp; #生成0到1的随机数</span><br><span class="line">select round(rand()*100,0) from emp; #生成100以内的随机数</span><br><span class="line"># ifnull 可以将 null 转换成一个具体值，ifnull是空处理函数，专门处理空的</span><br><span class="line"># 在所有数据库当中，只要有NULL参与的数学运算，最终结果就是NULL。</span><br><span class="line"># ifnull函数用法：ifnull(数据, 被当做哪个值)，如果“数据”为NULL的时候，把这个数据结构当做哪个值。</span><br><span class="line">select ename, (sal + ifnull(comm, 0)) * 12 as yearsal from emp;</span><br><span class="line"># 计算每个员工的年薪： 年薪 = (月薪 + 月补助) * 12</span><br></pre></td></tr></table></figure>
+
+<h4 id="分组函数（多行处理函数）"><a href="#分组函数（多行处理函数）" class="headerlink" title="分组函数（多行处理函数）"></a>分组函数（多行处理函数）</h4><p>特点：输入多行，最多处理一行</p>
+<p>注：分组函数在使用时必须先进行分组，然后才能使用，如果没有分组，整张表默认为一组</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># max 最大值</span><br><span class="line">select max(sal) from emp; #找出最高工资</span><br><span class="line"># min 最小值</span><br><span class="line">select min(sal) from emp; #找出最低工资</span><br><span class="line"># sum 求和</span><br><span class="line">select sum(sal) from emp; #计算工资和</span><br><span class="line"># avg 平均值</span><br><span class="line">select avg(sal) from emp; #计算平均工资</span><br><span class="line"># count	计数</span><br><span class="line">select count(ename) from emp; #计算员工数量</span><br></pre></td></tr></table></figure>
+
+<p>分组函数使用时注意问题：</p>
+<p>一、分组函数自动忽略NULL，不需要提前对NULL进行处理。</p>
+<p>二、分组函数中count(*)和count(具体字段)有什么区别？</p>
+<p>​        count(具体字段)：表示统计该字段下所有不为NULL的元素的总数。</p>
+<p>​        count(*)：统计表当中的总行数。（只要有一行数据count则++）。因为每一行记录不可能都为NULL，都为NULL没有意义，一行数                            据中有一列不为NULL，则这行数据就是有效的。</p>
+<p>三、分组函数不能够直接使用在where子句中。</p>
+<p>四、所有的分组函数可以组合起来一起用。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select sum(sal),min(sal),max(sal),avg(sal),count(*) from emp;</span><br></pre></td></tr></table></figure>
+
+<h2 id="分组查询（非常重要）"><a href="#分组查询（非常重要）" class="headerlink" title="分组查询（非常重要）"></a>分组查询（非常重要）</h2><p>在实际的应用中，可能有这样的需求，需要先进行分组，然后对每一组的数据进行操作，这个时候我们需要使用分组查询。</p>
+<p>select …  from …  group by …</p>
+<p>将之前的关键字全部组合在一起，<strong>使用顺序</strong>:</p>
+<p>select … from … where … group by … order by …</p>
+<p><strong>执行顺序</strong>：1. from  2.where   3.group by    4. select   5.order by</p>
+<p>为什么分组函数不能直接使用在where后面？</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select ename,sal from emp where sal &gt; min(sal); #报错。</span><br></pre></td></tr></table></figure>
+
+<p>因为分组函数在使用的时候必须先分组之后才能使用，where执行的时候，还没有分组，所以where后面不能出现分组函数。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select sum(sal) from emp; </span><br></pre></td></tr></table></figure>
+
+<p>这个没有分组，因为select在group by之后执行，所以sum()函数可以用</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 找出每个工作岗位的工资和</span><br><span class="line"># 实现思路：按照工作岗位分组，然后对工资求和</span><br><span class="line">select job,sum(sal) from emp group by job;</span><br><span class="line"># 执行顺序：先从emp表中查询数据，根据job字段进行分组，然后对每一组的数据进行sum(sal)</span><br><span class="line">select ename,job,sum(sal) from emp group by job;</span><br><span class="line"># 以上语句在mysql中可以执行，但是毫无意义。</span><br><span class="line"># 以上语句在oracle中执行报错，oracle的语法比mysql的语法严格。（mysql的语法相对来说松散一些！）</span><br></pre></td></tr></table></figure>
+
+<p>结论：在一条select语句当中，如果有group by语句的话，select后面只能跟：参加分组的字段，以及分组函数，其它的一律不能跟。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 找出每个部门的最高薪资</span><br><span class="line"># 实现思路：按照部门编号分组，求每一组的最大值。</span><br><span class="line">select deptno,max(sal) from emp group by deptno;</span><br><span class="line"># 找出“每个部门，不同工作岗位”的最高薪资</span><br><span class="line"># 技巧：两个字段联合成1个字段看。（两个字段联合分组）</span><br><span class="line">select deptno, job, max(sal) from emp group by deptno, job;</span><br></pre></td></tr></table></figure>
+
+<p><strong>having语句：</strong>使用having可以对分完组之后的数据进一步过滤。</p>
+<p>having不能单独使用，having不能代替where，having必须和group by联合使用。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 找出每个部门最高薪资，要求显示最高薪资大于3000的</span><br><span class="line"># 第一步：找出每个部门最高薪资，按照部门编号分组，求每一组最大值。</span><br><span class="line">select deptno,max(sal) from emp group by deptno;</span><br><span class="line"># 第二步：要求显示最高薪资大于3000</span><br><span class="line">select deptno,max(sal) from emp group by deptno having max(sal) &gt; 3000;</span><br><span class="line">#这样的两步语句执行效率低</span><br><span class="line">#实际思路：先将大于3000的都找出来，然后再分组。</span><br><span class="line">select deptno,max(sal) from emp where sal &gt; 3000 group by deptno;</span><br></pre></td></tr></table></figure>
+
+<p>优化策略：where和having，优先选择where，where实在完成不了了，再选择having。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># where实现不了的例子</span><br><span class="line"># 找出每个部门平均薪资，要求显示平均薪资高于2500的。</span><br><span class="line"># 第一步：找出每个部门平均薪资</span><br><span class="line">select deptno,avg(sal) from emp group by deptno;</span><br><span class="line"># 第二步：要求显示平均薪资高于2500的</span><br><span class="line">select deptno,avg(sal) from emp group by deptno having avg(sal) &gt; 2500;</span><br></pre></td></tr></table></figure>
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p><strong>输入顺序（不能颠倒）：</strong>        select ..from…where…group by…having…order by…</p>
+<p><strong>执行顺序：</strong>   1.from    2. where    3. group by    4. having    5. select     6.order by</p>
+<p>   从某张表中查询数据，<br>    先经过where条件筛选出有价值的数据。<br>    对这些有价值的数据进行分组。<br>    分组之后可以使用having继续筛选。<br>    select查询出来。<br>    最后排序输出！</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">#找出每个岗位的平均薪资，要求显示平均薪资大于1500的，除MANAGER岗位之外，要求按照平均薪资降序排。</span><br><span class="line">		select </span><br><span class="line">			job, avg(sal) as avgsal</span><br><span class="line">		from</span><br><span class="line">			emp</span><br><span class="line">		where</span><br><span class="line">			job &lt;&gt; &#x27;MANAGER&#x27;</span><br><span class="line">		group by</span><br><span class="line">			job</span><br><span class="line">		having</span><br><span class="line">			avg(sal) &gt; 1500</span><br><span class="line">		order by</span><br><span class="line">			avgsal desc;</span><br></pre></td></tr></table></figure>
+
 
                 
             </div>
@@ -569,7 +637,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/07/29/hexo-matery%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">http://example.com/2021/07/29/hexo-matery%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</a>
+                    <a href="http://example.com/2021/09/05/MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/">http://example.com/2021/09/05/MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -607,8 +675,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/hexo-github-git/">
-                                    <span class="chip bg-color">hexo,github,git</span>
+                                <a href="/tags/mysql-%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                                    <span class="chip bg-color">mysql 数据库</span>
                                 </a>
                             
                         </div>
@@ -1097,46 +1165,48 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/07/30/%E5%9C%A8VMware%E4%B8%AD%E5%AE%89%E8%A3%85Ubuntu%E4%B8%8E%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE/">
+                <a href="/2021/09/05/MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="在虚拟机中安装Ubuntu与基本环境的配置">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="MySQL学习笔记（二）">
                         
-                        <span class="card-title">在虚拟机中安装Ubuntu与基本环境的配置</span>
+                        <span class="card-title">MySQL学习笔记（二）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            VMware-Ubuntu与基本环境与软件的配置
+                            MySQL的第二部分笔记
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-30
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-05
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/linux/" class="post-category">
-                                    linux
+                            <a href="/categories/mysql/" class="post-category">
+                                    mysql
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/ubuntu-linux-vmware/">
-                        <span class="chip bg-color">ubuntu linux vmware</span>
+                    <a href="/tags/mysql-%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                        <span class="chip bg-color">mysql 数据库</span>
                     </a>
                     
                 </div>
@@ -1150,32 +1220,44 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/07/24/%E5%91%A8%E9%9D%99I-LOVE-YOU/">
+                <a href="/2021/09/03/MySQL%E7%9A%84%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E4%B8%8E%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="周静I LOVE YOU">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="MySQL的安装配置与学习笔记（一）">
                         
-                        <span class="card-title">周静I LOVE YOU</span>
+                        <span class="card-title">MySQL的安装配置与学习笔记（一）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            windows系统下的MySQL的安装配置与学习，第一部分笔记
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-24
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-03
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            wck
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/mysql/" class="post-category">
+                                    mysql
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/mysql-%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                        <span class="chip bg-color">mysql 数据库</span>
+                    </a>
+                    
                 </div>
                 
             </div>
