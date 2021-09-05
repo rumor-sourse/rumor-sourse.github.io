@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="python爬虫项目豆瓣榜单（一）, wck&#39;s blog">
+    <meta name="keywords" content="MySQL学习笔记（三）, wck&#39;s blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>python爬虫项目豆瓣榜单（一） | wck&#39;s blog</title>
+    <title>MySQL学习笔记（三） | wck&#39;s blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -326,12 +326,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">python爬虫项目豆瓣榜单（一）</h1>
+                    <h1 class="description center-align post-title">MySQL学习笔记（三）</h1>
                 </div>
             </div>
         </div>
@@ -447,8 +447,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/python/">
-                                <span class="chip bg-color">python</span>
+                            <a href="/tags/mysql-%E6%95%B0%E6%8D%AE%E5%BA%93-sql/">
+                                <span class="chip bg-color">mysql 数据库 sql</span>
                             </a>
                         
                     </div>
@@ -459,8 +459,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/python/" class="post-category">
-                                python
+                            <a href="/categories/mysql/" class="post-category">
+                                mysql
                             </a>
                         
                     </div>
@@ -472,28 +472,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-08-24
+                    2021-09-05
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-08-24
+                    2021-09-05
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    963
+                    2.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    9 分
                 </div>
                 
 
@@ -513,12 +513,94 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="项目概述"><a href="#项目概述" class="headerlink" title="项目概述"></a>项目概述</h1><p>在豆瓣电影Top250<a target="_blank" rel="noopener" href="http://movie.douban.com/top250?start=">http://movie.douban.com/top250?start=</a>上爬取每部电影的详情，图片链接，影片中文名，外国名，评分，评价数，概况，相关信息</p>
-<p>结果如下：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/top250.png"></p>
-<h1 id="完整代码"><a href="#完整代码" class="headerlink" title="完整代码"></a>完整代码</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> urllib.request,urllib.error</span><br><span class="line"><span class="keyword">import</span> xlwt</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span>():</span></span><br><span class="line">    baseurl=<span class="string">&quot;http://movie.douban.com/top250?start=&quot;</span></span><br><span class="line">    <span class="comment">#1.爬取网页</span></span><br><span class="line">    datalist = getData(baseurl)</span><br><span class="line">    <span class="comment">#2.解析数据</span></span><br><span class="line">    savepath=<span class="string">&quot;.\\豆瓣电影Top250.xls&quot;</span></span><br><span class="line">    <span class="comment">#3.保存数据</span></span><br><span class="line">    saveData(datalist,savepath)</span><br><span class="line"><span class="comment">#影片详情链接的规则</span></span><br><span class="line">findLink = re.<span class="built_in">compile</span>(<span class="string">r&#x27;&lt;a href=&quot;(.*?)&quot;&gt;&#x27;</span>) <span class="comment">#创建正则表达式，表示规则（字符串的模式）</span></span><br><span class="line"><span class="comment">#影片图片</span></span><br><span class="line">findImgSrc = re.<span class="built_in">compile</span>(<span class="string">r&#x27;&lt;img.*src=&quot;(.*?)&quot;&#x27;</span>,re.S)</span><br><span class="line"><span class="comment">#影片片名</span></span><br><span class="line">findTitle = re.<span class="built_in">compile</span>(<span class="string">r&#x27;&lt;span class=&quot;title&quot;&gt;(.*)&lt;/span&gt;&#x27;</span>)</span><br><span class="line"><span class="comment">#影片评分</span></span><br><span class="line">findRating = re.<span class="built_in">compile</span>(<span class="string">r&#x27;&lt;span class=&quot;rating_num&quot; property=&quot;v:average&quot;&gt;(.*)&lt;/span&gt;&#x27;</span>)</span><br><span class="line"><span class="comment">#找到评价人数</span></span><br><span class="line">findJudge = re.<span class="built_in">compile</span>(<span class="string">r&#x27;&lt;span&gt;(\d*)人评价&lt;/span&gt;&#x27;</span>)</span><br><span class="line"><span class="comment">#找到概况</span></span><br><span class="line">findInq = re.<span class="built_in">compile</span>(<span class="string">r&#x27;&lt;span class=&quot;inq&quot;&gt;(.*)&lt;/span&gt;&#x27;</span>)</span><br><span class="line"><span class="comment">#找到影片的相关内容</span></span><br><span class="line">findBd = re.<span class="built_in">compile</span>(<span class="string">r&#x27;&lt;p class=&quot;&quot;&gt;(.*?)&lt;/p&gt;&#x27;</span>,re.S)</span><br><span class="line"><span class="comment">#爬取网页</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getData</span>(<span class="params">baseurl</span>):</span></span><br><span class="line">    datalist=[]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,<span class="number">10</span>):            <span class="comment">#调用获取页面信息的函数10次</span></span><br><span class="line">        url = baseurl + <span class="built_in">str</span>(i*<span class="number">25</span>)</span><br><span class="line">        html = askURL(url)    <span class="comment">#保存获取到的网页源码</span></span><br><span class="line">        <span class="comment">#逐一解析数据</span></span><br><span class="line">        soup = BeautifulSoup(html,<span class="string">&quot;html.parser&quot;</span>)</span><br><span class="line">        <span class="keyword">for</span> item <span class="keyword">in</span> soup.find_all(<span class="string">&#x27;div&#x27;</span>,class_=<span class="string">&quot;item&quot;</span>):   <span class="comment">#查找符合要求的字符串</span></span><br><span class="line">             <span class="comment">#print(item)   #测试：查看item电影全部信息</span></span><br><span class="line">             data = []    <span class="comment">#保存一部电影的所有信息</span></span><br><span class="line">             item = <span class="built_in">str</span>(item)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">             <span class="comment">#影片详情的链接</span></span><br><span class="line">             link = re.findall(findLink,item)[<span class="number">0</span>]   <span class="comment">#re库用来通过正则表达式查找指定的字符串</span></span><br><span class="line">             data.append(link)                     <span class="comment">#添加链接</span></span><br><span class="line">             imgSrc = re.findall(findImgSrc,item)[<span class="number">0</span>]</span><br><span class="line">             data.append(imgSrc)                   <span class="comment">#添加图片</span></span><br><span class="line">             titles = re.findall(findTitle,item)   <span class="comment">#片名可能只有一个中文名，没有外国名</span></span><br><span class="line">             <span class="keyword">if</span>(<span class="built_in">len</span>(titles) == <span class="number">2</span>):</span><br><span class="line">                 ctitle = titles[<span class="number">0</span>]</span><br><span class="line">                 data.append(ctitle)</span><br><span class="line">                 otitle = titles[<span class="number">1</span>].replace(<span class="string">&quot;/&quot;</span>,<span class="string">&quot;&quot;</span>) <span class="comment">#去掉无关的符号</span></span><br><span class="line">                 data.append(otitle)                <span class="comment">#添加外国名</span></span><br><span class="line">             <span class="keyword">else</span>:</span><br><span class="line">                data.append(titles[<span class="number">0</span>])</span><br><span class="line">                data.append(<span class="string">&#x27;&#x27;</span>)             <span class="comment">#外国名字留空</span></span><br><span class="line"></span><br><span class="line">             rating = re.findall(findRating,item)[<span class="number">0</span>]</span><br><span class="line">             data.append(rating)     <span class="comment">#添加评分</span></span><br><span class="line">             judgeNum = re.findall(findJudge,item)[<span class="number">0</span>]</span><br><span class="line">             data.append(judgeNum)      <span class="comment">#添加评价人数</span></span><br><span class="line">             inq = re.findall(findInq,item)</span><br><span class="line">             <span class="keyword">if</span> <span class="built_in">len</span>(inq) != <span class="number">0</span>:</span><br><span class="line">                inq = inq[<span class="number">0</span>].replace(<span class="string">&quot;。&quot;</span>,<span class="string">&quot;&quot;</span>)    <span class="comment">#去掉句号</span></span><br><span class="line">                data.append(inq)                    <span class="comment">#添加概述</span></span><br><span class="line">             <span class="keyword">else</span>:</span><br><span class="line">                data.append(<span class="string">&quot; &quot;</span>)                <span class="comment">#留空</span></span><br><span class="line">             bd = re.findall(findBd,item)[<span class="number">0</span>]</span><br><span class="line">             bd = re.sub(<span class="string">&#x27;&lt;br(\s+)?/&gt;(\s+)?&#x27;</span>,<span class="string">&quot;&quot;</span>,bd)  <span class="comment">#去掉&lt;br/&gt;</span></span><br><span class="line">             bd = re.sub(<span class="string">&#x27;/&#x27;</span>,<span class="string">&quot;&quot;</span>,bd)    <span class="comment">#替换/</span></span><br><span class="line">             data.append(bd.strip())     <span class="comment">#去掉前后的空格</span></span><br><span class="line"></span><br><span class="line">             datalist.append(data)   <span class="comment">#把处理好的一部信息放入datalist</span></span><br><span class="line">    <span class="keyword">return</span> datalist</span><br><span class="line"><span class="comment">#得到指定一个URL的网页内容</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">askURL</span>(<span class="params">url</span>):</span></span><br><span class="line">    head = &#123;            <span class="comment">#模拟浏览器信息，向豆瓣服务器发送信息</span></span><br><span class="line">        <span class="string">&quot;User-Agent&quot;</span>:<span class="string">&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36 Edg/92.0.902.73&quot;</span></span><br><span class="line">    &#125;<span class="comment">#用户代理，告诉豆瓣我们是浏览器，本质上是伪装，告诉服务器我们可以接受什么样的文件</span></span><br><span class="line">    request = urllib.request.Request(url,headers=head)</span><br><span class="line">    html = <span class="string">&quot;&quot;</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        response = urllib.request.urlopen(request)</span><br><span class="line">        html = response.read().decode(<span class="string">&quot;utf-8&quot;</span>)</span><br><span class="line">    <span class="keyword">except</span> urllib.error.URLError <span class="keyword">as</span> e:</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">hasattr</span>(e,<span class="string">&quot;code&quot;</span>):</span><br><span class="line">            <span class="built_in">print</span>(e.code)</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">hasattr</span>(e,<span class="string">&quot;reason&quot;</span>):</span><br><span class="line">            <span class="built_in">print</span>(e.reason)</span><br><span class="line">    <span class="keyword">return</span> html</span><br><span class="line"><span class="comment">#保存数据</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">saveData</span>(<span class="params">datalist,savepath</span>):</span></span><br><span class="line">    book = xlwt.Workbook(encoding=<span class="string">&quot;utf-8&quot;</span>,style_compression=<span class="number">0</span>)</span><br><span class="line">    sheet = book.add_sheet(<span class="string">&#x27;豆瓣电影Top250&#x27;</span>,cell_overwrite_ok = <span class="literal">True</span>)</span><br><span class="line">    col = (<span class="string">&quot;电影详情链接&quot;</span>,<span class="string">&quot;图片链接&quot;</span>,<span class="string">&quot;影片中文名&quot;</span>,<span class="string">&quot;影片外国名&quot;</span>,<span class="string">&quot;评分&quot;</span>,<span class="string">&quot;评价数&quot;</span>,<span class="string">&quot;概况&quot;</span>,<span class="string">&quot;相关信息&quot;</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,<span class="number">8</span>):</span><br><span class="line">        sheet.write(<span class="number">0</span>,i,col[i])  <span class="comment">#列名</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,<span class="number">250</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;第%d条&quot;</span> %(i+<span class="number">1</span>))</span><br><span class="line">        data = datalist[i]</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,<span class="number">8</span>):</span><br><span class="line">            sheet.write(i+<span class="number">1</span>,j,data[j])</span><br><span class="line">    book.save(savepath)</span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    <span class="comment">#调用函数</span></span><br><span class="line">    main()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;爬取完毕！&quot;</span>)</span><br></pre></td></tr></table></figure>
+                <h1 id="MySQL学习（三）"><a href="#MySQL学习（三）" class="headerlink" title="MySQL学习（三）"></a>MySQL学习（三）</h1><h2 id="把查询结果去除重复记录【distinct】"><a href="#把查询结果去除重复记录【distinct】" class="headerlink" title="把查询结果去除重复记录【distinct】"></a>把查询结果去除重复记录【distinct】</h2><p>注意：原表数据不会被修改，只是查询结果去重。<br>去重需要使用一个关键字：distinct</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">select distinct job from emp;</span><br><span class="line">select ename,distinct job from emp;  #报错，distinct只能出现在所有字段的最前方。</span><br><span class="line">select distinct job,deptno from emp; </span><br><span class="line">#distinct出现在job,deptno两个字段之前，表示两个字段联合起来去重。</span><br><span class="line">select count(distinct job) from emp;  #统计一下工作岗位的数量</span><br></pre></td></tr></table></figure>
 
-<h1 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h1><p>这只是将结果输出到excel表中，教程上还有有关MySQL的输出，可以在学习MySQL后进行补充</p>
+<h2 id="连接查询"><a href="#连接查询" class="headerlink" title="连接查询"></a>连接查询</h2><p>从一张表中单独查询，称为单表查询。<br>emp表和dept表联合起来查询数据，从emp表中取员工名字，从dept表中取部门名字。<br>这种跨表查询，多张表联合起来查询数据，被称为连接查询。</p>
+<h3 id="分类："><a href="#分类：" class="headerlink" title="分类："></a>分类：</h3><p><strong>1、根据语法的年代分类：</strong><br>        <strong>SQL92</strong>：1992年的时候出现的语法<br>        <strong>SQL99</strong>：1999年的时候出现的语法<br>        我们这里重点学习SQL99.(这个过程中简单演示一个SQL92的例子)</p>
+<p><strong>2、根据表连接的方式分类：</strong><br>        <strong>内连接：</strong><br>                        等值连接<br>                        非等值连接<br>                        自连接</p>
+<p>​        <strong>外连接：</strong></p>
+<p>​                        左外连接（左连接）<br>​                        右外连接（右连接）</p>
+<p>​        <strong>全连接（不讲）</strong></p>
+<h3 id="两张表的连接查询"><a href="#两张表的连接查询" class="headerlink" title="两张表的连接查询"></a>两张表的连接查询</h3><h4 id="笛卡尔积现象"><a href="#笛卡尔积现象" class="headerlink" title="笛卡尔积现象"></a>笛卡尔积现象</h4><p>当两张表进行连接查询时，没有任何条件的限制会发生什么现象？</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select ename,dename from emp,dept; # 查询每个员工所在部门名称</span><br><span class="line">#会得到14*4=56行结果，对emp的每一行，都与dept的每一行进行匹配</span><br></pre></td></tr></table></figure>
+
+<p>当两张表进行连接查询，没有任何条件限制的时候，最终查询结果条数，是两张表条数的乘积，这种现象被称为：<strong>笛卡尔积现象</strong>。（笛卡尔发现的，这是一个数学现象。）</p>
+<h4 id="怎么避免笛卡尔积现象？"><a href="#怎么避免笛卡尔积现象？" class="headerlink" title="怎么避免笛卡尔积现象？"></a>怎么避免笛卡尔积现象？</h4><p>连接时加条件，满足这个条件的记录被筛选出来！</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">select </span><br><span class="line">		ename,dname </span><br><span class="line">from </span><br><span class="line">		emp, dept</span><br><span class="line">where</span><br><span class="line">		emp.deptno = dept.deptno;</span><br><span class="line">#最终查询的结果条数是14条，但是匹配的过程中，匹配的次数还是56次，只不过进行了四选一。次数没有减少。</span><br><span class="line">select </span><br><span class="line">		e.ename,d.dname </span><br><span class="line">from </span><br><span class="line">		emp e, dept d</span><br><span class="line">where</span><br><span class="line">		e.deptno = d.deptno;</span><br><span class="line">#起别名，效率高一些</span><br><span class="line">#SQL92语法</span><br></pre></td></tr></table></figure>
+
+<p>注：通过笛卡尔积现象得出，表的连接次数越多效率越低，尽量避免表的连接次数。</p>
+<h4 id="内连接之等值连接"><a href="#内连接之等值连接" class="headerlink" title="内连接之等值连接"></a>内连接之等值连接</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># 查询每个员工所在部门名称，显示员工名和部门名</span><br><span class="line"># emp e和dept d表进行连接。条件是：e.deptno = d.deptno</span><br><span class="line"># SQL92语法：</span><br><span class="line">select </span><br><span class="line">		e.ename,d.dname</span><br><span class="line">	from</span><br><span class="line">		emp e, dept d</span><br><span class="line">	where</span><br><span class="line">		e.deptno = d.deptno;</span><br></pre></td></tr></table></figure>
+
+<p>sql92的缺点：结构不清晰，表的连接条件，和后期进一步筛选的条件，都放到了where后面。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">select </span><br><span class="line">		e.ename,d.dname</span><br><span class="line">	from</span><br><span class="line">		emp e</span><br><span class="line">	inner join   #inner可以省略，带着可读性更好</span><br><span class="line">		dept d</span><br><span class="line">	on</span><br><span class="line">		e.deptno = d.deptno; #条件是等量关系，所以被称为等值连接。</span><br></pre></td></tr></table></figure>
+
+<p>sql99优点：表连接的条件是独立的，连接之后，如果还需要进一步筛选，再往后继续添加where</p>
+<p>SQL99语法：<br>        select<br>            …<br>        from<br>            a<br>        join<br>            b<br>        on<br>            a和b的连接条件<br>        where<br>            筛选条件</p>
+<h4 id="内连接之非等值连接"><a href="#内连接之非等值连接" class="headerlink" title="内连接之非等值连接"></a>内连接之非等值连接</h4><p>条件不是一个等量关系，称为非等值连接</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">#找出每个员工的薪资等级，要求显示员工名、薪资、薪资等级</span><br><span class="line">select </span><br><span class="line">	e.ename, e.sal, s.grade</span><br><span class="line">from</span><br><span class="line">	emp e</span><br><span class="line">join</span><br><span class="line">	salgrade s</span><br><span class="line">on</span><br><span class="line">	e.sal between s.losal and s.hisal; </span><br></pre></td></tr></table></figure>
+
+<h4 id="内连接之自连接"><a href="#内连接之自连接" class="headerlink" title="内连接之自连接"></a>内连接之自连接</h4><p>技巧：一张表看做两张表</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># 查询员工的上级领导，要求显示员工名和对应的领导名</span><br><span class="line">select </span><br><span class="line">	a.ename as &#x27;员工名&#x27;, b.ename as &#x27;领导名&#x27;</span><br><span class="line">from</span><br><span class="line">	emp a</span><br><span class="line">join</span><br><span class="line">	emp b</span><br><span class="line">on</span><br><span class="line">	a.mgr = b.empno; # 员工的领导编号 = 领导的员工编号</span><br></pre></td></tr></table></figure>
+
+<h4 id="内连接"><a href="#内连接" class="headerlink" title="内连接"></a>内连接</h4><p>（A和B连接，AB两张表没有主次关系。平等的。）</p>
+<p>内连接的特点：完成能够匹配上这个条件的数据查询出来</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">select </span><br><span class="line">	e.ename,d.dname</span><br><span class="line">from</span><br><span class="line">	emp e</span><br><span class="line">join</span><br><span class="line">	dept d</span><br><span class="line">on</span><br><span class="line">	e.deptno = d.deptno; 。</span><br></pre></td></tr></table></figure>
+
+<h4 id="外连接"><a href="#外连接" class="headerlink" title="外连接"></a>外连接</h4><p>带有right的是右外连接，又叫做右连接。带有left的是左外连接，又叫做左连接。<br>任何一个右连接都有左连接的写法。任何一个左连接都有右连接的写法。</p>
+<p><strong>右外连接（右连接）：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">select </span><br><span class="line">	e.ename,d.dname</span><br><span class="line">from</span><br><span class="line">	emp e </span><br><span class="line">right outer join  #outer可以省略，带着可读性强 </span><br><span class="line">	dept d</span><br><span class="line">on</span><br><span class="line">	e.deptno = d.deptno;</span><br><span class="line">#结果会比上述内连接多一行</span><br></pre></td></tr></table></figure>
+
+<p>right表示将join关键字右边的这张表看成主表，主要是为了将这张表的数据全部查询出来，捎带着关联查询左边的表。在外连接当中，两张表连接，产生了<strong>主次关系</strong>。</p>
+<p><strong>左外连接（左连接）：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">select </span><br><span class="line">	e.ename,d.dname</span><br><span class="line">from</span><br><span class="line">	dept d </span><br><span class="line">left join </span><br><span class="line">	emp e</span><br><span class="line">on</span><br><span class="line">	e.deptno = d.deptno;</span><br></pre></td></tr></table></figure>
+
+<p>连接的查询结果条数一定是 &gt;= 内连接的查询结果条数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># 查询每个员工的上级领导，要求显示所有员工的名字和领导名</span><br><span class="line">select </span><br><span class="line">		a.ename as &#x27;员工名&#x27;, b.ename as &#x27;领导名&#x27;</span><br><span class="line">from</span><br><span class="line">		emp a</span><br><span class="line">left join</span><br><span class="line">		emp b</span><br><span class="line">on</span><br><span class="line">		a.mgr = b.empno; </span><br></pre></td></tr></table></figure>
+
+<h3 id="三张表，四张表怎么连接"><a href="#三张表，四张表怎么连接" class="headerlink" title="三张表，四张表怎么连接"></a>三张表，四张表怎么连接</h3><p>语法：<br>        select<br>            …<br>        from<br>            a<br>        join<br>            b<br>        on<br>            a和b的连接条件<br>        join<br>            c<br>        on<br>            a和c的连接条件<br>        right join<br>            d<br>        on<br>            a和d的连接条件<br>一条SQL中内连接和外连接可以混合。都可以出现！</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">#找出每个员工的部门名称以及工资等级，要求显示员工名、部门名、薪资、薪资等级</span><br><span class="line">select </span><br><span class="line">		e.ename,e.sal,d.dname,s.grade</span><br><span class="line">from</span><br><span class="line">		emp e</span><br><span class="line">join</span><br><span class="line">		dept d</span><br><span class="line">on </span><br><span class="line">		e.deptno = d.deptno</span><br><span class="line">join</span><br><span class="line">		salgrade s</span><br><span class="line">on</span><br><span class="line">		e.sal between s.losal and s.hisal;</span><br><span class="line">#找出每个员工的部门名称以及工资等级，还有上级领导，要求显示员工名、领导名、部门名、薪资、薪资等级</span><br><span class="line">select </span><br><span class="line">		e.ename,e.sal,d.dname,s.grade,l.ename</span><br><span class="line">from</span><br><span class="line">		emp e</span><br><span class="line">join</span><br><span class="line">		dept d</span><br><span class="line">on </span><br><span class="line">		e.deptno = d.deptno</span><br><span class="line">join</span><br><span class="line">		salgrade s</span><br><span class="line">on</span><br><span class="line">		e.sal between s.losal and s.hisal</span><br><span class="line">left join</span><br><span class="line">		emp l</span><br><span class="line">on</span><br><span class="line">		e.mgr = l.empno;</span><br></pre></td></tr></table></figure>
+
+<h2 id="子查询"><a href="#子查询" class="headerlink" title="子查询"></a>子查询</h2><p>select语句中嵌套select语句，被嵌套的select语句称为子查询</p>
+<p>子查询可以出现在哪里：</p>
+<p>select<br>        ..(select).<br>    from<br>        ..(select).<br>    where<br>        ..(select).</p>
+<h3 id="where子句中的子查询"><a href="#where子句中的子查询" class="headerlink" title="where子句中的子查询"></a>where子句中的子查询</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># 找出比最低工资高的员工姓名和工资</span><br><span class="line">select </span><br><span class="line">		ename,sal</span><br><span class="line">from</span><br><span class="line">		emp </span><br><span class="line">where</span><br><span class="line">		sal &gt; min(sal);</span><br><span class="line">#报错，where子句中不能直接使用分组函数</span><br><span class="line">#实现思路：第一步：查询最低工资是多少</span><br><span class="line">select min(sal) from emp;</span><br><span class="line">#第二步：找出&gt;800的</span><br><span class="line">select ename,sal from emp where sal &gt; 800;</span><br><span class="line">#第三步：合并</span><br><span class="line">select ename,sal from emp where sal &gt; (select min(sal) from emp);</span><br></pre></td></tr></table></figure>
+
+<h3 id="from子句中的子查询"><a href="#from子句中的子查询" class="headerlink" title="from子句中的子查询"></a>from子句中的子查询</h3><p>技巧：from后面的子查询，可以将子查询的查询结果当做一张临时表</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># 找出每个岗位的平均工资的薪资等级</span><br><span class="line"># 第一步：找出每个岗位的平均工资（按照岗位分组求平均值），当成真实存在的表</span><br><span class="line">select job,avg(sal) from emp group by job;</span><br><span class="line"># 第二步：找到薪资等级表</span><br><span class="line">select * from salgrade; </span><br><span class="line"># 第三步：表连接</span><br><span class="line">select </span><br><span class="line">		t.*, s.grade</span><br><span class="line">from</span><br><span class="line">		(select job,avg(sal) as avgsal from emp group by job) t</span><br><span class="line">join</span><br><span class="line">		salgrade s</span><br><span class="line">on</span><br><span class="line">		t.avgsal between s.losal and s.hisal;</span><br></pre></td></tr></table></figure>
+
+<h3 id="select后面出现的子查询"><a href="#select后面出现的子查询" class="headerlink" title="select后面出现的子查询"></a>select后面出现的子查询</h3><p>这个内容不需要掌握，了解即可！！！</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 找出每个员工的部门名称，要求显示员工名，部门名</span><br><span class="line">select </span><br><span class="line">		e.ename,e.deptno,(select d.dname from dept d where e.deptno = d.deptno) as dname </span><br><span class="line">from </span><br><span class="line">		emp e;</span><br></pre></td></tr></table></figure>
+
+<p>注意：对于select后面的子查询来说，这个子查询只能一次返回1条结果，多于1条，就报错了。！</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">select </span><br><span class="line">		e.ename,e.deptno,(select dname from dept) as dname</span><br><span class="line">from</span><br><span class="line">		emp e;</span><br><span class="line"># 报错</span><br></pre></td></tr></table></figure>
+
+<h2 id="union合并查询结果集"><a href="#union合并查询结果集" class="headerlink" title="union合并查询结果集"></a>union合并查询结果集</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 查询工作岗位是MANAGER和SALESMAN的员工</span><br><span class="line">select ename,job from emp where job = &#x27;MANAGER&#x27; or job = &#x27;SALESMAN&#x27;;</span><br><span class="line">select ename,job from emp where job in(&#x27;MANAGER&#x27;,&#x27;SALESMAN&#x27;);</span><br><span class="line">select ename,job from emp where job = &#x27;MANAGER&#x27;</span><br><span class="line">	union</span><br><span class="line">select ename,job from emp where job = &#x27;SALESMAN&#x27;;</span><br></pre></td></tr></table></figure>
+
+<p>union的<strong>效率</strong>要高一些。对于表连接来说，每连接一次新表，则匹配的次数满足笛卡尔积，会成倍的翻，但是union可以减少匹配的次数。在减少匹配次数的情况下，还可以完成两个结果集的拼接。</p>
+<p>union把乘法变成了加法运算</p>
+<p><strong>注意事项：</strong></p>
+<p>1、union在进行结果集合并的时候，要求两个结果集的列数相同。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">select ename,job from emp where job = &#x27;MANAGER&#x27;</span><br><span class="line">union</span><br><span class="line">select ename from emp where job = &#x27;SALESMAN&#x27;;</span><br><span class="line">#报错</span><br></pre></td></tr></table></figure>
+
+<p>2、MYSQL可以，oracle语法严格 ，不可以，报错。要求：结果集合并时列和列的数据类型也要一致。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select ename,job from emp where job = &#x27;MANAGER&#x27;</span><br><span class="line">union</span><br><span class="line">select ename,sal from emp where job = &#x27;SALESMAN&#x27;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="limit（非常重要）"><a href="#limit（非常重要）" class="headerlink" title="limit（非常重要）"></a>limit（非常重要）</h2><p><strong>作用：</strong>将查询结果集的一部分取出来。通常使用在<strong>分页查询</strong>当中</p>
+<p>分页的作用是为了提高用户的体验，因为一次全部都查出来，用户体验差。可以一页一页翻页看。</p>
+<p><strong>使用：</strong></p>
+<p>完整用法：limit startIndex, length<br>        startIndex是起始下标，length是长度。<br>        <strong>起始下标从0开始。</strong></p>
+<p>缺省用法：limit 5; 这是取前5.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 按照薪资降序，取出排名在前5名的员工</span><br><span class="line">select </span><br><span class="line">	ename,sal</span><br><span class="line">from</span><br><span class="line">	emp</span><br><span class="line">order by </span><br><span class="line">	sal desc</span><br><span class="line">limit 5; #取前五</span><br></pre></td></tr></table></figure>
+
+<p><strong>注意：</strong>mysql当中limit在order by之后执行！！！！！！</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># 取出工资排名在[3-5]名的员工</span><br><span class="line">select </span><br><span class="line">		ename,sal</span><br><span class="line">from</span><br><span class="line">		emp</span><br><span class="line">order by</span><br><span class="line">		sal desc</span><br><span class="line">limit</span><br><span class="line">		2, 3;</span><br></pre></td></tr></table></figure>
+
+<h2 id="分页"><a href="#分页" class="headerlink" title="分页"></a>分页</h2><p>每页显示3条记录<br>        第1页：limit 0,3        [0 1 2]<br>        第2页：limit 3,3        [3 4 5]<br>        第3页：limit 6,3        [6 7 8]<br>        第4页：limit 9,3        [9 10 11]</p>
+<p>每页显示pageSize条记录<br>        第pageNo页：limit (pageNo - 1) * pageSize  , pageSize</p>
+<p><strong>记公式：</strong>limit (pageNo-1)*pageSize , pageSize</p>
+<h2 id="DQL语句大总结"><a href="#DQL语句大总结" class="headerlink" title="DQL语句大总结"></a>DQL语句大总结</h2><p>select<br>        …<br>from<br>        …<br>where<br>        …<br>group by<br>        …<br>having<br>        …<br>order by<br>        …<br>limit<br>        …</p>
+<p>执行顺序<br>        1.from<br>        2.where<br>        3.group by<br>        4.having<br>        5.select<br>        6.order by<br>        7.limit..</p>
 
                 
             </div>
@@ -545,7 +627,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/08/24/python%E7%88%AC%E8%99%AB%E9%A1%B9%E7%9B%AE%E8%B1%86%E7%93%A3%E6%A6%9C%E5%8D%95%EF%BC%88%E4%B8%80%EF%BC%89/">http://example.com/2021/08/24/python%E7%88%AC%E8%99%AB%E9%A1%B9%E7%9B%AE%E8%B1%86%E7%93%A3%E6%A6%9C%E5%8D%95%EF%BC%88%E4%B8%80%EF%BC%89/</a>
+                    <a href="http://example.com/2021/09/05/MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/">http://example.com/2021/09/05/MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -583,8 +665,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/python/">
-                                    <span class="chip bg-color">python</span>
+                                <a href="/tags/mysql-%E6%95%B0%E6%8D%AE%E5%BA%93-sql/">
+                                    <span class="chip bg-color">mysql 数据库 sql</span>
                                 </a>
                             
                         </div>
@@ -1073,29 +1155,30 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/09/03/MySQL%E7%9A%84%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E4%B8%8E%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/">
+                <a href="/2021/09/05/MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="MySQL的安装配置与学习笔记（一）">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="MySQL学习笔记（三）">
                         
-                        <span class="card-title">MySQL的安装配置与学习笔记（一）</span>
+                        <span class="card-title">MySQL学习笔记（三）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            windows系统下的MySQL的安装配置与学习，第一部分笔记
+                            MySQL的第二部分笔记
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-09-03
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-05
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1108,6 +1191,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1126,31 +1210,31 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/08/17/python%E7%BC%96%E7%A8%8B%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5%E7%AC%AC%E4%BA%8C%E7%89%88%E9%A1%B9%E7%9B%AE%E5%AE%9E%E8%B7%B5%EF%BC%88%E4%B8%80%EF%BC%89%E3%80%8A%E5%A4%96%E6%98%9F%E4%BA%BA%E5%85%A5%E4%BE%B5%E3%80%8B%E5%AE%8C%E6%95%B4%E4%BB%A3%E7%A0%81/">
+                <a href="/2021/09/05/MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="python编程从入门到实践第二版项目实践（一）《外星人入侵》完整代码">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="MySQL学习笔记（二）">
                         
-                        <span class="card-title">python编程从入门到实践第二版项目实践（一）《外星人入侵》完整代码</span>
+                        <span class="card-title">MySQL学习笔记（二）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            小游戏《外星人入侵》的完整代码
+                            MySQL的第二部分笔记
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-05
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/python/" class="post-category">
-                                    python
+                            <a href="/categories/mysql/" class="post-category">
+                                    mysql
                                 </a>
                             
                             
@@ -1160,8 +1244,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/python/">
-                        <span class="chip bg-color">python</span>
+                    <a href="/tags/mysql-%E6%95%B0%E6%8D%AE%E5%BA%93-sql/">
+                        <span class="chip bg-color">mysql 数据库 sql</span>
                     </a>
                     
                 </div>
