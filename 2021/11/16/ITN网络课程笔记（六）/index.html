@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="鸟哥私房菜学习（三）, charminghacker">
+    <meta name="keywords" content="ITN网络课程笔记（六）, charminghacker">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>鸟哥私房菜学习（三） | charminghacker</title>
+    <title>ITN网络课程笔记（六） | charminghacker</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -326,12 +326,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">鸟哥私房菜学习（三）</h1>
+                    <h1 class="description center-align post-title">ITN网络课程笔记（六）</h1>
                 </div>
             </div>
         </div>
@@ -447,8 +447,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/linux-%E7%94%B5%E8%84%91%E7%A1%AC%E4%BB%B6/">
-                                <span class="chip bg-color">linux 电脑硬件</span>
+                            <a href="/tags/%E6%80%9D%E7%A7%91-%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/">
+                                <span class="chip bg-color">思科 网络协议</span>
                             </a>
                         
                     </div>
@@ -459,8 +459,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/linux/" class="post-category">
-                                linux
+                            <a href="/categories/%E7%BD%91%E7%BB%9C/" class="post-category">
+                                网络
                             </a>
                         
                     </div>
@@ -472,28 +472,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-08-10
+                    2021-11-16
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-08-10
+                    2021-11-16
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.2k
+                    6.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    11 分
+                    22 分
                 </div>
                 
 
@@ -513,249 +513,222 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="一、Linux与硬件的搭配"><a href="#一、Linux与硬件的搭配" class="headerlink" title="一、Linux与硬件的搭配"></a>一、Linux与硬件的搭配</h1><p>各个组件或设备在Linux下面都是一个文件</p>
-<h2 id="1、认识计算机的硬件设备"><a href="#1、认识计算机的硬件设备" class="headerlink" title="1、认识计算机的硬件设备"></a>1、认识计算机的硬件设备</h2><p>游戏机/工作机的考虑</p>
-<p>性能/价格比与性能/消耗的瓦数比的考虑</p>
-<p>支持度的考虑：当我们想要购买或是升级某些计算机组件时，应该要特别注意该硬件是否有针对您的操作系统提供适当的驱动程序</p>
-<h2 id="2、选择与Linux搭配的主机设备"><a href="#2、选择与Linux搭配的主机设备" class="headerlink" title="2、选择与Linux搭配的主机设备"></a>2、选择与Linux搭配的主机设备</h2><p>桌面型Linux系统/含X-Window</p>
-<p>用途：Linux的练习机或办公室工作机（一般我们会用到的环境）</p>
-<p>CPU：最好等级高一点，例如Intel i5、i7以上的等级</p>
-<p>内存：一定要大于1GB就比较好，否则容易有图形用户界面卡顿的现象</p>
-<p>网卡：普通的以太网卡就好</p>
-<p>显卡：使用256MB以上内存的显卡（入门级的都在这个容量以上了）</p>
-<p>硬盘：越大越好，最好有60GB</p>
-<h2 id="3、各硬件设备在Linux中的文件名"><a href="#3、各硬件设备在Linux中的文件名" class="headerlink" title="3、各硬件设备在Linux中的文件名"></a>3、各硬件设备在Linux中的文件名</h2><p><strong>重申：在Linux系统中，每个设备都被当成一个文件来对待</strong></p>
+                <h1 id="六、数据链路"><a href="#六、数据链路" class="headerlink" title="六、数据链路"></a>六、数据链路</h1><p>每个网络都有物理组件和连接组件的介质。不同类型的介质需要有关数据的不同信息，以便接受数据并在物理网络上移动数据。</p>
+<p>数据必须有帮助才能在不同介质之中移动。数据链路层提供了这种帮助。</p>
+<p><strong>模块目标</strong>: 说明数据链路层中的介质访问控制如何支持网络间的通信。</p>
 <table>
 <thead>
 <tr>
-<th align="left">设备</th>
-<th align="left">设备在Linux中的文件名</th>
+<th align="left"><strong>主题标题</strong></th>
+<th align="left"><strong>主题目标</strong></th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="left">SCISI、SATA、USB驱动器</td>
-<td align="left">/dev/sd[a-p]</td>
+<td align="left"><strong>数据链路层的用途</strong></td>
+<td align="left">阐述在准备通过特定介质传输通信数据时， 数据链路层的用途和功能。</td>
 </tr>
 <tr>
-<td align="left">U盘</td>
-<td align="left">/dev/sd[a-p]（与SATA相同）</td>
+<td align="left"><strong>拓扑</strong></td>
+<td align="left">比较 WAN 和 LAN 拓扑下，介质访问控制方法的 不同特征。</td>
 </tr>
 <tr>
-<td align="left">Virtio接口</td>
-<td align="left">/dev/vd[a-p]（用于虚拟机内）</td>
-</tr>
-<tr>
-<td align="left">软盘驱动器</td>
-<td align="left">/dev/fd[0-7]</td>
-</tr>
-<tr>
-<td align="left">打印机</td>
-<td align="left">/dev/lp[0-2]（25针打印机）</td>
-</tr>
-<tr>
-<td align="left"></td>
-<td align="left">/dev/usb/lp[0-15]（USB接口）</td>
-</tr>
-<tr>
-<td align="left">鼠标</td>
-<td align="left">/dev/input/mouse[0-15]（通用）</td>
-</tr>
-<tr>
-<td align="left"></td>
-<td align="left">/dev/psaux（PS/2接口）</td>
-</tr>
-<tr>
-<td align="left"></td>
-<td align="left">/dev/mouse（当前鼠标）</td>
-</tr>
-<tr>
-<td align="left">CD-ROM、DVD-ROM</td>
-<td align="left">/dev/scd[0-1]（通用）</td>
-</tr>
-<tr>
-<td align="left"></td>
-<td align="left">/dev/sr[0-1]（通用，CentOS较常见）</td>
-</tr>
-<tr>
-<td align="left"></td>
-<td align="left">/dev/cdrom（当前CD-ROM）</td>
-</tr>
-<tr>
-<td align="left">磁带机</td>
-<td align="left">/dev/ht0（IDE接口）</td>
-</tr>
-<tr>
-<td align="left"></td>
-<td align="left">/dev/st0（SATA/SCSI接口）</td>
-</tr>
-<tr>
-<td align="left"></td>
-<td align="left">/dev/tape（当前磁带）</td>
-</tr>
-<tr>
-<td align="left">IDE磁盘驱动器</td>
-<td align="left">/dev/hd[a-d]（旧式系统才有）</td>
+<td align="left"><strong>数据链路层帧</strong></td>
+<td align="left">阐述数据链路层帧的特征和功能。</td>
 </tr>
 </tbody></table>
-<h2 id="4、使用虚拟机学习"><a href="#4、使用虚拟机学习" class="headerlink" title="4、使用虚拟机学习"></a>4、使用虚拟机学习</h2><p>如果用windows系统，建议使用VirtualBox这个软件，官网<a target="_blank" rel="noopener" href="https://www.virtualbox.org/">https://www.virtualbox.org</a></p>
-<p>教程<a target="_blank" rel="noopener" href="http://www.virtualbox.org/manual/ch01.html">http://www.virtualbox.org/manual/ch01.html</a></p>
-<p>如果原本用Linux系统，例如Fedora或Ubuntu等系列，建议使用原本系统内就有的虚拟系统管理器</p>
-<h1 id="二、磁盘分区"><a href="#二、磁盘分区" class="headerlink" title="二、磁盘分区"></a>二、磁盘分区</h1><h2 id="1、磁盘连接方式与设备文件名的关系"><a href="#1、磁盘连接方式与设备文件名的关系" class="headerlink" title="1、磁盘连接方式与设备文件名的关系"></a>1、磁盘连接方式与设备文件名的关系</h2><p>设备文件名需要根据Linux内核检测到磁盘的顺序命名</p>
-<p>我们知道磁盘主要由碟片，机械手臂，磁头与主轴马达所组成，而数据的读写其实是在碟片上面。碟片上面又可细分出扇区与磁道两种单位，其中扇区的物理大小设计有两种，分别是512字节与4k字节。</p>
-<p>第一个扇区特别重要，因为它记录了整块磁盘的重要信息。早期磁盘第一个扇区里面含有的重要信息我们称为MBR格式，后来又多了一个新的磁盘分区格式，称为GPT</p>
-<h2 id="2、MBR与GPT分区表"><a href="#2、MBR与GPT分区表" class="headerlink" title="2、MBR与GPT分区表"></a>2、MBR与GPT分区表</h2><h3 id="MBR分区表格式与限制"><a href="#MBR分区表格式与限制" class="headerlink" title="MBR分区表格式与限制"></a>MBR分区表格式与限制</h3><p>第一个扇区的512个字节通常有这两个东西：</p>
-<p>主引导记录：可以安装启动引导程序的地方，有446字节</p>
-<p>分区表：记录整块磁盘分区的状态，有64字节</p>
-<p>由于分区表所在区块仅有64字节容量，因此最多仅能有四组记录区，每组记录区记录了该区段的启动与结束的柱面号码</p>
-<p>我们假设磁盘只有400个柱面，划分为四个分区，可如图所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/1figure1.jpeg">)</p>
-<p>我们有几个重点信息：</p>
+<h1 id="1、数据链路层的用途"><a href="#1、数据链路层的用途" class="headerlink" title="1、数据链路层的用途"></a>1、数据链路层的用途</h1><h2 id="1-1、数据链路层"><a href="#1-1、数据链路层" class="headerlink" title="1.1、数据链路层"></a>1.1、数据链路层</h2><p>OSI模型的数据链路层(第2层)为物理网络准备网络数据。数据链路层负责<strong>网络接口卡 (NIC) 到网络接口卡</strong>的通信。数据链路层执行以下操作：</p>
 <ul>
-<li>其实所谓的分区只是针对那个64字节的分区表进行设置而已</li>
-<li>硬盘默认的分区表仅能写入四组分区信息</li>
-<li>这四组划分信息我们称为主要或扩展分区</li>
-<li>分区的最小单位为柱面</li>
+<li>允许上层访问介质。上层协议完全不知道用于转发数据的介质类型。</li>
+<li>接受数据，通常是第 3 层数据包（即 IPv4 或 IPv6），并将它们封装到第 2 层帧中。</li>
+<li>控制数据在介质上的放置和接收方式，</li>
+<li>通过网络介质在终端之间交换帧。</li>
+<li>接收封装的数据，通常是第 3 层数据包，并将它们定向到适当的上层协议。</li>
+<li>执行错误检测并拒绝任何损坏的帧。</li>
 </ul>
-<p>分区由数据的安全性和系统的性能考虑来决定的</p>
-<p>我们可以利用额外的扇区来记录更多的信息，即如图所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/1figure2.jpeg"></p>
-<p>其中，P1为主要分区，P2为扩展分区。注意：扩展分区的目的是使用额外的扇区来记录分区信息，扩展分区本身并不能被拿来格式化</p>
-<p>如图右下方那个区块继续划分出五个分区，这五个由扩展分区继续切出来的分区，被称为逻辑分区</p>
-<p><em>因为前四个号码都是保留给主要或者扩展分区用的，所以逻辑分区的名称号码就从5号开始</em></p>
-<p>MBR主要分区、扩展分区与逻辑分区的特性我们做个简单的定义</p>
+<p>在计算机网络中，节点是可以沿通信路径接收、创建、存储或转发数据的设备。节点可以是笔记本电脑或移动电话等终端设备，也可以是中间设备如以太网交换机。</p>
+<p>如果没有数据链路层，则网络层协议（如 IP）必须提供连接到传输路径中可能存在的各种类型介质所需的连接。此外，每当开发出一种新的网络技术或介质时，IP 必须做出相应调整。</p>
+<p>该图显示了数据链路层如何将第2层以太网目的和源网卡信息添加到第3层数据包的示例。然后，它会将此信息转换为物理层（即第 1 层）支持的格式。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN6.1.png"></p>
+<h2 id="1-2、IEEE-802LAN-MAN-数据链路子层"><a href="#1-2、IEEE-802LAN-MAN-数据链路子层" class="headerlink" title="1.2、IEEE 802LAN/MAN 数据链路子层"></a>1.2、IEEE 802LAN/MAN 数据链路子层</h2><p>IEEE 802 LAN/MAN 标准专用于以太网局域网、无线局域网 (WLAN)、无线个人区域网 (WPAN) 和其他类型的局域网和城域网。IEEE 802 LAN/MAN 数据链路层由以下两个子层组成：</p>
 <ul>
-<li>主要分区与扩展分区最多可以有四个（磁盘的限制）</li>
-<li>扩展分区最多只能有1个（操作系统的限制）</li>
-<li>逻辑分区是由扩展分区持续划分出来的分区</li>
-<li>能够被格式化后作为数据存取的分区是主要分区与逻辑分区，扩展分区无法格式化</li>
-<li>逻辑分区的数量依操作系统的而不同，在Linux系统中SATA硬盘已经可以突破63个以上的分区</li>
+<li><strong>逻辑链路控制 (LLC)</strong> - 这个 IEEE 802.2 子层在上层的网络软件与下层的设备硬件之间进行通信。它放入帧中的信息用于确定帧所使用的网络层协议。此信息允许多个第 3 层协议（如 IPv4 和 IPv6）使用相同的网络接口和介质。</li>
+<li><strong>介质访问控制 (MAC)</strong> - 在硬件上实现这个子层（IEEE 802.3、802.11 或 802.15）。它负责数据封装和介质访问控制。它提供数据链路层寻址，并与各种物理层技术集成。</li>
 </ul>
-<h3 id="GPT磁盘分区表的出现"><a href="#GPT磁盘分区表的出现" class="headerlink" title="GPT磁盘分区表的出现"></a>GPT磁盘分区表的出现</h3><p>在过去MBR分区表的限制中经常可以发现如下的问题</p>
+<p>该图显示了数据链路层的两个子层（LLC 和 MAC）。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN6.2.png"></p>
+<p>LLC 子层获取网络协议数据（通常是 IPv4 或 IPv6数据包）并加入第2层控制信息，帮助将数据包传送到目的节点。 </p>
+<p>MAC子层控制网卡和负责在有线或无线LAN/MAN介质上发送和接收数据的其他硬件。</p>
+<p>MAC 子层提供数据封装：</p>
 <ul>
-<li>操作系统无法使用2.2TB以上的磁盘容量</li>
-<li>MBR仅有一个区块，若被破坏后，经常无法或很难恢复</li>
-<li>MBR内的存放启动引导程序的区块仅446字节，无法存储较多的程序代码</li>
+<li><strong>帧定界</strong> - 在成帧过程中提供重要的定界符，用来标识帧中的字段。这些定界符位可以在发送节点与接收节点之间提供同步。</li>
+<li><strong>编址</strong> - 提供源和目的编址，用于在同一共享介质上的设备之间传输第 2 层帧。</li>
+<li><strong>错误检测</strong> - 包含一个帧尾，用于检测传输错误。</li>
 </ul>
-<p>因此出现了GPT磁盘分区表，如图：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/1figure3.jpg"></p>
-<p>GPT使用了34个LBA区块来记录分区信息，除了前面34个LBA外，整个磁盘的最后34个LBA也拿来作为另一个备份</p>
-<p>解释如下：</p>
-<p>LBA0（MBR兼容区块）：存储了第一阶段的启动引导程序，以及放入了一块特殊标志符，用来表示此磁盘为GPT格式</p>
-<p>LBA1（GPT表头记录）：记录了分区表本身的位置与大小，记录了备份用的GPT分区放置的位置，同时放置了分区表的检验码（CRC32）</p>
-<p>LBA2-33（实际记录分区信息化）：每个LBA都可以记录4组分区信息，所以在默认的情况下，总共可以有4*32=128组分区记录，GPT还在每组记录中提供了64位来记载开始/结束的扇区号码</p>
-<p>现在GPT分区默认可以提供多达128组记录，而在Linux本身的Linux本身的内核设备记录中，针对单一磁盘来说，虽然过去最多只能到达15个分区，不过由于Linux内核通过udev等方式的处理，现在Linux也已经没有这个限制了。此外，GPT分区已经没有所谓的主、扩展、逻辑分区的概念，既然每组记录都可以独立存在，当然每个都可以视为是主要分区，每一个分区都可以拿来格式化使用。</p>
-<h2 id="3、启动流程中的BIOS与UEFI启动检测程序"><a href="#3、启动流程中的BIOS与UEFI启动检测程序" class="headerlink" title="3、启动流程中的BIOS与UEFI启动检测程序"></a>3、启动流程中的BIOS与UEFI启动检测程序</h2><h3 id="BIOS搭配MBR-GPT的启动流程"><a href="#BIOS搭配MBR-GPT的启动流程" class="headerlink" title="BIOS搭配MBR/GPT的启动流程"></a>BIOS搭配MBR/GPT的启动流程</h3><ol>
-<li>BIOS：启动主动执行的固件，会认识第一个可启动的设备</li>
-<li>MBR：第一个可启动设备的第一个扇区内的主引导记录块，内含启动引导代码</li>
-<li>启动引导程序：一个可读取内核文件来执行的软件</li>
-<li>内核文件：开始启动操作系统</li>
+<p>MAC 子层还提供介质访问控制，允许多个设备通过共享（半双工）介质进行通信。全双工通信不需要访问控制。</p>
+<h2 id="1-3、提供介质访问"><a href="#1-3、提供介质访问" class="headerlink" title="1.3、提供介质访问"></a>1.3、提供介质访问</h2><p>在数据包从本地主机传送到远程主机的过程中，其遇到的各种网络环境可能具有不同的特性。例如，以太网 LAN 通常由许多争用网络介质访问的主机组成。MAC 子层解决了这个问题。对于串行链路，访问方法可能只包括两个设备之间的直接连接，通常是两个路由器。因此，它们不需要 IEEE 802 MAC 子层所使用的技术。</p>
+<p>路由器接口将数据包封装到适当的帧中。使用合适的介质访问控制方法来访问每个链路。在任意指定的网络层数据包交换过程中，可能存在多次数据链路层和介质的转换。</p>
+<p>在路径上的每一跳，路由器都执行以下第 2 层功能：</p>
+<ol>
+<li>从介质接受帧</li>
+<li>解封帧</li>
+<li>将数据包重新封装到新帧中</li>
+<li>从适合该物理网络网段的介质转发新帧</li>
 </ol>
-<p>如果启动引导程序支持GPT，那么使用BIOS同样可以读取到正确的操作系统内核；如果启动引导程序不懂GPT，如Windows XP的环境，就无法读取内核文件，就无法启动操作系统</p>
-<p>Boot loader是操作系统安装在MBR上面的一个软件，主要任务有：</p>
+<p>若路由器具有连接到 LAN 的一个以太网接口和连接到 WAN 的一个串行接口。在处理帧的过程中，路由器将使用数据链路层服务从某个介质接收帧，再将它解封到第 3 层 PDU，然后将 PDU 重新封装到新帧中，再将帧放到网络下一链路的介质中。</p>
+<h2 id="1-4、数据链路层标准"><a href="#1-4、数据链路层标准" class="headerlink" title="1.4、数据链路层标准"></a>1.4、数据链路层标准</h2><p>与 TCP/IP 的上层协议不同，数据链路层协议通常不是由征求意见 (RFC) 文档定义的。互联网工程任务组 (IETF) 虽然维护着 TCP/IP 协议簇上层的工作协议和服务，但它没有定义TCP/IP模型的网络接入层的功能和操作。</p>
+<p>定义适用于网络接入层（即，OSI的物理和数据链路层）的开放标准和协议的工程组织包括：</p>
 <ul>
-<li>提供选项：用户可以选择不同的启动选项，这也是多重引导的重要功能</li>
-<li>加载内核文件：直接指向可使用的程序区段来启动操作系统</li>
-<li>转交其他启动引导程序：将启动管理功能转交给其他启动引导程序负责</li>
+<li>电气电子工程师协会 (IEEE)</li>
+<li>国际电信联盟 (ITU)</li>
+<li>国际标准化组织 (ISO)</li>
+<li>美国国家标准学会 (ANSI)</li>
 </ul>
-<p>启动引导程序除了可以安装在MBR之外，还可以安装在每个分区的启动扇区，这才造就了“<strong>多重引导</strong>”的功能，如图：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/1figure4.png"></p>
-<p>我们可以做个总结：</p>
+<h2 id="1-5、检测"><a href="#1-5、检测" class="headerlink" title="1.5、检测"></a>1.5、检测</h2><p><strong>注：</strong></p>
+<p><strong>1、MAC子层负责将帧放置在介质上以及从介质中删除帧</strong></p>
+<p><strong>2、确定所使用的介质控制方法是所涉及的介质共享类型和拓扑</strong></p>
+<h1 id="2、拓扑"><a href="#2、拓扑" class="headerlink" title="2、拓扑"></a>2、拓扑</h1><h2 id="2-1、物理和逻辑拓扑"><a href="#2-1、物理和逻辑拓扑" class="headerlink" title="2.1、物理和逻辑拓扑"></a>2.1、物理和逻辑拓扑</h2><p>数据链路层为物理网络准备网络数据。它必须知道网络的逻辑拓扑，以便能够确定从一个设备向另一个设备传输帧需要什么。本主题介绍了数据链路层与不同逻辑网络拓扑一起工作的方式。</p>
+<p>网络拓扑是指网络设备及它们之间的互连布局或关系。</p>
+<p>描述 LAN 和 WAN 网络时使用两种类型的拓扑：</p>
 <ul>
-<li>每个分区都有自己的启动扇区</li>
-<li>图中的系统分区为第一及第二分区</li>
-<li>实际可启动的内核文件是放置到各分区中的</li>
-<li>启动引导程序只会认识自己的系统分区内的可启动的内核文件，以及其他启动引导程序而已</li>
-<li>启动引导程序可直接指向或是间接将管理权转交给另一个管理程序</li>
+<li><strong>物理拓扑</strong> - 标识物理连接，以及终端设备和中间设备（即，路由器、交换机和无线接入点）如何互连。这个拓扑还可能包括特定的设备位置，如房间号和设备机架上的位置。物理拓扑通常是点对点拓扑或星型拓扑。</li>
+<li><strong>逻辑拓扑</strong> - 是指网络将帧从一个节点传输到另一节点的方法。此拓扑使用设备接口和第 3 层 IP 寻址方案识别虚拟连接。</li>
 </ul>
-<p>如果要安装多重引导，最好先安装Windows再安装Linux，否则原本在MBR内的Linux的启动程序就会被覆盖，使得MBR的启动引导程序就只会有Windows选项，而不会有Linux选项</p>
-<h3 id="UEFI-BIOS搭配GPT启动的流程"><a href="#UEFI-BIOS搭配GPT启动的流程" class="headerlink" title="UEFI BIOS搭配GPT启动的流程"></a>UEFI BIOS搭配GPT启动的流程</h3><p>我们知道GPT可以提供64位的寻址，然后也能够使用较大的区块来处理启动引导程序，但是BIOS其实不懂GPT。还得要通过GPT提供兼容模式才能够读写这个磁盘设备，而且BIOS仅是16位的程序，在与现阶段的新的操作系统接轨方面有点弱。因此，就诞生了UEFI这个统一可扩展固件接口</p>
-<p><em>UEFI也称UEFI BIOS，用C语言编写</em></p>
-<p>传统BIOS与UEFI的差异：</p>
-<table>
-<thead>
-<tr>
-<th>比较项目</th>
-<th>传统BIOS</th>
-<th>UEFI</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>使用程序语言</td>
-<td>汇编语言</td>
-<td>C语言</td>
-</tr>
-<tr>
-<td>硬件资源控制</td>
-<td>使用中断（IRQ）管理</td>
-<td>使用驱动程序与协议</td>
-</tr>
-<tr>
-<td></td>
-<td>不可变的内存存取</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>不可变的输入/输出存取</td>
-<td></td>
-</tr>
-<tr>
-<td>处理器运行环境</td>
-<td>16位</td>
-<td>CPU保护模式</td>
-</tr>
-<tr>
-<td>扩充方式</td>
-<td>通过IRQ连接</td>
-<td>直接加载驱动程序</td>
-</tr>
-<tr>
-<td>第三方厂商支持</td>
-<td>较差</td>
-<td>较佳且可支持多平台</td>
-</tr>
-<tr>
-<td>图形能力</td>
-<td>较差</td>
-<td>较佳</td>
-</tr>
-<tr>
-<td>内置简化操作系统环境</td>
-<td>不支持</td>
-<td>支持</td>
-</tr>
-</tbody></table>
-<p>UEFI当初在开发的时候，就制定了一些规则在里面，包括硬件资源使用轮询的方式来管理，与BIOS直接使用CPU以中断的方式来管理比较，这种轮询的效率稍微低一些</p>
-<p>UEFI加入了一个所谓的安全启动功能，这个功能代表着即将启动的操作系统必须要被UEFI验证，否则就无法启动。在某些时刻，你可能要将secure boot功能关闭，才能够顺利进入Linux</p>
-<p>虽然UEFI可以直接获取GPT的分区表，不过最好依旧拥有BIOS boot的分区支持</p>
-<p>同时，为了与Windows兼容，并且提供其他第三方厂商所使用的UEFI应用程序存储的空间，你必须要格式化一个FAT格式的文件系统分区，大约提供512MB到1GB左右的大小，以让其他UEFI执行较为方便</p>
-<h2 id="4、Linux安装模式下，磁盘分区的选择"><a href="#4、Linux安装模式下，磁盘分区的选择" class="headerlink" title="4、Linux安装模式下，磁盘分区的选择"></a>4、Linux安装模式下，磁盘分区的选择</h2><h3 id="目录树结构"><a href="#目录树结构" class="headerlink" title="目录树结构"></a>目录树结构</h3><p>目录树结构是以根目录为主，然后向下呈现为分支状的目录结构的一种文件结构，所以整个目录树架构最重要的就是那个根目录，这个根目录的表示方法为一条斜线“/”，所有的文件都与目录树有关</p>
-<h3 id="文件系统与目录树的关系（挂载）"><a href="#文件系统与目录树的关系（挂载）" class="headerlink" title="文件系统与目录树的关系（挂载）"></a>文件系统与目录树的关系（挂载）</h3><p>所谓的“挂载”就是利用一个目录当成进入点，将磁盘分区的数据放置在该目录下；也就是说进入该目录就可以读取该分区的意思</p>
-<h3 id="发行版安装时，挂载点与磁盘分区的规划"><a href="#发行版安装时，挂载点与磁盘分区的规划" class="headerlink" title="发行版安装时，挂载点与磁盘分区的规划"></a>发行版安装时，挂载点与磁盘分区的规划</h3><p>强烈建议使用“自定义安装”这个安装模式</p>
-<p>A：初次接触Linux：只要划分“/“及”交换分区“即可</p>
-<p>B：建议分区的方法：预备一个备用的剩余磁盘容量</p>
-<h1 id="三、安装Linux前的规划"><a href="#三、安装Linux前的规划" class="headerlink" title="三、安装Linux前的规划"></a>三、安装Linux前的规划</h1><h2 id="1、选择合适的Linux的发行版"><a href="#1、选择合适的Linux的发行版" class="headerlink" title="1、选择合适的Linux的发行版"></a>1、选择合适的Linux的发行版</h2><p>CentOS官方网站：<a target="_blank" rel="noopener" href="http://mirror.centos.org/centos/7/isos/">http://mirror.centos.org/centos/7/isos/</a></p>
-<p>中科大镜像站：<a target="_blank" rel="noopener" href="http://centos.ustc.edu.cn/centos/7/isos/">http://centos.ustc.edu.cn/centos/7/isos/</a></p>
-<p>清华大学镜像站：<a target="_blank" rel="noopener" href="http://mirrors.tuna.tsinghua.edu.cn/centos/7/isos">http://mirrors.tuna.tsinghua.edu.cn/centos/7/isos</a></p>
-<p>必须将它以“镜像文件格式”刻录成CD或DVD才行</p>
-<h2 id="2、主机的规划服务与硬件关系"><a href="#2、主机的规划服务与硬件关系" class="headerlink" title="2、主机的规划服务与硬件关系"></a>2、主机的规划服务与硬件关系</h2><ul>
-<li>NAT（完成IP分享器的功能）</li>
-<li>SAMBA（加入Windows网络邻居）</li>
-<li>Mail（邮件服务器）</li>
-<li>Web（WWW服务器）</li>
-<li>DHCP（提供客户端自动获取IP的功能）</li>
-<li>FTP</li>
-</ul>
-<h2 id="3、主机硬盘的主要规划"><a href="#3、主机硬盘的主要规划" class="headerlink" title="3、主机硬盘的主要规划"></a>3、主机硬盘的主要规划</h2><h3 id="最简单的分区方法"><a href="#最简单的分区方法" class="headerlink" title="最简单的分区方法"></a>最简单的分区方法</h3><p>仅划分出根目录与内存交换分区（/与swap），再预留一些剩余的磁盘空间以供后续的练习之用</p>
-<h3 id="稍微麻烦的方法"><a href="#稍微麻烦的方法" class="headerlink" title="稍微麻烦的方法"></a>稍微麻烦的方法</h3><p>根据用途去分析，如：</p>
+<p>在控制对介质的数据访问时，<strong>数据链路层“看见”的是网络的逻辑拓扑</strong>。<strong>正是逻辑拓扑在影响网络成帧和介质访问控制的类型。</strong></p>
+<h3 id="物理拓扑"><a href="#物理拓扑" class="headerlink" title="物理拓扑"></a>物理拓扑</h3><p>该图显示了一个小型示例网络的示例物理（ <strong>物理层</strong> ）拓扑。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN6.3.png"></p>
+<h3 id="逻辑拓扑"><a href="#逻辑拓扑" class="headerlink" title="逻辑拓扑"></a>逻辑拓扑</h3><p>下图显示了同一网络的示例逻辑（ <strong>逻辑</strong> ）拓扑。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN6.4.png"></p>
+<h2 id="2-2、WAN拓扑"><a href="#2-2、WAN拓扑" class="headerlink" title="2.2、WAN拓扑"></a>2.2、WAN拓扑</h2><h3 id="点对点"><a href="#点对点" class="headerlink" title="点对点"></a>点对点</h3><p>这是最简单和最常见的 WAN 拓扑。它由两个终端之间的永久链接组成。</p>
+<h3 id="中心辐射型"><a href="#中心辐射型" class="headerlink" title="中心辐射型"></a>中心辐射型</h3><p>这是星型拓扑的 WAN 版本，在该拓扑中一个中心站点使用点对点链路互连分支机构站点。如果不经过中心站点，分支站点就不能与其他分支站点交换数据。</p>
+<h3 id="网状"><a href="#网状" class="headerlink" title="网状"></a>网状</h3><p>该拓扑可用性高，但要求每个终端系统都与其他各个系统互连。因此管理成本和物理成本都会非常高。每条链路实质上是另一节点的点对点链路。</p>
+<p>混合拓扑是任何拓扑的变体或组合。例如，部分网状就是一种混合拓扑，因为其中一些而并非所有的终端设备都是互连的。</p>
+<h2 id="2-3、点对点WAN拓扑"><a href="#2-3、点对点WAN拓扑" class="headerlink" title="2.3、点对点WAN拓扑"></a>2.3、点对点WAN拓扑</h2><p>如图所示，物理点对点拓扑直接连接两个节点。在这种布局中，两个节点无需与其他主机共享介质。此外，当使用串行通信协议，如点对点协议(PPP)时，节点无需判定收到的帧是指向它还是指向另一节点。因此，逻辑数据链路协议将非常简单，因为介质中的所有帧都只去往或来自这两个节点。节点将帧放置到一端的介质上，然后点对点线路另一端的节点从介质取走帧。</p>
+<p><strong>注意</strong>: 通过以太网进行的点对点连接需要设备确定传入帧是否发往此节点。</p>
+<p>使用多个中间设备，距离较远的源节点和目的节点彼此可以间接相连。但是，在网络中使用物理设备并不会影响逻辑拓扑，如图所示。在图中，添加中间物理连接不会改变逻辑拓扑。逻辑点对点连接相同。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN6.5.png"></p>
+<h2 id="2-4、LAN拓扑"><a href="#2-4、LAN拓扑" class="headerlink" title="2.4、LAN拓扑"></a>2.4、LAN拓扑</h2><p>在多路访问局域网中，终端设备（即节点）使用<strong>星型或扩展星型</strong>拓扑相互连接。在这种类型的拓扑中，终端设备连接到一个中央中间设备。扩展星型通过连接多个以太网交换机来扩展此拓扑。星型和扩展星型拓扑安装简单、扩展性好（易于添加和删除终端设备），而且故障排除容易。早期的星型拓扑使用以太网集线器互连终端设备。</p>
+<p>有时可能只有两个设备连接在以太网局域网上。两个相互连接的路由器就是一个例子。这是在点对点拓扑上使用以太网的一个示例。</p>
+<p><strong>传统LAN拓扑</strong></p>
+<p>早期的以太网和传统令牌环局域网技术包括另外两种拓扑结构:</p>
 <ul>
-<li>/boot</li>
-<li>/</li>
-<li>/home</li>
-<li>/var</li>
-<li>swap</li>
+<li><strong>总线</strong> - 所有终端系统都相互连接，并在两端以某种形式端接。终端设备互连时不需要基础设施设备（例如交换机）。传统的以太网络中会使用采用同轴电缆的总线拓扑，因为它价格低廉而且安装简易。</li>
+<li><strong>环</strong> - 终端系统与其各自的邻居相连，形成一个环状。与总线拓扑不同，环拓扑不需要端接。传统的光纤分布式数据接口 (FDDI) 和令牌环网络使用环拓扑。</li>
 </ul>
-<p>特别注意您的服务种类，然后才进行硬盘的规划</p>
+<p>下图说明终端设备如何在局域网中互连。网络图形中经常用直线来代表包含一个简单星型和一个扩展星型的以太网 LAN。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN6.6.png"></p>
+<h2 id="2-5、半双工和全双工通信"><a href="#2-5、半双工和全双工通信" class="headerlink" title="2.5、半双工和全双工通信"></a>2.5、半双工和全双工通信</h2><p>理解双工通信在讨论局域网拓扑时非常重要，因为它指的是两个设备之间的数据传输方向。有两种常见的双工模式。</p>
+<p><strong>半双工通信</strong></p>
+<p>两台设备都可以通过该介质发送和接收，但无法同时执行这两个操作。WLAN和带有以太网集线器的传统总线拓扑使用半双工模式。半双工每次只允许一台设备通过共享介质发送或接收。</p>
+<p><strong>全双工通信</strong></p>
+<p>两台设备都可以在共享介质上同时发送和接收。数据链路层假定介质随时可供两个节点实现传输。默认情况下，以太网交换机在全双工模式下运行，但是如果与以太网集线器等设备连接，它们则可以在半双工模式下运行。</p>
+<p>总之，半双工通信限制为每次在一个方向进行数据交换。全双工允许同时发送和接收数据。</p>
+<p>两个互连设备，比如一个主机网卡和以太网交换机上的一个接口，必须采用同一双工模式运行。否则，将会出现双工不匹配，导致链路效率低下和延时。</p>
+<h2 id="2-6、访问控制方法"><a href="#2-6、访问控制方法" class="headerlink" title="2.6、访问控制方法"></a>2.6、访问控制方法</h2><p>某些多路访问网络需要使用规则来管理设备共享物理介质的方式。对于共享介质，有两种基本的访问控制方法：</p>
+<ul>
+<li>基于竞争的访问</li>
+<li>受控访问</li>
+</ul>
+<p><strong>基于竞争的访问</strong></p>
+<p>在基于竞争的多路访问网络中，所有节点都工作在半双工方式，争夺介质的使用。然而，一次只有一台设备能够发送。因此，当多台设备同时传输时，会使用一个处理过程。基于竞争的访问方法示例如下：</p>
+<ul>
+<li>在传统总线拓扑以太网局域网上使用载波侦听多路访问/冲突检测(CSMA/CD)</li>
+<li>在无线局域网上使用载波侦听多路访问/冲突避免(CSMA/CA)</li>
+</ul>
+<p><strong>受控访问</strong></p>
+<p>在基于控制的多路访问网络中，每个节点都有自己的时间来使用介质。这种确定性的传统网络类型效率很低，因为设备必须等到轮到自己才能访问介质。使用受控访问的多路访问网络的示例包括：</p>
+<ul>
+<li>传统令牌环</li>
+<li>传统ARCNET</li>
+</ul>
+<p><strong>注意</strong>: 如今，<strong>以太网网络以全双工方式运行</strong>，不需要访问方法。</p>
+<h2 id="2-7、基于竞争的访问-CSMA-CD"><a href="#2-7、基于竞争的访问-CSMA-CD" class="headerlink" title="2.7、基于竞争的访问-CSMA/CD"></a>2.7、基于竞争的访问-CSMA/CD</h2><p>基于竞争的访问网络示例如下：</p>
+<ul>
+<li><strong>无线局域网（WLAN）（使用 CSMA/CA）</strong></li>
+<li>传统总线拓扑以太网局域网（使用 CSMA/CD）</li>
+<li>使用集线器的传统以太网局域网（使用 CSMA/CD）</li>
+</ul>
+<p>这些网络在半双工模式下运行，意味着一台设备一次只能发送或接收。这需要有一个进程来管理设备何时可以发送以及当多台设备同时发送时会发生什么情况。</p>
+<p>如果两台设备同时传输，则会发生冲突。对于传统以太网局域网，两台设备将会检测到网络上的冲突。这就是 CSMA/CD 的冲突检测 (CD) 部分。网卡通过比较传输的数据与接收的数据，或通过识别介质中的信号振幅是否高于正常状况来实现。两台设备发送的数据会损坏且需重新发送。</p>
+<h3 id="PC1发送一个帧"><a href="#PC1发送一个帧" class="headerlink" title="PC1发送一个帧"></a>PC1发送一个帧</h3><p>PC1 有一个以太网帧要发送给 PC3。PC1 的网卡需要确定是否有设备正在通过介质传输。如果它没有检测到载波信号，也就是说，它没有收到来自其他设备的传输，则假定网络可用于发送。</p>
+<p>当介质可用时，PC1 NIC 发送以太网帧，如图所示。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN6.7.png"></p>
+<h3 id="集线器接受帧"><a href="#集线器接受帧" class="headerlink" title="集线器接受帧"></a>集线器接受帧</h3><p>以太网集线器接收并发送帧。以太网集线器也称为多端口中继器。传入端口上收到的任何位都会重新生成，并通过所有其他端口发送出去，如图所示。</p>
+<p>如果另一台设备，比如 PC2，想要发送，但当前正在接收一个帧，则它必须等待信道空闲，如图所示。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN6.8.png"></p>
+<h3 id="集线器发送帧"><a href="#集线器发送帧" class="headerlink" title="集线器发送帧"></a>集线器发送帧</h3><p>与集线器连接的所有设备都将收到该帧。然后，由于帧拥有 PC3 的目的数据链路地址，只有该设备会接受并被全帧复制。所有其他设备的网卡都将忽略该帧，如图所示。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN6.9.png"></p>
+<h2 id="2-8、基于竞争的访问-CSMA-CA"><a href="#2-8、基于竞争的访问-CSMA-CA" class="headerlink" title="2.8、基于竞争的访问-CSMA/CA"></a>2.8、基于竞争的访问-CSMA/CA</h2><p>IEEE 802.11 WLAN 所使用的另一种 CSMA 形式为载波侦听多路访问/冲突避免 (CSMA/CA)。</p>
+<p>CMSA/CA 采用一种与 CSMA/CD 类似的方法来检测介质是否空闲。CMSA/CA 采用其他技术。在无线环境中，设备可能无法检测到冲突。CMSA/CA 不会检测冲突，但会通过在传输之前等待来尝试避免冲突。每台设备发送时都会包含传输所需的持续时间。所有其他无线设备都会收到此信息，知道介质将有多长时间不可用。</p>
+<p>在图中，如果主机 A 从接入点接收到一个无线帧，那么主机 B 和 C 也会看到该帧以及介质有多久不可用。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN6.10.png"></p>
+<p>当无线设备发送 802.11 帧后，接收方会返回确认，以使发送方知道帧已到达。</p>
+<p>不管是使用集线器的以太网 LAN，还是 WLAN，基于竞争的系统在介质使用率高的情况下都无法很好地扩展。</p>
+<p><strong>注意</strong>: 使用交换机的以太网 LAN 不使用基于竞争的系统，因为交换机和主机网卡在全双工模式下运行。</p>
+<h1 id="3、数据链路帧"><a href="#3、数据链路帧" class="headerlink" title="3、数据链路帧"></a>3、数据链路帧</h1><h2 id="3-1、帧"><a href="#3-1、帧" class="headerlink" title="3.1、帧"></a>3.1、帧</h2><p>本主题详细讨论数据链路帧在网络中移动时发生的情况。附加到帧的信息由正在使用的协议决定。</p>
+<p>数据链路层通过使用帧头和帧尾将其封装以创建帧，从而准备封装后的数据（通常是IPv4或IPv6数据包），以便在本地介质上进行传输。</p>
+<p>数据链路协议负责同一网络中的网卡间通信。虽然有许多描述数据链路层帧的不同数据链路层协议，但每种帧均有三个基本组成部分：</p>
+<ul>
+<li>帧头</li>
+<li>数据</li>
+<li>帧尾</li>
+</ul>
+<p>与其他封装协议不同，数据链路层以帧尾的形式在帧的末尾附加信息。</p>
+<p>所有数据链路层协议均将数据封装于帧的数据字段内。但是，由于协议的不同，帧结构以及帧头和帧尾中包含的字段会存在差异。</p>
+<p>没有一种帧结构能满足通过所有类型介质的全部数据传输需求。根据环境的不同，帧中所需的控制信息量也相应变化，以匹配介质和逻辑拓扑的访问控制需求。例如，WLAN帧必须包含避免冲突的过程，因此与以太网帧相比需要额外的控制信息。</p>
+<h2 id="3-2、帧字段"><a href="#3-2、帧字段" class="headerlink" title="3.2、帧字段"></a>3.2、帧字段</h2><p>成帧技术将位流拆分成可破解的多个分组，且将控制信息作为不同字段值插入帧头和帧尾中。此格式使物理信号具备能被节点识别且可在目的地解码成数据包的一种结构。</p>
+<p>图中显示了通用帧字段。并非所有协议均包含全部此类字段。特定数据链路协议的标准定义了实际帧格式。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN6.11.png"></p>
+<p>帧字段包括以下内容：</p>
+<ul>
+<li><strong>帧开始和停止指示标志</strong> - 用于标识帧的开始和结束位置的限制。</li>
+<li><strong>编址</strong> - 表示介质上的源节点和目的节点。</li>
+<li><strong>类型</strong> - 用于标识数据字段中的第 3 层协议。</li>
+<li><strong>控制</strong> - 用于标识特殊流量控制服务，比如服务质量 (QoS)。QoS 为某些类型的消息提供转发优先权。例如，IP 语音 (VoIP) 帧通常优先接收，因为它们对延迟敏感。</li>
+<li><strong>数据</strong> - 包含帧负载（即数据包报头、数据段报头和数据）。</li>
+<li><strong>错误检测</strong> - 包含在数据之后以形成帧尾。</li>
+</ul>
+<p>数据链路层协议将帧尾添加到各帧结尾处。在一个叫做错误检测的过程中，帧尾会判断帧是否到达时没有错误。它将组成帧的各个位的逻辑或数学摘要放入帧尾中。要将错误检测添加到数据链路层，因为介质中的信号可能遭受干扰、失真或丢失，从而大幅更改这些信号所代表的位值。</p>
+<p>发送节点会创建帧内容的逻辑摘要，称为循环冗余校验 (CRC) 值。此值将放入帧校验序列 (FCS) 字段中以代表帧内容。在以太网尾部，FCS 为接收节点提供一种方法，用于确定帧是否出现传输错误。</p>
+<h2 id="3-3、第2层地址"><a href="#3-3、第2层地址" class="headerlink" title="3.3、第2层地址"></a>3.3、第2层地址</h2><p>数据链路层提供了通过共享本地介质传输帧时要用到的编址。此层中的设备地址称为物理地址。数据链路层地址包含在帧头中，它指定了帧在本地网络中的目的节点。它通常位于帧的开头，因此网卡可以在接受帧的其余部分之前快速确定它是否匹配自己的第 2 层地址。帧头还可能包含帧的源地址。</p>
+<p>与分层式第 3 层逻辑地址不同，物理地址不会表示设备位于哪个网络。相反，物理地址对于特定设备是唯一的。即使设备移至另一网络或子网，它将仍使用相同的第 2 层物理地址。因此，第2层地址仅用于在相同的共享介质中，在相同的IP网络上连接设备。</p>
+<p>当 IP 数据包从主机到路由器、从路由器到路由器和最终从路由器到主机传输时，沿途中的每个点上都会将 IP 数据包封装到新的数据链路帧中。每个数据链路帧包含发送帧的网卡的源数据链路地址和接收帧的网卡的目的数据链路地址。</p>
+<h3 id="主机到路由器"><a href="#主机到路由器" class="headerlink" title="主机到路由器"></a>主机到路由器</h3><p>源主机将第 3 层IP数据包封装成第 2 层帧。在帧头中，主机将其第 2 层地址添加为源地址，R1 的第 2 层地址添加为目的地址。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN6.12.png"></p>
+<h3 id="路由器到路由器"><a href="#路由器到路由器" class="headerlink" title="路由器到路由器"></a>路由器到路由器</h3><p>R1将第 3 层IP数据包封装成新的第 2 层帧。在帧头中，R1将其第 2 层地址添加为源地址，R2 的第 2 层地址添加为目的地址。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN6.13.png"></p>
+<h3 id="路由器到主机"><a href="#路由器到主机" class="headerlink" title="路由器到主机"></a>路由器到主机</h3><p>R2将第 3 层IP数据包封装成新的第 2 层帧。在帧头中，R2将其第 2 层地址添加为源地址，服务器的第 2 层地址添加为目的地址。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN6.14.png"></p>
+<p>数据链路层地址仅用于本地传送。该层地址在本地网络之外无任何意义。将它与第 3 层进行比较，我们发现在第 3 层中，无论途中有多少个网络跳点，数据包报头中的址址都会从源主机传送到目的主机。</p>
+<p>如果数据必须传递到另一网段上，则需要使用中间设备，比如路由器。路由器必须根据物理地址接受帧并解封帧，以便检查分层地址，即 IP 地址。路由器使用 IP 地址可以确定目的设备的网络地址以及到达该地址的最佳路径。当知道要将数据包转发到何处时，路由器会为数据包创建一个新帧，并将新帧发送到通往最终目的地的下一网段。</p>
+<h3 id="3-4、LAN和WAN上的帧"><a href="#3-4、LAN和WAN上的帧" class="headerlink" title="3.4、LAN和WAN上的帧"></a>3.4、LAN和WAN上的帧</h3><p>以太网协议由有线局域网使用。无线通信属于无线局域网（IEEE 802.11）协议范围。这些协议都是为多路访问网络而设计的。</p>
+<p>WAN 传统上在各种类型的点对点、中心辐射和全网状拓扑中使用其他类型的协议。多年来，一些常见的广域网协议包括：</p>
+<ul>
+<li>点对点协议 (PPP)</li>
+<li>高级数据链路控制 (HDLC)</li>
+<li>帧中继</li>
+<li>异步传输模式 (ATM)</li>
+<li>X.25</li>
+</ul>
+<p>这些第2层协议现在正在被以太网在广域网中取代。</p>
+<p>在 TCP/IP 网络中，所有 OSI 第 2 层协议都与 OSI 第 3 层的 IP 一起使用。但是，所用的第 2 层协议取决于<strong>逻辑拓扑和物理介质</strong>。</p>
+<p>每个协议执行指定第 2 层逻辑拓扑的介质访问控制。这意味着在执行这些协议时，有很多种不同的网络设备都可以充当运行在数据链路层上的节点。这些设备包括计算机上的网卡以及路由器和第 2 层交换机上的接口。</p>
+<p>用于特定网络拓扑的第 2 层协议取决于实施该拓扑的技术。所使用的技术取决于网络规模（根据主机数量和地理范围判断）以及通过网络提供的服务。</p>
+<p>LAN 通常使用能支持大量主机的高带宽技术。由于 LAN 的地理范围相对较小（单个建筑物或多个建筑物的园区），用户的密集度高，因此这种技术比较节约成本。</p>
+<p>但是，对于服务范围较广（例如一个城市或多个城市）的 WAN，使用高带宽技术通常不够经济。长距离物理链路的成本以及长距离传送信号的技术一般都会使带宽容量降低。</p>
+<p>带宽差异常会导致 LAN 和 WAN 使用不同的协议。</p>
+<p>数据链路层协议包括：</p>
+<ul>
+<li>以太网</li>
+<li>802.11 无线</li>
+<li>点对点协议 (PPP)</li>
+<li>高级数据链路控制 (HDLC)</li>
+<li>帧中继</li>
+</ul>
+<h2 id="3-5、检测"><a href="#3-5、检测" class="headerlink" title="3.5、检测"></a>3.5、检测</h2><p>注：第2层和第3层地址字段的正确顺序是：目的网卡地址、源网卡地址、源IP地址、目的IP地址</p>
+<h1 id="4、单元检测"><a href="#4、单元检测" class="headerlink" title="4、单元检测"></a>4、单元检测</h1><p>1、在数据链路层使用<strong>MAC地址</strong>来唯一地标识一个以太网设备</p>
+<p>2、网卡的<strong>MAC地址</strong>使其放置在OSI模型的数据链路层</p>
+<p>3、通过以太网电缆连接到中央设备可以创建<strong>星型</strong>物理拓扑</p>
+<p>4、逻辑链路控制子层的作用是：<strong>识别正在使用的网络层协议</strong></p>
 
                 
             </div>
@@ -782,7 +755,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/08/10/%E9%B8%9F%E5%93%A5%E7%A7%81%E6%88%BF%E8%8F%9C%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%89%EF%BC%89/">http://example.com/2021/08/10/%E9%B8%9F%E5%93%A5%E7%A7%81%E6%88%BF%E8%8F%9C%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%89%EF%BC%89/</a>
+                    <a href="http://example.com/2021/11/16/ITN%E7%BD%91%E7%BB%9C%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E5%85%AD%EF%BC%89/">http://example.com/2021/11/16/ITN%E7%BD%91%E7%BB%9C%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E5%85%AD%EF%BC%89/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -820,8 +793,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/linux-%E7%94%B5%E8%84%91%E7%A1%AC%E4%BB%B6/">
-                                    <span class="chip bg-color">linux 电脑硬件</span>
+                                <a href="/tags/%E6%80%9D%E7%A7%91-%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/">
+                                    <span class="chip bg-color">思科 网络协议</span>
                                 </a>
                             
                         </div>
@@ -1314,31 +1287,31 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/08/11/%E9%B8%9F%E5%93%A5%E7%A7%81%E6%88%BF%E8%8F%9C%E5%AD%A6%E4%B9%A0%EF%BC%88%E5%9B%9B%EF%BC%89/">
+                <a href="/2021/11/16/ITN%E7%BD%91%E7%BB%9C%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%83%EF%BC%89/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="鸟哥私房菜学习（四）">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="ITN网络课程笔记（七）">
                         
-                        <span class="card-title">鸟哥私房菜学习（四）</span>
+                        <span class="card-title">ITN网络课程笔记（七）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            安装CentOS 7
+                            计网笔记（七）以太网交换
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-08-11
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-16
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/linux/" class="post-category">
-                                    linux
+                            <a href="/categories/%E7%BD%91%E7%BB%9C/" class="post-category">
+                                    网络
                                 </a>
                             
                             
@@ -1348,8 +1321,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/linux-centos/">
-                        <span class="chip bg-color">linux centos</span>
+                    <a href="/tags/%E6%80%9D%E7%A7%91-%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/">
+                        <span class="chip bg-color">思科 网络协议</span>
                     </a>
                     
                 </div>
@@ -1363,31 +1336,31 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/08/08/%E9%B8%9F%E5%93%A5%E7%A7%81%E6%88%BF%E8%8F%9C%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%BA%8C%EF%BC%89/">
+                <a href="/2021/11/06/ITN%E7%BD%91%E7%BB%9C%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%94%EF%BC%89/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="鸟哥私房菜学习（二）">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="ITN网络课程笔记（五）">
                         
-                        <span class="card-title">鸟哥私房菜学习（二）</span>
+                        <span class="card-title">ITN网络课程笔记（五）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Linux是什么与如何学习
+                            计网笔记（五）数制系统
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-06
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/linux/" class="post-category">
-                                    linux
+                            <a href="/categories/%E7%BD%91%E7%BB%9C/" class="post-category">
+                                    网络
                                 </a>
                             
                             
@@ -1397,8 +1370,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/linux-%E5%86%85%E6%A0%B8-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">
-                        <span class="chip bg-color">linux 内核 操作系统</span>
+                    <a href="/tags/%E6%80%9D%E7%A7%91-%E7%BD%91%E7%BB%9C/">
+                        <span class="chip bg-color">思科 网络</span>
                     </a>
                     
                 </div>
