@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="python爬虫项目豆瓣榜单（一）, charminghacker">
+    <meta name="keywords" content="ITN网络课程笔记（九）, charminghacker">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>python爬虫项目豆瓣榜单（一） | charminghacker</title>
+    <title>ITN网络课程笔记（九） | charminghacker</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -326,12 +326,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">python爬虫项目豆瓣榜单（一）</h1>
+                    <h1 class="description center-align post-title">ITN网络课程笔记（九）</h1>
                 </div>
             </div>
         </div>
@@ -447,8 +447,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/python/">
-                                <span class="chip bg-color">python</span>
+                            <a href="/tags/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE-%E6%80%9D%E7%A7%91/">
+                                <span class="chip bg-color">网络协议 思科</span>
                             </a>
                         
                     </div>
@@ -459,8 +459,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/python/" class="post-category">
-                                python
+                            <a href="/categories/%E7%BD%91%E7%BB%9C/" class="post-category">
+                                网络
                             </a>
                         
                     </div>
@@ -472,28 +472,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-08-24
+                    2021-11-19
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-08-24
+                    2021-11-19
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    963
+                    3.7k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    13 分
                 </div>
                 
 
@@ -513,12 +513,131 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="项目概述"><a href="#项目概述" class="headerlink" title="项目概述"></a>项目概述</h1><p>在豆瓣电影Top250<a target="_blank" rel="noopener" href="http://movie.douban.com/top250?start=">http://movie.douban.com/top250?start=</a>上爬取每部电影的详情，图片链接，影片中文名，外国名，评分，评价数，概况，相关信息</p>
-<p>结果如下：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/top250.png"></p>
-<h1 id="完整代码"><a href="#完整代码" class="headerlink" title="完整代码"></a>完整代码</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> urllib.request,urllib.error</span><br><span class="line"><span class="keyword">import</span> xlwt</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span>():</span></span><br><span class="line">    baseurl=<span class="string">&quot;http://movie.douban.com/top250?start=&quot;</span></span><br><span class="line">    <span class="comment">#1.爬取网页</span></span><br><span class="line">    datalist = getData(baseurl)</span><br><span class="line">    <span class="comment">#2.解析数据</span></span><br><span class="line">    savepath=<span class="string">&quot;.\\豆瓣电影Top250.xls&quot;</span></span><br><span class="line">    <span class="comment">#3.保存数据</span></span><br><span class="line">    saveData(datalist,savepath)</span><br><span class="line"><span class="comment">#影片详情链接的规则</span></span><br><span class="line">findLink = re.<span class="built_in">compile</span>(<span class="string">r&#x27;&lt;a href=&quot;(.*?)&quot;&gt;&#x27;</span>) <span class="comment">#创建正则表达式，表示规则（字符串的模式）</span></span><br><span class="line"><span class="comment">#影片图片</span></span><br><span class="line">findImgSrc = re.<span class="built_in">compile</span>(<span class="string">r&#x27;&lt;img.*src=&quot;(.*?)&quot;&#x27;</span>,re.S)</span><br><span class="line"><span class="comment">#影片片名</span></span><br><span class="line">findTitle = re.<span class="built_in">compile</span>(<span class="string">r&#x27;&lt;span class=&quot;title&quot;&gt;(.*)&lt;/span&gt;&#x27;</span>)</span><br><span class="line"><span class="comment">#影片评分</span></span><br><span class="line">findRating = re.<span class="built_in">compile</span>(<span class="string">r&#x27;&lt;span class=&quot;rating_num&quot; property=&quot;v:average&quot;&gt;(.*)&lt;/span&gt;&#x27;</span>)</span><br><span class="line"><span class="comment">#找到评价人数</span></span><br><span class="line">findJudge = re.<span class="built_in">compile</span>(<span class="string">r&#x27;&lt;span&gt;(\d*)人评价&lt;/span&gt;&#x27;</span>)</span><br><span class="line"><span class="comment">#找到概况</span></span><br><span class="line">findInq = re.<span class="built_in">compile</span>(<span class="string">r&#x27;&lt;span class=&quot;inq&quot;&gt;(.*)&lt;/span&gt;&#x27;</span>)</span><br><span class="line"><span class="comment">#找到影片的相关内容</span></span><br><span class="line">findBd = re.<span class="built_in">compile</span>(<span class="string">r&#x27;&lt;p class=&quot;&quot;&gt;(.*?)&lt;/p&gt;&#x27;</span>,re.S)</span><br><span class="line"><span class="comment">#爬取网页</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getData</span>(<span class="params">baseurl</span>):</span></span><br><span class="line">    datalist=[]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,<span class="number">10</span>):            <span class="comment">#调用获取页面信息的函数10次</span></span><br><span class="line">        url = baseurl + <span class="built_in">str</span>(i*<span class="number">25</span>)</span><br><span class="line">        html = askURL(url)    <span class="comment">#保存获取到的网页源码</span></span><br><span class="line">        <span class="comment">#逐一解析数据</span></span><br><span class="line">        soup = BeautifulSoup(html,<span class="string">&quot;html.parser&quot;</span>)</span><br><span class="line">        <span class="keyword">for</span> item <span class="keyword">in</span> soup.find_all(<span class="string">&#x27;div&#x27;</span>,class_=<span class="string">&quot;item&quot;</span>):   <span class="comment">#查找符合要求的字符串</span></span><br><span class="line">             <span class="comment">#print(item)   #测试：查看item电影全部信息</span></span><br><span class="line">             data = []    <span class="comment">#保存一部电影的所有信息</span></span><br><span class="line">             item = <span class="built_in">str</span>(item)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">             <span class="comment">#影片详情的链接</span></span><br><span class="line">             link = re.findall(findLink,item)[<span class="number">0</span>]   <span class="comment">#re库用来通过正则表达式查找指定的字符串</span></span><br><span class="line">             data.append(link)                     <span class="comment">#添加链接</span></span><br><span class="line">             imgSrc = re.findall(findImgSrc,item)[<span class="number">0</span>]</span><br><span class="line">             data.append(imgSrc)                   <span class="comment">#添加图片</span></span><br><span class="line">             titles = re.findall(findTitle,item)   <span class="comment">#片名可能只有一个中文名，没有外国名</span></span><br><span class="line">             <span class="keyword">if</span>(<span class="built_in">len</span>(titles) == <span class="number">2</span>):</span><br><span class="line">                 ctitle = titles[<span class="number">0</span>]</span><br><span class="line">                 data.append(ctitle)</span><br><span class="line">                 otitle = titles[<span class="number">1</span>].replace(<span class="string">&quot;/&quot;</span>,<span class="string">&quot;&quot;</span>) <span class="comment">#去掉无关的符号</span></span><br><span class="line">                 data.append(otitle)                <span class="comment">#添加外国名</span></span><br><span class="line">             <span class="keyword">else</span>:</span><br><span class="line">                data.append(titles[<span class="number">0</span>])</span><br><span class="line">                data.append(<span class="string">&#x27;&#x27;</span>)             <span class="comment">#外国名字留空</span></span><br><span class="line"></span><br><span class="line">             rating = re.findall(findRating,item)[<span class="number">0</span>]</span><br><span class="line">             data.append(rating)     <span class="comment">#添加评分</span></span><br><span class="line">             judgeNum = re.findall(findJudge,item)[<span class="number">0</span>]</span><br><span class="line">             data.append(judgeNum)      <span class="comment">#添加评价人数</span></span><br><span class="line">             inq = re.findall(findInq,item)</span><br><span class="line">             <span class="keyword">if</span> <span class="built_in">len</span>(inq) != <span class="number">0</span>:</span><br><span class="line">                inq = inq[<span class="number">0</span>].replace(<span class="string">&quot;。&quot;</span>,<span class="string">&quot;&quot;</span>)    <span class="comment">#去掉句号</span></span><br><span class="line">                data.append(inq)                    <span class="comment">#添加概述</span></span><br><span class="line">             <span class="keyword">else</span>:</span><br><span class="line">                data.append(<span class="string">&quot; &quot;</span>)                <span class="comment">#留空</span></span><br><span class="line">             bd = re.findall(findBd,item)[<span class="number">0</span>]</span><br><span class="line">             bd = re.sub(<span class="string">&#x27;&lt;br(\s+)?/&gt;(\s+)?&#x27;</span>,<span class="string">&quot;&quot;</span>,bd)  <span class="comment">#去掉&lt;br/&gt;</span></span><br><span class="line">             bd = re.sub(<span class="string">&#x27;/&#x27;</span>,<span class="string">&quot;&quot;</span>,bd)    <span class="comment">#替换/</span></span><br><span class="line">             data.append(bd.strip())     <span class="comment">#去掉前后的空格</span></span><br><span class="line"></span><br><span class="line">             datalist.append(data)   <span class="comment">#把处理好的一部信息放入datalist</span></span><br><span class="line">    <span class="keyword">return</span> datalist</span><br><span class="line"><span class="comment">#得到指定一个URL的网页内容</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">askURL</span>(<span class="params">url</span>):</span></span><br><span class="line">    head = &#123;            <span class="comment">#模拟浏览器信息，向豆瓣服务器发送信息</span></span><br><span class="line">        <span class="string">&quot;User-Agent&quot;</span>:<span class="string">&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36 Edg/92.0.902.73&quot;</span></span><br><span class="line">    &#125;<span class="comment">#用户代理，告诉豆瓣我们是浏览器，本质上是伪装，告诉服务器我们可以接受什么样的文件</span></span><br><span class="line">    request = urllib.request.Request(url,headers=head)</span><br><span class="line">    html = <span class="string">&quot;&quot;</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        response = urllib.request.urlopen(request)</span><br><span class="line">        html = response.read().decode(<span class="string">&quot;utf-8&quot;</span>)</span><br><span class="line">    <span class="keyword">except</span> urllib.error.URLError <span class="keyword">as</span> e:</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">hasattr</span>(e,<span class="string">&quot;code&quot;</span>):</span><br><span class="line">            <span class="built_in">print</span>(e.code)</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">hasattr</span>(e,<span class="string">&quot;reason&quot;</span>):</span><br><span class="line">            <span class="built_in">print</span>(e.reason)</span><br><span class="line">    <span class="keyword">return</span> html</span><br><span class="line"><span class="comment">#保存数据</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">saveData</span>(<span class="params">datalist,savepath</span>):</span></span><br><span class="line">    book = xlwt.Workbook(encoding=<span class="string">&quot;utf-8&quot;</span>,style_compression=<span class="number">0</span>)</span><br><span class="line">    sheet = book.add_sheet(<span class="string">&#x27;豆瓣电影Top250&#x27;</span>,cell_overwrite_ok = <span class="literal">True</span>)</span><br><span class="line">    col = (<span class="string">&quot;电影详情链接&quot;</span>,<span class="string">&quot;图片链接&quot;</span>,<span class="string">&quot;影片中文名&quot;</span>,<span class="string">&quot;影片外国名&quot;</span>,<span class="string">&quot;评分&quot;</span>,<span class="string">&quot;评价数&quot;</span>,<span class="string">&quot;概况&quot;</span>,<span class="string">&quot;相关信息&quot;</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,<span class="number">8</span>):</span><br><span class="line">        sheet.write(<span class="number">0</span>,i,col[i])  <span class="comment">#列名</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,<span class="number">250</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;第%d条&quot;</span> %(i+<span class="number">1</span>))</span><br><span class="line">        data = datalist[i]</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,<span class="number">8</span>):</span><br><span class="line">            sheet.write(i+<span class="number">1</span>,j,data[j])</span><br><span class="line">    book.save(savepath)</span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    <span class="comment">#调用函数</span></span><br><span class="line">    main()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;爬取完毕！&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<h1 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h1><p>这只是将结果输出到excel表中，教程上还有有关MySQL的输出，可以在学习MySQL后进行补充</p>
+                <h1 id="九、地址解析"><a href="#九、地址解析" class="headerlink" title="九、地址解析"></a>九、地址解析</h1><p>主机和路由器都创建路由表，以确保它们可以跨网络发送和接收数据。那么这些信息是如何在路由表中被创建的呢? 作为网络管理员，您可以手动输入这些 MAC 和 IP 地址。但这将花费大量时间，而且犯一些错误的可能性很大。您是否认为一定有某种方式，由主机和路由器可以自动完成? 当然，您是对的！即使它是自动的，您仍然必须要了解它是如何工作的，因为您可能会需要排除一些故障，或更糟的是，您的网络可能会受到威胁发起者的攻击。</p>
+<p><strong>模块目标</strong>: 介绍ARP和ND如何在网络上实现通信。</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>主题标题</strong></th>
+<th align="left"><strong>主题目标</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>MAC 和 IP</strong></td>
+<td align="left">比较 MAC 地址和 IP 地址的不同作用。</td>
+</tr>
+<tr>
+<td align="left"><strong>⁪ARP</strong></td>
+<td align="left">阐述 ARP 的用途。</td>
+</tr>
+<tr>
+<td align="left"><strong>邻居发现</strong></td>
+<td align="left">描述 IPv6 邻居发现的工作方式。</td>
+</tr>
+</tbody></table>
+<h1 id="1、MAC和IP"><a href="#1、MAC和IP" class="headerlink" title="1、MAC和IP"></a>1、MAC和IP</h1><h2 id="1-1、同一网络中的目的地"><a href="#1-1、同一网络中的目的地" class="headerlink" title="1.1、同一网络中的目的地"></a>1.1、同一网络中的目的地</h2><p>有时，主机必须发送消息，但它只知道目的设备的 IP 地址。主机需要知道该设备的MAC地址，但是如何才能发现它呢? 这就是地址解析变得至关重要的地方。</p>
+<p>以太网 LAN 上的设备都配有两个主要地址：</p>
+<ul>
+<li><strong>物理地址（MAC 地址）</strong> – 用于同一网络上的以太网网卡之间的通信。</li>
+<li><strong>逻辑地址（IP地址）</strong> – 用于将数据包从源设备发送到目的设备。目的IP地址可能与源地址在同一个IP网络上，也可能在远程网络上。</li>
+</ul>
+<p>第二层物理地址(即以太网MAC地址)用于将数据链路层帧从同一网络中一个网卡发送到另一个网卡， IP 数据包就封装在帧中。如果目的IP地址在同一网络上，则目的MAC地址将是目的设备的MAC地址。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN9.1.png"></p>
+<p>在本示例中，PC1想要向PC2发送一个数据包。该图显示了从PC1发送的数据包中包含：第2层目的和源MAC地址以及第3层IPv4地址。</p>
+<p>第2层以太网帧包含以下内容：</p>
+<ul>
+<li><strong>目的MAC地址</strong> – 这是简化的 PC2 MAC地址，55-55-55。</li>
+<li><strong>源MAC地址</strong> – 这是 PC1上以太网网卡的简化MAC地址，aa-aa-aa。</li>
+</ul>
+<p>第 3 层 IP 数据包包含以下内容：</p>
+<ul>
+<li><strong>源 IPv4 地址</strong> – 这是 PC1 的 IPv4 地址，192.168.10.10。</li>
+<li><strong>目的 IPv4 地址</strong> – 这是 PC2的 IPv4 地址, 192.168.10.11。</li>
+</ul>
+<h2 id="1-2、远程网络中的目的地"><a href="#1-2、远程网络中的目的地" class="headerlink" title="1.2、远程网络中的目的地"></a>1.2、远程网络中的目的地</h2><p>当目的 IP 地址(IPv4或IPv6)处于远程网络中时，则目的 MAC 地址为主机的默认网关的地址(即路由器接口)。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN9.2.jpg"></p>
+<p>在本示例中，PC1想要向PC2发送一个数据包。PC2 位于远程网络上。因为目的IPv4地址与PC1不在同一个本地网络上，所以目的MAC地址是路由器上的本地默认网关地址。</p>
+<p>路由器通过检查目的 IPv4 地址来确定转发 IPv4 数据包的最佳路径。路由器收到以太网帧后，将解封第 2 层信息。它可借助目的 IPv4 地址确定下一跳设备，然后将 IPv4 数据包封装在发送接口的新数据链路帧中。</p>
+<p>在我们的示例中, R1现在用新的第2层地址信息封装数据包，如图所示。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN9.3.jpg"></p>
+<p>新的目的MAC地址将是R2 G0/0/1接口的地址，新的源MAC地址将是R1 G0/0/1接口的地址。</p>
+<p>沿着路径中的每个链路，IP数据包都被封装在一个帧中。这个帧由该链路的数据链路层技术指定，如以太网。如果下一跳设备为最终目的地，则目的 MAC 地址将是该设备的以太网网卡的 MAC 地址，如图所示。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN9.10.png"></p>
+<p>数据流中 IP 数据包的 IP 地址如何与通往目的地路径中每条链路上的 MAC 地址相关联？对于IPv4数据包，这可以通过<strong>地址解析协议</strong> (ARP) 过程来完成。对于IPv6数据包，这个过程是ICMPv6<strong>邻居发现</strong>(ND)。</p>
+<h1 id="2、ARP"><a href="#2、ARP" class="headerlink" title="2、ARP"></a>2、ARP</h1><h2 id="2-1、ARP概述"><a href="#2-1、ARP概述" class="headerlink" title="2.1、ARP概述"></a>2.1、ARP概述</h2><p>如果您的网络使用IPv4通信协议，则需要使用地址解析协议(ARP)将IPv4地址映射到MAC地址。本主题介绍ARP是如何工作的。</p>
+<p>以太网网络上的每个IP设备都有一个唯一的以太网MAC地址。当设备发送以太网第2层帧时，将包含以下两个地址：</p>
+<ul>
+<li><strong>目的 MAC 地址</strong> - 目的设备位于同一本地网络上，则为其以太网MAC地址。如果目的主机位于另一个网络上，则帧中的目的地址将是默认网关（即路由器）的地址。</li>
+<li><strong>源 MAC 地址</strong> - 源主机以太网网卡的MAC地址。</li>
+</ul>
+<p>该图说明了将帧发送到 IPv4 网络上同一段中的另一个主机时出现的问题。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN9.4.png"></p>
+<p>要向同一本地IPv4网络上的另一个主机发送数据包，主机必须知道目的设备的IPv4地址和MAC地址。设备目的IPv4地址可以是已知的，也可以通过设备名称解析。然而，MAC地址必须被发现。</p>
+<p><strong>设备使用地址解析协议(ARP)来确定一个已知 IPv4 地址的本地设备的目的MAC地址。</strong></p>
+<p>ARP 提供两个基本功能：</p>
+<ul>
+<li>将 IPv4 地址解析为 MAC 地址</li>
+<li>维护IPv4到MAC地址映射表</li>
+</ul>
+<h2 id="2-2、ARP功能"><a href="#2-2、ARP功能" class="headerlink" title="2.2、ARP功能"></a>2.2、ARP功能</h2><p>当数据包发送到要封装入以太网帧的数据链路层时，设备将参照其内存中的表来查找映射至 IPv4 地址的 MAC 地址。此表临时存储在RAM内存中，称为 ARP 表或 ARP 缓存。</p>
+<p>发送设备会在自己的 ARP 表中搜索目的 IPv4 地址和相应的 MAC 地址。</p>
+<ul>
+<li>如果数据包的目的 IPv4 地址与源 IPv4 地址处于同一个网络，则设备会在 ARP 表中搜索目的 IPv4 地址。</li>
+<li>如果目的 IPv4 地址与源 IPv4 地址不在同一个网络中，则设备会在 ARP 表中搜索默认网关的 IPv4 地址。</li>
+</ul>
+<p>这两种情况都是搜索设备的 IPv4 地址和与其相对应的 MAC 地址。</p>
+<p>ARP 表中的每一条（或每行）将一个 IPv4 地址与一个 MAC 地址绑定。我们把两个值之间的关系称为映射。这意味着您可以在表中查找 IPv4 地址并发现相应的 MAC 地址。ARP 表暂时保存（缓存）LAN 上设备的映射。</p>
+<p>如果设备找到 IPv4 地址，其相应的 MAC 地址将作为帧中的目的 MAC 地址。如果找不到该条目，设备会发送一个 ARP 请求。</p>
+<h2 id="2-3、视频-ARP请求"><a href="#2-3、视频-ARP请求" class="headerlink" title="2.3、视频-ARP请求"></a>2.3、视频-ARP请求</h2><p>当设备需要确定与 IPv4 地址关联的 MAC 地址，而它的 ARP 表中没有该 IPv4 地址条目时，会发送一个 ARP 请求。</p>
+<p>ARP 消息直接封装到以太网帧中。没有 IPv4 报头。ARP 请求使用以下帧头信息封装在以太网帧中：</p>
+<ul>
+<li><strong>目的 MAC 地址</strong> – 这是一种要求 LAN 上的所有以太网网卡接受并处理 ARP 请求的广播地址FF-FF-FF-FF-FF-FF。</li>
+<li><strong>源 MAC 地址</strong> – 这是ARP请求发送方的MAC地址。</li>
+<li><strong>类型</strong> - ARP 消息的类型字段为 0x806。该类型字段会通知接收网卡需要将帧的数据部分传递给 ARP 进程处理。</li>
+</ul>
+<p>因为 ARP 请求属于广播，交换机会将其泛洪到除接收端口外的其他所有端口。局域网上的所有以太网网卡都会处理广播，并且必须将ARP请求发送到其操作系统进行处理。每台设备必须处理 ARP 请求，以检查目的 IPv4 地址是否与其自己的地址相匹配。路由器不会将广播转发到其他接口。</p>
+<p>LAN 上只有一台设备的 IPv4 地址与 ARP 请求中的目的 IPv4 地址相匹配。所有其他设备将不应答。</p>
+<h2 id="2-4、视频-ARP操作-ARP应答"><a href="#2-4、视频-ARP操作-ARP应答" class="headerlink" title="2.4、视频-ARP操作 -ARP应答"></a>2.4、视频-ARP操作 -ARP应答</h2><p>只有具有与ARP请求相应的目的IPv4地址的设备才会以ARP应答做出响应。ARP 应答使用以下帧头信息封装在以太网帧中：</p>
+<ul>
+<li><strong>目的 MAC 地址</strong> – 这是ARP请求发送方的MAC地址。</li>
+<li><strong>源 MAC 地址</strong> – 这是ARP应答发送方的MAC地址。</li>
+<li><strong>类型</strong> – ARP 消息的类型字段为 0x806。该类型字段会通知接收网卡需要将帧的数据部分传递给 ARP 进程处理。</li>
+</ul>
+<p>只有原始发送 ARP 请求的设备会收到单播 ARP 应答。收到该 ARP 应答后，设备会将 IPv4 地址及相应的 MAC 地址添加到自身的 ARP 表中。该 IPv4 地址的数据包现在便可使用其相应的 MAC 地址封装在帧中。</p>
+<p>如果没有设备响应 ARP 请求，就无法创建帧，那么这个数据包会被丢弃。</p>
+<p>ARP 表中的条目具有时间戳。如果设备在时间戳到期前没有从特定设备收到帧，此设备的条目将会从 ARP 表中删除。</p>
+<p>此外，也可以在 ARP 表中输入静态映射条目，但这种情况很少见。静态 ARP 表条目没有到期时间，必须手动删除。</p>
+<p><strong>注意</strong>: IPv6 使用与 IPv4 类似的 ARP 流程，称为 ICMPv6 邻居发现(ND)。与 IPv4 的 ARP 请求和 ARP 应答类似，Pv6 使用邻居请求和邻居通告消息。</p>
+<h2 id="2-5、视频-ARP在远程通信中的作用"><a href="#2-5、视频-ARP在远程通信中的作用" class="headerlink" title="2.5、视频-ARP在远程通信中的作用"></a>2.5、视频-ARP在远程通信中的作用</h2><p>当目的 IPv4 地址与源 IPv4 地址位于不同网络时，源设备需要将帧发送到其默认网关。这是本地路由器的接口。每当源设备具有 IPv4 地址在其他网络中的数据包时，它会使用路由器的目的 MAC 地址将该数据包封装在帧中。</p>
+<p>默认网关的 IPv4 地址存储在主机的 IPv4 配置中。当主机创建通往某台目的主机的数据包时，会将目的 IPv4 地址与其自己的 IPv4 地址进行比较，以确定两个 IPv4 地址是否位于相同的第 3 层网络上。如果目的主机不在同一网络上，源主机将从 ARP 表中查找默认网关的 IPv4 地址条目。如果没有该条目，源主机将使用 ARP 流程来确定默认网关的 MAC 地址。</p>
+<h2 id="2-6、从ARP表中删除条目"><a href="#2-6、从ARP表中删除条目" class="headerlink" title="2.6、从ARP表中删除条目"></a>2.6、从ARP表中删除条目</h2><p>对于每台设备，ARP 缓存定时器将会删除在指定时间内未使用的 ARP 条目。时间根据设备的操作系统不同而不同。例如，较新的 Windows 操作系统将 ARP 表条目存储 15 秒到 45 秒之间</p>
+<p>也可以使用命令来手动删除 ARP 表中的部分或全部条目。当条目被删除之后，要想在 ARP 表中输入映射，必须重复一次发送 ARP 请求和接收 ARP 回复的过程。</p>
+<h2 id="2-7、网络设备上的ARP表"><a href="#2-7、网络设备上的ARP表" class="headerlink" title="2.7、网络设备上的ARP表"></a>2.7、网络设备上的ARP表</h2><p>在思科路由器上，<strong>show ip arp</strong>命令用于显示 ARP 表。</p>
+<p>在 Windows 10 PC 上，<strong>arp –a</strong>命令用于显示 ARP 表。</p>
+<h2 id="2-8、ARP问题-ARP广播和ARP欺骗"><a href="#2-8、ARP问题-ARP广播和ARP欺骗" class="headerlink" title="2.8、ARP问题-ARP广播和ARP欺骗"></a>2.8、ARP问题-ARP广播和ARP欺骗</h2><p>作为广播帧，本地网络上的每台设备都会收到并处理 ARP 请求。在一般的商业网络中，这些广播对网络性能的影响可能微不足道。但是，如图所示，如果大量设备都已启动，并且同时开始使用网络服务，网络性能可能会有短时间的下降。在设备发出初始 ARP 广播并获取必要的 MAC 地址之后，网络受到的影响将会降至最小。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN9.5.png"></p>
+<p>有时，使用 ARP 可能会造成潜在的安全风险。威胁发起者可以使用 ARP 欺骗来执行 ARP 毒化攻击。如图所示，威胁发起者使用这种技术来应答属于另一台设备（例如默认网关）的 IPv4 地址的 ARP 请求。威胁发起者会发送一个带有自己 MAC 地址的 ARP 应答。ARP 应答的接收方会将错误的 MAC 地址添加到其 ARP 表中，并将这些数据包发送给威胁发起者。 企业级的交换机包含称为动态 ARP 检查 (DAI) 的缓解技术。DAI 不在本课程的讨论范围之内。</p>
+<h1 id="3、IPv6邻居发现"><a href="#3、IPv6邻居发现" class="headerlink" title="3、IPv6邻居发现"></a>3、IPv6邻居发现</h1><h2 id="3-1、视频-IPv6邻居发现"><a href="#3-1、视频-IPv6邻居发现" class="headerlink" title="3.1、视频-IPv6邻居发现"></a>3.1、视频-IPv6邻居发现</h2><p>如果您的网络使用IPv6通信协议，则需要使用邻居发现协议(ND)将 IPv6 地址与 MAC 地址进行匹配。本主题介绍ND是如何工作的。</p>
+<h2 id="3-2、IPv6邻居发现消息"><a href="#3-2、IPv6邻居发现消息" class="headerlink" title="3.2、IPv6邻居发现消息"></a>3.2、IPv6邻居发现消息</h2><p>IPv6 邻居发现协议有时被称为 ND 或 NDP。在本课程中，我们称它为 ND。ND使用ICMPv6为IPv6提供地址解析、路由器发现和重定向服务。ICMPv6 ND 使用五种 ICMPv6 消息来执行这些服务：</p>
+<ul>
+<li>邻居请求消息</li>
+<li>邻居通告消息</li>
+<li>路由器请求消息</li>
+<li>路由器通告消息</li>
+<li>重定向消息</li>
+</ul>
+<p>邻居请求和邻居通告消息用于设备到设备的消息传递，例如地址解析（类似于 IPv4 的 ARP）。设备包括主机计算机和路由器。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN9.6.png"></p>
+<p>路由器请求和路由器通告消息用于设备和路由器之间的消息传递。通常，路由器发现用于动态地址分配和无状态地址自动配置 (SLAAC)。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN9.7.png"></p>
+<p><strong>注意</strong>: 第五个 ICMPv6 ND 消息是一个重定向消息，用于更好的下一跳选择。这不在本课程的讨论范围之内。</p>
+<p>IPv6 ND 是在 IETF RFC 4861 中定义的。</p>
+<h2 id="3-3、IPv6邻居发现-地址解析"><a href="#3-3、IPv6邻居发现-地址解析" class="headerlink" title="3.3、IPv6邻居发现-地址解析"></a>3.3、IPv6邻居发现-地址解析</h2><p>与IPv4的ARP非常相似，IPv6设备使用IPv6 ND来确定一个已知IPv6地址的设备的MAC地址。</p>
+<p>ICMPv6 邻居请求和邻居通告消息用于MAC地址解析。这类似于ARP用于IPv4的ARP请求和ARP应答。例如，假设 PC1 想要ping PC2的Ipv6地址2001:db8:acad::11。为了确定已知IPv6地址的MAC地址，PC1发送一个ICMPv6邻居请求消息，如图所示。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN9.8.png"></p>
+<p>ICMPv6邻居请求消息使用特定的以太网和IPv6<strong>组播</strong>地址发送。这允许接收设备的以太网卡确定邻居请求消息是否属于它自己，而不必将它发送到操作系统进行处理。</p>
+<p>PC2使用包含其MAC地址的ICMPv6邻居通告消息来应答请求。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN9.9.png"></p>
 
                 
             </div>
@@ -545,7 +664,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/08/24/python%E7%88%AC%E8%99%AB%E9%A1%B9%E7%9B%AE%E8%B1%86%E7%93%A3%E6%A6%9C%E5%8D%95%EF%BC%88%E4%B8%80%EF%BC%89/">http://example.com/2021/08/24/python%E7%88%AC%E8%99%AB%E9%A1%B9%E7%9B%AE%E8%B1%86%E7%93%A3%E6%A6%9C%E5%8D%95%EF%BC%88%E4%B8%80%EF%BC%89/</a>
+                    <a href="http://example.com/2021/11/19/ITN%E7%BD%91%E7%BB%9C%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B9%9D%EF%BC%89/">http://example.com/2021/11/19/ITN%E7%BD%91%E7%BB%9C%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B9%9D%EF%BC%89/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -583,8 +702,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/python/">
-                                    <span class="chip bg-color">python</span>
+                                <a href="/tags/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE-%E6%80%9D%E7%A7%91/">
+                                    <span class="chip bg-color">网络协议 思科</span>
                                 </a>
                             
                         </div>
@@ -1077,31 +1196,31 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/09/03/MySQL%E7%9A%84%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E4%B8%8E%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/">
+                <a href="/2021/11/19/ITN%E7%BD%91%E7%BB%9C%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E5%8D%81%EF%BC%89/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="MySQL的安装配置与学习笔记（一）">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="ITN网络课程笔记（十）">
                         
-                        <span class="card-title">MySQL的安装配置与学习笔记（一）</span>
+                        <span class="card-title">ITN网络课程笔记（十）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            windows系统下的MySQL的安装配置与学习，第一部分笔记
+                            计网笔记（十）路由器基本配置
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-09-03
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-19
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql/" class="post-category">
-                                    mysql
+                            <a href="/categories/%E7%BD%91%E7%BB%9C/" class="post-category">
+                                    网络
                                 </a>
                             
                             
@@ -1111,8 +1230,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql-%E6%95%B0%E6%8D%AE%E5%BA%93-sql/">
-                        <span class="chip bg-color">mysql 数据库 sql</span>
+                    <a href="/tags/%E6%80%9D%E7%A7%91-%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/">
+                        <span class="chip bg-color">思科 网络协议</span>
                     </a>
                     
                 </div>
@@ -1126,31 +1245,31 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/08/17/python%E7%BC%96%E7%A8%8B%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5%E7%AC%AC%E4%BA%8C%E7%89%88%E9%A1%B9%E7%9B%AE%E5%AE%9E%E8%B7%B5%EF%BC%88%E4%B8%80%EF%BC%89%E3%80%8A%E5%A4%96%E6%98%9F%E4%BA%BA%E5%85%A5%E4%BE%B5%E3%80%8B%E5%AE%8C%E6%95%B4%E4%BB%A3%E7%A0%81/">
+                <a href="/2021/11/18/ITN%E7%BD%91%E7%BB%9C%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E5%85%AB%EF%BC%89/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="python编程从入门到实践第二版项目实践（一）《外星人入侵》完整代码">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="ITN网络课程笔记（八）">
                         
-                        <span class="card-title">python编程从入门到实践第二版项目实践（一）《外星人入侵》完整代码</span>
+                        <span class="card-title">ITN网络课程笔记（八）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            小游戏《外星人入侵》的完整代码
+                            计网笔记（八）网络层
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-18
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/python/" class="post-category">
-                                    python
+                            <a href="/categories/%E7%BD%91%E7%BB%9C/" class="post-category">
+                                    网络
                                 </a>
                             
                             
@@ -1160,8 +1279,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/python/">
-                        <span class="chip bg-color">python</span>
+                    <a href="/tags/%E6%80%9D%E7%A7%91-%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/">
+                        <span class="chip bg-color">思科 网络协议</span>
                     </a>
                     
                 </div>
