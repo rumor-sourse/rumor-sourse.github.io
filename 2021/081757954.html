@@ -1,0 +1,2078 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="python编程从入门到实践第二版项目实践（一）《外星人入侵》完整代码, charminghacker">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>python编程从入门到实践第二版项目实践（一）《外星人入侵》完整代码 | charminghacker</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="charminghacker" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">charminghacker</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">charminghacker</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/rumor-sourse" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        <!-- 
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/rumor-sourse" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+         -->
+    </nav>
+     <!-- <div class="weather">
+        
+        <div id="tp-weather-widget"></div>
+        <script>
+            (function (a, h, g, f, e, d, c, b) { b = function () { d = h.createElement(g); c = h.getElementsByTagName(g)[0]; d.src = e; d.charset = "utf-8"; d.async = 1; c.parentNode.insertBefore(d, c) }; a["SeniverseWeatherWidgetObject"] = f; a[f] || (a[f] = function () { (a[f].q = a[f].q || []).push(arguments) }); a[f].l = +new Date(); if (a.attachEvent) { a.attachEvent("onload", b) } else { a.addEventListener("load", b, false) } }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+            window.SeniverseWeatherWidget('show', {
+                flavor: "bubble",
+                location: "WW92M43YCQG0",
+                geolocation: true,
+                language: "zh-Hans",
+                unit: "c",
+                theme: "auto",
+                token: "2ee46d07-e99c-4227-925e-461574e6469c",
+                hover: "enabled",
+                container: "tp-weather-widget"
+            })
+        </script>
+    </div>   -->
+    
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">python编程从入门到实践第二版项目实践（一）《外星人入侵》完整代码</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/python/">
+                                <span class="chip bg-color">python</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/python/" class="post-category">
+                                python
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-08-17
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2023-03-01
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    3k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    14 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="前提准备"><a href="#前提准备" class="headerlink" title="前提准备"></a>前提准备</h1><h2 id="安装pygame"><a href="#安装pygame" class="headerlink" title="安装pygame"></a>安装pygame</h2><p>在终端提示符下执行如下命令：</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">$ python -m pip <span class="token function">install</span> --user pygame<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>该命令让python运行pip模块，将pygame包添加到当前用户的python安装中</p>
+<h1 id="代码总览"><a href="#代码总览" class="headerlink" title="代码总览"></a>代码总览</h1><p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/1category.png"></p>
+<h1 id="完整代码"><a href="#完整代码" class="headerlink" title="完整代码"></a>完整代码</h1><p>注：不用管_pycache_中的代码，运行后会自动生成</p>
+<h2 id="images文件夹"><a href="#images文件夹" class="headerlink" title="images文件夹"></a>images文件夹</h2><p>alien和ship两个位图</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/alien.bmp"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ship.bmp"></p>
+<h2 id="alien-invasion-py"><a href="#alien-invasion-py" class="headerlink" title="alien_invasion.py"></a>alien_invasion.py</h2><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> sys
+<span class="token keyword">from</span> time <span class="token keyword">import</span> sleep
+<span class="token keyword">import</span> pygame
+<span class="token keyword">from</span> pygame<span class="token punctuation">.</span>constants <span class="token keyword">import</span> FULLSCREEN
+<span class="token keyword">from</span> settings <span class="token keyword">import</span> Settings
+<span class="token keyword">from</span> game_stats <span class="token keyword">import</span> GameStats
+<span class="token keyword">from</span> scoreboard <span class="token keyword">import</span> Scoreboard
+<span class="token keyword">from</span> button <span class="token keyword">import</span> Button
+<span class="token keyword">from</span> ship <span class="token keyword">import</span> Ship
+<span class="token keyword">from</span> bullet <span class="token keyword">import</span> Bullet
+<span class="token keyword">from</span> alien <span class="token keyword">import</span> Alien
+<span class="token keyword">class</span> <span class="token class-name">AlienInvasion</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""管理游戏资源和行为的类"""</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">""""初始化游戏并创建游戏资源"""</span>
+        pygame<span class="token punctuation">.</span>init<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>settings <span class="token operator">=</span> Settings<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>screen <span class="token operator">=</span> pygame<span class="token punctuation">.</span>display<span class="token punctuation">.</span>set_mode<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">,</span> pygame<span class="token punctuation">.</span>FULLSCREEN<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>settings<span class="token punctuation">.</span>screen_width <span class="token operator">=</span> self<span class="token punctuation">.</span>screen<span class="token punctuation">.</span>get_rect<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>width
+        self<span class="token punctuation">.</span>settings<span class="token punctuation">.</span>screen_height <span class="token operator">=</span> self<span class="token punctuation">.</span>screen<span class="token punctuation">.</span>get_rect<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>height
+        pygame<span class="token punctuation">.</span>display<span class="token punctuation">.</span>set_caption<span class="token punctuation">(</span><span class="token string">"Alien Invasion"</span><span class="token punctuation">)</span>
+
+        <span class="token comment">#创建存储游戏统计信息的案例</span>
+        <span class="token comment">#并创建记分牌</span>
+        self<span class="token punctuation">.</span>stats <span class="token operator">=</span> GameStats<span class="token punctuation">(</span>self<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>sb <span class="token operator">=</span> Scoreboard<span class="token punctuation">(</span>self<span class="token punctuation">)</span>
+        <span class="token comment">#创建一个用于存储游戏统计信息的实例</span>
+        self<span class="token punctuation">.</span>ship <span class="token operator">=</span> Ship<span class="token punctuation">(</span>self<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>bullets <span class="token operator">=</span> pygame<span class="token punctuation">.</span>sprite<span class="token punctuation">.</span>Group<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>aliens <span class="token operator">=</span> pygame<span class="token punctuation">.</span>sprite<span class="token punctuation">.</span>Group<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>_create_fleet<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment">#创建Play按钮</span>
+        self<span class="token punctuation">.</span>play_button <span class="token operator">=</span> Button<span class="token punctuation">(</span>self<span class="token punctuation">,</span><span class="token string">"Play"</span><span class="token punctuation">)</span>
+        <span class="token comment">#设置背景色</span>
+    <span class="token keyword">def</span> <span class="token function">run_game</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""开始游戏的主循环"""</span>
+        <span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>_check_events<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+            <span class="token keyword">if</span> self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>game_active<span class="token punctuation">:</span>
+                self<span class="token punctuation">.</span>ship<span class="token punctuation">.</span>update<span class="token punctuation">(</span><span class="token punctuation">)</span>
+                self<span class="token punctuation">.</span>_update_bullets<span class="token punctuation">(</span><span class="token punctuation">)</span>
+                self<span class="token punctuation">.</span>_update_aliens<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            self<span class="token punctuation">.</span>_update_screen<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">def</span> <span class="token function">_check_events</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""响应按键和鼠标事件"""</span>
+        <span class="token keyword">for</span> event <span class="token keyword">in</span> pygame<span class="token punctuation">.</span>event<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> event<span class="token punctuation">.</span><span class="token builtin">type</span> <span class="token operator">==</span> pygame<span class="token punctuation">.</span>QUIT<span class="token punctuation">:</span>
+                sys<span class="token punctuation">.</span>exit<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token keyword">elif</span> event<span class="token punctuation">.</span><span class="token builtin">type</span> <span class="token operator">==</span> pygame<span class="token punctuation">.</span>KEYDOWN<span class="token punctuation">:</span>
+                self<span class="token punctuation">.</span>_check_keydown_events<span class="token punctuation">(</span>event<span class="token punctuation">)</span>
+            <span class="token keyword">elif</span> event<span class="token punctuation">.</span><span class="token builtin">type</span> <span class="token operator">==</span> pygame<span class="token punctuation">.</span>KEYUP<span class="token punctuation">:</span>
+                self<span class="token punctuation">.</span>_check_keyup_events<span class="token punctuation">(</span>event<span class="token punctuation">)</span>
+            <span class="token keyword">elif</span> event<span class="token punctuation">.</span><span class="token builtin">type</span> <span class="token operator">==</span> pygame<span class="token punctuation">.</span>MOUSEBUTTONDOWN<span class="token punctuation">:</span>
+                mouse_pos <span class="token operator">=</span> pygame<span class="token punctuation">.</span>mouse<span class="token punctuation">.</span>get_pos<span class="token punctuation">(</span><span class="token punctuation">)</span>
+                self<span class="token punctuation">.</span>_check_play_button<span class="token punctuation">(</span>mouse_pos<span class="token punctuation">)</span>
+    <span class="token keyword">def</span> <span class="token function">_check_play_button</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>mouse_pos<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""在玩家单击Play按钮时开始新游戏"""</span>
+        button_clicked <span class="token operator">=</span> self<span class="token punctuation">.</span>play_button<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>collidepoint<span class="token punctuation">(</span>mouse_pos<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> button_clicked <span class="token keyword">and</span> <span class="token keyword">not</span> self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>game_active<span class="token punctuation">:</span>
+            <span class="token comment">#重置游戏设置</span>
+            self<span class="token punctuation">.</span>settings<span class="token punctuation">.</span>initialize_dynamic_settings<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+            <span class="token comment">#重置游戏统计信息</span>
+            self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>reset_stats<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>game_active <span class="token operator">=</span><span class="token boolean">True</span>
+            self<span class="token punctuation">.</span>sb<span class="token punctuation">.</span>prep_score<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            self<span class="token punctuation">.</span>sb<span class="token punctuation">.</span>prep_level<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            self<span class="token punctuation">.</span>sb<span class="token punctuation">.</span>prep_ships<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+            <span class="token comment">#清空余下的外星人和子弹</span>
+            self<span class="token punctuation">.</span>aliens<span class="token punctuation">.</span>empty<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            self<span class="token punctuation">.</span>bullets<span class="token punctuation">.</span>empty<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+            <span class="token comment">#创建一群新的外星人并让飞船居中</span>
+            self<span class="token punctuation">.</span>_create_fleet<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            self<span class="token punctuation">.</span>ship<span class="token punctuation">.</span>center_ship<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+            <span class="token comment">#隐藏鼠标光标</span>
+            pygame<span class="token punctuation">.</span>mouse<span class="token punctuation">.</span>set_visible<span class="token punctuation">(</span><span class="token boolean">False</span><span class="token punctuation">)</span>
+                         
+    <span class="token keyword">def</span> <span class="token function">_check_keydown_events</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>event<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""响应按键"""</span>
+        <span class="token keyword">if</span> event<span class="token punctuation">.</span>key <span class="token operator">==</span> pygame<span class="token punctuation">.</span>K_RIGHT<span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>ship<span class="token punctuation">.</span>moving_right<span class="token operator">=</span><span class="token boolean">True</span>
+        <span class="token keyword">elif</span> event<span class="token punctuation">.</span>key <span class="token operator">==</span> pygame<span class="token punctuation">.</span>K_LEFT<span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>ship<span class="token punctuation">.</span>moving_left<span class="token operator">=</span><span class="token boolean">True</span>
+        <span class="token keyword">elif</span> event<span class="token punctuation">.</span>key <span class="token operator">==</span> pygame<span class="token punctuation">.</span>K_q<span class="token punctuation">:</span>
+            sys<span class="token punctuation">.</span>exit<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">elif</span> event<span class="token punctuation">.</span>key <span class="token operator">==</span> pygame<span class="token punctuation">.</span>K_SPACE<span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>_fire_bullet<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">def</span> <span class="token function">_check_keyup_events</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>event<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""响应松开"""</span>
+        <span class="token keyword">if</span> event<span class="token punctuation">.</span>key <span class="token operator">==</span> pygame<span class="token punctuation">.</span>K_RIGHT<span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>ship<span class="token punctuation">.</span>moving_right <span class="token operator">=</span><span class="token boolean">False</span>
+        <span class="token keyword">elif</span> event<span class="token punctuation">.</span>key <span class="token operator">==</span> pygame<span class="token punctuation">.</span>K_LEFT<span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>ship<span class="token punctuation">.</span>moving_left <span class="token operator">=</span><span class="token boolean">False</span>
+    <span class="token keyword">def</span> <span class="token function">_fire_bullet</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""创建一颗新子弹并将其加入编组bullets中"""</span>
+        <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>bullets<span class="token punctuation">)</span> <span class="token operator">&lt;</span> self<span class="token punctuation">.</span>settings<span class="token punctuation">.</span>bullets_allowed<span class="token punctuation">:</span>
+            new_bullet <span class="token operator">=</span> Bullet<span class="token punctuation">(</span>self<span class="token punctuation">)</span>
+            self<span class="token punctuation">.</span>bullets<span class="token punctuation">.</span>add<span class="token punctuation">(</span>new_bullet<span class="token punctuation">)</span>
+    <span class="token keyword">def</span> <span class="token function">_update_bullets</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""更新子弹的位置并删除消失的子弹"""</span>
+        <span class="token comment">#更新子弹的位置</span>
+        self<span class="token punctuation">.</span>bullets<span class="token punctuation">.</span>update<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment">#删除消失的子弹</span>
+        <span class="token keyword">for</span> bullet <span class="token keyword">in</span> self<span class="token punctuation">.</span>bullets<span class="token punctuation">.</span>copy<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> bullet<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>bottom <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">:</span>
+                self<span class="token punctuation">.</span>bullets<span class="token punctuation">.</span>remove<span class="token punctuation">(</span>bullet<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>_check_bullet_alien_collisions<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">def</span> <span class="token function">_check_bullet_alien_collisions</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""响应子弹和外星人碰撞"""</span>
+        <span class="token comment">#删除发生碰撞的子弹和外星人</span>
+        collisions <span class="token operator">=</span> pygame<span class="token punctuation">.</span>sprite<span class="token punctuation">.</span>groupcollide<span class="token punctuation">(</span>
+            self<span class="token punctuation">.</span>bullets<span class="token punctuation">,</span>self<span class="token punctuation">.</span>aliens<span class="token punctuation">,</span><span class="token boolean">True</span><span class="token punctuation">,</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+        <span class="token keyword">if</span> collisions<span class="token punctuation">:</span>
+            <span class="token keyword">for</span> aliens <span class="token keyword">in</span> collisions<span class="token punctuation">.</span>values<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>score <span class="token operator">+=</span> self<span class="token punctuation">.</span>settings<span class="token punctuation">.</span>alien_points <span class="token operator">*</span> <span class="token builtin">len</span><span class="token punctuation">(</span>aliens<span class="token punctuation">)</span>
+            self<span class="token punctuation">.</span>sb<span class="token punctuation">.</span>prep_score<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            self<span class="token punctuation">.</span>sb<span class="token punctuation">.</span>check_high_score<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">if</span> <span class="token keyword">not</span> self<span class="token punctuation">.</span>aliens<span class="token punctuation">:</span>
+            <span class="token comment">#删除现有的子弹并新建一群外星人</span>
+            self<span class="token punctuation">.</span>bullets<span class="token punctuation">.</span>empty<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            self<span class="token punctuation">.</span>_create_fleet<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            self<span class="token punctuation">.</span>settings<span class="token punctuation">.</span>increase_speed<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+            <span class="token comment">#提高等级</span>
+            self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>level<span class="token operator">+=</span><span class="token number">1</span>
+            self<span class="token punctuation">.</span>sb<span class="token punctuation">.</span>prep_level<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">def</span> <span class="token function">_ship_hit</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""响应飞船被外星人撞到"""</span>
+        <span class="token keyword">if</span> self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>ships_left <span class="token operator">></span><span class="token number">0</span><span class="token punctuation">:</span>
+            <span class="token comment">#将ships_left减1并更新记分牌</span>
+            self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>ships_left <span class="token operator">-=</span> <span class="token number">1</span>
+            self<span class="token punctuation">.</span>sb<span class="token punctuation">.</span>prep_ships<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token comment">#清空余下的外星人和子弹</span>
+            self<span class="token punctuation">.</span>aliens<span class="token punctuation">.</span>empty<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            self<span class="token punctuation">.</span>bullets<span class="token punctuation">.</span>empty<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token comment">#创建一群新的外星人，并将飞船放到屏幕底端的中央</span>
+            self<span class="token punctuation">.</span>_create_fleet<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            self<span class="token punctuation">.</span>ship<span class="token punctuation">.</span>center_ship<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token comment">#暂停</span>
+            sleep<span class="token punctuation">(</span><span class="token number">0.5</span><span class="token punctuation">)</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>game_active <span class="token operator">=</span> <span class="token boolean">False</span>
+            pygame<span class="token punctuation">.</span>mouse<span class="token punctuation">.</span>set_visible<span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+    <span class="token keyword">def</span> <span class="token function">_update_aliens</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""检查是否有外星人位于屏幕边缘，并更新整群外星人的位置"""</span>
+        <span class="token triple-quoted-string string">"""更新外星人群中所有外星人的位置"""</span>
+        self<span class="token punctuation">.</span>_check_fleet_edges<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>aliens<span class="token punctuation">.</span>update<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment">#检测外星人和飞船之间的碰撞</span>
+        <span class="token keyword">if</span> pygame<span class="token punctuation">.</span>sprite<span class="token punctuation">.</span>spritecollideany<span class="token punctuation">(</span>self<span class="token punctuation">.</span>ship<span class="token punctuation">,</span>self<span class="token punctuation">.</span>aliens<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>_ship_hit<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment">#检查是否有外星人到达了屏幕底端</span>
+        self<span class="token punctuation">.</span>_check_aliens_bottom<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+
+    <span class="token keyword">def</span> <span class="token function">_check_aliens_bottom</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""检查是否有外星人到达了屏幕底端"""</span>
+        screen_rect <span class="token operator">=</span> self<span class="token punctuation">.</span>screen<span class="token punctuation">.</span>get_rect<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">for</span> alien <span class="token keyword">in</span> self<span class="token punctuation">.</span>aliens<span class="token punctuation">.</span>sprites<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> alien<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>bottom <span class="token operator">>=</span>screen_rect<span class="token punctuation">.</span>bottom<span class="token punctuation">:</span>
+                <span class="token comment">#像飞船被撞到一样处理</span>
+                self<span class="token punctuation">.</span>_ship_hit<span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token keyword">break</span>
+
+    <span class="token keyword">def</span> <span class="token function">_create_fleet</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""创建外星人群"""</span>
+        <span class="token comment">#创建一个外星人</span>
+        alien <span class="token operator">=</span> Alien<span class="token punctuation">(</span>self<span class="token punctuation">)</span>
+        alien_width<span class="token punctuation">,</span>alien_height <span class="token operator">=</span> alien<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>size
+        available_space_x <span class="token operator">=</span> self<span class="token punctuation">.</span>settings<span class="token punctuation">.</span>screen_width <span class="token operator">-</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>alien_width<span class="token punctuation">)</span>
+        number_alien_x <span class="token operator">=</span> available_space_x <span class="token operator">//</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>alien_width<span class="token punctuation">)</span>
+        <span class="token comment">#计算屏幕可容纳多少行外星人</span>
+        ship_height <span class="token operator">=</span> self<span class="token punctuation">.</span>ship<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>height
+        available_space_y <span class="token operator">=</span> <span class="token punctuation">(</span>self<span class="token punctuation">.</span>settings<span class="token punctuation">.</span>screen_height<span class="token operator">-</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token operator">*</span>alien_height<span class="token punctuation">)</span><span class="token operator">-</span>ship_height<span class="token punctuation">)</span>
+        number_rows <span class="token operator">=</span> available_space_y <span class="token operator">//</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>alien_height<span class="token punctuation">)</span>
+
+        <span class="token comment">#创建外星人群</span>
+        <span class="token keyword">for</span> row_number <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>number_rows<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">for</span> alien_number <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>number_alien_x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                self<span class="token punctuation">.</span>_create_alien<span class="token punctuation">(</span>alien_number<span class="token punctuation">,</span>row_number<span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">_create_alien</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>alien_number<span class="token punctuation">,</span>row_number<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        alien <span class="token operator">=</span> Alien<span class="token punctuation">(</span>self<span class="token punctuation">)</span>
+        alien_width<span class="token punctuation">,</span> alien_height <span class="token operator">=</span> alien<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>size
+        alien<span class="token punctuation">.</span>x <span class="token operator">=</span> alien_width <span class="token operator">+</span> <span class="token number">2</span> <span class="token operator">*</span> alien_width <span class="token operator">*</span> alien_number
+        alien<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>x <span class="token operator">=</span> alien<span class="token punctuation">.</span>x
+        alien<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>y <span class="token operator">=</span> alien<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>height <span class="token operator">+</span> <span class="token number">2</span><span class="token operator">*</span>alien<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>height<span class="token operator">*</span> row_number
+        self<span class="token punctuation">.</span>aliens<span class="token punctuation">.</span>add<span class="token punctuation">(</span>alien<span class="token punctuation">)</span>
+    <span class="token keyword">def</span> <span class="token function">_check_fleet_edges</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""有外星人到达边缘时采取相应的措施"""</span>
+        <span class="token keyword">for</span> alien <span class="token keyword">in</span> self<span class="token punctuation">.</span>aliens<span class="token punctuation">.</span>sprites<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> alien<span class="token punctuation">.</span>check_edges<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                self<span class="token punctuation">.</span>_change_fleet_direction<span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token keyword">break</span>
+    <span class="token keyword">def</span> <span class="token function">_change_fleet_direction</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""将整群外星人下移，并改变他们的方向"""</span>
+        <span class="token keyword">for</span> alien <span class="token keyword">in</span> self<span class="token punctuation">.</span>aliens<span class="token punctuation">.</span>sprites<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            alien<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>y <span class="token operator">+=</span>self<span class="token punctuation">.</span>settings<span class="token punctuation">.</span>fleet_drop_speed
+        self<span class="token punctuation">.</span>settings<span class="token punctuation">.</span>fleet_direction <span class="token operator">*=</span> <span class="token operator">-</span><span class="token number">1</span>
+    <span class="token keyword">def</span> <span class="token function">_update_screen</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""更新屏幕上的图像，并切换到新屏幕"""</span>
+        self<span class="token punctuation">.</span>screen<span class="token punctuation">.</span>fill<span class="token punctuation">(</span>self<span class="token punctuation">.</span>settings<span class="token punctuation">.</span>bg_color<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>ship<span class="token punctuation">.</span>blitme<span class="token punctuation">(</span><span class="token punctuation">)</span>  
+        <span class="token keyword">for</span> bullet <span class="token keyword">in</span> self<span class="token punctuation">.</span>bullets<span class="token punctuation">.</span>sprites<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            bullet<span class="token punctuation">.</span>draw_bullet<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>aliens<span class="token punctuation">.</span>draw<span class="token punctuation">(</span>self<span class="token punctuation">.</span>screen<span class="token punctuation">)</span>
+        <span class="token comment">#显示得分</span>
+        self<span class="token punctuation">.</span>sb<span class="token punctuation">.</span>show_score<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment">#如果游戏处于非活动状态，就绘制Play按钮</span>
+        <span class="token keyword">if</span> <span class="token keyword">not</span> self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>game_active<span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>play_button<span class="token punctuation">.</span>draw_button<span class="token punctuation">(</span><span class="token punctuation">)</span>      
+        pygame<span class="token punctuation">.</span>display<span class="token punctuation">.</span>flip<span class="token punctuation">(</span><span class="token punctuation">)</span> 
+<span class="token keyword">if</span> __name__<span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    <span class="token comment">#创建游戏实例并运行游戏</span>
+    ai<span class="token operator">=</span>AlienInvasion<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    ai<span class="token punctuation">.</span>run_game<span class="token punctuation">(</span><span class="token punctuation">)</span>           <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="alien-py"><a href="#alien-py" class="headerlink" title="alien.py"></a>alien.py</h2><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> pygame
+<span class="token keyword">from</span> pygame<span class="token punctuation">.</span>sprite <span class="token keyword">import</span> Sprite
+<span class="token keyword">class</span> <span class="token class-name">Alien</span><span class="token punctuation">(</span>Sprite<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""表示单个外星人的类"""</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>ai_game<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""初始化外星人并设置其初始位置"""</span>
+        <span class="token builtin">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>screen <span class="token operator">=</span> ai_game<span class="token punctuation">.</span>screen
+        self<span class="token punctuation">.</span>settings <span class="token operator">=</span> ai_game<span class="token punctuation">.</span>settings
+
+        <span class="token comment">#加载外星人图像并设置其rect属性</span>
+        self<span class="token punctuation">.</span>image <span class="token operator">=</span> pygame<span class="token punctuation">.</span>image<span class="token punctuation">.</span>load<span class="token punctuation">(</span><span class="token string">'images/alien.bmp'</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>rect <span class="token operator">=</span> self<span class="token punctuation">.</span>image<span class="token punctuation">.</span>get_rect<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment">#每个外星人最初都在屏幕左上角附近</span>
+        self<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>x <span class="token operator">=</span> self<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>width
+        self<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>y <span class="token operator">=</span> self<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>height
+        <span class="token comment">#存储外星人的精确水平位置</span>
+        self<span class="token punctuation">.</span>x <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>x<span class="token punctuation">)</span>
+    
+    <span class="token keyword">def</span> <span class="token function">check_edges</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""如果外星人位于屏幕边缘，就返回True"""</span>
+        screen_rect <span class="token operator">=</span> self<span class="token punctuation">.</span>screen<span class="token punctuation">.</span>get_rect<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">if</span> self<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>right <span class="token operator">>=</span> screen_rect<span class="token punctuation">.</span>right <span class="token keyword">or</span> self<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>left <span class="token operator">&lt;=</span><span class="token number">0</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token boolean">True</span>
+
+    <span class="token keyword">def</span> <span class="token function">update</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""向右移动外星人"""</span>
+        self<span class="token punctuation">.</span>x <span class="token operator">+=</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>settings<span class="token punctuation">.</span>alien_speed<span class="token operator">*</span>self<span class="token punctuation">.</span>settings<span class="token punctuation">.</span>fleet_direction<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>x <span class="token operator">=</span> self<span class="token punctuation">.</span>x<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="bullet-py"><a href="#bullet-py" class="headerlink" title="bullet.py"></a>bullet.py</h2><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> pygame
+<span class="token keyword">from</span> pygame<span class="token punctuation">.</span>sprite <span class="token keyword">import</span> Sprite
+<span class="token keyword">class</span> <span class="token class-name">Bullet</span><span class="token punctuation">(</span>Sprite<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""管理飞船所发射子弹的类"""</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>ai_game<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""在飞船当前位置创建一个子弹对象"""</span>
+        <span class="token builtin">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>screen <span class="token operator">=</span> ai_game<span class="token punctuation">.</span>screen
+        self<span class="token punctuation">.</span>settings <span class="token operator">=</span> ai_game<span class="token punctuation">.</span>settings
+        self<span class="token punctuation">.</span>color <span class="token operator">=</span> self<span class="token punctuation">.</span>settings<span class="token punctuation">.</span>bullet_color
+
+        <span class="token comment">#在（0,0）处创建一个表示子弹的矩形，在设置正确的位置</span>
+        self<span class="token punctuation">.</span>rect <span class="token operator">=</span> pygame<span class="token punctuation">.</span>Rect<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span>self<span class="token punctuation">.</span>settings<span class="token punctuation">.</span>bullet_width<span class="token punctuation">,</span>
+            self<span class="token punctuation">.</span>settings<span class="token punctuation">.</span>bullet_height<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>midtop <span class="token operator">=</span> ai_game<span class="token punctuation">.</span>ship<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>midtop
+
+        <span class="token comment">#存储用小数表示的子弹位置</span>
+        self<span class="token punctuation">.</span>y <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>y<span class="token punctuation">)</span>
+    
+    <span class="token keyword">def</span> <span class="token function">update</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""向上表示子弹"""</span>
+        <span class="token comment">#更新表示子弹位置的小数值</span>
+        self<span class="token punctuation">.</span>y <span class="token operator">-=</span> self<span class="token punctuation">.</span>settings<span class="token punctuation">.</span>bullet_speed
+        <span class="token comment">#更新表示子弹的rect的位置</span>
+        self<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>y <span class="token operator">=</span> self<span class="token punctuation">.</span>y
+    <span class="token keyword">def</span> <span class="token function">draw_bullet</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""在屏幕上绘制子弹"""</span>
+        pygame<span class="token punctuation">.</span>draw<span class="token punctuation">.</span>rect<span class="token punctuation">(</span>self<span class="token punctuation">.</span>screen<span class="token punctuation">,</span>self<span class="token punctuation">.</span>color<span class="token punctuation">,</span>self<span class="token punctuation">.</span>rect<span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="button-py"><a href="#button-py" class="headerlink" title="button.py"></a>button.py</h2><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> pygame<span class="token punctuation">.</span>font
+<span class="token keyword">class</span> <span class="token class-name">Button</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>ai_game<span class="token punctuation">,</span>msg<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""初始化按钮的属性"""</span>
+        self<span class="token punctuation">.</span>screen <span class="token operator">=</span> ai_game<span class="token punctuation">.</span>screen
+        self<span class="token punctuation">.</span>screen_rect <span class="token operator">=</span> self<span class="token punctuation">.</span>screen<span class="token punctuation">.</span>get_rect<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        <span class="token comment">#设置按钮的尺寸和其他属性</span>
+        self<span class="token punctuation">.</span>width<span class="token punctuation">,</span>self<span class="token punctuation">.</span>height <span class="token operator">=</span> <span class="token number">200</span><span class="token punctuation">,</span><span class="token number">50</span>
+        self<span class="token punctuation">.</span>button_color <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">255</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>text_color <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">,</span><span class="token number">255</span><span class="token punctuation">,</span><span class="token number">255</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>font <span class="token operator">=</span> pygame<span class="token punctuation">.</span>font<span class="token punctuation">.</span>SysFont<span class="token punctuation">(</span><span class="token boolean">None</span><span class="token punctuation">,</span><span class="token number">48</span><span class="token punctuation">)</span>
+
+        <span class="token comment">#创建按钮的rect对象，并使其居中</span>
+        self<span class="token punctuation">.</span>rect <span class="token operator">=</span> pygame<span class="token punctuation">.</span>Rect<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span>self<span class="token punctuation">.</span>width<span class="token punctuation">,</span>self<span class="token punctuation">.</span>height<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>center <span class="token operator">=</span> self<span class="token punctuation">.</span>screen_rect<span class="token punctuation">.</span>center
+
+        <span class="token comment">#按钮的标签只需创建一次</span>
+        self<span class="token punctuation">.</span>_prep_msg<span class="token punctuation">(</span>msg<span class="token punctuation">)</span>
+    <span class="token keyword">def</span> <span class="token function">_prep_msg</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>msg<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""将msg渲染为图像，并使其在按钮上居中"""</span>
+        self<span class="token punctuation">.</span>msg_image <span class="token operator">=</span> self<span class="token punctuation">.</span>font<span class="token punctuation">.</span>render<span class="token punctuation">(</span>msg<span class="token punctuation">,</span><span class="token boolean">True</span><span class="token punctuation">,</span>self<span class="token punctuation">.</span>text_color<span class="token punctuation">,</span>
+                self<span class="token punctuation">.</span>button_color<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>msg_image_rect <span class="token operator">=</span> self<span class="token punctuation">.</span>msg_image<span class="token punctuation">.</span>get_rect<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>msg_image_rect<span class="token punctuation">.</span>center <span class="token operator">=</span> self<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>center
+    <span class="token keyword">def</span> <span class="token function">draw_button</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment">#绘制一个用颜色填充的按钮，在绘制文本</span>
+        self<span class="token punctuation">.</span>screen<span class="token punctuation">.</span>fill<span class="token punctuation">(</span>self<span class="token punctuation">.</span>button_color<span class="token punctuation">,</span>self<span class="token punctuation">.</span>rect<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>screen<span class="token punctuation">.</span>blit<span class="token punctuation">(</span>self<span class="token punctuation">.</span>msg_image<span class="token punctuation">,</span>self<span class="token punctuation">.</span>msg_image_rect<span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="game-stats-py"><a href="#game-stats-py" class="headerlink" title="game_stats.py"></a>game_stats.py</h2><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">GameStats</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""跟踪游戏的统计信息"""</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>ai_game<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""初始化统计信息"""</span>
+        self<span class="token punctuation">.</span>settings <span class="token operator">=</span> ai_game<span class="token punctuation">.</span>settings
+        self<span class="token punctuation">.</span>reset_stats<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment">#游戏刚启动时处于活动状态</span>
+        self<span class="token punctuation">.</span>game_active <span class="token operator">=</span> <span class="token boolean">False</span>
+        <span class="token comment">#任何情况下都不会重置最高得分</span>
+        self<span class="token punctuation">.</span>high_score <span class="token operator">=</span> <span class="token number">0</span>
+
+    <span class="token keyword">def</span> <span class="token function">reset_stats</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""初始化在游戏运行期间可能变化的统计信息"""</span>
+        self<span class="token punctuation">.</span>ships_left <span class="token operator">=</span> self<span class="token punctuation">.</span>settings<span class="token punctuation">.</span>ship_limit
+        self<span class="token punctuation">.</span>score <span class="token operator">=</span> <span class="token number">0</span>
+        self<span class="token punctuation">.</span>level <span class="token operator">=</span> <span class="token number">1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+<h2 id="scoreboard-py"><a href="#scoreboard-py" class="headerlink" title="scoreboard.py"></a>scoreboard.py</h2><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> pygame<span class="token punctuation">.</span>font
+<span class="token keyword">from</span> pygame<span class="token punctuation">.</span>sprite <span class="token keyword">import</span> Group
+<span class="token keyword">from</span> ship <span class="token keyword">import</span> Ship
+<span class="token keyword">class</span> <span class="token class-name">Scoreboard</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""显示得分信息的类"""</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>ai_game<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""初始化显示得分涉及的属性"""</span>
+        self<span class="token punctuation">.</span>ai_game <span class="token operator">=</span> ai_game
+        self<span class="token punctuation">.</span>screen <span class="token operator">=</span> ai_game<span class="token punctuation">.</span>screen
+        self<span class="token punctuation">.</span>screen_rect <span class="token operator">=</span> self<span class="token punctuation">.</span>screen<span class="token punctuation">.</span>get_rect<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>settings <span class="token operator">=</span> ai_game<span class="token punctuation">.</span>settings
+        self<span class="token punctuation">.</span>stats <span class="token operator">=</span> ai_game<span class="token punctuation">.</span>stats
+        
+
+        <span class="token comment">#显示得分信息时使用的字体设置</span>
+        self<span class="token punctuation">.</span>text_color <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">,</span><span class="token number">30</span><span class="token punctuation">,</span><span class="token number">30</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>font <span class="token operator">=</span> pygame<span class="token punctuation">.</span>font<span class="token punctuation">.</span>SysFont<span class="token punctuation">(</span><span class="token boolean">None</span><span class="token punctuation">,</span><span class="token number">48</span><span class="token punctuation">)</span>
+        <span class="token comment">#准备包括最高得分和当前得分的图像</span>
+        self<span class="token punctuation">.</span>prep_score<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>prep_high_score<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>prep_level<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>prep_ships<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    
+    <span class="token keyword">def</span> <span class="token function">prep_score</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""将得分转换为一幅渲染的图像"""</span>
+        rounded_score <span class="token operator">=</span> <span class="token builtin">round</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>score<span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>
+        score_str<span class="token operator">=</span><span class="token string">"&#123;:,&#125;"</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>rounded_score<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>score_image <span class="token operator">=</span> self<span class="token punctuation">.</span>font<span class="token punctuation">.</span>render<span class="token punctuation">(</span>score_str<span class="token punctuation">,</span><span class="token boolean">True</span><span class="token punctuation">,</span>
+                self<span class="token punctuation">.</span>text_color<span class="token punctuation">,</span>self<span class="token punctuation">.</span>settings<span class="token punctuation">.</span>bg_color<span class="token punctuation">)</span>
+
+        <span class="token comment">#在屏幕右上角显示得分</span>
+        self<span class="token punctuation">.</span>score_rect <span class="token operator">=</span> self<span class="token punctuation">.</span>score_image<span class="token punctuation">.</span>get_rect<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>score_rect<span class="token punctuation">.</span>right <span class="token operator">=</span> self<span class="token punctuation">.</span>screen_rect<span class="token punctuation">.</span>right <span class="token operator">-</span> <span class="token number">20</span>
+        self<span class="token punctuation">.</span>score_rect<span class="token punctuation">.</span>top <span class="token operator">=</span><span class="token number">20</span>
+
+    
+    <span class="token keyword">def</span> <span class="token function">prep_high_score</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""将最高分转换为渲染的图像"""</span>
+        high_score <span class="token operator">=</span> <span class="token builtin">round</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>high_score<span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>
+        high_score_str <span class="token operator">=</span> <span class="token string">"&#123;:,&#125;"</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>high_score<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>high_score_image <span class="token operator">=</span> self<span class="token punctuation">.</span>font<span class="token punctuation">.</span>render<span class="token punctuation">(</span>high_score_str<span class="token punctuation">,</span><span class="token boolean">True</span><span class="token punctuation">,</span>
+                self<span class="token punctuation">.</span>text_color<span class="token punctuation">,</span>self<span class="token punctuation">.</span>settings<span class="token punctuation">.</span>bg_color<span class="token punctuation">)</span>
+        <span class="token comment">#将最高得分放在屏幕顶部中央</span>
+        self<span class="token punctuation">.</span>high_score_rect <span class="token operator">=</span> self<span class="token punctuation">.</span>high_score_image<span class="token punctuation">.</span>get_rect<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>high_score_rect<span class="token punctuation">.</span>centerx <span class="token operator">=</span>self<span class="token punctuation">.</span>screen_rect<span class="token punctuation">.</span>centerx
+        self<span class="token punctuation">.</span>high_score_rect<span class="token punctuation">.</span>top <span class="token operator">=</span>self<span class="token punctuation">.</span>score_rect<span class="token punctuation">.</span>top
+    
+    
+    <span class="token keyword">def</span> <span class="token function">prep_level</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""将等级转换为渲染的图像"""</span>
+        level_str <span class="token operator">=</span> <span class="token builtin">str</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>level<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>level_image <span class="token operator">=</span> self<span class="token punctuation">.</span>font<span class="token punctuation">.</span>render<span class="token punctuation">(</span>level_str<span class="token punctuation">,</span><span class="token boolean">True</span><span class="token punctuation">,</span>
+                self<span class="token punctuation">.</span>text_color<span class="token punctuation">,</span>self<span class="token punctuation">.</span>settings<span class="token punctuation">.</span>bg_color<span class="token punctuation">)</span>
+        <span class="token comment">#将等级放在得分下方</span>
+        self<span class="token punctuation">.</span>level_rect <span class="token operator">=</span> self<span class="token punctuation">.</span>level_image<span class="token punctuation">.</span>get_rect<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>level_rect<span class="token punctuation">.</span>right <span class="token operator">=</span> self<span class="token punctuation">.</span>score_rect<span class="token punctuation">.</span>right
+        self<span class="token punctuation">.</span>level_rect<span class="token punctuation">.</span>top <span class="token operator">=</span>self<span class="token punctuation">.</span>score_rect<span class="token punctuation">.</span>bottom <span class="token operator">+</span> <span class="token number">10</span>
+
+    <span class="token keyword">def</span> <span class="token function">prep_ships</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""显示还余下多少飞船"""</span>
+        self<span class="token punctuation">.</span>ships <span class="token operator">=</span> Group<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">for</span> ship_number <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>ships_left<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            ship <span class="token operator">=</span> Ship<span class="token punctuation">(</span>self<span class="token punctuation">.</span>ai_game<span class="token punctuation">)</span>
+            ship<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>x <span class="token operator">=</span> <span class="token number">10</span> <span class="token operator">+</span> ship_number <span class="token operator">*</span> ship<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>width
+            ship<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>y <span class="token operator">=</span> <span class="token number">10</span>
+            self<span class="token punctuation">.</span>ships<span class="token punctuation">.</span>add<span class="token punctuation">(</span>ship<span class="token punctuation">)</span>
+    
+    <span class="token keyword">def</span> <span class="token function">check_high_score</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""检查是否诞生了新的最高得分"""</span>
+        <span class="token keyword">if</span> self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>score <span class="token operator">></span> self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>high_score<span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>high_score <span class="token operator">=</span> self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>score
+            self<span class="token punctuation">.</span>prep_high_score<span class="token punctuation">(</span><span class="token punctuation">)</span>
+ 
+
+    <span class="token keyword">def</span> <span class="token function">show_score</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""在屏幕上显示得分、等级和余下的飞船数"""</span>
+        self<span class="token punctuation">.</span>screen<span class="token punctuation">.</span>blit<span class="token punctuation">(</span>self<span class="token punctuation">.</span>score_image<span class="token punctuation">,</span>self<span class="token punctuation">.</span>score_rect<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>screen<span class="token punctuation">.</span>blit<span class="token punctuation">(</span>self<span class="token punctuation">.</span>high_score_image<span class="token punctuation">,</span>self<span class="token punctuation">.</span>high_score_rect<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>screen<span class="token punctuation">.</span>blit<span class="token punctuation">(</span>self<span class="token punctuation">.</span>level_image<span class="token punctuation">,</span>self<span class="token punctuation">.</span>level_rect<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>ships<span class="token punctuation">.</span>draw<span class="token punctuation">(</span>self<span class="token punctuation">.</span>screen<span class="token punctuation">)</span>
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="settings-py"><a href="#settings-py" class="headerlink" title="settings.py"></a>settings.py</h2><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Settings</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""存储游戏《外星人入侵》中所有设置的类"""</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""初始化游戏的静态设置"""</span>
+        <span class="token comment">#屏幕设置</span>
+        self<span class="token punctuation">.</span>screen_width<span class="token operator">=</span><span class="token number">1200</span>
+        self<span class="token punctuation">.</span>screen_height<span class="token operator">=</span><span class="token number">800</span>
+        self<span class="token punctuation">.</span>bg_color <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">230</span><span class="token punctuation">,</span><span class="token number">230</span><span class="token punctuation">,</span><span class="token number">230</span><span class="token punctuation">)</span>
+        <span class="token comment">#飞船设置</span>
+        self<span class="token punctuation">.</span>ship_limit <span class="token operator">=</span> <span class="token number">3</span>
+        <span class="token comment">#子弹设置</span>
+        self<span class="token punctuation">.</span>bullet_width <span class="token operator">=</span><span class="token number">3</span>
+        self<span class="token punctuation">.</span>bullet_height<span class="token operator">=</span><span class="token number">15</span>
+        self<span class="token punctuation">.</span>bullet_color <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">60</span><span class="token punctuation">,</span><span class="token number">60</span><span class="token punctuation">,</span><span class="token number">60</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>bullets_allowed <span class="token operator">=</span> <span class="token number">3</span>
+        <span class="token comment">#外星人设置</span>
+        self<span class="token punctuation">.</span>fleet_drop_speed <span class="token operator">=</span> <span class="token number">10</span>
+        <span class="token comment">#fleet_direction为1表示向右移，为-1表示向左移</span>
+        self<span class="token punctuation">.</span>fleet_direction <span class="token operator">=</span> <span class="token number">1</span>
+
+        <span class="token comment">#加快游戏的节奏</span>
+        self<span class="token punctuation">.</span>speedup_scale <span class="token operator">=</span> <span class="token number">1.1</span>
+        <span class="token comment">#外星人分数的提高速度</span>
+        self<span class="token punctuation">.</span>score_scale <span class="token operator">=</span> <span class="token number">1.5</span>
+        self<span class="token punctuation">.</span>initialize_dynamic_settings<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">def</span> <span class="token function">initialize_dynamic_settings</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""初始化随游戏进行而变化的设置"""</span>
+        self<span class="token punctuation">.</span>ship_speed <span class="token operator">=</span> <span class="token number">1.5</span>
+        self<span class="token punctuation">.</span>bullet_speed <span class="token operator">=</span> <span class="token number">3.0</span>
+        self<span class="token punctuation">.</span>alien_speed <span class="token operator">=</span> <span class="token number">1.0</span>
+
+        <span class="token comment">#fleet_direction 为1表示向右，为-1表示向左</span>
+        self<span class="token punctuation">.</span>fleet_direction <span class="token operator">=</span> <span class="token number">1</span>
+
+        <span class="token comment">#记分</span>
+        self<span class="token punctuation">.</span>alien_points <span class="token operator">=</span> <span class="token number">50</span>
+    <span class="token keyword">def</span> <span class="token function">increase_speed</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""提高速度设置和外星人分数"""</span>
+        self<span class="token punctuation">.</span>ship_speed <span class="token operator">*=</span> self<span class="token punctuation">.</span>speedup_scale
+        self<span class="token punctuation">.</span>bullet_speed <span class="token operator">*=</span> self<span class="token punctuation">.</span>speedup_scale
+        self<span class="token punctuation">.</span>alien_speed <span class="token operator">*=</span> self<span class="token punctuation">.</span>speedup_scale
+
+        self<span class="token punctuation">.</span>alien_points <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>alien_points <span class="token operator">*</span> self<span class="token punctuation">.</span>score_scale<span class="token punctuation">)</span>
+    
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="ship-py"><a href="#ship-py" class="headerlink" title="ship.py"></a>ship.py</h2><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> pygame
+<span class="token keyword">from</span> pygame<span class="token punctuation">.</span>sprite <span class="token keyword">import</span> Sprite
+<span class="token keyword">class</span> <span class="token class-name">Ship</span><span class="token punctuation">(</span>Sprite<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""管理飞船的类"""</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>ai_game<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""初始化飞船并设置其初始位置"""</span>
+        <span class="token builtin">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>screen <span class="token operator">=</span> ai_game<span class="token punctuation">.</span>screen
+        self<span class="token punctuation">.</span>settings <span class="token operator">=</span> ai_game<span class="token punctuation">.</span>settings
+        self<span class="token punctuation">.</span>screen_rect <span class="token operator">=</span>ai_game<span class="token punctuation">.</span>screen<span class="token punctuation">.</span>get_rect<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        <span class="token comment">#加载飞船图像并获取其外接矩形</span>
+        self<span class="token punctuation">.</span>image <span class="token operator">=</span> pygame<span class="token punctuation">.</span>image<span class="token punctuation">.</span>load<span class="token punctuation">(</span><span class="token string">'images/ship.bmp'</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>rect <span class="token operator">=</span> self<span class="token punctuation">.</span>image<span class="token punctuation">.</span>get_rect<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment">#对于每艘新飞船，都将其放在屏幕底部的中央</span>
+        self<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>midbottom <span class="token operator">=</span> self<span class="token punctuation">.</span>screen_rect<span class="token punctuation">.</span>midbottom
+        <span class="token comment">#在飞船的属性x中存储小数值</span>
+        self<span class="token punctuation">.</span>x<span class="token operator">=</span><span class="token builtin">float</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>x<span class="token punctuation">)</span>
+        <span class="token comment">#移动标志</span>
+        self<span class="token punctuation">.</span>moving_right <span class="token operator">=</span><span class="token boolean">False</span>
+        self<span class="token punctuation">.</span>moving_left <span class="token operator">=</span> <span class="token boolean">False</span>
+    <span class="token keyword">def</span> <span class="token function">update</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""根据移动标志调整飞船位置"""</span>
+        <span class="token comment">#更新飞船而不是rect对象的x值</span>
+        <span class="token keyword">if</span> self<span class="token punctuation">.</span>moving_right <span class="token keyword">and</span> self<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>right <span class="token operator">&lt;</span> self<span class="token punctuation">.</span>screen_rect<span class="token punctuation">.</span>right<span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>x <span class="token operator">+=</span> self<span class="token punctuation">.</span>settings<span class="token punctuation">.</span>ship_speed
+        <span class="token keyword">if</span> self<span class="token punctuation">.</span>moving_left <span class="token keyword">and</span> self<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>left <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>x <span class="token operator">-=</span> self<span class="token punctuation">.</span>settings<span class="token punctuation">.</span>ship_speed
+        <span class="token comment">#根据self.x更新rect对象</span>
+        self<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>x <span class="token operator">=</span> self<span class="token punctuation">.</span>x
+    <span class="token keyword">def</span> <span class="token function">blitme</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""在指定位置绘制飞船"""</span>
+        self<span class="token punctuation">.</span>screen<span class="token punctuation">.</span>blit<span class="token punctuation">(</span>self<span class="token punctuation">.</span>image<span class="token punctuation">,</span>self<span class="token punctuation">.</span>rect<span class="token punctuation">)</span>
+    <span class="token keyword">def</span> <span class="token function">center_ship</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""让飞船在屏幕底端居中"""</span>
+        self<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>midbottom <span class="token operator">=</span> self<span class="token punctuation">.</span>screen_rect<span class="token punctuation">.</span>midbottom
+        self<span class="token punctuation">.</span>x <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>rect<span class="token punctuation">.</span>x<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h1 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h1><p>在最后debug的过程中，刚开始都是一些小小的拼写错误，可到最后程序能正常运行的时候却出现了分数、等级不能正常增加，飞船数在碰撞后不能正常减少的问题，我花了两天时间搜遍了几乎所有的资料，然后与源代码文件比对了很长时间，也没发现是哪的错误。直到最后，一次偶然我发现在alien_invasion.py中的init方法里我多敲了一遍<code>self.stats = GameStats(self)</code>，我抱着试一试的态度把它删掉，结果发现都变得正常了。之前与源代码对比的时候，因为觉得init方法应该不会出现什么问题，毕竟能正常运行，而且在其他的语言中多定义一次也大差不差，所以就没怎么注意。现在虽然找出了问题所在，然而却仍不知道为什么多敲一遍会导致这样的错误，如果有人看到了这篇文章，并且知道这个原因的话，希望可以留言告诉我。</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">wck</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://example.com/2021/081757954.html">http://example.com/2021/081757954.html</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">wck</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/python/">
+                                    <span class="chip bg-color">python</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'yohIdjiNFr5gi9AMV8TPhv90-gzGzoHsz',
+        appKey: 'dpdaXreArfn9sbA5A5hGBlUG',
+        notify: 'false' === 'true',
+        verify: 'false' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'monsterid',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: '留下你想说的话吧~',
+        enableQQ: true,
+        emojiCDN: '//i0.hdslb.com/bfs/emote/', 
+        // 表情title和图片映射
+        emojiMaps: {
+        "tv_doge": "6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png",
+        "tv_亲亲": "a8111ad55953ef5e3be3327ef94eb4a39d535d06.png",
+        "tv_偷笑": "bb690d4107620f1c15cff29509db529a73aee261.png",
+        "tv_再见": "180129b8ea851044ce71caf55cc8ce44bd4a4fc8.png",
+        "tv_冷漠": "b9cbc755c2b3ee43be07ca13de84e5b699a3f101.png",
+        "tv_发怒": "34ba3cd204d5b05fec70ce08fa9fa0dd612409ff.png",
+        "tv_发财": "34db290afd2963723c6eb3c4560667db7253a21a.png",
+        "tv_可爱": "9e55fd9b500ac4b96613539f1ce2f9499e314ed9.png",
+        "tv_吐血": "09dd16a7aa59b77baa1155d47484409624470c77.png",
+        "tv_呆": "fe1179ebaa191569b0d31cecafe7a2cd1c951c9d.png",
+        "tv_呕吐": "9f996894a39e282ccf5e66856af49483f81870f3.png",
+        "tv_困": "241ee304e44c0af029adceb294399391e4737ef2.png",
+        "tv_坏笑": "1f0b87f731a671079842116e0991c91c2c88645a.png",
+        "tv_大佬": "093c1e2c490161aca397afc45573c877cdead616.png",
+        "tv_大哭": "23269aeb35f99daee28dda129676f6e9ea87934f.png",
+        "tv_委屈": "d04dba7b5465779e9755d2ab6f0a897b9b33bb77.png",
+        "tv_害羞": "a37683fb5642fa3ddfc7f4e5525fd13e42a2bdb1.png",
+        "tv_尴尬": "7cfa62dafc59798a3d3fb262d421eeeff166cfa4.png",
+        "tv_微笑": "70dc5c7b56f93eb61bddba11e28fb1d18fddcd4c.png",
+        "tv_思考": "90cf159733e558137ed20aa04d09964436f618a1.png",
+        "tv_惊吓": "0d15c7e2ee58e935adc6a7193ee042388adc22af.png",
+        "tv_打脸": "56ab10b624063e966bfcb76ea5dc4794d87dfd47.png",
+        "tv_抓狂": "fe31c08edad661d63762b04e17b8d5ae3c71a757.png",
+        "tv_抠鼻": "c666f55e88d471e51bbd9fab9bb308110824a6eb.png",
+        "tv_斜眼笑": "911f987aa8bc1bee12d52aafe62bc41ef4474e6c.png",
+        "tv_无奈": "ea8ed89ee9878f2fece2dda0ea8a5dbfe21b5751.png",
+        "tv_晕": "5443c22b4d07fb1907ccc610c8e6db254f2461b7.png",
+        "tv_流汗": "cead1c351ab8d79e9f369605beb90148db0fbed3.png",
+        "tv_流泪": "7e71cde7858f0cd50d74b0264aa26db612a8a167.png",
+        "tv_流鼻血": "c32d39db2737f89b904ca32700d140a9241b0767.png",
+        "tv_点赞": "f85c354995bd99e28fc76c869bfe42ba6438eff4.png",
+        "tv_生气": "26702dcafdab5e8225b43ffd23c94ac1ff932654.png",
+        "tv_生病": "8b0ec90e6b86771092a498c54f09fc94621c1900.png",
+        "tv_疑问": "0793d949b18d7be716078349c202c15ff166f314.png",
+        "tv_白眼": "c1d59f439e379ee50eef488bcb5e5378e5044ea4.png",
+        "tv_皱眉": "72ccad6679fea0d14cce648b4d818e09b8ffea2d.png",
+        "tv_目瞪口呆": "0b8cb81a68de5d5365212c99375e7ace3e7891b7.png",
+        "tv_睡着": "8b196675b53af58264f383c50ad0945048290b33.png",
+        "tv_笑哭": "1abc628f6d4f4caf9d0e7800878f4697abbc8273.png",
+        "tv_腼腆": "89712c0d4af73e67f89e35cbc518420380a7f6f4.png",
+        "tv_色": "61822c7e9aae5da76475e7892534545336b23a6f.png",
+        "tv_调侃": "4bc022533ef31544ca0d72c12c808cf4a1cce3e3.png",
+        "tv_调皮": "b9c41de8e82dd7a8515ae5e3cb63e898bf245186.png",
+        "tv_鄙视": "6e72339f346a692a495b123174b49e4e8e781303.png",
+        "tv_闭嘴": "c9e990da7f6e93975e25fd8b70e2e290aa4086ef.png",
+        "tv_难过": "87f46748d3f142ebc6586ff58860d0e2fc8263ba.png",
+        "tv_馋": "fc7e829b845c43c623c8b490ee3602b7f0e76a31.png",
+        "tv_鬼脸": "0ffbbddf8a94d124ca2f54b360bbc04feb6bbfea.png",
+        "tv_黑人问号": "45821a01f51bc867da9edbaa2e070410819a95b2.png",
+        "tv_鼓掌": "1d21793f96ef4e6f48b23e53e3b9e42da833a0f6.png"
+        },
+        requiredFields: ['nick','mail'],
+    });
+</script>
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2021/082416001.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="python爬虫项目豆瓣榜单（一）">
+                        
+                        <span class="card-title">python爬虫项目豆瓣榜单（一）</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            有关python爬虫的项目，从豆瓣Top250的榜单上爬取信息
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-08-24
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/python/" class="post-category">
+                                    python
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/081132315.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="鸟哥私房菜学习（四）">
+                        
+                        <span class="card-title">鸟哥私房菜学习（四）</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            安装CentOS 7
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-11
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/linux/" class="post-category">
+                                    linux
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/linux-centos/">
+                        <span class="chip bg-color">linux centos</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2023</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank">wck</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">352.5k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/rumor-sourse" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:2560428298@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2560428298" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2560428298" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+    <a href="https://weibo.com/u/7491101842/home" class="tooltipped" target="_blank" data-tooltip="关注我的微博: https://weibo.com/u/7491101842/home" data-position="top" data-delay="50">
+        <i class="fab fa-weibo"></i>
+    </a>
+
+
+
+    <a href="https://www.zhihu.com/people/chu-zi-hang-46-14" class="tooltipped" target="_blank" data-tooltip="关注我的知乎: https://www.zhihu.com/people/chu-zi-hang-46-14" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
+    </a>
+
+
+
+
+
+    <a href="https://space.bilibili.com/531340472" class="tooltipped" target="_blank" data-tooltip="在B站上关注我" " data-position="top" data-delay="50">
+        <i class="fas fa-play-circle"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <!-- <script type="text/javascript">
+        //只在桌面版网页启用特效
+        var windowWidth = $(window).width();
+        if (windowWidth > 768) {
+            document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+        }
+    </script> -->
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+ 
+</body>
+
+</html>

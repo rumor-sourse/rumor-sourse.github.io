@@ -1,0 +1,2030 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="ITN网络课程笔记（十四）, charminghacker">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>ITN网络课程笔记（十四） | charminghacker</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="charminghacker" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">charminghacker</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">charminghacker</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/rumor-sourse" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        <!-- 
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/rumor-sourse" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+         -->
+    </nav>
+     <!-- <div class="weather">
+        
+        <div id="tp-weather-widget"></div>
+        <script>
+            (function (a, h, g, f, e, d, c, b) { b = function () { d = h.createElement(g); c = h.getElementsByTagName(g)[0]; d.src = e; d.charset = "utf-8"; d.async = 1; c.parentNode.insertBefore(d, c) }; a["SeniverseWeatherWidgetObject"] = f; a[f] || (a[f] = function () { (a[f].q = a[f].q || []).push(arguments) }); a[f].l = +new Date(); if (a.attachEvent) { a.attachEvent("onload", b) } else { a.addEventListener("load", b, false) } }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+            window.SeniverseWeatherWidget('show', {
+                flavor: "bubble",
+                location: "WW92M43YCQG0",
+                geolocation: true,
+                language: "zh-Hans",
+                unit: "c",
+                theme: "auto",
+                token: "2ee46d07-e99c-4227-925e-461574e6469c",
+                hover: "enabled",
+                container: "tp-weather-widget"
+            })
+        </script>
+    </div>   -->
+    
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">ITN网络课程笔记（十四）</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E6%80%9D%E7%A7%91-%E7%BD%91%E7%BB%9C-tcp-ip-udp/">
+                                <span class="chip bg-color">思科 网络 tcp/ip udp</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E7%BD%91%E7%BB%9C/" class="post-category">
+                                网络
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-12-03
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2023-03-01
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    11.1k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    39 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="十四、传输层"><a href="#十四、传输层" class="headerlink" title="十四、传输层"></a>十四、传输层</h1><p>欢迎来学习传输层！</p>
+<p>顾名思义,传输层是将数据从一个主机传输到另一个主机的地方。这是您的网络真正开始动起来的地方! 传输层使用两个协议: TCP和UDP。可以把TCP看作是在邮件中收到一封挂号信。您必须先签收,然后邮递员才会给您。这会稍微减慢这个过程,但是发送者可以确定地知道您收到了这封信,以及您收到这封信的时间。UDP更像是一个普通的,盖了邮戳的信。它到达了您的邮箱（如果它到了的话）,它可能是给您的,但它实际上也可能是给其他不住在那里的人的。而且,它还可能根本就没有到达您的邮箱。发件人无法确定您已收到了信。尽管如此,有时还是需要像盖了邮戳的信件一样的UDP协议。本主题深入探讨 TCP和 UDP 在传输层中的工作方式。</p>
+<p><strong>模块目标</strong>: 比较各种传输层协议支持端到端通信的方式。</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>主题标题</strong></th>
+<th align="left"><strong>主题目标</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>数据传输</strong></td>
+<td align="left">说明传输层在端对端通信中 管理数据传输的目的。</td>
+</tr>
+<tr>
+<td align="left"><strong>TCP 概述</strong></td>
+<td align="left">说明 TCP 的特征</td>
+</tr>
+<tr>
+<td align="left"><strong>UDP 概述</strong></td>
+<td align="left">说明UDP 的特征。</td>
+</tr>
+<tr>
+<td align="left"><strong>端口号</strong></td>
+<td align="left">说明 TCP 和 UDP 如何使用端口号。</td>
+</tr>
+<tr>
+<td align="left"><strong>TCP 通信过程</strong></td>
+<td align="left">说明 TCP 会话的建立和终止过程如何 有助于实现可靠通信。</td>
+</tr>
+<tr>
+<td align="left"><strong>可靠性和流控制</strong></td>
+<td align="left">说明如何通过发送和确认 TCP 协议数据单元来 保证数据传输。</td>
+</tr>
+<tr>
+<td align="left"><strong>UDP 通信</strong></td>
+<td align="left">比较各种传输层协议支持 端到端通信的方式。</td>
+</tr>
+</tbody></table>
+<h1 id="1、数据传输"><a href="#1、数据传输" class="headerlink" title="1、数据传输"></a>1、数据传输</h1><h2 id="1-1、传输层的应用"><a href="#1-1、传输层的应用" class="headerlink" title="1.1、传输层的应用"></a>1.1、传输层的应用</h2><p>应用层程序生成必须在源主机和目的主机之间交换的数据。传输层负责在不同主机上运行的应用程序之间进行的逻辑通信。这可能包括在两个主机之间建立临时会话以及应用程序信息的可靠传输等服务。</p>
+<p>如图所示，传输层将应用层与负责网络传输的下层连接起来。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.1.png"></p>
+<p>传输层并不了解目标主机类型、数据必须经过的介质类型、数据使用的路径，链路拥塞情况或网络大小。</p>
+<p>传输层包括两个协议：</p>
+<ul>
+<li>传输控制协议 (TCP)</li>
+<li>用户数据报协议 (UDP)</li>
+</ul>
+<h2 id="1-2、传输层的职责"><a href="#1-2、传输层的职责" class="headerlink" title="1.2、传输层的职责"></a>1.2、传输层的职责</h2><h3 id="跟踪各个会话"><a href="#跟踪各个会话" class="headerlink" title="跟踪各个会话"></a>跟踪各个会话</h3><p>在传输层中，源应用和目的应用之间传输的每个数据集称为会话并分别进行跟踪。传输层负责维护并跟踪这些会话。</p>
+<p>如图所示，每台主机上都可以有多个应用同时在网络上通信。</p>
+<p>大多数网络对单个数据包能承载的数据量都有限制。因此，必须将数据分成可管理的部分。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.2.png"></p>
+<h3 id="数据分段和数据段重组"><a href="#数据分段和数据段重组" class="headerlink" title="数据分段和数据段重组"></a>数据分段和数据段重组</h3><p>传输层负责将应用程序数据划分为适当大小的块。根据所使用的传输层协议，传输层块称为数据段或数据报。该图说明了使用不同块进行每个会话的传输层。</p>
+<p>传输层将数据划分为更易于管理和传输的更小的块（即，数据段或数据报）。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.3.png"></p>
+<h3 id="添加报头信息"><a href="#添加报头信息" class="headerlink" title="添加报头信息"></a>添加报头信息</h3><p>传输层协议还将包含二进制数据的报头信息添加到每个数据块中，这些数据被组织成几个字段。不同的传输层协议通过这些字段值在管理数据通信过程中执行各自的功能。</p>
+<p>例如，接收主机使用报头信息将数据块重新组装为接收应用程序层程序的完整数据流。</p>
+<p>传输层可以确保在设备上运行多个应用时，所有应用都能接收正确的数据。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.4.png"></p>
+<h3 id="标识应用"><a href="#标识应用" class="headerlink" title="标识应用"></a>标识应用</h3><p>传输层必须能够划分和管理具有不同传输要求的多个通信。为了将数据流传递到适当的应用程序，传输层使用称为端口号的标识符来标识目标应用。如图所示，在每台主机中，每个需要访问网络的软件进程都将被分配一个唯一的端口号。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.5.png"></p>
+<h3 id="会话多路复用"><a href="#会话多路复用" class="headerlink" title="会话多路复用"></a>会话多路复用</h3><p>将某些类型的数据（即视频流）作为完整的通信流在网络中发送，会使用所有可用带宽。这将阻止其他通信会话同时发生。而且也难以对损坏的数据开展错误恢复和重新传输的工作。</p>
+<p>如图所示，传输层使用数据段和多路复用，使不同的通信会话在同一网络上交错。</p>
+<p>可对数据段中的数据执行错误检查，以确定数据段在传输过程中是否发生了更改。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.6.png"></p>
+<h2 id="1-3、传输层协议"><a href="#1-3、传输层协议" class="headerlink" title="1.3、传输层协议"></a>1.3、传输层协议</h2><p>IP 只涉及数据包的结构、地址分配和路由。IP 不指定数据包的传送或传输方式。</p>
+<p>传输层协议指定如何在主机之间传输消息，并负责管理会话的可靠性要求。传输层包括 TCP 和 UDP 协议。</p>
+<p>不同的应用有不同的传输可靠性要求。因此，TCP/IP 提供了两个传输层协议，如图所示。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.7.png"></p>
+<h2 id="1-4、传输控制协议（TCP）"><a href="#1-4、传输控制协议（TCP）" class="headerlink" title="1.4、传输控制协议（TCP）"></a>1.4、传输控制协议（TCP）</h2><p>IP 只涉及从原始发送方到最终目的地的数据包的结构、编址和路由。IP不负责保证传递或确定发送方和接收方之间是否需要建立连接。</p>
+<p>TCP 被认为是可靠且功能齐全的传输层协议，用于确保所有数据到达目的设备。TCP包含确保应用数据传递的字段。这些字段需要发送和接收的主机进行额外处理。</p>
+<p><strong>注意</strong>：TCP将数据分为若干个数据段。</p>
+<p>TCP 传输类似于从源到目的地跟踪发送的数据包。如果快递订单分多个数据包，客户可以在线查看发货顺序。</p>
+<p>TCP 使用以下基本操作提供可靠性和流量控制：</p>
+<ul>
+<li>编号并跟踪从特定应用程序发送到特定主机的数据段。</li>
+<li>确认收到数据</li>
+<li>在一定时间段后重新传输未确认的数据</li>
+<li>有顺序的数据可能以错误的顺序到达 以接收方可以接受的有效速率* 发送数据</li>
+</ul>
+<p>为了维护会话的状态并跟踪信息，TCP必须首先在发送方和接收方之间建立连接。这就是为什么TCP被称为是一种面向连接的协议。</p>
+<h2 id="1-5、用户数据报协议（UDP）"><a href="#1-5、用户数据报协议（UDP）" class="headerlink" title="1.5、用户数据报协议（UDP）"></a>1.5、用户数据报协议（UDP）</h2><p>UDP是一种比TCP更简单的传输层协议。它不提供可靠性和流量控制，这意味着它需要更少的报头字段。由于发送方和接收方UDP进程不需要管理可靠性和流量控制，这意味着 UDP 数据报的处理速度比 TCP 数据段快。UDP 仅提供在相应应用之间传输数据报的基本功能，需要很少的开销和数据检查。</p>
+<p><strong>注意</strong>：UDP 将数据划分为数据报，也称为数据段。</p>
+<p>UDP是一种<strong>无连接协议</strong>。由于 UDP 不提供可靠性或流量控制，因此不需要建立连接。由于 UDP 不跟踪客户端和服务器之间发送或接收的信息，因此UDP 也称为<strong>无状态协议</strong>。</p>
+<p>UDP 也称为<strong>最大努力交付协议</strong>，因为在目的地接收到数据后没有确认消息。UDP 中没有通知发送方是否成功传输的传输层流程。</p>
+<p>UDP 类似于邮寄未挂号的常规信件。发件人不知道收件人是否能够接收信件。邮局也不负责跟踪信件或在信件未到达最终目的地时通知发件人。</p>
+<h2 id="1-6、正确的应用程序使用正确的传输层协议"><a href="#1-6、正确的应用程序使用正确的传输层协议" class="headerlink" title="1.6、正确的应用程序使用正确的传输层协议"></a>1.6、正确的应用程序使用正确的传输层协议</h2><p>一些应用可以容忍在网络传输过程中丢失部分数据，但是不接受传输中出现延迟。由于需要的网络开销较少，对于这些应用，UDP 是更好的选择。UDP 是 IP 语音 (VoIP) 之类应用的首选。确认和重新发送会拖慢传输速度，并使语音会话不可接受。</p>
+<p>UDP 也被“请求-回复”应用程序使用，其中数据最少，并且可以快速完成重新传输。例如，域名服务 (DNS) 为此类事务使用 UDP。客户端从DNS服务器请求已知域名的IPv4和IPv6地址。如果客户端在预定的时间内没有收到响应，它将再次发送请求。</p>
+<p>例如，如果视频数据流中的一段或者两段数据未到达目的地，就会造成数据流的短暂中断。这可能表现为图像失真或声音失真，用户也许不会察觉。如果目的设备必须负责处理丢失的数据，则流可能在等待重新发送的过程中被推迟，从而导致图像或声音的质量大大降低。在这种情况下，最好利用接收到的分段呈现最佳媒体，并放弃可靠性。</p>
+<p>对于其他应用程序，重要的是所有数据都应到达并且可以按适当的顺序对其进行处理。对于这些类型的应用程序，使用TCP 作为传输协议。例如，数据库、Web 浏览器和邮件客户端等应用，要求发送的所有数据都必须以原始形式到达目的地。任何数据的丢失都可能导致通信失败，要么不能完成通信，要么通信的信息不可读。例如，通过网页访问银行信息时，确保所有信息都正确发送和接收是非常重要的。</p>
+<p>应用开发人员必须根据应用的需求，选择适合的传输层协议类型。视频可以通过 TCP 或 UDP 发送。存储音频和视频流的应用使用 TCP。应用程序使用 TCP 执行缓冲、带宽探测和拥塞控制，以便更好地控制用户体验。</p>
+<p>实时视频和语音通常使用UDP，但也可能使用TCP，或同时使用UDP和TCP。视频会议应用程序默认情况下可能使用UDP，但由于许多防火墙阻止UDP，应用程序也可以通过TCP发送。</p>
+<p>存储音频和视频流的应用使用 TCP。例如，如果您的网络突然不能支持观看一个点播电影所需的带宽，则应用使播放暂停。在暂停期间，您可能会看到一个“缓冲……”消息，这时，TCP 正在重建流。当所有的片段都井然有序且恢复最低限度的带宽时，您的 TCP 会话重新开始，电影恢复播放。</p>
+<p>该图总结了UDP和TCP之间的差异。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.8.png"></p>
+<h1 id="2、TCP概述"><a href="#2、TCP概述" class="headerlink" title="2、TCP概述"></a>2、TCP概述</h1><h2 id="2-1、TCP功能"><a href="#2-1、TCP功能" class="headerlink" title="2.1、TCP功能"></a>2.1、TCP功能</h2><p>在上一主题中，您了解了TCP和UDP是两个传输层协议。本主题提供了更多关于TCP的详细信息，以及何时使用它而不是UDP是明智的。</p>
+<p>要了解 TCP 和 UDP 的差异，就必须了解每种协议如何实现特定的可靠性功能，以及每个协议如何跟踪会话。</p>
+<p>除了支持数据分段和重组的基本功能之外，TCP 还提供以下服务：</p>
+<ul>
+<li><strong>建立会话</strong> -TCP是一种面向连接的协议，在转发任何流量之前，在源设备和目的设备之间协商并建立永久连接（或会话）。通过建立会话，设备可以协商特定时间能够转发的流量，而且两个设备之间的通信数据可得到严格管理。</li>
+<li><strong>确保可靠的传递</strong> -由于多种原因，数据段在网络传输过程中可能会损坏或者完全丢失。TCP确保从源设备发送的每个数据段都能够到达目的地。</li>
+<li><strong>提供相同顺序的传递</strong> -由于网络可能提供了多条路由，每条路由又有不同的传输速率，所以可能导致数据抵达的顺序错乱。通过对数据段编号和排序，TCP 确保按正确的顺序重组这些数据段。</li>
+<li><strong>支持流量控制</strong> -网络主机的资源有限（即，内存或处理能力）。当 TCP 发现这些资源超负荷运转时，它可以请求源应用程序降低数据流速。为此，TCP 会调整源设备传输的数据量。流量控制可避免当接收主机的资源不堪重负时，数据的重新传输。</li>
+</ul>
+<p>有关 TCP 的更多信息，请在互联网上搜索 RFC 793。</p>
+<h2 id="2-2、TCP报头"><a href="#2-2、TCP报头" class="headerlink" title="2.2、TCP报头"></a>2.2、TCP报头</h2><p>TCP是有状态的协议，意味着它跟踪通信会话的状态。为了跟踪会话的状态，TCP 记录已发送的信息和已确认的信息。状态会话开始于会话建立时，结束于会话终止时。</p>
+<p>在封装应用层数据时，TCP 数据段会增加 20 个字节（即 160 位）的开销。该图显示的是 TCP 报头中的字段。</p>
+<p><strong>TCP报头由一个20字节报头中的10个字段组成</strong></p>
+<p>该图显示的是 TCP 报头中的字段。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.9.png"></p>
+<h2 id="2-3、TCP报头字段"><a href="#2-3、TCP报头字段" class="headerlink" title="2.3、TCP报头字段"></a>2.3、TCP报头字段</h2><p>该表标识并描述了 TCP 报头中的十个字段。</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>TCP 报头字段</strong></th>
+<th align="left"><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>源端口</strong></td>
+<td align="left">一个16位字段, 用于通过端口号标识源应用程序。</td>
+</tr>
+<tr>
+<td align="left"><strong>目的端口</strong></td>
+<td align="left">一个16位字段, 用于通过端口号标识目的应用 程序。</td>
+</tr>
+<tr>
+<td align="left"><strong>序列号</strong></td>
+<td align="left">一个32位字段, 用于数据重组。</td>
+</tr>
+<tr>
+<td align="left"><strong>确认号</strong></td>
+<td align="left">一个32位的字段, 用于指示已接收到数据, 并且期望从源 接收下一个字节。</td>
+</tr>
+<tr>
+<td align="left"><strong>报头长度</strong></td>
+<td align="left">一个4位字段, 称为“数据偏移”, 表示 TCP数据段报头的长度。</td>
+</tr>
+<tr>
+<td align="left"><strong>保留</strong></td>
+<td align="left">一个6位字段, 保留供将来使用。</td>
+</tr>
+<tr>
+<td align="left"><strong>控制位</strong></td>
+<td align="left">一个6位字段, 包括位代码或标志, 指示 TCP段的目的和功能。</td>
+</tr>
+<tr>
+<td align="left"><strong>窗口大小</strong></td>
+<td align="left">一个16位字段, 用于指示一次可以接受的 字节数。</td>
+</tr>
+<tr>
+<td align="left"><strong>校验和</strong></td>
+<td align="left">一个16位字段, 用于数据段报头和数据的错误检查。</td>
+</tr>
+<tr>
+<td align="left"><strong>紧急</strong></td>
+<td align="left">一个 16 位字段, 用于指示包含的数据是否紧急。</td>
+</tr>
+</tbody></table>
+<h2 id="2-4、使用TCP的应用程序"><a href="#2-4、使用TCP的应用程序" class="headerlink" title="2.4、使用TCP的应用程序"></a>2.4、使用TCP的应用程序</h2><p>TCP 很好地说明了 TCP/IP 协议簇的不同层如何拥有特定角色。TCP 处理与将数据流划分为数据段、提供可靠性、控制数据流量和数据段重新排序相关的所有任务。TCP 使应用程序不用再管理这些任务。如图所示的应用程序只需要将数据流发送到传输层和使用 TCP 提供的服务。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.10.png"></p>
+<h1 id="3、UDP概述"><a href="#3、UDP概述" class="headerlink" title="3、UDP概述"></a>3、UDP概述</h1><h2 id="3-1、UDP功能"><a href="#3-1、UDP功能" class="headerlink" title="3.1、UDP功能"></a>3.1、UDP功能</h2><p>本主题将介绍UDP、它的作用以及何时使用UDP代替TCP是一个好主意。UDP 是一种尽最大努力传输协议。UDP 是一种轻型传输协议，提供与 TCP 相同的数据分段和重组功能，但是没有 TCP 所提供的可靠性和流量控制。</p>
+<p>UDP 协议非常简单，它通常被描述为与 TCP 比较所不提供的功能。</p>
+<p>UDP的特点包括以下几种：</p>
+<ul>
+<li>数据按照接收顺序重构。</li>
+<li>丢失的任何数据段都不会重新发送。</li>
+<li>不会建立会话。</li>
+<li>不会告知发送者资源可用性。</li>
+</ul>
+<p>有关 UDP 的更多信息，请在互联网上搜索 RFC。</p>
+<h2 id="3-2、UDP报头"><a href="#3-2、UDP报头" class="headerlink" title="3.2、UDP报头"></a>3.2、UDP报头</h2><p>UDP 是无状态协议，这意味着客户端和服务器都不会跟踪通信会话的状态。如果使用 UDP 作为传输协议时要求可靠性，必须由应用来处理可靠性。</p>
+<p>通过网络传输实时视频和语音的一个最重要的要求是数据持续高速传输。实时视频和语音应用能够容忍具有极小或没有明显影响的一些数据丢失，非常适合于 UDP。</p>
+<p>UDP 中的通信块称为数据报或数据段。这些数据报通过传输层协议尽力传送。</p>
+<p>UDP报头比TCP报头简单得多，因为它只有四个字段，需要8个字节(即64位)。该图显示的是 UDP 报头中的字段。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.11.png"></p>
+<h2 id="3-3、UDP报头字段"><a href="#3-3、UDP报头字段" class="headerlink" title="3.3、UDP报头字段"></a>3.3、UDP报头字段</h2><p>该表标识并描述了 UDP 报头中的四个字段。</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>UDP 报头字段</strong></th>
+<th align="left"><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>源端口</strong></td>
+<td align="left">一个16位字段,用于通过端口号标识源应用程序。</td>
+</tr>
+<tr>
+<td align="left"><strong>目的端口</strong></td>
+<td align="left">一个16位字段,用于通过端口号标识目的应用 程序。</td>
+</tr>
+<tr>
+<td align="left"><strong>长度</strong></td>
+<td align="left">一个16位字段,指示UDP数据报报头的长度。</td>
+</tr>
+<tr>
+<td align="left"><strong>校验和</strong></td>
+<td align="left">一个16位字段,用于数据报报头和数据的错误检查。</td>
+</tr>
+</tbody></table>
+<h2 id="3-4、使用UDP的应用程序"><a href="#3-4、使用UDP的应用程序" class="headerlink" title="3.4、使用UDP的应用程序"></a>3.4、使用UDP的应用程序</h2><p>最适合采用 UDP 协议的三种应用程序包括：</p>
+<ul>
+<li><strong>实时视频和多媒体应用程序</strong> - 这些应用可以容忍部分数据丢失但要求延迟极小或没有延迟的应用程序。示例包括 VoIP 和实时流传输视频。</li>
+<li><strong>简单请求和应答应用程序</strong> - 处理简单事务的应用程序，其中主机发送请求，但不一定收到应答。示例包括 DNS 和 DHCP。</li>
+<li><strong>处理可靠性的应用程序</strong> - 不要求进行流量控制、错误检测、确认和错误恢复，或这些功能由应用程序来执行的单向通信。示例包括 SNMP 和 TFTP。</li>
+</ul>
+<p>该图标识了需要 UDP 的应用程序。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.12.png"></p>
+<p>虽然 DNS 和 SNMP 默认使用 UDP，但它们都可以使用 TCP。如果 DNS 请求或 DNS 响应大于 512 字节，DNS 会使用 TCP，例如 DNS 响应包含许多域名解析时。同样，在某些情况下，网络管理员可以配置 SNMP 使用 TCP。</p>
+<h1 id="4、端口号"><a href="#4、端口号" class="headerlink" title="4、端口号"></a>4、端口号</h1><h2 id="4-1、多个单独的通信"><a href="#4-1、多个单独的通信" class="headerlink" title="4.1、多个单独的通信"></a>4.1、多个单独的通信</h2><p>如您所知，在某些情况下TCP是适合该作业的协议，在其他情况下则应使用UDP。无论传输何种类型的数据，TCP和UDP都使用端口号。</p>
+<p>TCP 和 UDP 传输层协议使用端口号来管理多个同时的对话。如图所示，TCP和UDP报头字段标识源和目的应用程序端口号。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.13.png"></p>
+<p>源端口号与本地主机上的原始应用程序相关联，而目的端口号与远程主机上的目的应用程序相关联。</p>
+<p>例如，假设一台主机正在向 Web 服务器发起网页请求。当主机发起网页请求时，主机会动态生成源端口号，以惟一地标识会话。由主机生成的每个请求将使用不同的动态创建的源端口号。这就使多个会话能够同时发生。</p>
+<p>在请求中，目的端口号是标识目的Web服务器正在被请求的服务类型的端口号。例如，当客户端在目的端口中指定端口 80 时，接收该消息的服务器就知道请求的是 Web 服务。</p>
+<p>服务器可同时提供多个服务，例如在端口 80 上提供 Web 服务，并同时在端口 21 上提供建立文件传输协议 (FTP) 连接的服务。</p>
+<h2 id="4-2、套接字对"><a href="#4-2、套接字对" class="headerlink" title="4.2、套接字对"></a>4.2、套接字对</h2><p>源端口和目的端口都被置入分段内，然后分段封装于 IP 数据包内。IP 数据包中含有源 IP 地址和目的 IP 地址。源 IP 地址和源端口号的组合或者目的 IP 地址和目的端口号的组合，称为套接字。</p>
+<p>在图中的示例中，PC 同时从目标服务器请求 FTP 和 Web 服务。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.14.png"></p>
+<p>在该示例中，PC生成的FTP请求包括第2层MAC地址和第3层IP地址。请求还标识了源端口号 1305（即，由主机动态生成）和标识了FTP服务的目的端口21。主机还使用相同的第 2 层和第 3 层地址从服务器请求了一个网页。但是，它使用的是源端口号 1099（即，由主机动态生成）和标识了Web服务的目的端口80。</p>
+<p>套接字用于标识客户端所请求的服务器和服务。客户端套接字可能如下所示，其中 1099 代表源端口号：192.168.1.5:1099</p>
+<p>Web 服务器上的套接字则可能是192.168.1.7:80</p>
+<p>这两个套接字组合在一起形成一个套接字对：192.168.1.5:1099，192.168.1.7:80</p>
+<p>有了套接字，一台客户端上运行的多个进程便可彼此区分，它们与同一服务器进程建立的多个连接也可以彼此区分。</p>
+<p>对于请求数据的应用而言，该源端口号就像是一个返回地址。传输层将跟踪此端口和发出该请求的应用，当返回响应时，传输层可以将其转发到正确的应用。</p>
+<h2 id="4-3、端口号组"><a href="#4-3、端口号组" class="headerlink" title="4.3、端口号组"></a>4.3、端口号组</h2><p>互联网编号指派机构 (IANA) 是负责分配各种编址标准（包括端口号）的标准组织。用于标识源端口号和目的端口号的16位二进制提供了从0到65535的端口范围。</p>
+<p>IANA 已将号码范围划分为以下三个端口组。</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>端口组</strong></th>
+<th align="left"><strong>号码范围</strong></th>
+<th align="left"><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>公认端口</strong></td>
+<td align="left"><strong>0到1023</strong></td>
+<td align="left">这些端口号保留用于常见或流行的服务和应用程序, 例如 Web浏览器, 电子邮件客户端和远程访问 客户端。为常用的服务器应用程序定义的公认端口使 客户端能够轻松识别所需的关联服务。</td>
+</tr>
+<tr>
+<td align="left"><strong>注册端口</strong></td>
+<td align="left"><strong>1024到49151</strong></td>
+<td align="left">IANA将这些端口号分配给请求实体, 以用于特定的进程或应用程序。这些进程主要是用户选择安装的单个 应用程序, 而不是使用公认端口号的 常见应用程序。例如, 思科已为其RADIUS服务器身份验证进程 注册了端口1812。</td>
+</tr>
+<tr>
+<td align="left"><strong>私有</strong> 和(或) <strong>动态端口</strong></td>
+<td align="left"><strong>49152 到 65535</strong></td>
+<td align="left">这些端口也称为 <em>临时端口</em>。客户端的操作系统通常在 发起与服务的连接时动态分配端口号。之后即可在通信过程中使用动态端口识别客户端 应用程序。</td>
+</tr>
+</tbody></table>
+<p><strong>注意</strong>: 一些客户端操作系统在分配源端口时可能使用注册端口号而不是动态端口号。</p>
+<p>该表显示了一些常用的公认端口号及其相关应用程序。</p>
+<p><strong>Well-Known Port Numbers</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>端口号</strong></th>
+<th align="left"><strong>协议</strong></th>
+<th align="left"><strong>应用层</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>20</strong></td>
+<td align="left">TCP</td>
+<td align="left">文件传输协议 (FTP) - 数据</td>
+</tr>
+<tr>
+<td align="left"><strong>21</strong></td>
+<td align="left">TCP</td>
+<td align="left">文件传输协议 (FTP) - 控制</td>
+</tr>
+<tr>
+<td align="left"><strong>22</strong></td>
+<td align="left">TCP</td>
+<td align="left">安全 Shell (SSH)</td>
+</tr>
+<tr>
+<td align="left"><strong>23</strong></td>
+<td align="left">TCP</td>
+<td align="left">Telnet</td>
+</tr>
+<tr>
+<td align="left"><strong>25</strong></td>
+<td align="left">TCP</td>
+<td align="left">简单邮件传输协议 (SMTP)</td>
+</tr>
+<tr>
+<td align="left"><strong>53</strong></td>
+<td align="left">UDP、TCP</td>
+<td align="left">域名服务 (DNS)</td>
+</tr>
+<tr>
+<td align="left"><strong>67</strong></td>
+<td align="left">UDP</td>
+<td align="left">动态主机配置协议 (DHCP)- 服务器</td>
+</tr>
+<tr>
+<td align="left"><strong>68</strong></td>
+<td align="left">UDP</td>
+<td align="left">动态主机配置协议-客户端</td>
+</tr>
+<tr>
+<td align="left"><strong>69</strong></td>
+<td align="left">UDP</td>
+<td align="left">简单文件传输协议 (TFTP)</td>
+</tr>
+<tr>
+<td align="left"><strong>80</strong></td>
+<td align="left">TCP</td>
+<td align="left">超文本传输协议 (HTTP)</td>
+</tr>
+<tr>
+<td align="left"><strong>110</strong></td>
+<td align="left">TCP</td>
+<td align="left">邮局协议第 3 版 (POP3)</td>
+</tr>
+<tr>
+<td align="left"><strong>143</strong></td>
+<td align="left">TCP</td>
+<td align="left">互联网消息访问协议 (IMAP)</td>
+</tr>
+<tr>
+<td align="left"><strong>161</strong></td>
+<td align="left">UDP</td>
+<td align="left">简单网络管理协议 (SNMP)</td>
+</tr>
+<tr>
+<td align="left"><strong>443</strong></td>
+<td align="left">TCP</td>
+<td align="left">安全超文本传输协议 (HTTPS)</td>
+</tr>
+</tbody></table>
+<p>一些应用程序可能既使用 TCP，又使用 UDP。例如，当客户端向 DNS 服务器发送请求时，DNS 使用 UDP。但是，两台 DNS 服务器之间的通信始终使用 TCP。</p>
+<p>在IANA网站上搜索端口注册表，来查看端口号及相关应用的完整列表。</p>
+<h2 id="4-4、netstat-命令"><a href="#4-4、netstat-命令" class="headerlink" title="4.4、netstat 命令"></a>4.4、netstat 命令</h2><p>不明的 TCP 连接可能造成重大的安全威胁。因为此类连接表示某程序或某人正连接到本地主机。有些时候，需要了解联网主机中启用并运行了哪些活动 TCP 连接。Netstat 是一种重要的网络实用程序，可用来检验此类连接。如下所示，输入命令 <strong>netstat</strong>可列出正在使用的协议、本地地址和端口号、外部地址和端口号以及连接的状态。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">C:\&gt; netstat
+
+Active Connections
+
+  Proto  Local Address          Foreign Address            State
+  TCP    192.168.1.124:3126     192.168.0.2:netbios-ssn    ESTABLISHED
+  TCP    192.168.1.124:3158     207.138.126.152:http       ESTABLISHED
+  TCP    192.168.1.124:3159     207.138.126.169:http       ESTABLISHED
+  TCP    192.168.1.124:3160     207.138.126.169:http       ESTABLISHED
+  TCP    192.168.1.124:3161     sc.msn.com:http            ESTABLISHED
+  TCP    192.168.1.124:3166     www.cisco.com:http         ESTABLISHED
+(output omitted)
+C:\&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>默认情况下，<strong>netstat</strong>命令会试图将 IP 地址解析为域名，将端口号解析为公认应用程序。使用**-n**选项能够以数字形式显示 IP 地址和端口号。</p>
+<h1 id="5、TCP通信过程"><a href="#5、TCP通信过程" class="headerlink" title="5、TCP通信过程"></a>5、TCP通信过程</h1><h2 id="5-1、TCP服务器进程"><a href="#5-1、TCP服务器进程" class="headerlink" title="5.1、TCP服务器进程"></a>5.1、TCP服务器进程</h2><p>您已经了解了 TCP 的基础知识。了解端口号的作用将帮助您掌握TCP通信过程的细节。在本主题中，您还将了解TCP三次握手和会话终止的过程。</p>
+<p>在服务器上运行的每个应用程序进程都配置为使用一个端口号。端口号由系统管理员自动分配或手动配置。</p>
+<p>在同一传输层服务中，单个服务器上不能同时存在具有相同端口号的两个不同服务。例如，主机同时运行 Web 服务器应用程序和文件传输应用程序时，不能为两个应用程序配置相同的端口（如 TCP 端口 80）。</p>
+<p>分配有特定端口的活动服务器应用程序被认为是开放的，也就是说，传输层将接受并处理分配到该端口的数据段。所有发送到正确套接字地址的传入客户端请求都将被接受，数据将被传送到服务器应用。在同一服务器上可以同时开启很多端口，每个端口对应一个动态服务器应用。</p>
+<h3 id="发送TCP请求的客户端"><a href="#发送TCP请求的客户端" class="headerlink" title="发送TCP请求的客户端"></a>发送TCP请求的客户端</h3><p>客户端 1 正在请求 Web 服务，客户端 2 正在使用公认端口（即 Web 服务 = 端口 80，电子邮件服务 = 端口 25）请求电子邮件服务。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.15.png"></p>
+<h3 id="请求的目的端口"><a href="#请求的目的端口" class="headerlink" title="请求的目的端口"></a>请求的目的端口</h3><p>请求动态生成源端口号。在这种情况下，客户端 1 使用源端口 49152，客户端 2 使用源端口 51152。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.16.png"></p>
+<h3 id="请求的源端口"><a href="#请求的源端口" class="headerlink" title="请求的源端口"></a>请求的源端口</h3><p>当服务器响应客户端请求时，它会反转发起请求的目的端口和源端口。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.17.png"></p>
+<h3 id="响应的目的端口"><a href="#响应的目的端口" class="headerlink" title="响应的目的端口"></a>响应的目的端口</h3><p>注意，服务器对web请求的响应现在具有目的端口49152，而电子邮件的响应现在具有目的端口51152。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.18.png"></p>
+<h3 id="响应的源端口"><a href="#响应的源端口" class="headerlink" title="响应的源端口"></a>响应的源端口</h3><p>服务器响应中的源端口是发起请求中的原始目的端口。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.19.png"></p>
+<h2 id="5-2、TCP连接的建立"><a href="#5-2、TCP连接的建立" class="headerlink" title="5.2、TCP连接的建立"></a>5.2、TCP连接的建立</h2><p>在一些文化中，两个人见面时常常通过握手来问好。双方都把握手的行为理解为友好问候的信号。网络中的连接是类似的。在 TCP 连接中，主机客户端使用三次握手过程与服务器建立连接。</p>
+<h3 id="第一步SYN"><a href="#第一步SYN" class="headerlink" title="第一步SYN"></a>第一步SYN</h3><p>源客户端请求与服务器进行客户端-服务器通信会话。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.20.png"></p>
+<h3 id="第二步ACK和SYN"><a href="#第二步ACK和SYN" class="headerlink" title="第二步ACK和SYN"></a>第二步ACK和SYN</h3><p>服务器确认客户端-服务器通信会话，并请求服务器-客户端通信会话。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.21.png"></p>
+<h3 id="第三步ACK"><a href="#第三步ACK" class="headerlink" title="第三步ACK"></a>第三步ACK</h3><p>源客户端确认服务器-客户端通信会话。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.22.png"></p>
+<p>三次握手验证目标主机是否可用来通信。在示例中，主机 A验证了主机 B可用。</p>
+<h2 id="5-3、会话终止"><a href="#5-3、会话终止" class="headerlink" title="5.3、会话终止"></a>5.3、会话终止</h2><p>若要关闭连接，分段报头必须设置完成 (FIN) 控制标志。为终止每个单向 TCP 会话，需采用包含 FIN 分段和确认 (ACK) 分段的二次握手。因此，若要终止 TCP 支持的整个会话过程，需要实施四次交换，以终止两个双向会话。客户端或服务器都可以发起终止。</p>
+<p>在本示例中，为了更容易理解，采用了客户端和服务器这两个术语进行说明。实际上，终止的过程可以由任意两台具有开放会话的主机发起。</p>
+<h3 id="第1步FIN"><a href="#第1步FIN" class="headerlink" title="第1步FIN"></a>第1步FIN</h3><p>当客户端的数据流中没有其他要发送的数据时，它将发送带 FIN 标志设置的分段。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.23.png"></p>
+<h3 id="第2步ACK"><a href="#第2步ACK" class="headerlink" title="第2步ACK"></a>第2步ACK</h3><p>服务器发送 ACK 信息，确认收到从客户端发出的请求终止会话的 FIN 信息。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.24.png"></p>
+<h3 id="第3步FIN"><a href="#第3步FIN" class="headerlink" title="第3步FIN"></a>第3步FIN</h3><p>服务器向客户端发送FIN消息，终止从服务端到客户端的对话</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.25.png"></p>
+<h3 id="第4步ACK"><a href="#第4步ACK" class="headerlink" title="第4步ACK"></a>第4步ACK</h3><p>客户端发送 ACK 响应信息，确认收到从服务器发出的 FIN 信息。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.26.png"></p>
+<p>当所有数据段得到确认后，会话关闭。</p>
+<h2 id="5-4、TCP三次握手分析"><a href="#5-4、TCP三次握手分析" class="headerlink" title="5.4、TCP三次握手分析"></a>5.4、TCP三次握手分析</h2><p>主机维护状态，跟踪会话过程中的每个分段，并使用 TCP 报头信息交换已接收数据的相关信息。TCP 是全双工协议，每个连接都代表两个单向通信会话。若要建立连接，主机应执行三次握手。如图所示，TCP 报头中的控制位指出了连接的进度和状态。</p>
+<p>这些是三次握手的功能：</p>
+<ul>
+<li>确认目的设备存在于网络上。</li>
+<li>确认目的设备有活动的服务，并且正在源客户端要使用的目的端口号上接受请求。</li>
+<li>通知目的设备源客户端想要在该端口号上建立通信会话。</li>
+</ul>
+<p>通信完成后，将关闭会话并终止连接。连接和会话机制保障了 TCP 的可靠性功能。</p>
+<p><strong>控制位字段</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.27.png"></p>
+<p>TCP 分段报头的控制位字段中的六位被称为标志。标志是设置为开启或关闭的位。</p>
+<p>六个控制位标志如下：</p>
+<ul>
+<li><strong>URG</strong> - 紧急指针字段（重要）</li>
+<li><strong>ACK</strong> -用于建立连接和会话终止的确认标志</li>
+<li><strong>PSH</strong> - 推送功能</li>
+<li><strong>RST</strong> 在出现错误或超时时重置连接</li>
+<li><strong>SYN</strong> -同步建立连接中使用的序列号</li>
+<li><strong>FIN</strong> -没有更多来自发送方的数据，并用于会话终止</li>
+</ul>
+<p>搜索互联网以了解 PSH 和 URG 标志的详细信息。</p>
+<h2 id="5-5、视频-TCP三次握手"><a href="#5-5、视频-TCP三次握手" class="headerlink" title="5.5、视频-TCP三次握手"></a>5.5、视频-TCP三次握手</h2><p>略</p>
+<h1 id="6、可靠性和流控制"><a href="#6、可靠性和流控制" class="headerlink" title="6、可靠性和流控制"></a>6、可靠性和流控制</h1><h2 id="6-1、TCP可靠性-保证及按序传递"><a href="#6-1、TCP可靠性-保证及按序传递" class="headerlink" title="6.1、TCP可靠性-保证及按序传递"></a>6.1、TCP可靠性-保证及按序传递</h2><p>对某些应用程序来说，TCP更好，原因是，与 UDP 不同，它重新发送丢弃的数据包以及对数据包进行编号，以便在传递前指示其正确的顺序。TCP 还可以帮助维护数据包的流量，以避免设备过载。本主题详细介绍 TCP 的这些功能。</p>
+<p>有时可能TCP数据段没有到达目的地。有时，TCP段可能会无序到达。因此，为了让接收方理解原始消息，必须接收所有数据，并重组这些数据段，使其恢复原有顺序。每个数据包中的数据段报头中都含有序列号，便于进行数据重组。序列号代表 TCP 分段的第一个数据字节在完整数据中的位置。</p>
+<p>在会话建立过程中，将设置初始序列号 (ISN)。此 ISN 表示传输到接收应用的字节起始值。在会话过程中，每传送一定字节的数据，序列号就随之增加。通过这样的数据字节跟踪，可以唯一标识并确认每个分段，还可以标识丢失的分段。</p>
+<p>ISN 并不是从 1 开始，而是随机的数字。这样做的目的是防止某些类型的恶意攻击。为简单起见，本章的示例中我们将使用 1 作为 ISN。</p>
+<p>如图所示，数据段的序列号用于指示如何重组和重新排序收到的数据段。</p>
+<p><strong>在目的设备上对TCP数据段进行重新排序</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.28.png"></p>
+<p>接收方的 TCP 进程将数据段中的数据存入缓存区，然后数据段按照正确的序列顺序进行排列，重组后发送到应用层。对于序列号混乱的分段，将被保留以备后期处理。等缺失的分段到达后，再来按顺序处理这些分段。</p>
+<h2 id="6-2、视频-TCP可靠性-序列号和确认"><a href="#6-2、视频-TCP可靠性-序列号和确认" class="headerlink" title="6.2、视频-TCP可靠性-序列号和确认"></a>6.2、视频-TCP可靠性-序列号和确认</h2><p>TCP 的其中一项功能是确保每个数据段都能到达目的地。在目的主机上的 TCP 服务确认该源应用收到的数据。</p>
+<p>视频略</p>
+<h2 id="6-3、TCP可靠性-数据丢失和重传"><a href="#6-3、TCP可靠性-数据丢失和重传" class="headerlink" title="6.3、TCP可靠性-数据丢失和重传"></a>6.3、TCP可靠性-数据丢失和重传</h2><p>无论网络设计得有多好，数据丢失还是时有发生。TCP 提供了管理数据段丢失的方法。其中一个方法就是重新传输未确认的数据。</p>
+<p>序列 (SEQ) 号和确认 (ACK) 号一起使用，以确认接收传输段中包含的数据字节。SEQ 编号标识正在传输的数据段中的第一个字节。TCP 使用发送回源代码的 ACK 编号来指示接收方希望接收的下一个字节。这称为<strong>期望确认</strong>。</p>
+<p>在进行后续增强之前，TCP只能确认预期的下一个字节。例如，在图中，为简单起见，主机A使用数据段号向主机B发送段1到10。如果除段3和段4之外的所有数据段都已到达，主机B将应答并确认指定下一个预期的数据段是段3。主机A不知道其他数据段是否到达。因此，主机A将重新发送段3到段10。如果所有重新发送的数据段都成功到达，则段 5 到 段10 将是重复的。这会导致延迟、拥塞和效率低下。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.29.png"></p>
+<p>今天的主机操作系统通常采用一种称为选择性确认 (SAK) 的可选 TCP 功能，在三次握手期间协商。如果两个主机都支持SACK，则接收方可以明确地确认接收了哪些数据段(字节)，包括任何不连续的段。因此，发送主机只需要重新传输丢失的数据。例如，在下图中，还是为简单起见，主机A使用数据段号向主机B发送段1到10。如果除段3和段4之外的所有数据段都已到达，主机B可以确认它已经接收了段1和段2 (ACK 3)，并有选择地确认段5到10 (SACK 5-10)。主机A只需要重新发送段3和段4。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.30.png"></p>
+<p><strong>注意</strong>：TCP通常会为每个其他数据包发送ACK，但是超出本主题范围的其他因素可能会改变这种行为。</p>
+<p>TCP使用计时器来知道在重新发送一个数据段之前需要等待多长时间。</p>
+<h2 id="6-4、视频-TCP可靠性-数据丢失和重传"><a href="#6-4、视频-TCP可靠性-数据丢失和重传" class="headerlink" title="6.4、视频-TCP可靠性-数据丢失和重传"></a>6.4、视频-TCP可靠性-数据丢失和重传</h2><p>略</p>
+<h2 id="6-5、TCP流量控制-窗口大小和确认"><a href="#6-5、TCP流量控制-窗口大小和确认" class="headerlink" title="6.5、TCP流量控制-窗口大小和确认"></a>6.5、TCP流量控制-窗口大小和确认</h2><p>TCP 还提供了流量控制机制。流量控制即目的主机能够可靠地接收并处理的数据量。流量控制可以调整给定会话中源和目的地之间的数据流速，有助于保持 TCP 传输的可靠性。为此，TCP 报头包括一个称为“窗口大小”的 16 位字段。</p>
+<p>图中显示了一个窗口大小和确认的示例。</p>
+<p><strong>TCP窗口大小示例</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.31.png"></p>
+<p>窗口大小用于确定在获得确认前可以发送的字节数。确认号是指下一个预期字节的编号。</p>
+<p>窗口大小是 TCP 会话的目的设备一次可以接受和处理的字节数。在本例中，PC B 用于 TCP 会话的初始窗口大小为 10000 字节。从第 1 个字节开始，字节数为 1，PC A 在不收到确认的前提下可以发送的最后一个字节为 10,000。这被称为PC A的发送窗口。每个 TCP 分段均包含窗口大小，那样目的设备可以根据缓冲区的可用性随时修改窗口大小。</p>
+<p>初始窗口大小在三次握手期间建立 TCP 会话时确定。源设备必须根据目的设备的窗口大小限制发送到目的设备的字节数。只有源设备收到字节数已接收的确认之后，才能继续发送更多会话数据。通常情况下，目的设备不会等待其窗口大小的所有字节接收后才以确认应答。接收和处理字节时，目的设备就会发送确认，以告知源设备它可以继续发送更多字节。</p>
+<p>例如，通常情况下，PC B 不会等待所有 10,000 字节都接收后才发送确认。这就意味着 PC A 可以在收到 PC B 的确认时调整其发送窗口。如图所示，当 PC A 收到确认号为 2,921 的确认消息时，它即是下一个预期的字节的编号。PC A 发送窗口将增加 2920 字节。这会将发送窗口从 10000 字节更改为 12920。现在只要 PC A 发送不超出其新的发送窗口 12920 的字节数，它就能够向 PC B 另外发送 10000 字节。</p>
+<p>目的设备在处理接收的字节时发送确认并不断调整源设备的发送窗口大小被称为滑动窗口。在上一个示例中，PC A 的发送窗口会增加或滑动了 2921 个字节，从 10000 增到 12920。</p>
+<p>如果目的设备缓冲区空间的可用性减小，它可以缩减窗口大小，通知源设备减少发送的字节数，而不需要接收确认。</p>
+<p><strong>注意</strong>：设备如今使用滑动窗口协议。接收方通常在每收到两个数据段之后发送确认。在确认之前收到的数据段的数量可能有所不同。滑动窗口的优势在于，只要接收方确认之前的数据段，就可以让发送方持续传输数据段。滑动窗口的详细信息不在本课程的讨论范围之内。</p>
+<h2 id="6-6、TCP流量控制-最大段大小（MSS）"><a href="#6-6、TCP流量控制-最大段大小（MSS）" class="headerlink" title="6.6、TCP流量控制-最大段大小（MSS）"></a>6.6、TCP流量控制-最大段大小（MSS）</h2><p>如图所示，在每个TCP数据段内，源主机正在传输 1460 字节的数据。这通常是目的设备可接收的最大段大小 (MSS)。MSS 是 TCP 报头中选项字段的一部分，用于指定设备可以在单个 TCP数据段中接收的最大数据量（以字节为单位）。MSS 大小不包括 TCP 报头。MSS 通常包括在三次握手过程中。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.32.png"></p>
+<p>使用 IPv4 时，常见的 MSS 为 1460 字节。主机会从以太网最大传输单位 (MTU) 中减去 IP 和 TCP 报头，从而确定其 MSS 字段的值。在以太网接口上，默认 MTU 为 1500 个字节。减去 20 个字节的 IPv4 报头和 20 个字节的 TCP 报头，默认 MSS 大小为 1460 个字节，如图所示</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.33.png"></p>
+<h2 id="6-7、TCP流量控制-避免堵塞"><a href="#6-7、TCP流量控制-避免堵塞" class="headerlink" title="6.7、TCP流量控制-避免堵塞"></a>6.7、TCP流量控制-避免堵塞</h2><p>网络中出现拥塞会使过载的路由器丢弃数据包。当包含 TCP 数据段的数据包未到达其目的地时，它们就成为未确认的数据包。通过确定 TCP 数据段发送但未确认的速率，源设备可以假设一定程度的网络拥塞。</p>
+<p>出现网络拥塞时，从源设备丢失的 TCP 数据段就会重传。如果不适当控制重传，TCP 数据段的额外重传会使拥塞的情况更糟。网络中不仅有 TCP 数据段的新数据包，而且还有重传丢失的 TCP 数据段的反馈效果，这都增加了拥塞。为避免和控制拥塞，TCP 使用了多个拥塞处理机制、计时器和算法。</p>
+<p>如果源设备确定 TCP 数据段没有被确认或没有被及时确认，它会在收到确认之前减少发送的字节数。如图所示，PC A 感知到存在拥塞，因此，在收到PC B的确认之前减少了它发送的字节数。</p>
+<p><strong>TCP拥塞控制</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.34.png"></p>
+<p>确认号是下一个预期字节的编号，而不是数据段的编号。简化使用的数据段号用作说明。</p>
+<p>注意是源设备在减少其发送的未确认的字节数，而不是由目的设备来确定窗口大小。</p>
+<p><strong>注意：</strong>实际拥塞处理机制、计时器和算法的解释不属于本课程的范围。</p>
+<h1 id="7、UDP通信"><a href="#7、UDP通信" class="headerlink" title="7、UDP通信"></a>7、UDP通信</h1><h2 id="7-1、UDP低开销与可靠性"><a href="#7-1、UDP低开销与可靠性" class="headerlink" title="7.1、UDP低开销与可靠性"></a>7.1、UDP低开销与可靠性</h2><p>如前所述，UDP非常适合需要快速通信的场合，比如VoIP。本主题详细解释为什么 UDP 非常适合某些类型的传输。如图所示，UDP 不建立连接。因为 UDP 的数据报头较小而且没有网络管理流量，因此可以提供低开销数据传输。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.35.png"></p>
+<h2 id="7-2、UDP数据报重组"><a href="#7-2、UDP数据报重组" class="headerlink" title="7.2、UDP数据报重组"></a>7.2、UDP数据报重组</h2><p>与 TCP分段类似，当将多个 UDP 数据报发送到目的主机时，它们通常采用不同的路径，到达顺序也可能跟发送时的顺序不同。与 TCP 不同，UDP 不跟踪序列号。如图所示，UDP 不会按传输顺序重新排列数据报。</p>
+<p>因此，UDP 仅仅是将接收到的数据按照先来后到的顺序转发到应用程序。如果数据顺序对应用程序很重要，应用程序必须确定正确的顺序并决定如何处理数据。</p>
+<p><strong>UDP：无连接和不可靠</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.36.png"></p>
+<h2 id="7-3、UDP服务器进程与请求"><a href="#7-3、UDP服务器进程与请求" class="headerlink" title="7.3、UDP服务器进程与请求"></a>7.3、UDP服务器进程与请求</h2><p>如图所示，与基于 TCP 的应用程序相同的是，基于 UDP 的服务器应用程序也被分配了公认端口号或注册端口号。当上述应用或进程在服务器上运行时，它们就会接受与所分配端口号相匹配的数据。当 UDP 收到用于某个端口的数据报时，它就会按照应用的端口号将数据发送到相应的应用。</p>
+<p><strong>UDP服务器侦听请求</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.37.png"></p>
+<p><strong>注意:</strong> 图中所示的远程认证拨号用户服务 (RADIUS) 服务器通过提供认证、授权和审计服务，来管理用户访问。RADIUS 的操作不属于本课程的范围。</p>
+<h2 id="7-4、UDP客户端进程"><a href="#7-4、UDP客户端进程" class="headerlink" title="7.4、UDP客户端进程"></a>7.4、UDP客户端进程</h2><p>与 TCP 一样，客户端应用向服务器进程请求数据，便会发起客户端-服务器通信。UDP 客户端进程则是从可用端口号中动态挑选一个端口号，用来作为会话的源端口。而目的端口通常都是分配到服务器进程的公认端口号或注册端口号。</p>
+<p>客户端选定了源端口和目的端口后，通信事务中的所有数据报头都采用相同的端口对。对于从服务器到达客户端的数据来说，数据报头所含的源端口号和目的端口号作了互换。</p>
+<h3 id="发送UDP请求的客户端"><a href="#发送UDP请求的客户端" class="headerlink" title="发送UDP请求的客户端"></a>发送UDP请求的客户端</h3><p>客户端1使用公认端口53发送DNS请求，而客户端2使用注册端口1812请求RADIUS身份验证服务。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.38.png"></p>
+<h3 id="UDP请求的目的端口"><a href="#UDP请求的目的端口" class="headerlink" title="UDP请求的目的端口"></a>UDP请求的目的端口</h3><p>客户端的请求会动态生成源端口号。在这种情况下，客户端 1 使用源端口 49152，客户端 2 使用源端口 51152。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.39.png"></p>
+<h3 id="UDP请求源端口"><a href="#UDP请求源端口" class="headerlink" title="UDP请求源端口"></a>UDP请求源端口</h3><p>当服务器响应客户端请求时，它会反转发起请求的目的端口和源端口。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.40.png"></p>
+<h3 id="UDP响应目的端口"><a href="#UDP响应目的端口" class="headerlink" title="UDP响应目的端口"></a>UDP响应目的端口</h3><p>在服务器中，对DNS请求的响应目的端口现在是49152，而RADIUS身份验证的响应目的端口现在是51152。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.41.png"></p>
+<h3 id="UDP响应源端口"><a href="#UDP响应源端口" class="headerlink" title="UDP响应源端口"></a>UDP响应源端口</h3><p>服务器响应中的源端口是发起请求中的原始目的端口。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN14.42.png"></p>
+<h1 id="8、单元检测"><a href="#8、单元检测" class="headerlink" title="8、单元检测"></a>8、单元检测</h1><p>1、在TCP通信中使用源端口号的目的是<strong>跟踪设备之间的多个会话</strong></p>
+<p>2、传输层协议的职责：</p>
+<p><strong>跟踪各个会话，数据分段和数据段重组，标识应用</strong></p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">wck</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://example.com/2021/120348627.html">http://example.com/2021/120348627.html</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">wck</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E6%80%9D%E7%A7%91-%E7%BD%91%E7%BB%9C-tcp-ip-udp/">
+                                    <span class="chip bg-color">思科 网络 tcp/ip udp</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'yohIdjiNFr5gi9AMV8TPhv90-gzGzoHsz',
+        appKey: 'dpdaXreArfn9sbA5A5hGBlUG',
+        notify: 'false' === 'true',
+        verify: 'false' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'monsterid',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: '留下你想说的话吧~',
+        enableQQ: true,
+        emojiCDN: '//i0.hdslb.com/bfs/emote/', 
+        // 表情title和图片映射
+        emojiMaps: {
+        "tv_doge": "6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png",
+        "tv_亲亲": "a8111ad55953ef5e3be3327ef94eb4a39d535d06.png",
+        "tv_偷笑": "bb690d4107620f1c15cff29509db529a73aee261.png",
+        "tv_再见": "180129b8ea851044ce71caf55cc8ce44bd4a4fc8.png",
+        "tv_冷漠": "b9cbc755c2b3ee43be07ca13de84e5b699a3f101.png",
+        "tv_发怒": "34ba3cd204d5b05fec70ce08fa9fa0dd612409ff.png",
+        "tv_发财": "34db290afd2963723c6eb3c4560667db7253a21a.png",
+        "tv_可爱": "9e55fd9b500ac4b96613539f1ce2f9499e314ed9.png",
+        "tv_吐血": "09dd16a7aa59b77baa1155d47484409624470c77.png",
+        "tv_呆": "fe1179ebaa191569b0d31cecafe7a2cd1c951c9d.png",
+        "tv_呕吐": "9f996894a39e282ccf5e66856af49483f81870f3.png",
+        "tv_困": "241ee304e44c0af029adceb294399391e4737ef2.png",
+        "tv_坏笑": "1f0b87f731a671079842116e0991c91c2c88645a.png",
+        "tv_大佬": "093c1e2c490161aca397afc45573c877cdead616.png",
+        "tv_大哭": "23269aeb35f99daee28dda129676f6e9ea87934f.png",
+        "tv_委屈": "d04dba7b5465779e9755d2ab6f0a897b9b33bb77.png",
+        "tv_害羞": "a37683fb5642fa3ddfc7f4e5525fd13e42a2bdb1.png",
+        "tv_尴尬": "7cfa62dafc59798a3d3fb262d421eeeff166cfa4.png",
+        "tv_微笑": "70dc5c7b56f93eb61bddba11e28fb1d18fddcd4c.png",
+        "tv_思考": "90cf159733e558137ed20aa04d09964436f618a1.png",
+        "tv_惊吓": "0d15c7e2ee58e935adc6a7193ee042388adc22af.png",
+        "tv_打脸": "56ab10b624063e966bfcb76ea5dc4794d87dfd47.png",
+        "tv_抓狂": "fe31c08edad661d63762b04e17b8d5ae3c71a757.png",
+        "tv_抠鼻": "c666f55e88d471e51bbd9fab9bb308110824a6eb.png",
+        "tv_斜眼笑": "911f987aa8bc1bee12d52aafe62bc41ef4474e6c.png",
+        "tv_无奈": "ea8ed89ee9878f2fece2dda0ea8a5dbfe21b5751.png",
+        "tv_晕": "5443c22b4d07fb1907ccc610c8e6db254f2461b7.png",
+        "tv_流汗": "cead1c351ab8d79e9f369605beb90148db0fbed3.png",
+        "tv_流泪": "7e71cde7858f0cd50d74b0264aa26db612a8a167.png",
+        "tv_流鼻血": "c32d39db2737f89b904ca32700d140a9241b0767.png",
+        "tv_点赞": "f85c354995bd99e28fc76c869bfe42ba6438eff4.png",
+        "tv_生气": "26702dcafdab5e8225b43ffd23c94ac1ff932654.png",
+        "tv_生病": "8b0ec90e6b86771092a498c54f09fc94621c1900.png",
+        "tv_疑问": "0793d949b18d7be716078349c202c15ff166f314.png",
+        "tv_白眼": "c1d59f439e379ee50eef488bcb5e5378e5044ea4.png",
+        "tv_皱眉": "72ccad6679fea0d14cce648b4d818e09b8ffea2d.png",
+        "tv_目瞪口呆": "0b8cb81a68de5d5365212c99375e7ace3e7891b7.png",
+        "tv_睡着": "8b196675b53af58264f383c50ad0945048290b33.png",
+        "tv_笑哭": "1abc628f6d4f4caf9d0e7800878f4697abbc8273.png",
+        "tv_腼腆": "89712c0d4af73e67f89e35cbc518420380a7f6f4.png",
+        "tv_色": "61822c7e9aae5da76475e7892534545336b23a6f.png",
+        "tv_调侃": "4bc022533ef31544ca0d72c12c808cf4a1cce3e3.png",
+        "tv_调皮": "b9c41de8e82dd7a8515ae5e3cb63e898bf245186.png",
+        "tv_鄙视": "6e72339f346a692a495b123174b49e4e8e781303.png",
+        "tv_闭嘴": "c9e990da7f6e93975e25fd8b70e2e290aa4086ef.png",
+        "tv_难过": "87f46748d3f142ebc6586ff58860d0e2fc8263ba.png",
+        "tv_馋": "fc7e829b845c43c623c8b490ee3602b7f0e76a31.png",
+        "tv_鬼脸": "0ffbbddf8a94d124ca2f54b360bbc04feb6bbfea.png",
+        "tv_黑人问号": "45821a01f51bc867da9edbaa2e070410819a95b2.png",
+        "tv_鼓掌": "1d21793f96ef4e6f48b23e53e3b9e42da833a0f6.png"
+        },
+        requiredFields: ['nick','mail'],
+    });
+</script>
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2021/120332589.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="ITN网络课程笔记（十五）">
+                        
+                        <span class="card-title">ITN网络课程笔记（十五）</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            计网笔记（十五）应用层
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-03
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%BD%91%E7%BB%9C/" class="post-category">
+                                    网络
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%80%9D%E7%A7%91-%E7%BD%91%E7%BB%9C-http/">
+                        <span class="chip bg-color">思科 网络 http</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/120157163.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="ITN网络课程笔记（十二）">
+                        
+                        <span class="card-title">ITN网络课程笔记（十二）</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            计网笔记（十二）IPv6编址
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-01
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%BD%91%E7%BB%9C/" class="post-category">
+                                    网络
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%80%9D%E7%A7%91-%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/">
+                        <span class="chip bg-color">思科 网络协议</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2023</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank">wck</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">352.5k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/rumor-sourse" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:2560428298@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2560428298" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2560428298" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+    <a href="https://weibo.com/u/7491101842/home" class="tooltipped" target="_blank" data-tooltip="关注我的微博: https://weibo.com/u/7491101842/home" data-position="top" data-delay="50">
+        <i class="fab fa-weibo"></i>
+    </a>
+
+
+
+    <a href="https://www.zhihu.com/people/chu-zi-hang-46-14" class="tooltipped" target="_blank" data-tooltip="关注我的知乎: https://www.zhihu.com/people/chu-zi-hang-46-14" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
+    </a>
+
+
+
+
+
+    <a href="https://space.bilibili.com/531340472" class="tooltipped" target="_blank" data-tooltip="在B站上关注我" " data-position="top" data-delay="50">
+        <i class="fas fa-play-circle"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <!-- <script type="text/javascript">
+        //只在桌面版网页启用特效
+        var windowWidth = $(window).width();
+        if (windowWidth > 768) {
+            document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+        }
+    </script> -->
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+ 
+</body>
+
+</html>

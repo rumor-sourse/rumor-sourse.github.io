@@ -1,0 +1,2475 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="ITN网络课程笔记（十七）（完）, charminghacker">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>ITN网络课程笔记（十七）（完） | charminghacker</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="charminghacker" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">charminghacker</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">charminghacker</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/rumor-sourse" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        <!-- 
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/rumor-sourse" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+         -->
+    </nav>
+     <!-- <div class="weather">
+        
+        <div id="tp-weather-widget"></div>
+        <script>
+            (function (a, h, g, f, e, d, c, b) { b = function () { d = h.createElement(g); c = h.getElementsByTagName(g)[0]; d.src = e; d.charset = "utf-8"; d.async = 1; c.parentNode.insertBefore(d, c) }; a["SeniverseWeatherWidgetObject"] = f; a[f] || (a[f] = function () { (a[f].q = a[f].q || []).push(arguments) }); a[f].l = +new Date(); if (a.attachEvent) { a.attachEvent("onload", b) } else { a.addEventListener("load", b, false) } }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+            window.SeniverseWeatherWidget('show', {
+                flavor: "bubble",
+                location: "WW92M43YCQG0",
+                geolocation: true,
+                language: "zh-Hans",
+                unit: "c",
+                theme: "auto",
+                token: "2ee46d07-e99c-4227-925e-461574e6469c",
+                hover: "enabled",
+                container: "tp-weather-widget"
+            })
+        </script>
+    </div>   -->
+    
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">ITN网络课程笔记（十七）（完）</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E6%80%9D%E7%A7%91-%E7%BD%91%E7%BB%9C/">
+                                <span class="chip bg-color">思科 网络</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E7%BD%91%E7%BB%9C/" class="post-category">
+                                网络
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-12-03
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2023-03-01
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    15.4k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    62 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="十七、构建小型网络"><a href="#十七、构建小型网络" class="headerlink" title="十七、构建小型网络"></a>十七、构建小型网络</h1><p>您已经来到了网络简介 v7.0 课程的最后一个模块。您已经掌握了建立自己的网络所需的大部分基础知识。从现在开始怎么做？当然，你要构建一个网络。而且您不仅要构建它，还要验证它是否正常工作，甚至还要解决一些常见的网络问题。</p>
+<p><strong>模块目标</strong>: 对小型网络实施网络设计，加入 1 台路由器、1 台交换机和多部终端设备。</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>主题标题</strong></th>
+<th align="left"><strong>主题目标</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>小型网络中的设备</strong></td>
+<td align="left">明确小型网络中使用的设备。</td>
+</tr>
+<tr>
+<td align="left"><strong>小型网络应用程序和协议</strong></td>
+<td align="left">明确小型网络中使用的协议和应用程序。</td>
+</tr>
+<tr>
+<td align="left"><strong>扩展到大型网络</strong></td>
+<td align="left">说明小型网络如何作为构建大型网络的基础。</td>
+</tr>
+<tr>
+<td align="left"><strong>验证连接</strong></td>
+<td align="left">使用 ping 和 tracert 命令的输出验证连接， 并确定相关网络的性能。</td>
+</tr>
+<tr>
+<td align="left"><strong>主机和 IOS 命令</strong></td>
+<td align="left">使用主机和 IOS 命令获取网络中设备的 相关信息。</td>
+</tr>
+<tr>
+<td align="left"><strong>故障排除方法</strong></td>
+<td align="left">描述常用的网络故障排除方法。</td>
+</tr>
+<tr>
+<td align="left"><strong>故障排除场景</strong></td>
+<td align="left">对网络中的设备进行故障排除。</td>
+</tr>
+</tbody></table>
+<h1 id="1、小型网络中的设备"><a href="#1、小型网络中的设备" class="headerlink" title="1、小型网络中的设备"></a>1、小型网络中的设备</h1><h2 id="1-1、小型网络拓扑"><a href="#1-1、小型网络拓扑" class="headerlink" title="1.1、小型网络拓扑"></a>1.1、小型网络拓扑</h2><p>大多数企业规模都很小，因此，大多数的商业网络也很小就不足为奇了。</p>
+<p>小型网络的设计通常很简单。与较大型网络相比，小型网络中设备的数量和类型都显著减少了。</p>
+<p>例如，请参考图中所示的小型企业网络示例。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN17.1.png"></p>
+<p>这个小型网络需要一台路由器、一台交换机和一个无线接入点来连接有线和无线用户、IP 电话、打印机和服务器。通常小型网络有一个由 DSL、电缆或以太网连接提供的 WAN 连接。</p>
+<p>大型网络需要一个IT部门来维护设备运行、保护设备安全、排除网络设备的故障以及保护组织的数据。管理小型网络所要求的许多技能与管理较大网络所需技能相同。小型网络由当地的IT技术人员或签约的专业人员管理。</p>
+<h2 id="1-2、小型网络的设备选择"><a href="#1-2、小型网络的设备选择" class="headerlink" title="1.2、小型网络的设备选择"></a>1.2、小型网络的设备选择</h2><p>为了满足用户需求，大型网络和小型网络都要求规划和设计。规划可以确保所有要求、成本因素和部署选项得到适当考虑。</p>
+<p>最初设计的注意事项之一就是用于支持网络的中间设备类型。</p>
+<h3 id="成本"><a href="#成本" class="headerlink" title="成本"></a>成本</h3><p>交换机或路由器的购买成本取决于其性能和功能。这包括可用的端口数量和类型以及背板速率。影响成本的其他因素包括网络管理功能、内嵌的安全技术、可选的高级交换技术。还需要考虑连接网络中每台设备所需的电缆布线费用。影响成本考量的另一个关键因素是网络整合的冗余量。</p>
+<h3 id="端口-接口的速度和类型"><a href="#端口-接口的速度和类型" class="headerlink" title="端口/接口的速度和类型"></a>端口/接口的速度和类型</h3><p>路由器或交换机上端口数量和类型的选择是至关重要的。较新版本的计算机有内置的 1Gbps 网卡。有些服务器甚至可能有 10Gbps 端口。虽然比较昂贵，但是选用能够适应速度增长的第 2 层设备使网络能够进行扩展，而无需更换中心设备。</p>
+<h3 id="可扩展性"><a href="#可扩展性" class="headerlink" title="可扩展性"></a>可扩展性</h3><p>网络设备的物理配置有固定式和模块化两种。固定式配置设备具有固定的端口或接口数量和类型。模块化设备具有扩展槽，可以随着需求的提高而新增模块。交换机上有附加端口，供高速上行链路使用。路由器可用于连接不同类型的网络。必须慎重选择每种介质适用的相应模块和接口。</p>
+<h3 id="操作系统的功能和服务"><a href="#操作系统的功能和服务" class="headerlink" title="操作系统的功能和服务"></a>操作系统的功能和服务</h3><p>网络设备必须具有可以支持组织需求的操作系统，如下：</p>
+<ul>
+<li>第 3 层交换</li>
+<li>网络地址转换 (NAT)</li>
+<li>动态主机配置协议 (DHCP)</li>
+<li>安全性</li>
+<li>服务质量 (QoS)</li>
+<li>网络电话 (VoIP)</li>
+</ul>
+<h2 id="1-3、小型网络的IP编址"><a href="#1-3、小型网络的IP编址" class="headerlink" title="1.3、小型网络的IP编址"></a>1.3、小型网络的IP编址</h2><p>在实施网络时，创建一个 IP编址方案并使用它。互联网络中的所有主机和设备都必须有一个唯一地址。</p>
+<p>将纳入IP编址方案的设备包括以下内容：</p>
+<ul>
+<li>终端用户设备-连接的数量和类型（即有线、无线、远程访问）</li>
+<li>服务器和外部设备（如打印机和安全摄像头）</li>
+<li>路由器、交换机和接入点都属于中间设备。</li>
+</ul>
+<p>建议您根据设备类型规划、记录和维护 IP编址方案。使用计划好的IP编址方案可以更容易地识别设备类型并对排除故障，例如，在使用协议分析器排除网络流量问题时。</p>
+<p>例如，请参考图中中小型组织的拓扑结构。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN17.2.png"></p>
+<p>该组织需要三个用户局域网(即192.168.1.0/24、192.168.2.0/24和192.168.3.0/24）。该组织已决定为每个192.168.x.0/24局域网实现一致的IP编址方案。计划如下表:</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>设备类型</strong></th>
+<th align="left"><strong>可分配的IP地址范围</strong></th>
+<th align="left"><strong>概括为…</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">默认网关（路由器）</td>
+<td align="left">192.168.x.<strong>1</strong> - 192.168.x.<strong>2</strong></td>
+<td align="left">192.168.x.<strong>0/30</strong></td>
+</tr>
+<tr>
+<td align="left">交换机(最多 2 个)</td>
+<td align="left">192.168.x.<strong>5</strong> - 192.168.x.<strong>6</strong></td>
+<td align="left">192.168.x.<strong>4/30</strong></td>
+</tr>
+<tr>
+<td align="left">接入点（最多 6 个）</td>
+<td align="left">192.168.x.<strong>9</strong> - 192.168.x.<strong>14</strong></td>
+<td align="left">192.168.x.<strong>8/29</strong></td>
+</tr>
+<tr>
+<td align="left">服务器 (最多 6 台)</td>
+<td align="left">192.168.x.<strong>17</strong> - 192.168.x.<strong>22</strong></td>
+<td align="left">192.168.x.<strong>16/29</strong></td>
+</tr>
+<tr>
+<td align="left">打印机 (最多 6 台)</td>
+<td align="left">192.168.x.<strong>25</strong> - 192.168.x.<strong>30</strong></td>
+<td align="left">192.168.x.<strong>24/29</strong></td>
+</tr>
+<tr>
+<td align="left">IP 电话 (最多 6 台)</td>
+<td align="left">192.168.x.<strong>33</strong> - 192.168.x.<strong>38</strong></td>
+<td align="left">192.168.x.<strong>32/29</strong></td>
+</tr>
+<tr>
+<td align="left">有线设备（最多62个）</td>
+<td align="left">192.168.x.<strong>65</strong> - 192.168.x.<strong>126</strong></td>
+<td align="left">192.168.x.<strong>64/26</strong></td>
+</tr>
+<tr>
+<td align="left">无线设备 (最多 62 个)</td>
+<td align="left">192.168.x.<strong>193</strong> - 192.168.x.<strong>254</strong></td>
+<td align="left">192.168.x.<strong>192/26</strong></td>
+</tr>
+</tbody></table>
+<p>该图显示了使用预定义 IP编址方案分配 IP地址的192.168.2.0/24 网络设备的示例。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN17.3.png"></p>
+<p>例如，默认的网关 IP 地址是 192.168.2.1/24，交换机地址是 192.168.2.5/24，服务器地址是 192.168.2.17/24，等等。</p>
+<p>注意，可分配的IP地址范围是有意分配到子网网络边界上的，以简化组类型的汇总。例如，假设另一个IP地址为192.168.2.6 的交换机被添加到网络中。要识别网络策略中的所有交换机，管理员可以指定汇总网络地址 192.168.x.4/30。</p>
+<h2 id="1-4、小型网络中的冗余"><a href="#1-4、小型网络中的冗余" class="headerlink" title="1.4、小型网络中的冗余"></a>1.4、小型网络中的冗余</h2><p>网络设计的另一个重要部分是可靠性。即使是小型企业，也常常非常依赖其网络以进行企业运营。网络故障的代价是非常大的。</p>
+<p>为了保持高可靠度，网络设计中要求冗余。冗余有助于避免单点故障。</p>
+<p>在网络中实现冗余有许多方法。可以通过安装重复设备实现冗余，但也可以通过为关键区域提供重复的网络链路来实现，如图所示。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN17.4.png"></p>
+<h2 id="1-5、流量管理"><a href="#1-5、流量管理" class="headerlink" title="1.5、流量管理"></a>1.5、流量管理</h2><p>小型网络中良好网络设计的目标也是为了提高员工工作效率和最大限度地减少网络中断。网络管理员应当考虑网络设计中的各种流量类型及其处理。</p>
+<p>应当对小型网络中的路由器和交换机进行配置，以相对于其他数据流量的适当方式支持实时流量，如语音和视频。事实上，<strong>一个好的网络设计将实现服务质量（QoS），根据优先级对流量进行仔细分类</strong>，如图所示。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN17.5.png"></p>
+<p>优先级有四个队列。高优先级队列总是先为空。</p>
+<h1 id="2、小型网络应用程序和协议"><a href="#2、小型网络应用程序和协议" class="headerlink" title="2、小型网络应用程序和协议"></a>2、小型网络应用程序和协议</h1><h2 id="2-1、常见应用程序"><a href="#2-1、常见应用程序" class="headerlink" title="2.1、常见应用程序"></a>2.1、常见应用程序</h2><p>上一个主题讨论了小型网络的组件以及一些设计需要考虑的因素。当您正在建立一个网络时，这些考虑是必要的。建立完成后，您的网络仍然需要某些类型的应用程序和协议才能工作。</p>
+<p>网络只有在网络上存在应用程序时才有用。有两种形式的软件程序或进程可以提供网络访问：网络应用程序和应用层服务。</p>
+<p><strong>网络应用程序</strong></p>
+<p>应用程序是指用于网络通信的软件程序。有些终端用户应用程序是网络感知程序，即这些程序实现应用层协议，并可直接与协议栈的较低层通信。电子邮件客户端和 Web 浏览器就属于这种类型的应用程序。</p>
+<p><strong>应用层服务</strong></p>
+<p>其他程序可能需要通过应用层服务使用网络资源，例如文件传输或网络假脱机打印。虽然这些服务对员工而言是透明的，但它们正是负责与网络交互和准备传输数据的程序。无论数据类型是文本、图形还是视频，只要类型不同，就需要与之对应的不同的网络服务，从而确保 OSI 模型的下层能够正确处理数据。</p>
+<p>每个应用程序或网络服务使用协议，定义要使用的标准和数据格式。如果没有协议，数据网络将不能使用通用的方式来格式化及引导数据。为了便于理解不同网络服务的功能，我们有必要先熟悉管理这些服务的底层协议。</p>
+<p>如图所示，使用任务管理器来查看 Windows PC 上当前运行的应用程序、进程和服务。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN17.6.png"></p>
+<h2 id="2-2、常见协议"><a href="#2-2、常见协议" class="headerlink" title="2.2、常见协议"></a>2.2、常见协议</h2><p>不管在小型还是大型网络中，技术人员的大部分工作都是与网络协议有关的。在小型网络中，网络协议将支持员工所使用的应用程序和服务。</p>
+<p>网络管理员通常需要访问网络设备和服务器。两种最常见的远程访问解决方案是 Telnet 和安全外壳 (SSH)。SSH 服务是 Telnet 的安全替代方案。连接后，管理员可以像在本地登录一样访问 SSH 服务器设备。</p>
+<p>SSH 用于在 SSH 客户端和其他支持 SSH 的设备之间建立安全的远程访问连接：</p>
+<ul>
+<li><strong>网络设备</strong> -网络设备（如路由器、交换机、接入点等）必须支持 SSH，才能为客户端提供远程访问 SSH 服务器的服务。</li>
+<li><strong>服务器</strong> -服务器（例如 Web 服务器、电子邮件服务器等）必须支持到客户端的远程访问 SSH 服务器的服务。</li>
+</ul>
+<p>网络管理员还必须支持公用网络服务器及其所需的相关网络协议，如图所示。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN17.7.png"></p>
+<h3 id="Web设备安全"><a href="#Web设备安全" class="headerlink" title="Web设备安全"></a>Web设备安全</h3><ul>
+<li>Web 客户端和 Web 服务器使用超文本传输协议 (HTTP) 交换 Web 流量。</li>
+<li>超文本传输协议安全 (HTTPS) 用于安全的 Web 通信。</li>
+</ul>
+<h3 id="邮件服务器"><a href="#邮件服务器" class="headerlink" title="邮件服务器"></a>邮件服务器</h3><ul>
+<li>邮件服务器和客户端使用简单邮件传输协议 (SMTP)发送邮件。</li>
+<li>邮件客户端使用邮局协议 (POP3) 和互联网消息访问协议 (IMAP)检索邮件。</li>
+<li>使用 <a href="mailto:user@xyz.xxx">user@xyz.xxx</a> 格式指定收件人。</li>
+</ul>
+<h3 id="FTP服务器"><a href="#FTP服务器" class="headerlink" title="FTP服务器"></a>FTP服务器</h3><ul>
+<li>文件传输协议 (FTP) 服务允许在客户端和 FTP 服务器之间下载和上传文件。</li>
+<li>FTP 安全（FPS）和安全 FTP（SFTP）用于保护 FTP 文件交换。</li>
+</ul>
+<h3 id="DHCP服务器"><a href="#DHCP服务器" class="headerlink" title="DHCP服务器"></a>DHCP服务器</h3><p>客户端使用动态主机配置协议 (DHCP) 从 DHCP 服务器获取 IP 配置（即 IP地址、子网掩码、默认网关等）。</p>
+<h3 id="DNS服务器"><a href="#DNS服务器" class="headerlink" title="DNS服务器"></a>DNS服务器</h3><ul>
+<li>域名服务（DNS）将域名解析为 IP 地址（例如，cisco.com = 72.163.4.185）</li>
+<li>DNS 向请求主机提供网站的 IP 地址（即域名）。</li>
+</ul>
+<p><strong>注意</strong>: 服务器可以提供多个网络服务。例如，服务器可以是电子邮件、FTP 和 SSH 服务器。</p>
+<p>这些网络协议将构成网络专家的基本工具集。每种网络协议都会定义：</p>
+<ul>
+<li>通信会话任意一端的流程</li>
+<li>消息类型</li>
+<li>消息语法</li>
+<li>信息性字段的意义</li>
+<li>消息发送方式和预期响应</li>
+<li>与下一层的交互</li>
+</ul>
+<p>许多公司都已制定政策，尽可能使用这些协议的安全版本（即SSH、SFTP和HTTPS）。</p>
+<h2 id="2-3、语音和视频应用程序"><a href="#2-3、语音和视频应用程序" class="headerlink" title="2.3、语音和视频应用程序"></a>2.3、语音和视频应用程序</h2><p>如今，企业越来越多地使用 IP 电话和流媒体与客户和业务合作伙伴沟通。许多组织正在使其员工能够远程工作。如图所示，他们的许多用户仍然需要访问公司软件和文件，以及对语音和视频应用程序的支持。</p>
+<p>网络管理员必须确保在网络中安装合适的设备并且对网络设备进行配置以确保优先传输。</p>
+<h3 id="基础设施"><a href="#基础设施" class="headerlink" title="基础设施"></a>基础设施</h3><ul>
+<li>网络基础设施必须支持实时应用程序。</li>
+<li>必须对 现有设备和布线进行测试和验证。</li>
+<li>可能需要 更新的网络产品。</li>
+</ul>
+<h3 id="VoIP"><a href="#VoIP" class="headerlink" title="VoIP"></a>VoIP</h3><ul>
+<li>VoIP 设备将模拟电话信号转换为数字 IP 数据包。</li>
+<li>通常，VoIP 比IP电话解决方案要低廉得多，但通信质量不能达到相同的标准。</li>
+<li>小型网络语音和 IP 视频可以使用 Skype 和非企业版的思科 WebEx 解决。</li>
+</ul>
+<h3 id="IP电话"><a href="#IP电话" class="headerlink" title="IP电话"></a>IP电话</h3><ul>
+<li>IP电话使用专用的呼叫控制和信令服务器进行语音到IP的转换。</li>
+<li>许多供应商提供小型企业 IP 电话解决方案，如思科Business Edition 4000 系列产品。</li>
+</ul>
+<h3 id="实时应用"><a href="#实时应用" class="headerlink" title="实时应用"></a>实时应用</h3><ul>
+<li>网络必须支持服务质量 (QoS) 机制，以最大限度地减少实时流应用程序的延迟问题。</li>
+<li>实时传输协议 (RTP) 和实时传输控制协议 (RTCP) 支持这一要求。</li>
+</ul>
+<h1 id="3、扩展为大型网络"><a href="#3、扩展为大型网络" class="headerlink" title="3、扩展为大型网络"></a>3、扩展为大型网络</h1><h2 id="3-1、小型网络的增长"><a href="#3-1、小型网络的增长" class="headerlink" title="3.1、小型网络的增长"></a>3.1、小型网络的增长</h2><p>如果您的网络是为小型企业服务的，那么您可能希望该企业能够增长，您的网络也会随之增长。这称为扩展网络，有一些最佳实践可以做到这一点。</p>
+<p>不断扩展是许多小型企业必经的过程，而其网络也必须相应地扩展。理想情况是网络管理员有足够的时间根据公司发展做出关于网络发展的明智决策。</p>
+<p>要扩展网络，要求有以下几个要素：</p>
+<ul>
+<li><strong>网络文档</strong> - 物理和逻辑拓扑</li>
+<li><strong>设备清单</strong> – 使用或组成网络的设备列表</li>
+<li><strong>预算</strong> – 逐项列出IT预算，包括财年设备采购预算</li>
+<li><strong>流量分析</strong> - 应当记录协议、应用程序和服务以及它们各自的流量要求</li>
+</ul>
+<p>这些要素用于为有关小型网络扩展的决策提供信息。</p>
+<h2 id="3-2、协议分析"><a href="#3-2、协议分析" class="headerlink" title="3.2、协议分析"></a>3.2、协议分析</h2><p>随着网络的增长，确定如何管理网络流量变得非常重要。了解网络上传输的流量类型以及当前的流量流很重要。有几个网络管理工具可用于此目的。但是，也可以使用 Wireshark 等简单的协议分析器。</p>
+<p>例如，在多个关键主机上运行 Wireshark 可以显示流经网络的网络流量类型。下图显示了小型网络上 Windows 主机的 Wireshark 协议分布统计信息。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN17.8.png"></p>
+<p>屏幕截图显示主机正在使用 IPv6 和 IPv4 协议。IPv4 特定输出还显示主机已使用 DNS、SSL、HTTP、ICMP 和其他协议。</p>
+<p>要确定流量模式，应做好以下几点：</p>
+<ul>
+<li>通过捕获网络使用高峰期的流量准确了解各种不同的流量类型。</li>
+<li>针对不同的网段和设备捕获流量，因为某些流量仅在特定的网段内传输。</li>
+</ul>
+<p>协议分析器收集的信息根据流量的源和目标以及发送的流量类型进行分析。这种分析有助于决定提高流量管理效率的方法，例如减少不必要的流量，或通过移动某台服务器的逻辑位置来改变流量的总体模式。</p>
+<p>有时，只要简单地将服务器或服务移到另一个网段就能提高网络性能并满足不断增长的流量需求。有时则需要大刀阔斧地进行网络的重新设计并投入巨大的人力才可以优化网络的性能。</p>
+<h2 id="3-3、员工网络使用率"><a href="#3-3、员工网络使用率" class="headerlink" title="3.3、员工网络使用率"></a>3.3、员工网络使用率</h2><p>除了要了解流量的变化趋势，网络管理员必须知道网络的使用是如何变化的。许多操作系统都提供内置工具来显示此类信息。例如，Windows 主机提供任务管理器、事件查看器和数据使用情况工具等工具。</p>
+<p>这些工具可用于捕获以下信息的 “快照”：</p>
+<ul>
+<li>操作系统和操作系统版本</li>
+<li>CPU 使用率</li>
+<li>内存利用率</li>
+<li>驱动程序利用率</li>
+<li>非网络应用程序</li>
+<li>网络应用程序</li>
+</ul>
+<p>在一段时间内记录小型网络中的员工快照对于识别不断发展的协议需求和相关的流量流非常有用。这种资源利用率的转变就可能要求网络管理员相应地调整网络资源分配。</p>
+<p>Windows 10 数据使用量工具对于确定哪些应用程序正在使用主机上的网络服务特别有用。数据使用量工具可以使用 <strong>Settings &gt; Network &amp; Internet &gt; Data usage &gt; network interface</strong> （从最近 30 天开始）访问。</p>
+<p>图中的示例显示了使用本地 Wi-Fi 网络连接在远程用户 Windows 10 主机上运行的应用程序。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN17.9.png"></p>
+<h1 id="4、验证连接"><a href="#4、验证连接" class="headerlink" title="4、验证连接"></a>4、验证连接</h1><h2 id="4-1、通过Ping验证连接性"><a href="#4-1、通过Ping验证连接性" class="headerlink" title="4.1、通过Ping验证连接性"></a>4.1、通过Ping验证连接性</h2><p>无论您的网络是新的还是小的，或者您正在扩展现有的网络，您总是希望能够验证您的组件彼此之间以及与互联网的连接是否正确。本主题讨论了一些可用于确保网络连接的实用程序。</p>
+<p><strong>ping</strong>命令是快速测试源和目的 IP 地址之间第 3 层连接的最有效方法。该命令还显示各种往返时间统计信息。</p>
+<p>具体而言，该 <strong>ping</strong> 命令使用 Internet 控制消息协议 (ICMP) 来Echo请求（ICMP 类型 8）和Echo应答（ICMP 类型 0）消息。该 <strong>ping</strong> 命令可用于大多数操作系统，包括 Windows、Linux、macOS 和思科 IOS。</p>
+<p>在 Windows 10 主机上，该 <strong>ping</strong> 命令发送四个连续的 ICMP Echo消息，并期望从目标收到四个连续的 ICMP Echo应答。</p>
+<p>例如，假设 PC A Ping PC B. 如图所示，PC A Windows 主机将四个连续的 ICMP Echo消息发送到 PC B（即 10.1.1.10）。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN17.10.png"></p>
+<p>目的主机接收并处理 ICMP Echos。如图所示，PC B 通过向 PC A 发送四条 ICMP Echo应答消息进行响应。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN17.11.png"></p>
+<p>如命令输出中所示，PC A 已收到来自 PC-B 的Echo应答，验证了第 3 层网络连接。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">C:\Users\PC-A&gt; ping 10.1.1.10
+Pinging 10.1.1.10 with 32 bytes of data:
+Reply from 10.1.1.10: bytes&#x3D;32 time&#x3D;47ms TTL&#x3D;51
+Reply from 10.1.1.10: bytes&#x3D;32 time&#x3D;60ms TTL&#x3D;51
+Reply from 10.1.1.10: bytes&#x3D;32 time&#x3D;53ms TTL&#x3D;51
+Reply from 10.1.1.10: bytes&#x3D;32 time&#x3D;50ms TTL&#x3D;51
+Ping statistics for 10.1.1.10:
+    Packets: Sent &#x3D; 4, Received &#x3D; 4, Lost &#x3D; 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum &#x3D; 47ms, Maximum &#x3D; 60ms, Average &#x3D; 52ms
+C:\Users\PC-A&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>输出验证了 PC A 和 PC B 之间的第 3 层连接。</p>
+<p>思科 IOS <strong>ping</strong> 命令的输出不同于 Windows 主机。例如，IOS ping 会发送五条 ICMP Echo消息，如输出所示。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">R1# ping 10.1.1.10
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.1.1.10, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5&#x2F;5), round-trip min&#x2F;avg&#x2F;max &#x3D; 1&#x2F;1&#x2F;2 ms
+R1#<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>请注意 <strong>!!!!!</strong> 输出字符。IOS <strong>ping</strong> 命令为收到的每个 ICMP Echo应答显示一个指示符。下表列出 <strong>ping</strong> 命令可能输出的字符：</p>
+<h3 id="IOS-Ping-指示符"><a href="#IOS-Ping-指示符" class="headerlink" title="IOS Ping 指示符"></a>IOS Ping 指示符</h3><table>
+<thead>
+<tr>
+<th align="left">元素</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>!</strong></td>
+<td align="left">感叹号表示成功收到Echo应答 消息。它验证了源和目标之间的第 3 层连接。</td>
+</tr>
+<tr>
+<td align="left"><strong>.</strong></td>
+<td align="left">句点意味着等待Echo应答消息的时间已过期。这表示路径中某处可能存在连接 问题。</td>
+</tr>
+<tr>
+<td align="left"><strong>U</strong></td>
+<td align="left">大写 <strong>U</strong> 表示沿路径的路由器 回应了 ICMP 类型 3 “目的地 不可达” 的错误消息。可能的原因包括路由器不知道目标网络的方向， 或者在目标网络上 找不到主机。</td>
+</tr>
+</tbody></table>
+<p><strong>注意:</strong> 其他可能的 ping 回复包括 Q、M、? 或 &amp;。但是，这些含义超出了本模块的范围。</p>
+<h2 id="4-2、扩展Ping"><a href="#4-2、扩展Ping" class="headerlink" title="4.2、扩展Ping"></a>4.2、扩展Ping</h2><p>标准 <strong>ping</strong> 使用最接近目标网络的接口的 IP 地址作为<strong>ping</strong>的源地址 。R1 上 <strong>ping 10.1.1.10</strong> 命令的源 IP 地址将是 G0/0/0 接口的地址（即 209.165.200.225），如示例所示。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN17.12.png"></p>
+<p>思科IOS 提供<strong>ping</strong>命令的“扩展”模式。此模式允许用户通过调整与命令操作相关的参数来创建特殊类型的 ping。</p>
+<p>在特权 EXEC 模式键入<strong>ping</strong> ，可进入扩展模式，无需目的 IP 地址。然后，您将得到多个提示来自定义扩展 <strong>ping</strong>。</p>
+<p><strong>注意:</strong> Pressing <strong>Enter</strong> 可接受所指出的默认值。</p>
+<p>例如，假设您想要测试从 R1 局域网（即 192.168.10.0/24）到 10.1.1.0 局域网的连接性。这可以从 PC A 进行验证。但是，扩展 <strong>ping</strong> 可以在 R1 上配置以指定不同的源地址。</p>
+<p>如示例所示，R1 上扩展 <strong>ping</strong> 命令的源 IP 地址可以配置为使用 G0/0/1 接口的 IP 地址（即 192.168.10.1）。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN17.13.png"></p>
+<p>下面在R1上的命令输出配置一个扩展<strong>ping</strong>，并指定源IP地址为G0/0/1接口的IP地址(即192.168.10.1)。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">R1# ping
+Protocol [ip]:
+Target IP address: 10.1.1.10
+Repeat count [5]:
+Datagram size [100]:
+Timeout in seconds [2]:
+Extended commands [n]: y
+Ingress ping [n]:
+Source address or interface: 192.168.10.1
+DSCP Value [0]:
+Type of service [0]:
+Set DF bit in IP header? [no]:
+Validate reply data? [no]:
+Data pattern [0x0000ABCD]:
+Loose, Strict, Record, Timestamp, Verbose[none]:
+Sweep range of sizes [n]:
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.1.1.1, timeout is 2 seconds:
+Packet sent with a source address of 192.168.10.1
+!!!!!
+Success rate is 100 percent (5&#x2F;5), round-trip min&#x2F;avg&#x2F;max &#x3D; 1&#x2F;1&#x2F;1 ms
+R1#<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>注意</strong>: <strong>ping ipv6</strong>命令用于 IPv6 扩展 ping。</p>
+<h2 id="4-3、通过Traceroute验证连接性"><a href="#4-3、通过Traceroute验证连接性" class="headerlink" title="4.3、通过Traceroute验证连接性"></a>4.3、通过Traceroute验证连接性</h2><p>该 <strong>ping</strong> 命令可用于快速确定是否存在第 3 层连接问题。但是，它不能确定问题位于路径的什么位置。</p>
+<p>Traceroute可以帮助定位网络中的第3层问题区域。追踪可用于返回数据包在网络中传输时沿途经过的跳跃列表。它可以用来识别路径上发现问题的点。</p>
+<p>追踪命令的语法因操作系统而异，如图所示。</p>
+<p><strong>Windows 和思科 IOS 追踪命令</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN17.14.png"></p>
+<p>以下是 Windows 10 主机上的 <strong>tracert</strong> 命令输出示例。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">C:\Users\PC-A&gt; tracert 10.1.1.10
+Tracing route to 10.1.10 over a maximum of 30 hops:
+  1     2 ms     2 ms     2 ms  192.168.10.1
+  2     *        *        *     Request timed out.
+  3     *        *        *     Request timed out.
+  4     *        *        *     Request timed out.
+^C
+C:\Users\PC-A&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>注意:</strong> Use <strong>Ctrl-C</strong> to interrupt a <strong>跟踪器</strong> 在窗口.</p>
+<p>唯一成功的响应来自 R1 上的网关。对下一跳的追踪请求超时，由星号(*)表示，这意味着下一跳的路由器没有响应。超时的请求表明，局域网以外的互联网络中有错误，或者这些路由已经配置为不响应追踪中使用的Echo请求。在这个例子中，R1 和 R2 之间似乎存在问题。</p>
+<p>思科 IOS <strong>traceroute</strong> 命令输出与 Windows <strong>tracert</strong>命令不同。例如，请参考以下拓扑结构。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN17.15.png"></p>
+<p>以下是来自 R1 的Traceroute命令的示例输出。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">R1# traceroute 10.1.1.10
+Type escape sequence to abort.
+Tracing the route to 10.1.1.10
+VRF info: (vrf in name&#x2F;id, vrf out name&#x2F;id)
+1 209.165.200.226 1 msec 0 msec 1 msec
+2 209.165.200.230 1 msec 0 msec 1 msec
+3 10.1.1.10 1 msec 0 msec
+R1#<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>在此示例中，追踪验证了它可以成功到达 PC B。</p>
+<p>超时表示存在潜在的问题。例如，如果 10.1.1.10 主机不可用，则该 <strong>traceroute</strong> 命令将显示以下输出。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">R1# traceroute 10.1.1.10
+Type escape sequence to abort.
+Tracing the route to 10.1.1.10
+VRF info: (vrf in name&#x2F;id, vrf out name&#x2F;id)
+1 209.165.200.226 1 msec 0 msec 1 msec
+2 209.165.200.230 1 msec 0 msec 1 msec
+3 * * *
+4 * * *
+5 *<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>使用 <strong>Ctrl-Shift-6</strong> 来中断思科IOS上的 <strong>traceroute</strong>命令。</p>
+<p><strong>注意</strong>: traceroute (tracert) 的 Windows 实现用于发送 ICMP Echo请求。思科 IOS 和 Linux 使用具有无效端口号的 UDP。最终目的地将返回一个ICMP 端口不可达的消息。</p>
+<h2 id="4-4、扩展-Traceroute"><a href="#4-4、扩展-Traceroute" class="headerlink" title="4.4、扩展 Traceroute"></a>4.4、扩展 Traceroute</h2><p>就像扩展 <strong>ping</strong>命令一样，同样也有一个扩展 <strong>traceroute</strong> 命令。它允许管理员调整与命令操作相关的参数。这有助于在排除路由环路故障以及准确确定下一跳路由器时定位问题，或者可以帮助确定路由器或防火墙在何处丢弃或拒绝了数据包。</p>
+<p>Windows <strong>tracert</strong>命令允许通过命令行中的选项输入多个参数。但是，它不像扩展追踪 IOS 命令那样提供引导。以下输出显示了 Windows <strong>tracert</strong> 命令的可用选项。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">C:\Users\PC-A&gt; tracert &#x2F;?
+Usage: tracert [-d] [-h maximum_hops] [-j host-list] [-w timeout]
+               [-R] [-S srcaddr] [-4] [-6] target_name
+Options:
+    -d                 Do not resolve addresses to hostnames.
+    -h maximum_hops    Maximum number of hops to search for target.
+    -j host-list       Loose source route along host-list (IPv4-only).
+    -w timeout         Wait timeout milliseconds for each reply.
+    -R                 Trace round-trip path (IPv6-only).
+    -S srcaddr         Source address to use (IPv6-only).
+    -4                 Force using IPv4.
+    -6                 Force using IPv6.
+C:\Users\PC-A&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>思科IOS扩展<strong>traceroute</strong>选项允许用户通过调整与命令操作相关的参数来创建特殊类型的 trace。在特权 EXEC 模式键入<strong>traceroute</strong> ，可进入扩展traceroute模式，无需目的 IP 地址。IOS 将会显示一些与各个参数的设置相关的提示，引导您使用命令选项。</p>
+<p><strong>注意</strong>:按<strong>Enter</strong>可接受所指出的默认值。</p>
+<p>例如，假设您要测试从 R1 局域网到 PC B 的连接。虽然这可以从 PC A 进行验证。但是，扩展 <strong>traceroute</strong> 可以在 R1 上配置以指定不同的源地址。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN17.16.png"></p>
+<p>如示例所示，R1 上扩展 <strong>traceroute</strong> 命令的源 IP 地址可以配置为使用 R1局域网接口的 IP 地址（即 192.168.10.1）。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">R1# traceroute
+Protocol [ip]:
+Target IP address: 10.1.1.10
+Ingress traceroute [n]:
+Source address: 192.168.10.1
+DSCP Value [0]:
+Numeric display [n]:
+Timeout in seconds [3]:
+Probe count [3]:
+Minimum Time to Live [1]:
+Maximum Time to Live [30]:
+Port Number [33434]:
+Loose, Strict, Record, Timestamp, Verbose[none]:
+Type escape sequence to abort.
+Tracing the route to 192.168.10.10
+VRF info: (vrf in name&#x2F;id, vrf out name&#x2F;id)
+  1 209.165.200.226 1 msec 1 msec 1 msec
+  2 209.165.200.230 0 msec 1 msec 0 msec
+  3  *
+    10.1.1.10 2 msec 2 msec
+R1#<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="4-5、网络基线"><a href="#4-5、网络基线" class="headerlink" title="4.5、网络基线"></a>4.5、网络基线</h2><p>监控网络和排除网络故障的最有效的工具之一就是建立网络基线。创建一条有效的网络性能基线需要一段较长的时间才能完成。在不同时间以及各种负载下测量网络性能有助于建立更准确的网络整体性能概貌。</p>
+<p>网络命令的输出可为网络基线提供数据。开始基线的方法之一就是将<strong>ping</strong>、<strong>trace</strong>或其他相关命令的执行结果复制并粘贴到文本文件中。然后为这些文本文件加上时间戳并保存到档案中以备将来检索和比较。</p>
+<p>需考虑的项目包括错误消息以及主机之间的响应时间。如果响应时间增加较大，则表示可能有延时问题需要解决。</p>
+<p>例如，以下 <strong>ping</strong> 输出已捕获并粘贴到文本文件中。</p>
+<p><strong>August 19, 2019 at 08:14:43</strong></p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">C:\Users\PC-A&gt; ping 10.1.1.10
+Pinging 10.1.1.10 with 32 bytes of data:
+Reply from 10.1.1.10: bytes&#x3D;32 time&lt;1ms TTL&#x3D;64
+Reply from 10.1.1.10: bytes&#x3D;32 time&lt;1ms TTL&#x3D;64
+Reply from 10.1.1.10: bytes&#x3D;32 time&lt;1ms TTL&#x3D;64
+Reply from 10.1.1.10: bytes&#x3D;32 time&lt;1ms TTL&#x3D;64
+Ping statistics for 10.1.1.10:
+    Packets: Sent &#x3D; 4, Received &#x3D; 4, Lost &#x3D; 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum &#x3D; 0ms, Maximum &#x3D; 0ms, Average &#x3D; 0ms
+C:\Users\PC-A&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>请注意 <strong>ping</strong> 往返时间小于 1 毫秒。</p>
+<p>一个月后，再次进行了ping测试并捕获记录。</p>
+<p>**September 19, 2019 at 10:1,821</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">C:\Users\PC-A&gt; ping 10.1.1.10
+Pinging 10.1.1.10 with 32 bytes of data:
+Reply from 10.1.1.10: bytes&#x3D;32 time&#x3D;50ms TTL&#x3D;64
+Reply from 10.1.1.10: bytes&#x3D;32 time&#x3D;49ms TTL&#x3D;64
+Reply from 10.1.1.10: bytes&#x3D;32 time&#x3D;46ms TTL&#x3D;64
+Reply from 10.1.1.10: bytes&#x3D;32 time&#x3D;47ms TTL&#x3D;64
+Ping statistics for 10.1.1.10:
+    Packets: Sent &#x3D; 4, Received &#x3D; 4, Lost &#x3D; 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum &#x3D; 46ms, Maximum &#x3D; 50ms, Average &#x3D; 48ms
+C:\Users\PC-A&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>请注意，这次 <strong>ping</strong> 往返时间要长得多，表明存在潜在的问题。</p>
+<p>企业网络应该制备详尽的基线，覆盖内容要远比我们在本课中所述全面得多。可选用专业的软件工具来存储和维护基线信息。在本课程中，我们介绍几个基本技巧并讨论基线的用途。</p>
+<p>通过在互联网上搜索 “基准流程最佳实践”，可以找到思科的基准流程最佳实践。</p>
+<h2 id="4-6、实验-使用-Ping-命令和-Traceroute-命令测试网络延时"><a href="#4-6、实验-使用-Ping-命令和-Traceroute-命令测试网络延时" class="headerlink" title="4.6、实验 - 使用 Ping 命令和 Traceroute 命令测试网络延时"></a>4.6、实验 - 使用 Ping 命令和 Traceroute 命令测试网络延时</h2><p>略</p>
+<h1 id="5、主机和IOS命令"><a href="#5、主机和IOS命令" class="headerlink" title="5、主机和IOS命令"></a>5、主机和IOS命令</h1><h2 id="5-1、Windows主机的-IP-配置"><a href="#5-1、Windows主机的-IP-配置" class="headerlink" title="5.1、Windows主机的 IP 配置"></a>5.1、Windows主机的 IP 配置</h2><p>如果您使用上一主题中的任何工具来验证连接性，并发现网络的某些部分不能正常工作，那么现在是使用一些命令来对设备进行故障排除的时候了。主机和 IOS 命令可以帮助您确定问题是否与设备的 IP编址有关，这是一个常见的网络问题。</p>
+<p>检查主机设备上的 IP 地址是网络中用于验证端到端连接并排除故障的常见做法。在 Windows 10 中，您可以从<strong>Network and Sharing Center</strong>（如图所示）访问 IP 地址详细信息，以快速查看四个重要的设置：地址、掩码、路由器和 DNS。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN17.17.png"></p>
+<p>但是，网络管理员通常通过会在 Windows 计算机的命令行发出 <strong>ipconfig</strong> 命令来查看 Windows 主机上的 IP编址信息，如示例输出中所示。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">C:\Users\PC-A&gt; ipconfig
+Windows IP Configuration
+(Output omitted)
+Wireless LAN adapter Wi-Fi:
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::a4aa:2dd1:ae2d:a75e%16   
+   IPv4 Address. . . . . . . . . . . : 192.168.10.10   
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.10.1
+(Output omitted)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>使用<strong>ipconfig /all</strong>命令可查看 MAC 地址和有关设备第 3 层编址的许多细节，如示例输出中所示。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">C:\Users\PC-A&gt; ipconfig &#x2F;all
+Windows IP Configuration
+   Host Name . . . . . . . . . . . . : PC-A-00H20
+   Primary Dns Suffix  . . . . . . . : cisco.com
+   Node Type . . . . . . . . . . . . : Hybrid
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+   DNS Suffix Search List. . . . . . : cisco.com
+(Output omitted)
+Wireless LAN adapter Wi-Fi:
+   Connection-specific DNS Suffix  . :
+   Description . . . . . . . . . . . : Intel(R) Dual Band Wireless-AC 8265
+   Physical Address. . . . . . . . . : F8-94-C2-E4-C5-0A
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::a4aa:2dd1:ae2d:a75e%16(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 192.168.10.10(Preferred)
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Lease Obtained. . . . . . . . . . : August 17, 2019 1:20:17 PM
+   Lease Expires . . . . . . . . . . : August 18, 2019 1:20:18 PM
+   Default Gateway . . . . . . . . . : 192.168.10.1
+   DHCP Server . . . . . . . . . . . : 192.168.10.1
+   DHCPv6 IAID . . . . . . . . . . . : 100177090
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-21-F3-76-75-54-E1-AD-DE-DA-9A
+   DNS Servers . . . . . . . . . . . : 192.168.10.1
+   NetBIOS over Tcpip. . . . . . . . : Enabled<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>如果将主机配置为 DHCP 客户端，则可以使用 <strong>ipconfig /release</strong> 和 <strong>ipconfig /renew</strong> 命令续订 IP 地址配置，如示例输出中所示。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">C:\Users\PC-A&gt; ipconfig &#x2F;release
+(Output omitted)
+Wireless LAN adapter Wi-Fi:
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::a4aa:2dd1:ae2d:a75e%16
+   Default Gateway . . . . . . . . . :
+(Output omitted)
+C:\Users\PC-A&gt; ipconfig &#x2F;renew
+(Output omitted)
+Wireless LAN adapter Wi-Fi:
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::a4aa:2dd1:ae2d:a75e%16
+   IPv4 Address. . . . . . . . . . . : 192.168.1.124
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.1.1
+(Output omitted)
+C:\Users\PC-A&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>在安装了 Windows 系统的 PC 上，DNS 客户端服务可以预先在内存中存储已解析的域名，从而优化 DNS 域名解析性能。在 Windows 计算机系统中，输入<strong>ipconfig /displaydns</strong>命令可以显示所有 DNS 缓存条目，如示例输出中所示。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">C:\Users\PC-A&gt; ipconfig &#x2F;displaydns
+Windows IP Configuration
+(Output omitted)
+    netacad.com
+    ----------------------------------------
+    Record Name . . . . . : netacad.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 602
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 54.165.95.219
+(Output omitted)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="5-2、Linux主机的-IP-配置"><a href="#5-2、Linux主机的-IP-配置" class="headerlink" title="5.2、Linux主机的 IP 配置"></a>5.2、Linux主机的 IP 配置</h2><p>在 Linux 计算机上使用 GUI 验证 IP 设置将根据 Linux 发行版和桌面界面而有所不同。下图显示了运行 Gnome 桌面的 Ubuntu 发行版上的 <strong>Connection Information</strong> 对话框。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN17.18.png"></p>
+<p>在命令行中，网络管理员使用 <strong>ifconfig</strong> 命令显示当前活动接口的状态及其 IP 配置，如输出中所示。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">[analyst@secOps ~]$ ifconfig
+enp0s3    Link encap:Ethernet  HWaddr 08:00:27:b5:d6:cb  
+          inet addr: 10.0.2.15  Bcast:10.0.2.255  Mask: 255.255.255.0
+          inet6 addr: fe80::57c6:ed95:b3c9:2951&#x2F;64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:1332239 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:105910 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:1855455014 (1.8 GB)  TX bytes:13140139 (13.1 MB)
+lo: flags&#x3D;73  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>Linux的<strong>ip address</strong> 命令用于显示地址及其属性。它也可以用于添加或删除 IP 地址。</p>
+<p><strong>注意:</strong> 显示的输出可能会因 Linux 发行版不同和而有所区别。</p>
+<h2 id="5-3、macOS主机的-IP-配置"><a href="#5-3、macOS主机的-IP-配置" class="headerlink" title="5.3、macOS主机的 IP 配置"></a>5.3、macOS主机的 IP 配置</h2><p>在 Mac 主机的 GUI 中，打开 <strong>Network Preferences &gt; Advanced</strong> 以获取 IP编址信息，如图所示。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN17.19.png"></p>
+<p>但是，该 <strong>ifconfig</strong> 命令也可用于验证输出中显示的接口 IP 配置。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">MacBook-Air:~ Admin$ ifconfig en0
+en0: flags&#x3D;8863 mtu 1500
+        ether c4:b3:01:a0:64:98
+        inet6 fe80::c0f:1bf4:60b1:3adb%en0 prefixlen 64 secured scopeid 0x5
+        inet 10.10.10.113 netmask 0xffffff00 broadcast 10.10.10.255
+        nd6 options&#x3D;201
+        media: autoselect
+        status: active
+MacBook-Air:~ Admin$ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>用于验证主机 IP 设置的其他有用的 macOS 命令包括 <strong>networksetup -listallnetworkservices</strong> 和 <strong>networksetup -getinfo &lt;***网络服务***&gt;,</strong> 如下面的输出所示。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">MacBook-Air:~ Admin$ networksetup -listallnetworkservices
+An asterisk (*) denotes that a network service is disabled.
+iPhone USB
+Wi-Fi
+Bluetooth PAN
+Thunderbolt Bridge
+MacBook-Air:~ Admin$ 
+MacBook-Air:~ Admin$ networksetup -getinfo Wi-Fi
+DHCP Configuration
+IP address: 10.10.10.113
+Subnet mask: 255.255.255.0
+Router: 10.10.10.1
+Client ID:
+IPv6: Automatic
+IPv6 IP address: none
+IPv6 Router: none
+Wi-Fi ID: c4:b3:01:a0:64:98
+MacBook-Air:~ Admin$<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="5-4、arp-命令"><a href="#5-4、arp-命令" class="headerlink" title="5.4、arp 命令"></a>5.4、arp 命令</h2><p>该 <strong>arp</strong> 命令是从 Windows、Linux 或 Mac 的命令提示符执行的。该命令列出了当前主机 ARP 缓存中的所有设备，所列出的信息包括每台设备的 IPv4 地址、物理地址和编址类型（静态/动态）。</p>
+<p>例如，请参考图中的拓扑结构。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN17.20.png"></p>
+<p>在Windows PC-A主机上显示了该<strong>arp -a</strong>命令的输出。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">C:\Users\PC-A&gt; arp -a
+Interface: 192.168.93.175 --- 0xc
+  Internet Address      Physical Address      Type
+  10.0.0.2              d0-67-e5-b6-56-4b     dynamic
+  10.0.0.3              78-48-59-e3-b4-01     dynamic
+  10.0.0.4              00-21-b6-00-16-97     dynamic
+  10.0.0.254            00-15-99-cd-38-d9     dynamic<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>该 <strong>arp -a</strong> 命令显示了已知 IP 地址及 MAC 地址绑定。请注意， IP 地址 10.0.0.5 不包含在列表中。这是因为ARP 缓存仅显示最近访问过的设备的信息。</p>
+<p>要确保填充 ARP 缓存，请<strong>ping</strong>一台设备以使该设备对应的条目出现在 ARP 表中。例如，如果 PC-A ping了 10.0.0.5，则 ARP 缓存将包含该 IP 地址的条目。</p>
+<p>当网络管理员要使用更新后的信息重新填充路由器缓存时，可通过使用<strong>netsh interface ip delete arpcache</strong>命令来清空缓存。</p>
+<p><strong>注意</strong>: 您可能需要主机的管理员访问权限才能使用 <strong>netsh interface ip delete arpcache</strong> 命令。</p>
+<h2 id="5-5、常用show-命令回顾"><a href="#5-5、常用show-命令回顾" class="headerlink" title="5.5、常用show 命令回顾"></a>5.5、常用show 命令回顾</h2><p>命令和工具可用于验证主机配置，同样，命令也可用于验证中间设备的接口。Cisco IOS 提供了用于验证路由器接口和交换机接口工作情况的命令。</p>
+<p>思科IOS CLI <strong>show</strong>命令显示有关设备配置和运行的相关信息。网络技术人员使用 <strong>show</strong>命令广泛用于查看配置文件，检查设备接口和进程的状态并且验证设备运行状态。几乎路由器的每个进程或功能的状态都可使用<strong>show</strong>命令显示出来。</p>
+<p>表中列出了常用的 <strong>show</strong> 命令以及应该何时使用它们。</p>
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th align="left"><strong>Useful for …</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>show running-config</strong></td>
+<td align="left">验证当前的配置和设置</td>
+</tr>
+<tr>
+<td align="left"><strong>show interfaces</strong></td>
+<td align="left">验证接口状态并显示任何错误消息</td>
+</tr>
+<tr>
+<td align="left"><strong>show ip interface</strong></td>
+<td align="left">验证接口的第 3 层信息</td>
+</tr>
+<tr>
+<td align="left"><strong>show arp</strong></td>
+<td align="left">验证本地以太网局域网上的已知主机列表</td>
+</tr>
+<tr>
+<td align="left"><strong>show ip route</strong></td>
+<td align="left">验证第 3 层路由信息。</td>
+</tr>
+<tr>
+<td align="left"><strong>show protocols</strong></td>
+<td align="left">验证哪些协议是可操作的</td>
+</tr>
+<tr>
+<td align="left"><strong>show version</strong></td>
+<td align="left">验证设备的内存、接口和许可</td>
+</tr>
+</tbody></table>
+<p><strong>注：对每个命令的详情见之前的笔记</strong></p>
+<h2 id="5-6、show-cdp-neighbors-命令"><a href="#5-6、show-cdp-neighbors-命令" class="headerlink" title="5.6、show cdp neighbors 命令"></a>5.6、show cdp neighbors 命令</h2><p>还有几个很有用的 IOS 命令。思科发现协议 (CDP) 是思科专有协议，在数据链路层运行。由于 CDP 在数据链路层运行，即使第 3 层连接还未建立，两台或多台思科网络设备（例如支持不同网络层协议的路由器）也可以互相获取信息。</p>
+<p>思科设备启动时会默认启动 CDP。CDP 会自动发现运行 CDP 的邻近思科设备，无论这些设备运行哪种第 3 层协议或协议簇。CDP 还会与直连的 CDP 邻居交换硬件和软件设备信息。</p>
+<p>CDP 提供每台 CDP 邻居设备的以下信息：</p>
+<ul>
+<li><strong>设备标识符</strong> -交换机、路由器或其他设备的已配置主机名</li>
+<li><strong>地址列表</strong> - 每种支持的协议最多对应一个网络层地址</li>
+<li><strong>端口标识符</strong> -本地和远程端口的名称 － ASCII 字符格式的字符串，例如 FastEthernet 0/0</li>
+<li><strong>功能列表</strong> -例如，特定设备是第 2 层交换机还是第 3 层交换机</li>
+<li><strong>平台</strong> - 设备的硬件平台-例如 Cisco 1841 系列路由器</li>
+</ul>
+<p>请参考拓扑和<strong>show cdp neighbor</strong>命令的输出。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN17.21.png"></p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">R3# show cdp neighbors
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone,
+                  D - Remote, C - CVTA, M - Two-port Mac Relay
+Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
+S3               Gig 0&#x2F;0&#x2F;1         122              S I   WS-C2960+ Fas 0&#x2F;5
+Total cdp entries displayed : 1
+R3#<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>输出显示了 R3 G0/0/1 接口连接到 S3 的F0/5 接口，这是思科2960+交换机。请注意，R3 尚未收集有关 S4 的信息。这是因为思科发现协议(CDP)只能发现直接连接的思科设备。S4 没有直接连接到 R3，所以没有在输出中列出。</p>
+<p>该 <strong>show cdp neighbors detail</strong> 命令显示相邻设备的 IP 地址，如输出中所示。无论是否能 ping 通邻居，CDP 都会显示邻居的 IP 地址。当两台思科路由器无法通过共享的数据链路进行路由时，此命令非常有用。<strong>show cdp neighbors detail</strong>命令有助于确定某个 CDP 邻居是否存在 IP 配置错误。</p>
+<p>虽然它和 CDP 同样有用，但它也会带来安全风险，因为它可以为威胁行动者提供有用的网络基础设施信息。例如，许多 IOS 版本默认情况下会向所有已启用的端口发送 CDP 通告。但是，最佳实践建议仅在连接到其他基础设施思科设备的接口上启用 CDP。应在面向用户的端口上禁用 CDP 通告。</p>
+<p>由于某些 IOS 版本默认情况下会向外发送 CDP 通告，因此必须知道如何禁用 CDP。要全局禁用 CDP，可以使用全局配置命令<strong>no cdp run</strong>。要在某一接口上禁用 CDP，请使用接口命令<strong>no cdp enable</strong>。</p>
+<h2 id="5-7、show-ip-interface-brief-命令"><a href="#5-7、show-ip-interface-brief-命令" class="headerlink" title="5.7、show ip interface brief 命令"></a>5.7、show ip interface brief 命令</h2><p><strong>show ip interface brief</strong>是最常用的命令之一。它提供的输出比<strong>show ip interface</strong>命令的输出更简略。它提供路由器上所有网络接口的重要信息摘要。</p>
+<p>例如，<strong>show ip interface brief</strong>输出显示路由器的所有接口、分配给每个接口的 IP 地址（如果有）和接口的运行状态。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">R1# show ip interface brief
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet0&#x2F;0&#x2F;0   209.165.200.225 YES manual up                    up
+GigabitEthernet0&#x2F;0&#x2F;1   192.168.10.1    YES manual up                    up
+Serial0&#x2F;1&#x2F;0            unassigned      NO  unset  down                  down
+Serial0&#x2F;1&#x2F;1            unassigned      NO  unset  down                  down
+GigabitEthernet0       unassigned      YES unset  administratively down down
+R1#<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>验证交换机接口</strong></p>
+<p><strong>show ip interface brief</strong>命令也可用于验证交换机接口的状态，如输出所示。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">S1# show ip interface brief
+Interface              IP-Address      OK? Method Status                Protocol
+Vlanl                  192.168.254.250 YES manual up                    up
+FastEthernet0&#x2F;l        unassigned      YES unset  down                  down
+FastEthernet0&#x2F;2        unassigned      YES unset  up                    up
+FastEthernet0&#x2F;3        unassigned      YES unset  up                    up<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>The VLAN1 interface is assigned an IPv4 address of 192.168.254.250, has been enabled, and is operational.</p>
+<p>输出还显示 FastEthernet0/1 接口已关闭。这表示没有设备连接到该接口或与该接口连接的设备中有一个网络接口不能正常运行。</p>
+<p>相反，输出显示 FastEthernet0/2 接口和 FastEthernet0/3 接口都运行正常。这通过 Status（状态）列和 Protocol（协议）列中的 up（工作）来表明。</p>
+<h2 id="5-8、视频-Show-Version-命令"><a href="#5-8、视频-Show-Version-命令" class="headerlink" title="5.8、视频- Show Version 命令"></a>5.8、视频- Show Version 命令</h2><p><strong>show version</strong>命令可用于检验和检修启动过程中使用的一些基本硬件和软件组件。</p>
+<p>视频略</p>
+<h2 id="5-9、Packet-Tracer-解释show命令输出"><a href="#5-9、Packet-Tracer-解释show命令输出" class="headerlink" title="5.9、Packet Tracer-解释show命令输出"></a>5.9、Packet Tracer-解释show命令输出</h2><p>略</p>
+<h1 id="6、故障排除方法"><a href="#6、故障排除方法" class="headerlink" title="6、故障排除方法"></a>6、故障排除方法</h1><h2 id="6-1、故障排除基本方法"><a href="#6-1、故障排除基本方法" class="headerlink" title="6.1、故障排除基本方法"></a>6.1、故障排除基本方法</h2><p>在前两个主题中，您了解了一些可用于帮助识别网络中的问题区域的实用程序和命令。这是故障排除的一个重要部分。有很多方法可以解决网络问题。本主题详细介绍了一个结构化的故障排除过程，该过程可帮助您成为更好的网络管理员。它还提供了一些更多的命令来帮助您解决问题。网络问题可能非常简单，也可能很复杂，而且可能会因硬件、软件和连接问题综合导致。技术人员必须能够分析问题并确定错误的原因才能解决网络问题。此过程称为故障排除。</p>
+<p>常用且有效的故障排除方法以科学方法为基础。</p>
+<p>此表显示故障排除流程的六个主要步骤。</p>
+<table>
+<thead>
+<tr>
+<th align="left">步骤</th>
+<th align="left"><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>第 1 步：确定问题</strong></td>
+<td align="left">这是故障排除流程的第一步。虽然此步骤中可以使用工具，但是沟通 往往非常有用。</td>
+</tr>
+<tr>
+<td align="left"><strong>第 2 步：推测潜在原因</strong></td>
+<td align="left">问题确定后，尝试推测一个 潜在的原因。此步骤通常会得出问题的多种潜在 原因。</td>
+</tr>
+<tr>
+<td align="left"><strong>第 3 步：验证推测以确定原因</strong></td>
+<td align="left">推断真正的原因 根据可能的原因，验证自己的理论，推断出 哪个才是导致问题的真正原因。技术人员通常会应用快速程序测试潜在原因，看 其是否能解决问题。流程没有解决这个问题，可能需要进一步研究 这个问题并且判断出准确的原因。</td>
+</tr>
+<tr>
+<td align="left"><strong>第 4 步：制定解决方案并实施方案</strong></td>
+<td align="left">在您已经明确了导致问题的原因之后，设计一个 方案来解决问题并实施解决方案。</td>
+</tr>
+<tr>
+<td align="left"><strong>步骤 5. 检验解决方案并实施预防措施</strong></td>
+<td align="left">在修复了问题之后，要验证完整的功能。如果需要的话，还要实施一些防御措施。</td>
+</tr>
+<tr>
+<td align="left"><strong>第 6 步：记录调查结果、采取措施和结果</strong></td>
+<td align="left">在故障排除流程的最后一步，记录 调查结果、采取措施和结果。这对于未来参考非常重要。</td>
+</tr>
+</tbody></table>
+<p>为了对问题进行评估，请先确定网络中有多少台设备存在问题。如果网络中的一台设备存在问题，则在该设备上开始进行故障排除。如果网络中的所有设备都有问题，请在连接所有其他设备的设备上开始实施故障排除流程。您应该开发出一种合理且一致的方法，通过一次排除一个问题来诊断网络问题。</p>
+<h2 id="6-2、解决还是上报？"><a href="#6-2、解决还是上报？" class="headerlink" title="6.2、解决还是上报？"></a>6.2、解决还是上报？</h2><p>在某些情况下，立即解决该问题是不可能的。如果问题需要经理决策，要求一些特定专业知识，或者实施故障排除的技术人员不具备所需网络访问级别，则应上报此问题。</p>
+<p>例如，在完成故障排查后，技术人员推断应该更换路由器模块。此问题应上报经理批准。经理可能需要再次上报此问题，因为需要财务部门批准后才能购买新的模块。</p>
+<p>公司政策应清楚地说明技术人员应何时以及如何上报问题。</p>
+<h2 id="6-3、debug命令"><a href="#6-3、debug命令" class="headerlink" title="6.3、debug命令"></a>6.3、debug命令</h2><p>OS 进程、协议、机制和事件生成消息以告知它们的状态。在排除故障或验证系统操作时，这些消息可以提供有价值的信息。IOS<strong>debug</strong>命令允许管理员实时显示这些消息，以便进行分析。它是思科IOS 设备中用于监控事件的一个非常重要的工具。</p>
+<p>所有<strong>debug</strong>命令都在特权 EXEC 模式下输入。思科IOS 允许缩小<strong>debug</strong>的输出，以便仅包含相关功能或子功能。这一点很重要，因为调试输出在 CPU 进程中享有高优先级，可能会导致系统不可用。因此，只在排查特定问题时才使用<strong>debug</strong>命令。</p>
+<p>如示例所示，要监控思科路由器中 ICMP 消息的状态，请使用<strong>debug ip icmp</strong>命令。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">R1# debug ip icmp
+ICMP packet debugging is on
+R1#
+R1# ping 10.1.1.1
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.1.1.1, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5&#x2F;5), round-trip min&#x2F;avg&#x2F;max &#x3D; 1&#x2F;1&#x2F;2 ms
+R1#
+*Aug 20 14:18:59.605: ICMP: echo reply rcvd, src 10.1.1.1, dst 209.165.200.225,topology BASE, dscp 0 topoid 0
+*Aug 20 14:18:59.606: ICMP: echo reply rcvd, src 10.1.1.1, dst 209.165.200.225,topology BASE, dscp 0 topoid 0
+*Aug 20 14:18:59.608: ICMP: echo reply rcvd, src 10.1.1.1, dst 209.165.200.225,topology BASE, dscp 0 topoid 0
+*Aug 20 14:18:59.609: ICMP: echo reply rcvd, src 10.1.1.1, dst 209.165.200.225,topology BASE, dscp 0 topoid 0
+*Aug 20 14:18:59.611: ICMP: echo reply rcvd, src 10.1.1.1, dst 209.165.200.225,topology BASE, dscp 0 topoid 0
+R1#<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>要列出所有调试命令选项的简短说明，请在特权 EXEC 模式下的命令行处使用**debug ?**命令。</p>
+<p>要关闭特定调试功能，请在<strong>debug</strong>命令前添加关键字<strong>no</strong>：</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">Router# no debug ip icmp<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>或者，您可以在特权 EXEC 模式中输入命令的<strong>undebug</strong>形式：</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">Router# undebug ip icmp<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>要同时关闭所有活动的 debug 命令，请使用<strong>undebug all</strong>命令：</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">Router# undebug all<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>使用某些 <strong>debug</strong> 命令时要小心。某些命令（例如<strong>debug all</strong>和<strong>debug ip packet</strong> ）会生成大量输出，并会使用大量的系统资源。路由器可能会忙于显示<strong>debug</strong>消息，以至于没有足够的处理能力来执行其网络功能，或侦听关闭调试的命令。因此，不建议使用这些命令选项，应尽量避免。</p>
+<h2 id="6-4、terminal-monitor-命令"><a href="#6-4、terminal-monitor-命令" class="headerlink" title="6.4、terminal monitor 命令"></a>6.4、terminal monitor 命令</h2><p>授权访问IOS命令行界面的连接可以通过以下两种方式建立:</p>
+<ul>
+<li><strong>本地</strong> 本地连接（即控制台连接）需要使用反转电缆对路由器或交换机的控制台接口进行物理访问。</li>
+<li><strong>远程</strong> -远程连接需要使用 Telnet 或 SSH 来与配置了IP的设备建立连接。</li>
+</ul>
+<p>某些 IOS 消息会自动显示在控制台连接上，但不会显示在远程连接上。例如，默认情况下，在控制台连接上显示 <strong>debug</strong> 输出。但是， <strong>debug</strong> 输出不会自动显示在远程连接上。这是因为<strong>debug</strong>消息是日志消息，它被禁止显示在vty线路上。</p>
+<p>例如，在以下输出中，用户使用 Telnet 建立了从 R2 到 R2 的远程连接。然后用户发出了 <strong>debug ip icmp</strong> 命令。但是，该命令无法显示 <strong>debug</strong> 输出。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">R2# telnet 209.165.200.225
+Trying 209.165.200.225 ... Open
+ Authorized access only!
+User Access Verification
+Password:
+R1&gt; enable
+Password:
+R1# debug ip icmp
+ICMP packet debugging is on
+R1# ping 10.1.1.1
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.1.1.1, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5&#x2F;5), round-trip min&#x2F;avg&#x2F;max &#x3D; 1&#x2F;1&#x2F;2 ms
+R1#
+! No debug output displayed&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>要在终端（虚拟控制台）上显示日志消息，请使用<strong>terminal monitor</strong>特权 EXEC 命令。要停止终端上的日志记录消息，请使用<strong>terminal no monitor</strong>特权 EXEC 命令。</p>
+<p>例如，注意<strong>terminal monitor</strong>命令现在是如何输入的，<strong>ping</strong>命令显示了<strong>debug</strong>输出。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">R1#  terminal monitor
+R1# ping 10.1.1.1
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.1.1.1, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5&#x2F;5), round-trip min&#x2F;avg&#x2F;max &#x3D; 1&#x2F;1&#x2F;2 ms
+R1#
+*Aug 20 16:03:49.735: ICMP: echo reply rcvd, src 10.1.1.1, dst 209.165.200.225,topology BASE, dscp 0 topoid 0
+**Aug 20 16:03:49.737: ICMP: echo reply rcvd, src 10.1.1.1, dst 209.165.200.225,topology BASE, dscp 0 topoid 0
+**Aug 20 16:03:49.738: ICMP: echo reply rcvd, src 10.1.1.1, dst 209.165.200.225,topology BASE, dscp 0 topoid 0
+**Aug 20 16:03:49.740: ICMP: echo reply rcvd, src 10.1.1.1, dst 209.165.200.225,topology BASE, dscp 0 topoid 0
+**Aug 20 16:03:49.741: ICMP: echo reply rcvd, src 10.1.1.1, dst 209.165.200.225,topology BASE, dscp 0 topoid 0
+R1# no debug ip icmp
+ICMP packet debugging is off
+R1#<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>注意</strong>: 该 <strong>debug</strong> 命令的目的是在短时间内捕获实时输出（即几秒钟到一分钟左右）。不需要时总是禁用<strong>debug</strong>。</p>
+<h1 id="7、故障排除场景"><a href="#7、故障排除场景" class="headerlink" title="7、故障排除场景"></a>7、故障排除场景</h1><h2 id="7-1、双工操作和不匹配问题"><a href="#7-1、双工操作和不匹配问题" class="headerlink" title="7.1、双工操作和不匹配问题"></a>7.1、双工操作和不匹配问题</h2><p>许多常见的网络问题可以很容易地识别和解决。现在您已经掌握了用于网络故障排除的工具和流程，本主题将回顾作为网络管理员可能遇到的一些常见网络问题。</p>
+<p>在数据通信中，双工是指两台设备之间数据传输的方向。</p>
+<p>有两种双工通信模式：</p>
+<ul>
+<li><strong>半双工</strong> -通信限制为每次在一个方向进行数据交换。</li>
+<li><strong>全双工</strong> -允许同时发送和接收通信。</li>
+</ul>
+<p>该图说明了每种双工方法的工作方式。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN17.22.png"></p>
+<p>为了达到最佳通信性能，两个互相连接的以太网接口必须在同一双工模式下运行，以避免低效和链路延迟。</p>
+<p>以太网自动协商功能简化了配置，最大限度地减少了问题，最大限度地提高了两个相互连接的以太网链路之间的链路性能。连接的设备首先通告其支持的功能，然后选择两端所支持的最高性能模式。例如，图中的交换机和路由器已成功自动协商全双工模式。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN17.23.png"></p>
+<p>如果两个连接的设备，一个在全双工模式下运行，另一个在半双工模式下运行，就会出现双工不匹配。当数据通过双工不匹配的链路通信时，链路性能就会很差。</p>
+<p>双工不匹配通常是由于接口配置错误导致的，或者在极少数情况下是由自动协商失败引起的。当设备之间仍在通信时，可能很难对双工不匹配的问题进行排查。</p>
+<h2 id="7-2、IOS-设备的-IP-寻址问题"><a href="#7-2、IOS-设备的-IP-寻址问题" class="headerlink" title="7.2、IOS 设备的 IP 寻址问题"></a>7.2、IOS 设备的 IP 寻址问题</h2><p>与 IP 地址相关的问题可能会阻止远程网络设备进行通信。由于 IP 地址是分层的，分配给网络设备的任何 IP 地址都必须符合该网络地址范围。错误分配的 IP 地址会导致很多问题，包括 IP 地址冲突和路由问题。</p>
+<p>IPv4 分配不正确的两个常见原因是手动分配错误或与 DHCP 相关的问题。</p>
+<p>网络管理员通常必须手动将 IP 地址分配到设备，比如服务器和路由器。如果在分配期间出现错误，则很可能引发设备的通信问题。</p>
+<p>在 IOS 设备上，请使用<strong>show ip interface</strong> 或 <strong>show ip interface brief</strong>命令验证哪些 IPv4 地址分配给了网络接口。例如，如图所示发出 <strong>show ip interface</strong> <strong>brief</strong> 命令将验证 R1 上的接口状态。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">R1# show ip interface brief
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet0&#x2F;0&#x2F;0   209.165.200.225 YES manual up                    up
+GigabitEthernet0&#x2F;0&#x2F;1   192.168.10.1    YES manual up                    up
+Serial0&#x2F;1&#x2F;0            unassigned      NO  unset  down                  down
+Serial0&#x2F;1&#x2F;1            unassigned      NO  unset  down                  down
+GigabitEthernet0       unassigned      YES unset  administratively down down
+R1#<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="7-3、终端设备的-IP编址问题"><a href="#7-3、终端设备的-IP编址问题" class="headerlink" title="7.3、终端设备的 IP编址问题"></a>7.3、终端设备的 IP编址问题</h2><p>在基于 Windows 的计算机中，当设备无法与 DHCP 服务器通信时，Windows 将自动分配一个属于 169.254.0.0/16 范围内的地址。此功能称为自动专用IP编址 (APIPA)，旨在促进本地网络内的通信。可以将其想象成 Windows 发声说“我将使用 169.254.0.0/16 范围内的这个地址，因为我无法获得任何其他地址”。</p>
+<p>通常，拥有APIPA地址的计算机无法与网络中的其他设备通信，因为这些设备很可能不属于 169.254.0.0/16 网络。这种情况表示，应对 IPv4 地址自动分配问题进行修复。</p>
+<p><strong>注意</strong>: 如果与 DHCP 服务器的通信失败，其他操作系统（例如 Linux 和 OS X）不会将 IPv4 地址分配给网络接口。</p>
+<p>大多数终端设备配置为依赖于 DHCP 服务器来实现 IPv4 地址的自动分配。如果设备无法与 DHCP 服务器通信，则服务器不会为该特定网络分配 IPv4 地址，而且设备将无法通信。</p>
+<p>如输出所示，要验证 IP 地址是否分配到基于 Windows 的计算机，请使用<strong>ipconfig</strong>命令。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">C:\Users\PC-A&gt; ipconfig
+Windows IP Configuration
+(Output omitted)
+Wireless LAN adapter Wi-Fi:
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::a4aa:2dd1:ae2d:a75e%16
+   IPv4 Address. . . . . . . . . . . : 192.168.10.10
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.10.1
+(Output omitted)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="7-4、默认网关问题"><a href="#7-4、默认网关问题" class="headerlink" title="7.4、默认网关问题"></a>7.4、默认网关问题</h2><p>终端设备的默认网关是可以将流量转发到其他网络的最近的网络设备。如果设备的默认网关地址不正确或不存在，它将无法与远程网络中的设备通信。由于默认网关是通向远程网络的路径，其地址必须与终端设备属于同一网络。</p>
+<p>默认网关地址可以手动设置，也可以从 DHCP 服务器获取。与 IPv4 寻址问题类似，默认网关问题可能与配置错误（在手动分配的情况下）或 DHCP 问题（如果使用自动分配）有关。</p>
+<p>要解决默认网关配置错误问题，请确保为设备配置正确的默认网关。如果手动设置的默认地址不正确，只需将其替换为合适的地址即可。如果默认网关地址是自动设置的，请确保设备可以与 DHCP 服务器通信。还必须验证路由器接口上的 IPv4 地址和子网掩码是否配置适当，以及该接口是否处于活动状态。</p>
+<p>如显示所示，要验证基于 Windows 的计算机上的默认网关，请使用<strong>ipconfig</strong>命令。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">C:\Users\PC-A&gt; ipconfig
+Windows IP Configuration
+(Output omitted)
+Wireless LAN adapter Wi-Fi:
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::a4aa:2dd1:ae2d:a75e%16
+   IPv4 Address. . . . . . . . . . . : 192.168.10.10
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.10.1
+(Output omitted)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>在路由器上，使用<strong>show ip route</strong>命令列出路由表，并验证称为默认路由的默认网关是否已设置。当数据包的目的地址与路由表中任何其他路由不匹配时，使用此路由。</p>
+<p>例如，输出验证 R1具有指向 IP 地址 209.168.200.226 的默认网关（即最后求助网关）。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">R1# show ip route | begin Gateway
+Gateway of last resort is 209.165.200.226 to network 0.0.0.0
+O*E2  0.0.0.0&#x2F;0 [110&#x2F;1] via 209.165.200.226, 02:19:50, GigabitEthernet0&#x2F;0&#x2F;0
+      10.0.0.0&#x2F;24 is subnetted, 1 subnets
+O        10.1.1.0 [110&#x2F;3] via 209.165.200.226, 02:05:42, GigabitEthernet0&#x2F;0&#x2F;0
+      192.168.10.0&#x2F;24 is variably subnetted, 2 subnets, 2 masks
+C        192.168.10.0&#x2F;24 is directly connected, GigabitEthernet0&#x2F;0&#x2F;1
+L        192.168.10.1&#x2F;32 is directly connected, GigabitEthernet0&#x2F;0&#x2F;1
+      209.165.200.0&#x2F;24 is variably subnetted, 3 subnets, 2 masks
+C        209.165.200.224&#x2F;30 is directly connected, GigabitEthernet0&#x2F;0&#x2F;0
+L        209.165.200.225&#x2F;32 is directly connected, GigabitEthernet0&#x2F;0&#x2F;0
+O        209.165.200.228&#x2F;30
+           [110&#x2F;2] via 209.165.200.226, 02:07:19, GigabitEthernet0&#x2F;0&#x2F;0
+R1#<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>突出显示的第一行基本上说明了网关通往任何地址（即 0.0.0.0）都应该发送到 IP 地址 209.165.200.226。第二行显示了 R1 如何获悉默认网关。在这种情况下，R1 从另一个启用了OSPF的路由器接收信息。</p>
+<h2 id="7-5、排除-DNS-故障"><a href="#7-5、排除-DNS-故障" class="headerlink" title="7.5、排除 DNS 故障"></a>7.5、排除 DNS 故障</h2><p>域名服务 (DNS) 定义了一种将域名（例如 <a target="_blank" rel="noopener" href="http://www.cisco.㯘/">www.cisco.com）与</a>-ob5f/) IP 地址相匹配的自动化服务。DNS 解析对于设备无关紧要，但对最终用户而言非常重要。</p>
+<p>用户通常会错误地将互联网链路的运行与 DNS的可用性相关联。“网络中断”或“互联网中断”等用户投诉通常就是由于 DNS 服务器无法访问所导致的。当数据包路由以及其他网络服务仍正常运行时，DNS 故障经常会导致用户得出错误结论。如果用户在 Web 浏览器中键入一个域名（例如 <a target="_blank" rel="noopener" href="http://www.cisco.㯘/">www.cisco.com），而</a>%2C-w63n/) DNS 服务器无法访问，则该域名将无法转换为 IP 地址，网站将不会显示。</p>
+<p>DNS 服务器地址可以手动或自动分配。网络管理员通常负责在服务器和其他设备上手动分配 DNS 服务器地址，而 DHCP 用于将 DNS 服务器地址自动分配到客户端。</p>
+<p>虽然公司和组织通常会管理他们自己的 DNS 服务器，但任何可访问的 DNS 服务器都可以用于解析域名。小型办公室和家庭办公室 (SOHO) 用户通常依赖其 ISP 所维护的 DNS 服务器来进行域名解析。ISP 维护的 DNS 服务器通过 DHCP 分配给 SOHO 客户。另外，Google 维护了一个可供所有人使用的公共 DNS 服务器，它对于测试非常有用。Google 的公共 DNS 服务器的 IPv4 地址为 8.8.8.8，其 IPv6 DNS 地址为 2001:4860:4860::8888。</p>
+<p>思科提供了OpenDNS，它通过过滤网络钓鱼和一些恶意网站来提供安全的 DNS 服务。您可以在首选 DNS 服务器和备用 DNS 服务器字段中将 DNS 地址更改为 208.67.222.222 和 208.67.220.220。家庭和企业可以使用web内容过滤和安全等高级功能。</p>
+<p>如显示所示，使用<strong>ipconfig /all</strong>验证 Windows 计算机正在使用哪个 DNS 服务器。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">C:\Users\PC-A&gt; ipconfig &#x2F;all
+(Output omitted)
+Wireless LAN adapter Wi-Fi:
+   Connection-specific DNS Suffix  . :
+   Description . . . . . . . . . . . : Intel(R) Dual Band Wireless-AC 8265
+   Physical Address. . . . . . . . . : F8-94-C2-E4-C5-0A
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::a4aa:2dd1:ae2d:a75e%16(Preferred)
+   IPv4 Address. . . . . . . . . . . : 192.168.10.10(Preferred)
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Lease Obtained. . . . . . . . . . : August 17, 2019 1:20:17 PM
+   Lease Expires . . . . . . . . . . : August 18, 2019 1:20:18 PM
+   Default Gateway . . . . . . . . . : 192.168.10.1
+   DHCP Server . . . . . . . . . . . : 192.168.10.1
+   DHCPv6 IAID . . . . . . . . . . . : 100177090
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-21-F3-76-75-54-E1-AD-DE-DA-9A
+   DNS Servers . . . . . . . . . . . : 208.67.222.222
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+(Output omitted)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>nslookup</strong>命令是 PC 的另一个有用的 DNS 故障排除工具。利用 <strong>nslookup</strong>，用户可以手动进行 DNS 查询并分析 DNS 响应。该 <strong>nslookup</strong> 命令显示了对于<a target="_blank" rel="noopener" href="http://www.cisco.com/">www.cisco.com</a> 查询的输出。请注意，您也可以简单地输入一个IP地址然后通过 <strong>nslookup</strong> 解析其域名。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">C:\Users\PC-A&gt; nslookup
+Default Server:  Home-Net
+Address:  192.168.1.1
+&gt; cisco.com
+Server:  Home-Net
+Address:  192.168.1.1
+Non-authoritative answer:
+Name:    cisco.com
+Addresses:  2001:420:1101:1::185
+          72.163.4.185
+&gt; 8.8.8.8
+Server:  Home-Net
+Address:  192.168.1.1
+Name:    dns.google
+Address:  8.8.8.8
+&gt;
+&gt; 208.67.222.222
+Server:  Home-Net
+Address:  192.168.1.1
+Name:    resolver1.opendns.com
+Address:  208.67.222.222
+&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="7-6、Packet-Tracer-排除连接故障"><a href="#7-6、Packet-Tracer-排除连接故障" class="headerlink" title="7.6、Packet Tracer - 排除连接故障"></a>7.6、Packet Tracer - 排除连接故障</h2><p>略</p>
+<h2 id="7-7、实验-排除连接故障"><a href="#7-7、实验-排除连接故障" class="headerlink" title="7.7、实验 - 排除连接故障"></a>7.7、实验 - 排除连接故障</h2><p>略</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">wck</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://example.com/2021/120353702.html">http://example.com/2021/120353702.html</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">wck</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E6%80%9D%E7%A7%91-%E7%BD%91%E7%BB%9C/">
+                                    <span class="chip bg-color">思科 网络</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'yohIdjiNFr5gi9AMV8TPhv90-gzGzoHsz',
+        appKey: 'dpdaXreArfn9sbA5A5hGBlUG',
+        notify: 'false' === 'true',
+        verify: 'false' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'monsterid',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: '留下你想说的话吧~',
+        enableQQ: true,
+        emojiCDN: '//i0.hdslb.com/bfs/emote/', 
+        // 表情title和图片映射
+        emojiMaps: {
+        "tv_doge": "6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png",
+        "tv_亲亲": "a8111ad55953ef5e3be3327ef94eb4a39d535d06.png",
+        "tv_偷笑": "bb690d4107620f1c15cff29509db529a73aee261.png",
+        "tv_再见": "180129b8ea851044ce71caf55cc8ce44bd4a4fc8.png",
+        "tv_冷漠": "b9cbc755c2b3ee43be07ca13de84e5b699a3f101.png",
+        "tv_发怒": "34ba3cd204d5b05fec70ce08fa9fa0dd612409ff.png",
+        "tv_发财": "34db290afd2963723c6eb3c4560667db7253a21a.png",
+        "tv_可爱": "9e55fd9b500ac4b96613539f1ce2f9499e314ed9.png",
+        "tv_吐血": "09dd16a7aa59b77baa1155d47484409624470c77.png",
+        "tv_呆": "fe1179ebaa191569b0d31cecafe7a2cd1c951c9d.png",
+        "tv_呕吐": "9f996894a39e282ccf5e66856af49483f81870f3.png",
+        "tv_困": "241ee304e44c0af029adceb294399391e4737ef2.png",
+        "tv_坏笑": "1f0b87f731a671079842116e0991c91c2c88645a.png",
+        "tv_大佬": "093c1e2c490161aca397afc45573c877cdead616.png",
+        "tv_大哭": "23269aeb35f99daee28dda129676f6e9ea87934f.png",
+        "tv_委屈": "d04dba7b5465779e9755d2ab6f0a897b9b33bb77.png",
+        "tv_害羞": "a37683fb5642fa3ddfc7f4e5525fd13e42a2bdb1.png",
+        "tv_尴尬": "7cfa62dafc59798a3d3fb262d421eeeff166cfa4.png",
+        "tv_微笑": "70dc5c7b56f93eb61bddba11e28fb1d18fddcd4c.png",
+        "tv_思考": "90cf159733e558137ed20aa04d09964436f618a1.png",
+        "tv_惊吓": "0d15c7e2ee58e935adc6a7193ee042388adc22af.png",
+        "tv_打脸": "56ab10b624063e966bfcb76ea5dc4794d87dfd47.png",
+        "tv_抓狂": "fe31c08edad661d63762b04e17b8d5ae3c71a757.png",
+        "tv_抠鼻": "c666f55e88d471e51bbd9fab9bb308110824a6eb.png",
+        "tv_斜眼笑": "911f987aa8bc1bee12d52aafe62bc41ef4474e6c.png",
+        "tv_无奈": "ea8ed89ee9878f2fece2dda0ea8a5dbfe21b5751.png",
+        "tv_晕": "5443c22b4d07fb1907ccc610c8e6db254f2461b7.png",
+        "tv_流汗": "cead1c351ab8d79e9f369605beb90148db0fbed3.png",
+        "tv_流泪": "7e71cde7858f0cd50d74b0264aa26db612a8a167.png",
+        "tv_流鼻血": "c32d39db2737f89b904ca32700d140a9241b0767.png",
+        "tv_点赞": "f85c354995bd99e28fc76c869bfe42ba6438eff4.png",
+        "tv_生气": "26702dcafdab5e8225b43ffd23c94ac1ff932654.png",
+        "tv_生病": "8b0ec90e6b86771092a498c54f09fc94621c1900.png",
+        "tv_疑问": "0793d949b18d7be716078349c202c15ff166f314.png",
+        "tv_白眼": "c1d59f439e379ee50eef488bcb5e5378e5044ea4.png",
+        "tv_皱眉": "72ccad6679fea0d14cce648b4d818e09b8ffea2d.png",
+        "tv_目瞪口呆": "0b8cb81a68de5d5365212c99375e7ace3e7891b7.png",
+        "tv_睡着": "8b196675b53af58264f383c50ad0945048290b33.png",
+        "tv_笑哭": "1abc628f6d4f4caf9d0e7800878f4697abbc8273.png",
+        "tv_腼腆": "89712c0d4af73e67f89e35cbc518420380a7f6f4.png",
+        "tv_色": "61822c7e9aae5da76475e7892534545336b23a6f.png",
+        "tv_调侃": "4bc022533ef31544ca0d72c12c808cf4a1cce3e3.png",
+        "tv_调皮": "b9c41de8e82dd7a8515ae5e3cb63e898bf245186.png",
+        "tv_鄙视": "6e72339f346a692a495b123174b49e4e8e781303.png",
+        "tv_闭嘴": "c9e990da7f6e93975e25fd8b70e2e290aa4086ef.png",
+        "tv_难过": "87f46748d3f142ebc6586ff58860d0e2fc8263ba.png",
+        "tv_馋": "fc7e829b845c43c623c8b490ee3602b7f0e76a31.png",
+        "tv_鬼脸": "0ffbbddf8a94d124ca2f54b360bbc04feb6bbfea.png",
+        "tv_黑人问号": "45821a01f51bc867da9edbaa2e070410819a95b2.png",
+        "tv_鼓掌": "1d21793f96ef4e6f48b23e53e3b9e42da833a0f6.png"
+        },
+        requiredFields: ['nick','mail'],
+    });
+</script>
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2023/022828758.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="计算机网络">
+                        
+                        <span class="card-title">计算机网络</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            计算机网络期末复习
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-02-28
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/" class="post-category">
+                                    期末复习
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+                        <span class="chip bg-color">计算机网络</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/120314164.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="ITN网络课程笔记（十六）">
+                        
+                        <span class="card-title">ITN网络课程笔记（十六）</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            计网笔记（十六）网络安全基础知识
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-03
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%BD%91%E7%BB%9C/" class="post-category">
+                                    网络
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/web%E5%AE%89%E5%85%A8-%E5%AE%89%E5%85%A8%E6%9E%B6%E6%9E%84-%E6%80%9D%E7%A7%91-%E7%BD%91%E7%BB%9C/">
+                        <span class="chip bg-color">web安全 安全架构 思科 网络</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2023</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank">wck</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">352.5k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/rumor-sourse" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:2560428298@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2560428298" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2560428298" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+    <a href="https://weibo.com/u/7491101842/home" class="tooltipped" target="_blank" data-tooltip="关注我的微博: https://weibo.com/u/7491101842/home" data-position="top" data-delay="50">
+        <i class="fab fa-weibo"></i>
+    </a>
+
+
+
+    <a href="https://www.zhihu.com/people/chu-zi-hang-46-14" class="tooltipped" target="_blank" data-tooltip="关注我的知乎: https://www.zhihu.com/people/chu-zi-hang-46-14" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
+    </a>
+
+
+
+
+
+    <a href="https://space.bilibili.com/531340472" class="tooltipped" target="_blank" data-tooltip="在B站上关注我" " data-position="top" data-delay="50">
+        <i class="fas fa-play-circle"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <!-- <script type="text/javascript">
+        //只在桌面版网页启用特效
+        var windowWidth = $(window).width();
+        if (windowWidth > 768) {
+            document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+        }
+    </script> -->
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+ 
+</body>
+
+</html>

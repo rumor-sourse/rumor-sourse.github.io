@@ -1,0 +1,2130 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="ITN网络课程笔记（十二）, charminghacker">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>ITN网络课程笔记（十二） | charminghacker</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="charminghacker" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">charminghacker</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">charminghacker</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/rumor-sourse" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        <!-- 
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/rumor-sourse" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+         -->
+    </nav>
+     <!-- <div class="weather">
+        
+        <div id="tp-weather-widget"></div>
+        <script>
+            (function (a, h, g, f, e, d, c, b) { b = function () { d = h.createElement(g); c = h.getElementsByTagName(g)[0]; d.src = e; d.charset = "utf-8"; d.async = 1; c.parentNode.insertBefore(d, c) }; a["SeniverseWeatherWidgetObject"] = f; a[f] || (a[f] = function () { (a[f].q = a[f].q || []).push(arguments) }); a[f].l = +new Date(); if (a.attachEvent) { a.attachEvent("onload", b) } else { a.addEventListener("load", b, false) } }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+            window.SeniverseWeatherWidget('show', {
+                flavor: "bubble",
+                location: "WW92M43YCQG0",
+                geolocation: true,
+                language: "zh-Hans",
+                unit: "c",
+                theme: "auto",
+                token: "2ee46d07-e99c-4227-925e-461574e6469c",
+                hover: "enabled",
+                container: "tp-weather-widget"
+            })
+        </script>
+    </div>   -->
+    
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">ITN网络课程笔记（十二）</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E6%80%9D%E7%A7%91-%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/">
+                                <span class="chip bg-color">思科 网络协议</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E7%BD%91%E7%BB%9C/" class="post-category">
+                                网络
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-12-01
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2023-03-01
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    11.3k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    43 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="十二、IPv6编址"><a href="#十二、IPv6编址" class="headerlink" title="十二、IPv6编址"></a>十二、IPv6编址</h1><p><strong>模块目标</strong>: 实施 IPv6 编址方案。</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>主题标题</strong></th>
+<th align="left"><strong>主题目标</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>IPv4 的问题</strong></td>
+<td align="left">说明 IPv6 编址的必要性。</td>
+</tr>
+<tr>
+<td align="left"><strong>IPv6 地址表示方法</strong></td>
+<td align="left">说明 IPv6 地址的表示方式。</td>
+</tr>
+<tr>
+<td align="left"><strong>IPv6 地址类型</strong></td>
+<td align="left">比较不同类型的 IPv6 网络地址。</td>
+</tr>
+<tr>
+<td align="left"><strong>GUA 和 LLA 静态配置</strong></td>
+<td align="left">说明如何配置静态全局单播和链路本地 IPv6 网络地址。</td>
+</tr>
+<tr>
+<td align="left"><strong>IPv6 GUA的动态编址</strong></td>
+<td align="left">说明如何动态配置全局单播地址。</td>
+</tr>
+<tr>
+<td align="left"><strong>IPv6 LLA的动态编址</strong></td>
+<td align="left">动态配置链路本地地址。</td>
+</tr>
+<tr>
+<td align="left"><strong>IPv6 组播地址</strong></td>
+<td align="left">识别 IPv6 地址</td>
+</tr>
+<tr>
+<td align="left"><strong>IPv6 网络的子网划分</strong></td>
+<td align="left">实施子网划分 IPv6编址方案</td>
+</tr>
+</tbody></table>
+<h1 id="1、IPv4的问题"><a href="#1、IPv4的问题" class="headerlink" title="1、IPv4的问题"></a>1、IPv4的问题</h1><h2 id="1-1、IPv6的必要性"><a href="#1-1、IPv6的必要性" class="headerlink" title="1.1、IPv6的必要性"></a>1.1、IPv6的必要性</h2><p>您已经知道IPv4的地址用完了。这就是为什么您需要了解 IPv6 的原因。</p>
+<p>IPv6 旨在接替 IPv4。IPv6 拥有更大的 128 位地址空间，提供 340 涧（即，340后面有36个0）个不确定地址。不过，IPv6 不只是具有更大的地址空间。</p>
+<p>当 IEFT 开始开发 IPv4 的接替版本时，还借此机会修复了 IPv4 的限制，并开发了增强功能。一个示例是 Internet 控制消息协议第 6 版 (ICMPv6)，它包括 IPv4 的 ICMP (ICMPv4) 中没有的地址解析和地址自动配置功能。</p>
+<p>IPv4 地址空间耗尽一直是迁移到 IPv6 的动因。随着非洲、亚洲和世界其他地区越来越多地使用互联网，IPv4 地址已经无法满足这一增长需求。</p>
+<p>理论上，IPv4 最多有 43 亿个地址。私有地址与网络地址转换 (NAT) 对于放缓 IPv4 地址空间的耗尽起了不可或缺的作用。然而，NAT对于许多应用程序来说是有问题的，它会造成延迟，并且有严重阻碍对等体对对等体通信的限制。</p>
+<p>随着移动设备数量的不断增加，移动供应商一直在引领着向IPv6的过渡。美国最大的两家移动运营商报告称，他们超过90%的流量都在IPv6之上。</p>
+<p>大多数顶级ISP和内容提供商，如YouTube、Facebook和NetFlix，也已经完成了过渡。许多公司，如微软、Facebook和LinkedIn，都在向内部只允许使用ipv6过渡。2018年，宽带ISP Comcast报告部署超过65%，英国天空广播报告超过86%。</p>
+<p><strong>物联网</strong></p>
+<p>当今的互联网与过去几十年相比大有不同。当今的互联网不仅仅是邮件、网页和计算机之间的文件传输。互联网正在不断向物联网 (IoT) 发展。能够访问互联网的设备将不仅仅只有计算机、平板电脑和智能手机。未来安装有传感器并支持互联网访问的设备将包括汽车、生物化学设备和家用电器以及自然生态系统等一切事物。</p>
+<p>考虑到互联网用户的不断增加、有限的 IPv4 地址空间、NAT 问题和物联网等问题，是时候开始向 IPv6 过渡了。</p>
+<h2 id="1-2、IPv4和IPv6并存"><a href="#1-2、IPv4和IPv6并存" class="headerlink" title="1.2、IPv4和IPv6并存"></a>1.2、IPv4和IPv6并存</h2><p>过渡到 IPv6 不是一朝一夕可以完成的。在不久的将来，IPv4和IPv6都将共存，并且过渡将需要几年的时间。IETF 已经创建了各种协议和工具来协助网络管理员将网络迁移到 IPv6。迁移技术可分为三类：</p>
+<h3 id="双堆栈"><a href="#双堆栈" class="headerlink" title="双堆栈"></a>双堆栈</h3><p>双堆栈允许 IPv4 和 IPv6 在同一网段上共存。双堆栈设备同时运行 IPv4 和 IPv6 协议栈。称为原生 IPv6，这意味着客户网络与他们的ISP建立了IPv6连接，并能够通过IPv6访问互联网上的内容。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN12.1.png"></p>
+<h3 id="隧道"><a href="#隧道" class="headerlink" title="隧道"></a>隧道</h3><p>隧道是一种通过 IPv4 网络传输 IPv6 数据包的方法。IPv6 数据包与其他类型数据类似，也封装在 IPv4 数据包中。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN12.2.png"></p>
+<h3 id="转换"><a href="#转换" class="headerlink" title="转换"></a>转换</h3><p>网络地址转换 64 (NAT64) 允许支持 IPv6 的设备与支持 IPv4 的设备使用类似于 IPv4 中 NAT 的转换技术进行通信。IPv6 数据包被转换为 IPv4 数据包，IPv4 数据包被转换为 IPv6 数据包。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN12.3.jpg"></p>
+<p><strong>注意:</strong> 隧道和转换用于过渡到原生IPv6，仅应在需要时使用。目标是从源到目的地进行本地 IPv6 通信。</p>
+<h1 id="2、IPv6地址表示方法"><a href="#2、IPv6地址表示方法" class="headerlink" title="2、IPv6地址表示方法"></a>2、IPv6地址表示方法</h1><h2 id="2-1、IPv6编址格式"><a href="#2-1、IPv6编址格式" class="headerlink" title="2.1、IPv6编址格式"></a>2.1、IPv6编址格式</h2><p>学习网络中的IPv6的第一步是理解IPv6地址的编写和格式化方式。IPv6 地址比 IPv4 地址多得多，这就是为什么我们不太可能用完它们。</p>
+<p>IPv6 地址长度为 128 位，写作十六进制值字符串。如图所示，每 4 位以一个十六进制数字表示，共 32 个十六进制值。IPv6 地址不区分大小写，可用大写或小写书写。</p>
+<p><strong>16位数据段或十六进制数</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN12.4.jpg"></p>
+<p><strong>首选格式</strong></p>
+<p>前面的图也显示了，书写 IPv6 地址的首选格式为 x：x：x：x：x：x：x：x，每个“x”均包括四个十六进制值。术语“八位组”是指 IPv4 地址的八位。在 IPv6 中，十六位位组是指代 16 位二进制或四位十六进制数的非官方术语。每个“x”是一个16 位二进制数或四位十六进制数字组成的十六进制数。</p>
+<p>首选格式表示使用所有 32 个十六进制数字书写 IPv6 地址。这并不意味着它是表示 IPv6 地址的理想方法。在本模块中，您将了解到有两条规则可帮助减少表示一个 IPv6 地址所需数字的数目</p>
+<h2 id="2-2、规则1-省略前导0"><a href="#2-2、规则1-省略前导0" class="headerlink" title="2.2、规则1-省略前导0"></a>2.2、规则1-省略前导0</h2><p>第一条有助于缩短 IPv6 地址记法的规则是省略十六进制数中的所有前导 0（零）。以下是省略前导零的四个方法示例：</p>
+<ul>
+<li>01ab 可表示为 1ab</li>
+<li>09f0 可表示为 9f0</li>
+<li>0a00 可表示为 a00</li>
+<li>00ab 可表示为 ab</li>
+</ul>
+<p>此规则仅适用于前导 0，不适用于后缀 0，否则会造成地址不明确。例如，十六进制的“abc”可能是“0abc”，也可能是“abc0”，但这些表示的值不相同。</p>
+<table>
+<thead>
+<tr>
+<th align="left">类型</th>
+<th align="left">格式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">首选</td>
+<td align="left"><code>2001 : 0db8 : 0000 : 1111 : 0000 : 0000 : 0000 : 0200</code></td>
+</tr>
+<tr>
+<td align="left">无前导 0</td>
+<td align="left"><code>2001 :  db8 :    0 : 1111 :    0 :    0 :    0 :  200</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">首选</td>
+<td align="left"><code>2001 : 0db8 : 0000 : 00a3 : ab00 : 0ab0 : 00ab : 1234</code></td>
+</tr>
+<tr>
+<td align="left">无前导 0</td>
+<td align="left"><code>2001 :  db8 :    0 :   a3 : ab00 :  ab0 :   ab : 1234</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">首选</td>
+<td align="left"><code>2001 : 0db8 : 000a : 0001 : c012 : 90ff : fe90 : 0001</code></td>
+</tr>
+<tr>
+<td align="left">无前导 0</td>
+<td align="left"><code>2001 :  db8 :    a :    1 : c012 : 90ff : fe90 :    1</code></td>
+</tr>
+</tbody></table>
+<h2 id="2-3、规则2-双冒号"><a href="#2-3、规则2-双冒号" class="headerlink" title="2.3、规则2-双冒号"></a>2.3、规则2-双冒号</h2><p>第二条有助于缩短 IPv6 地址记法的规则是使用双冒号 (::) 替换任何由一个或多个全由 0 组成的16 位十六进制数组成的连续字符串。例如，2001:db8:cafe:1:0:0:0:1（前导0省略）可以表示为2001:db8:cafe:1::1。双冒号 (::) 用于代替三个全 0十六进制数 (0:0:0)。</p>
+<p><strong>双冒号 (::) 仅可在每个地址中使用一次，否则可能会得出一个以上的地址。</strong>当与忽略前导 0 的方法一起使用时，IPv6 地址记法可以大幅缩短。这通常称为压缩格式。</p>
+<p>如果一个地址有多个连续的全为0的十六进制数字符串，最佳实践是在最长的字符串上使用双冒号(::)。如果字符串相等，则第一个字符串应使用双冒号 (::)。</p>
+<table>
+<thead>
+<tr>
+<th align="left">类型</th>
+<th align="left">格式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Preferred</td>
+<td align="left"><code>2001 : 0db8 : 0000 : 1111 : 0000 : 0000 : 0000 : 0200</code></td>
+</tr>
+<tr>
+<td align="left">压缩/空间</td>
+<td align="left"><code>2001 :  db8 :    0 : 1111 :                    :  200</code></td>
+</tr>
+<tr>
+<td align="left">压缩</td>
+<td align="left"><code>2001:db8:0:1111::200</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">首选</td>
+<td align="left"><code>2001 : 0db8 : 0000 : 0000 : ab00 : 0000 : 0000 : 0000</code></td>
+</tr>
+<tr>
+<td align="left">压缩/空间</td>
+<td align="left"><code>2001 :  db8 :    0 :    0 : ab00 :: </code></td>
+</tr>
+<tr>
+<td align="left">压缩</td>
+<td align="left"><code>2001:db8:0:0:ab00::</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">首选</td>
+<td align="left"><code>2001 : 0db8 : aaaa : 0001 : 0000 : 0000 : 0000 : 0000</code></td>
+</tr>
+<tr>
+<td align="left">压缩/空间</td>
+<td align="left"><code>2001 :  db8 : aaaa :    1 ::</code></td>
+</tr>
+</tbody></table>
+<h1 id="3、IPv6地址类型"><a href="#3、IPv6地址类型" class="headerlink" title="3、IPv6地址类型"></a>3、IPv6地址类型</h1><h2 id="3-1、单播、组播、任播"><a href="#3-1、单播、组播、任播" class="headerlink" title="3.1、单播、组播、任播"></a>3.1、单播、组播、任播</h2><p>与 IPv4 一样，有不同类型的 IPv6 地址。事实上，IPv6 地址有三大类：</p>
+<ul>
+<li><strong>单播</strong> - IPv6 单播地址用于唯一标识支持 IPv6 的设备上的接口。</li>
+<li><strong>组播</strong> - IPv6 组播地址用于将单个 IPv6 数据包发送到多个目的地。</li>
+<li><strong>任播</strong> -IPv6 任播地址是可分配到多个设备的 IPv6 任播地址。发送至任播地址的数据包会被路由到最近的拥有该地址的设备。任播地址不在本课程的讨论范围之内。</li>
+</ul>
+<p>与 IPv4 不同，IPv6 没有广播地址。但是，IPv6 具有 IPv6 全节点组播地址，这在本质上与广播地址的效果相同。</p>
+<h2 id="3-2、IPv6前缀长度"><a href="#3-2、IPv6前缀长度" class="headerlink" title="3.2、IPv6前缀长度"></a>3.2、IPv6前缀长度</h2><p>IPv4 地址的前缀或网络部分可以由点分十进制子网掩码或前缀长度（斜线记法）标识。例如， IPv4 地址 192.168.1.10（点分十进制子网掩码为 255.255.255.0）等值于 192.168.1.10/24。</p>
+<p>在 IPv4 中，/24 称为前缀。在 IPv6 中，它被称为前缀长度。IPv6 不使用点分十进制子网掩码记法。与IPv4一样，前缀长度以斜线记法表示，用于表示 IPv6 地址的网络部分。</p>
+<p>前缀长度范围为 0 至 128。推荐的局域网和大多数其他网络类型 IPv6 前缀长度为 /64，如图所示。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN12.5.png"></p>
+<p>地址前缀或网络部分的长度为 64 位，为该地址的接口 ID（主机部分）另外保留 64 位。</p>
+<p>强烈建议对大多数网络使用 64 位接口 ID。这是因为无状态地址自动配置(SLAAC)使用64位作为接口ID。它还使子网划分更易于创建和管理。</p>
+<h2 id="3-3、IPv6单播地址的类型"><a href="#3-3、IPv6单播地址的类型" class="headerlink" title="3.3、IPv6单播地址的类型"></a>3.3、IPv6单播地址的类型</h2><p>IPv6 单播地址用于唯一标识支持 IPv6 的设备上的接口。发送到单播地址的数据包由分配有该地址的接口接收。与 IPv4 类似，源 IPv6 地址必须是单播地址。目的 IPv6 地址可以是单播地址也可以是组播地址。该图显示了IPv6 单播地址的不同类型。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN12.6.png"></p>
+<p>与IPv4设备只有一个地址不同，IPv6地址通常有两个单播地址:</p>
+<ul>
+<li><strong>全局单播地址(GUA)</strong> - 这类似于公有 IPv4 地址。这些地址具有全局唯一性，是互联网可路由的地址。GUA可静态配置或动态分配</li>
+<li><strong>链路本地地址 (LLA)</strong> -这对于每个支持ipv6的设备都是必需的。LLA用于与同一链路中的其他设备通信。在 IPv6 中，术语链路是指子网。LLA仅限于单个链路。它们的唯一性仅在该链路上得到保证，因为它们在该链路之外不具有可路由性。换句话说，路由器不会转发具有本地链路源地址或目的地址的数据包。</li>
+</ul>
+<h2 id="3-4、关于唯一本地地址的注意事项"><a href="#3-4、关于唯一本地地址的注意事项" class="headerlink" title="3.4、关于唯一本地地址的注意事项"></a>3.4、关于唯一本地地址的注意事项</h2><p>唯一本地地址（范围 fc00:: /7 到 fdff:: /7）尚未普遍实现。因此，本模块仅涵盖 GUA 和 LLA 配置。然而，唯一本地地址最终可能被用于地址不应该从外部访问的设备，例如内部服务器和打印机。</p>
+<p>IPv6 唯一本地地址与 IPv4 的 RFC 1918 私有地址具有相似之处，但是也有着重大差异。</p>
+<ul>
+<li>唯一本地地址用于一个站点内或数量有限的站点之间的本地编址。</li>
+<li>唯一本地地址可用于从来不需要访问其他网络的设备。</li>
+<li>唯一本地地址不会全局路由或转换为全局 IPv6 地址。</li>
+</ul>
+<p><strong>注意</strong>: 许多站点也使用 RFC 1918 地址的私有性质来尝试去保护或隐藏其网络，使其免遭潜在的安全风险。但是，这绝不是这些技术的既定用途，IETF 始终推荐各站点在面向互联网的路由器上采取妥善的安全预防措施。</p>
+<h2 id="3-5、IPv6-GUA"><a href="#3-5、IPv6-GUA" class="headerlink" title="3.5、IPv6 GUA"></a>3.5、IPv6 GUA</h2><p>IPv6 全局单播地址 (GUA) 具有全局唯一性，可在 IPv6互联网上路由。这些地址相当于公有 IPv4 地址。互联网名称与数字地址分配机构 (ICANN)，即 IANA 的运营商，将 IPv6 地址块分配给五家 RIR。目前分配的仅是前三位为 001 或 2000::/3 的全局单播地址（GUA），如图所示。</p>
+<p>该图显示了第一个十六进制数的值范围，其中当前可用的GUAs的第一个十六进制数字以2或3开头。这只是可用 IPv6 地址空间的 1/8，对于其他类型单播和组播地址而言只是很小的一部分。</p>
+<p><strong>注意</strong>: 2001:db8::/32已经留作备档之用，包括示例用途。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN12.7.png"></p>
+<p>下图显示了 GUA 的结构和范围。</p>
+<p>带有 /48 全局路由前缀和 /64 前缀的### IPv6 地址</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN12.8.png"></p>
+<p>GUA 有三个部分：</p>
+<ul>
+<li>全局路由前缀</li>
+<li>子网 ID</li>
+<li>接口 ID</li>
+</ul>
+<h2 id="3-6、IPv6-GUA结构"><a href="#3-6、IPv6-GUA结构" class="headerlink" title="3.6、IPv6 GUA结构"></a>3.6、IPv6 GUA结构</h2><p><strong>全局路由前缀</strong></p>
+<p>全局路由前缀为提供商（如 ISP）分配给客户或站点的地址的前缀或网络部分。例如，ISP 通常会为其客户分配 /48 全局路由前缀。全局路由前缀通常会因 ISP 的策略而异。</p>
+<p>前面的图显示了使用/48全局路由前缀的GUA。/48 前缀是分配的常见全局路由前缀，本课程中的多数示例均使用该前缀。</p>
+<p>例如，IPv6 地址2001:db8:acad::/48 的全局路由前缀，该前缀表示ISP知道该前缀（网络）的方式是前48位（3个十六进制数）（2001:db8:acad）。/48 前缀长度后面的双冒号 (::) 表示地址的剩余部分全部为 0。全局路由前缀的大小决定子网 ID 的大小。</p>
+<p><strong>子网ID</strong></p>
+<p>子网ID字段是全局路由前缀和接口ID之间的区域。与IPv4不同，在IPv4中您必须从主机部分借用位来创建子网，IPv6在设计时考虑到了子网。组织使用子网 ID 确定其站点的子网。子网 ID 越大，可用子网越多。</p>
+<p><strong>注意</strong>: 许多组织正在接收 /32 全局路由前缀。使用推荐的 /64 前缀来创建 64 位接口 ID，会留下一个 32 位子网 ID。这意味着具有 /32 全局路由前缀和 32 位子网 ID 的组织将拥有 43 亿个子网，每个子网都有 1800亿亿（18后面跟18个0）个子网。这是与公有 IPv4 地址数量一样多的子网！</p>
+<p>在前面的图中，IPv6地址有一个/48全局路由前缀，这在许多企业网络中很常见。这使得检查地址的不同部分变得特别容易。使用典型的/64前缀长度，前四个十六进制数是地址的网络部分，其中第四个十六进制数表示子网 ID。剩下的四个十六进制数用于接口 ID。</p>
+<p><strong>接口ID</strong></p>
+<p>IPv6 接口 ID 相当于 IPv4 地址的主机部分。使用术语“接口 ID”是因为单个主机可能有多个接口，而每个接口又有一个或多个 IPv6 地址。该图显示了 IPv6 GUA 的结构示例。强烈建议在大多数情况下使用 /64 子网，这会创建64位接口ID。64 位接口 ID 允许每个子网有1800亿亿个设备或主机。</p>
+<p>/64 子网或前缀（全局路由前缀 + 子网 ID）为接口 ID 留下 64 位。建议允许启用 SLAAC 的设备创建自己的 64 位接口 ID。它还使得 IPv6 编址计划的开发变得简单而有效。</p>
+<p><strong>注意</strong>: 与 IPv4 不同，在 IPv6 中，全 0 和全 1 主机地址可以分配给设备。可以使用全1地址，因为广播地址不在IPv6中使用。全 0 地址也可使用，但它留作子网路由器任播地址，应仅分配给路由器。</p>
+<h2 id="3-7、IPv6-LLA"><a href="#3-7、IPv6-LLA" class="headerlink" title="3.7、IPv6 LLA"></a>3.7、IPv6 LLA</h2><p>IPv6 链路本地地址(LLA)允许设备与同一链路上支持 IPv6 的其他设备通信，并且只能在该链路（子网）上通信。具有源或目的LLA的数据包不能在数据包的源链路之外进行路由。</p>
+<p>GUA 不是一项要求。但是，每个启用 IPv6 的网络接口都必须有 LLA。</p>
+<p>如果没有手动为接口配置LLA，设备会在不与 DHCP 服务器通信的情况下自动创建自己的地址。支持 IPv6 的主机会创建 IPv6 LLA，即使没有为该设备分配 IPv6 全局单播地址。这允许支持 IPv6 的设备与同一子网中的其他支持 IPv6 的设备通信。这包括与默认网关（路由器）的通信。</p>
+<p>IPv6 LLAs在fe80::/10范围内。/10 表示前 10 位是 1111 1110 10xx xxxx。第一个十六进制数的范围是 1111 1110 10<strong>00 0000</strong> (fe80) 到 1111 1110 10<strong>11 1111</strong> (febf)。</p>
+<p>该图显示使用IPv6 LLA进行通信的示例。PC 能够使用LLA直接与打印机进行通信。</p>
+<p><strong>IPv6 链路本地通信</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN12.9.png"></p>
+<p>下图显示了IPv6 LLA的一些用途。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN12.10.png"></p>
+<ol>
+<li>路由器使用邻居路由器的LLA发送路由更新。</li>
+<li>主机使用本地路由器的 LLA 作为默认网关。</li>
+</ol>
+<p><strong>注意</strong>: 通常情况下，用作链路上其他设备的默认网关的是路由器的LLA而不是GUA。</p>
+<p>设备可以通过两种方式获取 LLA：</p>
+<ul>
+<li><strong>静态</strong> -这意味着设备已手动配置。</li>
+<li><strong>动态</strong> -这意味着设备通过使用随机生成的值或使用扩展唯一标识符 (EUI) 方法创建自己的接口 ID，该方法使用客户端 MAC 地址和其他位。</li>
+</ul>
+<h2 id="3-8、测验"><a href="#3-8、测验" class="headerlink" title="3.8、测验"></a>3.8、测验</h2><p><strong>LLA</strong>类型的IPv6地址以fe80开头</p>
+<h1 id="4、GUA和LLA静态配置"><a href="#4、GUA和LLA静态配置" class="headerlink" title="4、GUA和LLA静态配置"></a>4、GUA和LLA静态配置</h1><h2 id="4-1、路由器上的静态GUA配置"><a href="#4-1、路由器上的静态GUA配置" class="headerlink" title="4.1、路由器上的静态GUA配置"></a>4.1、路由器上的静态GUA配置</h2><p>如您在上一主题中了解到的，IPv6 GUA与公有 IPv4 地址数量相同。它们具有全局唯一性，可在 IPv6互联网上路由。IPv6 LLA 允许两个启用 IPV6 的设备在同一链路（子网）上相互通信。在路由器上静态配置IPv6 GUA和LLA很容易，可以帮助您创建IPv6网络。本主题教您如何做到这一点！</p>
+<p>在 思科 IOS 中，大多数 IPv6 的配置和验证命令与 IPv4 的相似。在多数情况下，唯一区别是命令中使用<strong>ipv6</strong> 取代<strong>ip</strong> 。</p>
+<p>例如，在接口上配置 IPv4 地址的思科IOS 命令是 <strong>ip address</strong> <em>ip 地址 子网掩码</em>，相比之下，在接口上配置 IPv6 GUA 的命令是 <strong>ipv6 address</strong> <em>ipv6 地址/前缀长度</em>。</p>
+<p>注意 <em>ipv6-address</em> 和 <em>prefix-length</em>之间没有空格。</p>
+<p>配置示例使用图中的拓扑和下列 IPv6 子网：</p>
+<ul>
+<li>2001:db8:acad:1:/64</li>
+<li>2001:db8:acad:2:/64</li>
+<li>2001:db8:acad:3:/64</li>
+</ul>
+<p><strong>示例拓扑</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN12.11.png"></p>
+<p>示例列出在 R1 的 G0/0/0、G0/0/1 和 Serial 0/1/0 接口上配置 IPv6 GUA所需的命令。</p>
+<p>路由器R1上的IPv6 GUA配置</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">R1(config)# interface gigabitethernet 0&#x2F;0&#x2F;0
+R1(config-if)# ipv6 address 2001:db8:acad:1::1&#x2F;64
+R1(config-if)# no shutdown
+R1(config-if)# exit
+R1(config)# interface gigabitethernet 0&#x2F;0&#x2F;1
+R1(config-if)# ipv6 address 2001:db8:acad:2::1&#x2F;64
+R1(config-if)# no shutdown
+R1(config-if)# exit
+R1(config)# interface serial 0&#x2F;1&#x2F;0
+R1(config-if)# ipv6 address 2001:db8:acad:3::1&#x2F;64
+R1(config-if)# no shutdown<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="4-2、Windows-主机上的静态GUA配置"><a href="#4-2、Windows-主机上的静态GUA配置" class="headerlink" title="4.2、Windows 主机上的静态GUA配置"></a>4.2、Windows 主机上的静态GUA配置</h2><p>在主机上手动配置 IPv6 地址与配置 IPv4 地址相似。</p>
+<p>如图中所示，为 PC1 配置的默认网关地址为2001:DB8:ACAD:1::1。该地址是同一网络中 R1 千兆以太网接口的GUA。或者，也可以配置默认网关地址以与千兆以太网接口的LLA相匹配。使用路由器的LLA作为默认网关地址被认为是最佳实践。任一配置都可以。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN12.12.png"></p>
+<p>与使用 IPv4 一样，在客户端配置静态地址并不能扩展至更大的环境。因此，多数 IPv6 网络的管理员会启用 IPv6 地址的动态分配。</p>
+<p>设备可以通过两种方法自动获取 IPv6 GUA：</p>
+<ul>
+<li>无状态地址自动配置 (SLAAC)</li>
+<li>有状态 DHCPv6</li>
+</ul>
+<p>下一个主题将介绍SLAAC和DHCPv6。</p>
+<p><strong>注意</strong>: 使用 DHCPv6 或 SLAAC 时，路由器的LLA将自动指定为默认网关地址。</p>
+<h2 id="4-3、链路本地单播地址的静态配置"><a href="#4-3、链路本地单播地址的静态配置" class="headerlink" title="4.3、链路本地单播地址的静态配置"></a>4.3、链路本地单播地址的静态配置</h2><p>手动配置LLA可以让您创建的地址便于识别和记忆。一般来说，只需要在路由器上创建可识别的LLA。这样做很有用，因为路由器LLA将被用作默认网关地址并包含在路由通告消息中。</p>
+<p>LLA 可以使用 <strong>ipv6 address</strong> <em>ipv6-链路本地地址</em> <strong>link-local</strong> 命令手动配置。当地址以 fe80 到 febf 范围的十六进制数开头时，<strong>link-local</strong>参数必须符合该地址。</p>
+<p>该图显示了一个示例拓扑，每个接口上都有LLA。</p>
+<p><strong>带有LLA的拓扑示例</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN12.13.png"></p>
+<p>该示例显示了路由器 R1 上 LLA 的配置。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">R1(config)# interface gigabitethernet 0&#x2F;0&#x2F;0
+R1(config-if)# ipv6 address fe80::1:1 link-local
+R1(config-if)# exit
+R1(config)# interface gigabitethernet 0&#x2F;0&#x2F;1
+R1(config-if)# ipv6 address fe80::2:1 link-local
+R1(config-if)# exit
+R1(config)# interface serial 0&#x2F;1&#x2F;0
+R1(config-if)# ipv6 address fe80::3:1 link-local
+R1(config-if)# exit<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>静态配置的LLA用于使它们更易于识别为属于路由器R1。在示例中，路由器 R1 的所有接口都配置了以 <strong>fe80::1:<strong><em>n</em> 开头的 LLA 以及唯一的最右侧数字 “n”。“</strong>1</strong>” 表示路由器 R1。</p>
+<p>遵循与路由器 R1 相同的语法，如果拓扑包含路由器 R2，那么它的三个接口将配置LLA为 fe80::2:1、fe80::2:2和fe80::2:3。</p>
+<p><strong>注意</strong>: 只要每个链路上的LLA是唯一的，就可以在每个链路上配置完全相同的LLA。这是因为LLA仅在该链路上具有唯一性。但是，常见的实践是在路由器的每个接口上创建一个不同的 LLA，以便轻松识别路由器和特定接口。</p>
+<h2 id="4-4、语法检查器-GUA和LLA的静态配置"><a href="#4-4、语法检查器-GUA和LLA的静态配置" class="headerlink" title="4.4、语法检查器-GUA和LLA的静态配置"></a>4.4、语法检查器-GUA和LLA的静态配置</h2><p>略</p>
+<h1 id="5、IPv6-GUA的动态编址"><a href="#5、IPv6-GUA的动态编址" class="headerlink" title="5、IPv6 GUA的动态编址"></a>5、IPv6 GUA的动态编址</h1><h2 id="5-1、RS-and-RA-消息"><a href="#5-1、RS-and-RA-消息" class="headerlink" title="5.1、RS and RA 消息"></a>5.1、RS and RA 消息</h2><p>如果您不想静态地配置IPv6 GUAs，也不必担心。大多数设备会动态获取其 IPv6 GUA。本主题说明如何使用路由器通告（RA）和路由器请求（RS）消息来完成此过程。本主题比较技术性，但是当您理解了路由器通告可以使用的三种方法之间的区别，以及创建接口ID的EUI-64进程与随机生成的进程的区别，您将在您的IPv6专业知识上有一个巨大的飞跃!</p>
+<p>对于 GUA，设备通过 Internet 控制消息协议版本 6 (ICMPv6) 消息动态获取地址。IPv6 路由器每 200 秒定期将 ICMPv6 RA 消息发送到网络上所有支持 IPv6 的设备。在响应发送 ICMPv6 路由器请求 (RS) 消息的主机时，也会发送 RA 消息，该消息是对RA消息的请求。这两条消息都显示在图中。</p>
+<p><strong>ICMPv6 RS  和 RA 消息</strong></p>
+<p>如果您不想静态地配置IPv6 GUAs，也不必担心。大多数设备会动态获取其 IPv6 GUA。本主题说明如何使用路由器通告（RA）和路由器请求（RS）消息来完成此过程。本主题比较技术性，但是当您理解了路由器通告可以使用的三种方法之间的区别，以及创建接口ID的EUI-64进程与随机生成的进程的区别，您将在您的IPv6专业知识上有一个巨大的飞跃!</p>
+<p>对于 GUA，设备通过 Internet 控制消息协议版本 6 (ICMPv6) 消息动态获取地址。IPv6 路由器每 200 秒定期将 ICMPv6 RA 消息发送到网络上所有支持 IPv6 的设备。在响应发送 ICMPv6 路由器请求 (RS) 消息的主机时，也会发送 RA 消息，该消息是对RA消息的请求。这两条消息都显示在图中。</p>
+<p><strong>ICMPv6 RS和RA消息</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN12.14.png"></p>
+<ol>
+<li>RS 消息由请求寻址信息的主机发送到所有 IPv6 路由器。</li>
+<li>RA 消息被发送到所有 IPv6 节点。如果使用方法 1（仅 SLAAC），RA 将包括网络前缀、前缀长度和默认网关信息。</li>
+</ol>
+<p>RA消息位于IPv6路由器以太网接口上。必须为路由器启用 IPv6 路由，这在默认情况下是不启用的。若要将路由器启用为 IPv6 路由器，必须使用 <strong>ipv6 unicast-routing</strong> 全局配置命令。</p>
+<p>ICMPv6 RA 消息提示设备获取 IPv6 GUA的方式。最终决定取决于设备的操作系统。ICMPv6 RA 消息包括以下：</p>
+<ul>
+<li><strong>网络前缀和前缀长度</strong> – 这会告知设备其所属的网络。</li>
+<li><strong>默认网关</strong> – IPv6 LLA，RA 消息的源 IPv6 地址。</li>
+<li><strong>DNS 地址和域名</strong> – 这些是DNS 服务器的地址和域名。</li>
+</ul>
+<p>RA 消息有三种方法：</p>
+<ul>
+<li><strong>方法 1: SLAAC</strong> -“我拥有您需要的一切，包括前缀、前缀长度和默认网关地址。”</li>
+<li><strong>方法 2:SLAAC 和 无状态DHCPv6服务器</strong> -“这是我的信息，但您需要从 无状态DHCPv6 服务器获得其他信息，例如 DNS 地址。”</li>
+<li><strong>方法 3:有状态的 DHCPv6（无SLAAC）</strong> -“我可以给您默认网关的地址。您需要向有状态的 DHCPv6 服务器询问您的所有其他信息。”</li>
+</ul>
+<h2 id="5-2、方法1：SLAAC"><a href="#5-2、方法1：SLAAC" class="headerlink" title="5.2、方法1：SLAAC"></a>5.2、方法1：SLAAC</h2><p>SLAAC是一种允许设备在没有DHCPv6服务的情况下创建自己的GUA的方法。使用 SLAAC，设备根据本地路由器的 ICMPv6 路由器通告 (RA) 消息获取必要信息。</p>
+<p>默认情况下，RA 消息会提示接收设备使用 RA 消息中的信息创建其自己的 IPv6 GUA及其他必要信息。DHCPv6 服务器的服务不是必需项。</p>
+<p>SLAAC 是无状态的，也就是说没有中央服务器（例如有状态DHCPv6 服务器）来分配GUA和维持设备及其地址的清单。借助 SLAAC，客户端设备使用 RA 消息中的信息创建其自己的GUA。如图中所示，地址的两部分生成如下：</p>
+<ul>
+<li><strong>前缀</strong> -这是在 RA 消息中通告的。</li>
+<li><strong>接口 ID</strong> -使用 EUI-64 流程或通过生成一个随机 64 位数字产生，取决于设备的操作系统。</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN12.16.png"></p>
+<ol>
+<li>路由器发送了一个带有本地链路前缀的RA消息。</li>
+<li>PC使用SLAAC从RA消息获取前缀并创建自己的接口ID。</li>
+</ol>
+<h2 id="5-3、方法2：SLAAC和无状态DHCPv6"><a href="#5-3、方法2：SLAAC和无状态DHCPv6" class="headerlink" title="5.3、方法2：SLAAC和无状态DHCPv6"></a>5.3、方法2：SLAAC和无状态DHCPv6</h2><p>路由器的接口可配置为使用 SLAAC 和无状态 DHCPv6 或仅使用有状态 DHCPv6 发送路由器通告。</p>
+<p>如图所示，使用此方法，RA 消息建议设备使用以下内容：</p>
+<ul>
+<li>SLAAC创建自己的IPv6 GUA</li>
+<li>路由器LLA，是RA源IPv6地址，作为默认网关地址</li>
+<li>使用无状态 DHCPv6 服务器获取其他信息，例如 DNS 服务器地址和域名。</li>
+</ul>
+<p><strong>注意</strong>: 使用无状态 DHCPv6 服务器分配 DNS 服务器地址和域名。<strong>它不分配 GUA。</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN12.17.png"></p>
+<ol>
+<li>PC向所有IPv6路由器发送了一条RS消息，“我需要编址信息”。</li>
+<li>路由器通过方法2 (SLAAC和DHCPv6)向所有IPv6节点发送了一条RA消息。“这是您的前缀、前缀长度和默认网关信息。但 DNS 信息需要从 DHCPv6 服务器获取。”</li>
+<li>PC向所有DHCPv6服务器发送了一条DHCPv6请求消息。“我使用 SLAAC 创建了我的 IPv6 地址并获取了我的默认网关地址，但我需要来自无状态 DHCPv6 服务器的其他信息。 “</li>
+</ol>
+<h2 id="5-4、方法3：有状态的DHCPv6"><a href="#5-4、方法3：有状态的DHCPv6" class="headerlink" title="5.4、方法3：有状态的DHCPv6"></a>5.4、方法3：有状态的DHCPv6</h2><p>路由器接口可以配置为仅使用有状态的DHCPv6发送RA。</p>
+<p>有状态 DHCPv6 与 IPv4 的 DHCP 相似。设备可以从有状态 DHCPv6 服务器自动接收编址信息，包括GUA、前缀长度和 DNS 服务器地址。</p>
+<p>如图所示，使用此方法，RA 消息建议设备使用以下内容：</p>
+<ul>
+<li>路由器LLA，是RA源IPv6地址，作为默认网关地址。</li>
+<li>使用有状态 DHCPv6 服务器获取GUA、DNS 服务器地址、域名和其他必要信息。</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN12.18.png"></p>
+<ol>
+<li>PC向所有IPv6路由器发送了一条RS消息，“我需要编址信息”。</li>
+<li>路由器使用方法3（有状态的 DHCPv6）向所有 IPv6节点发送 RA 消息，指明”我是您的默认网关，但您需要向有状态的 DHCPv6 服务器询问 IPv6地址和其他编址信息”。</li>
+<li>PC向所有DHCPv6服务器发送一条DHCPv6请求消息，“我从RA消息收到了我的默认网关地址，但是我需要一个IPv6地址和来自有状态的DHCPv6服务器的所有其他编址信息”。</li>
+</ol>
+<p>使用有状态 DHCPv6 服务器分配并维持哪台设备接收哪个 IPv6 地址的清单。IPv4 的 DHCP 是有状态的。</p>
+<p><strong>注意:</strong> 默认网关地址仅可从 RA 消息中动态获取。无状态或有状态 DHCPv6 服务器均不提供默认网关地址。</p>
+<h2 id="5-5、EUI-64流程和随机生成"><a href="#5-5、EUI-64流程和随机生成" class="headerlink" title="5.5、EUI-64流程和随机生成"></a>5.5、EUI-64流程和随机生成</h2><p>当 RA 消息为 SLAAC 或 SLAAC 和无状态 DHCPv6 时，客户端必须生成自己的接口 ID。客户端从 RA 消息中获知地址的前缀部分，但必须创建自己的接口 ID。如图所示，接口 ID 可使用 EUI-64 流程或随机生成的 64 位数字创建。</p>
+<p><strong>动态创建接口ID</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN12.19.png"></p>
+<ol>
+<li>路由器发送 RA 信息</li>
+<li>PC在RA消息中使用前缀，并使用EUI-64或一个随机64位数字来生成接口ID</li>
+</ol>
+<h2 id="5-6、EUI-64流程"><a href="#5-6、EUI-64流程" class="headerlink" title="5.6、EUI-64流程"></a>5.6、EUI-64流程</h2><p>IEEE 定义了扩展唯一标识符 (EUI) 或修改的 EUI-64 流程。该流程使用客户端的 48 位以太网 MAC 地址，并在该 48 位 MAC 地址的中间插入另外 16 位来创建 64 位接口 ID。</p>
+<p>以太网 MAC 地址一般使用十六进制表示，由两部分组成：</p>
+<ul>
+<li><strong>组织唯一标识符 (OUI)</strong> - OUI 为 IEEE 分配的 24 位（6 个十六进制数字）厂商代码。</li>
+<li><strong>设备标识符</strong> - 设备标识符是通用 OUI 内的唯一 24 位（6 个十六进制数字）值。</li>
+</ul>
+<p>EUI-64 接口 ID 以二进制表示，共分三个部分：</p>
+<ul>
+<li>客户端 MAC 地址的 24 位 OUI，但是第 7 位（通用/本地 (U/L) 位）颠倒。这意味着，如果第 7 位是 0，则它会变为 1，反之亦然。</li>
+<li>插入的 16 位值 fffe（十六进制）。</li>
+<li>客户端 MAC 地址的 24 位设备标识符。</li>
+</ul>
+<p>该图是 EUI-64 流程图，它使用 R1 千兆以太网 MAC 地址，即 fc99:4775:cee0。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN12.20.png"></p>
+<p><strong>步骤 1:</strong> 划分 OUI 和设备标识符之间的 MAC 地址。</p>
+<p><strong>步骤 2:</strong> 插入十六进制值 fffe（二进制形式为 1111 1111 1111 1110）。</p>
+<p><strong>步骤 3:</strong> 将 OUI 的前 2 个十六进制值转换为二进制值，并颠倒 U/L 位（第 7 位）。在该示例中，第 7 位的 0 变为 1。</p>
+<p>结果即是 EUI-64 生成的接口 ID：fe99:47ff:fe75:cee0。</p>
+<p><strong>注意</strong>: U/L 位的用途和该位值的翻转原因会在 RFC 5342 中讨论。</p>
+<p><strong>ipconfig</strong> 命令的示例输出显示了使用 SLAAC 和 EUI-64 流程动态创建的 IPv6 GUA。识别地址可能是使用EUI-64创建的一个简单方法是位于接口ID中间的<strong>fffe</strong>。</p>
+<p>EUI-64 优势在于可以使用以太网 MAC 地址确定接口 ID。这也允许网络管理员使用唯一 MAC 地址轻松跟踪终端设备的 IPv6 地址。然而，这引起了许多用户的隐私担忧，他们担心自己的数据包可能会被追踪到实际的物理计算机。出于这些顾虑，可以转而使用随机生成的接口 ID。</p>
+<p>EUI-64生成的接口ID</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">C:\&gt; ipconfig
+Windows IP Configuration
+Ethernet adapter Local Area Connection:
+Connection-specific DNS Suffix . :
+IPv6 Address. . . . . . . . . . . : 2001:db8:acad:1:fc99:47ff:fe75:cee0
+Link-local IPv6 Address . . . . . : fe80::fc99:47ff:fe75:cee0
+Default Gateway . . . . . . . . . : fe80::1
+C:\ &gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="5-7、随机生成的接口ID"><a href="#5-7、随机生成的接口ID" class="headerlink" title="5.7、随机生成的接口ID"></a>5.7、随机生成的接口ID</h2><p>根据操作系统，设备可以使用随机生成的接口 ID，而不使用 MAC 地址和 EUI-64 流程。从 Windows Vista 开始，Windows 使用随机生成的接口 ID，而不是 EUI-64 创建的接口 ID。Windows XP 和之前的 Windows 操作系统均使用 EUI-64。</p>
+<p>如图所示，接口 ID 创建后（无论是使用 EUI-64 流程还是通过随机生成），它都可以在 RA 消息中结合 IPv6 前缀来创建GUA。</p>
+<p><strong>随机生成的64位接口ID</strong></p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">C:\&gt; ipconfig
+Windows IP Configuration
+Ethernet adapter Local Area Connection:
+   Connection-specific DNS Suffix  . :
+   IPv6 Address. . . . . . . . . . . : 2001:db8:acad:1:50a5:8a35:a5bb:66e1
+   Link-local IPv6 Address . . . . . : fe80::50a5:8a35:a5bb:66e1
+   Default Gateway . . . . . . . . . : fe80::1
+C:\&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>注意</strong>: 为确保任何 IPv6 单播地址的唯一性，客户端可以使用重复地址检测 (DAD) 流程。这与 ARP 请求其地址的流程相似。如该请求没有响应，则地址是唯一的。</p>
+<h1 id="6、IPv6-LLA的动态编址"><a href="#6、IPv6-LLA的动态编址" class="headerlink" title="6、IPv6 LLA的动态编址"></a>6、IPv6 LLA的动态编址</h1><h2 id="6-1、动态LLA"><a href="#6-1、动态LLA" class="headerlink" title="6.1、动态LLA"></a>6.1、动态LLA</h2><p>所有 IPv6 设备都必须有 IPv6 LLA。与 IPv6 GUA一样，您也可以动态创建 LLA。无论您如何创建LLA(和GUA)，重要的是要验证所有IPv6地址配置。本主题介绍动态生成的 LLA和 IPv6 配置验证。</p>
+<p>该图显示了如何使用fe80::/10 前缀和通过 EUI-64 流程或随机生成的 64 位数字创建的接口 ID 动态创建LLA。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN12.21.png"></p>
+<h2 id="6-2、Windows上的动态LLA"><a href="#6-2、Windows上的动态LLA" class="headerlink" title="6.2、Windows上的动态LLA"></a>6.2、Windows上的动态LLA</h2><p>操作系统，如Windows，通常会对SLAAC创建的GUA和动态分配的LLA使用相同的方法。请参阅之前显示的以下示例中突出显示的区域。</p>
+<p><strong>EUI-64生成的接口ID</strong></p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">C:\&gt; ipconfig
+Windows IP Configuration
+Ethernet adapter Local Area Connection:
+Connection-specific DNS Suffix . :
+IPv6 Address. . . . . . . . . . . : 2001:db8:acad:1:fc99:47ff:fe75:cee0
+Link-local IPv6 Address . . . . . : fe80::fc99:47ff:fe75:cee0
+Default Gateway . . . . . . . . . : fe80::1
+C:\&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>随机生成的64位接口ID</strong></p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">C:\&gt; ipconfig
+Windows IP Configuration
+Ethernet adapter Local Area Connection:
+   Connection-specific DNS Suffix  . :
+   IPv6 Address. . . . . . . . . . . : 2001:db8:acad:1:50a5:8a35:a5bb:66e1
+   Link-local IPv6 Address . . . . . : fe80::50a5:8a35:a5bb:66e1
+   Default Gateway . . . . . . . . . : fe80::1
+C:\&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="6-3、思科路由器上的动态LLA"><a href="#6-3、思科路由器上的动态LLA" class="headerlink" title="6.3、思科路由器上的动态LLA"></a>6.3、思科路由器上的动态LLA</h2><p>当为接口分配GUA时，思科路由器会自动创建 IPv6 LLA。默认情况下，思科 IOS 路由器使用 EUI-64 为 IPv6 接口上的所有LLA生成接口 ID。对于串行接口，路由器会使用以太网接口的 MAC 地址。回想一下，LLA在该链路或网络上必须具有唯一性。但是，使用动态分配的LLA的缺点在于其接口 ID 较长，因此很难识别并记住分配的地址。示例显示了路由器 R1 千兆以太网0/0/0 接口的 MAC 地址。该地址用于在同一接口上动态创建LLA，也用于串行0/1/0接口。</p>
+<p>为了更容易在路由器上识别和记忆这些地址，通常要在路由器上静态配置 IPv6 LLA。</p>
+<p>在路由器 R1 上使用 EUI-64 的### IPv6 LLA</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">R1# show interface gigabitEthernet 0&#x2F;0&#x2F;0
+GigabitEthernet0&#x2F;0&#x2F;0 is up, line protocol is up
+  Hardware is ISR4221-2x1GE, address is 7079.b392.3640 (bia 7079.b392.3640)
+(Output omitted)
+R1# show ipv6 interface brief
+GigabitEthernet0&#x2F;0&#x2F;0   [up&#x2F;up]
+    FE80::7279:B3FF:FE92:3640
+    2001:DB8:ACAD:1::1
+GigabitEthernet0&#x2F;0&#x2F;1   [up&#x2F;up]
+    FE80::7279:B3FF:FE92:3641
+    2001:DB8:ACAD:2::1
+Serial0&#x2F;1&#x2F;0            [up&#x2F;up]
+    FE80::7279:B3FF:FE92:3640
+    2001:DB8:ACAD:3::1
+Serial0&#x2F;1&#x2F;1            [down&#x2F;down]
+    unassigned
+R1#<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="6-4、验证IPv6地址配置"><a href="#6-4、验证IPv6地址配置" class="headerlink" title="6.4、验证IPv6地址配置"></a>6.4、验证IPv6地址配置</h2><p>图中显示了示例拓扑。</p>
+<h3 id="show-ipv6-interface-brief"><a href="#show-ipv6-interface-brief" class="headerlink" title="show ipv6 interface brief"></a>show ipv6 interface brief</h3><p><strong>show ipv6 interface brief</strong> 命令会显示以太网接口的 MAC 地址。EUI-64 使用此 MAC 地址生成LLA的接口 ID。此外，<strong>show ipv6 interface brief</strong> 命令用于显示各个接口的缩略输出。与接口位于同一行的 [up/up] 输出指示第 1 层/第 2 层接口状态。这与等效的 IPv4 命令的状态和协议列相同。</p>
+<p>注意，每个接口有两个 IPv6 地址。每个接口的第二个地址是已配置的 GUA。第一个地址以 fe80 开头，是接口的链路本地单播地址。回想一下，分配 GUA 后，LLA 会自动添加到接口。</p>
+<p>另请注意，R1 的 Serial 0/0/0 本地链路地址与其 GigabitEthernet 0/0 接口相同。串行接口没有以太网 MAC 地址，因此思科 IOS 使用第一个可用的以太网接口的 MAC 地址。这样可行，因为本地链路接口仅在该链路上具有唯一性。</p>
+<p><strong>show ipv6 interface brief 命令在路由器 R1</strong></p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">R1# show ipv6 interface brief
+GigabitEthernet0&#x2F;0&#x2F;0 [up&#x2F;up]
+FE80::1:1
+2001:DB8:ACAD:1::1
+GigabitEthernet0&#x2F;0&#x2F;1 [up&#x2F;up]
+FE80::1:2
+2001:DB8:ACAD:2::1
+Serial0&#x2F;1&#x2F;0 [up&#x2F;up]
+FE80::1:3
+2001:DB8:ACAD:3::1
+Serial0&#x2F;1&#x2F;1 [down&#x2F;down]
+unassigned
+R1#<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="show-ipv6-route"><a href="#show-ipv6-route" class="headerlink" title="show ipv6 route"></a>show ipv6 route</h3><p>如示例所示，<strong>show ipv6 route</strong> 命令可用于检验 IPv6 网络和特定 IPv6 接口地址已添加到 IPv6 路由表中。该 <strong>show ipv6 route</strong> 命令将仅显示 IPv6 网络，而不显示 IPv4 网络。</p>
+<p>在路由表中，路由旁边的 <strong>C</strong> 表示这是一个直连网络。当路由器接口配置了 GUA 并处于 “up/up” 状态时，IPv6 前缀和前缀长度会作为直连路由添加至 IPv6 路由表。</p>
+<p><strong>注意</strong>:<strong>L</strong> 表示本地路由，即为接口分配的特定 IPv6 地址。这不是一个 LLA。由于 LLA 不是可路由地址，因此它们不包括在路由表中。</p>
+<p>接口上配置的 IPv6 GUA也作为本地路由添加到路由表中。本地路由具有 /128 前缀。路由表使用本地路由来有效处理目的地址为路由器接口地址的数据包。</p>
+<p><strong>show ipv6 route 命令在路由器 R1</strong></p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">R1# show ipv6 route
+IPv6 Routing Table - default - 7 entries
+Codes: C - Connected, L - Local, S - Static, U - Per-user Static route
+
+C 2001:DB8:ACAD:1::&#x2F;64 [0&#x2F;0]
+via GigabitEthernet0&#x2F;0&#x2F;0, directly connected
+L 2001:DB8:ACAD:1::1&#x2F;128 [0&#x2F;0]
+via GigabitEthernet0&#x2F;0&#x2F;0, receive
+C 2001:DB8:ACAD:2::&#x2F;64 [0&#x2F;0]
+via GigabitEthernet0&#x2F;0&#x2F;1, directly connected
+L 2001:DB8:ACAD:2::1&#x2F;128 [0&#x2F;0]
+via GigabitEthernet0&#x2F;0&#x2F;1, receive
+C 2001:DB8:ACAD:3::&#x2F;64 [0&#x2F;0]
+via Serial0&#x2F;1&#x2F;0, directly connected
+L 2001:DB8:ACAD:3::1&#x2F;128 [0&#x2F;0]
+via Serial0&#x2F;1&#x2F;0, receive
+L FF00::&#x2F;8 [0&#x2F;0]
+via Null0, receive
+R1#<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="ping"><a href="#ping" class="headerlink" title="ping"></a>ping</h3><p>IPv6 的 <strong>ping</strong> 命令和 IPv4 中这条命令的用法相同，只不过使用的是 IPv6 地址。如示例中所示，命令的作用是验证 R1 和 PC1 之间的第 3 层连通性。从路由器对 LLA 实施 ping 命令时，思科 IOS 会提示用户确认出接口。由于目的 LLA 可以在一个或多个链路或网络上使用，路由器需要知道要将 ping 发送到哪个接口。</p>
+<p><strong>ping 命令在路由器 R1</strong></p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">R1# ping 2001:db8:acad:1::10
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 2001:DB8:ACAD:1::10, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5&#x2F;5), round-trip min&#x2F;avg&#x2F;max &#x3D; 1&#x2F;1&#x2F;1 ms
+R1#<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="6-5、语法检查器-验证IPv6地址配置"><a href="#6-5、语法检查器-验证IPv6地址配置" class="headerlink" title="6.5、语法检查器-验证IPv6地址配置"></a>6.5、语法检查器-验证IPv6地址配置</h2><p>使用 <strong>show</strong> 命令在路由器R1接口上验证IPv6地址配置。</p>
+<p>略</p>
+<h1 id="7、IPv6组播地址"><a href="#7、IPv6组播地址" class="headerlink" title="7、IPv6组播地址"></a>7、IPv6组播地址</h1><h2 id="7-1、分配的IPv6组播地址"><a href="#7-1、分配的IPv6组播地址" class="headerlink" title="7.1、分配的IPv6组播地址"></a>7.1、分配的IPv6组播地址</h2><p>在本模块的前面，您了解到IPv6地址有三大类：单播、任播和组播。本主题将详细介绍组播地址。</p>
+<p>IPv6 组播地址类似于 IPv4 组播地址。回想一下，组播地址用于发送单个数据包到一个或多个目标（组播组）。IPv6 组播地址的前缀为ff00::/8。</p>
+<p><strong>注意</strong>: 组播地址仅可用作目的地址，不能用作源地址。</p>
+<p>IPv6 组播地址分为两种类型：</p>
+<ul>
+<li>知名组播地址</li>
+<li>请求节点组播地址</li>
+</ul>
+<h2 id="7-2、知名IPv6组播地址"><a href="#7-2、知名IPv6组播地址" class="headerlink" title="7.2、知名IPv6组播地址"></a>7.2、知名IPv6组播地址</h2><p>已分配的知名IPv6 组播地址。分配的组播地址是为预先定义的设备组保留的组播地址。分配的组播地址是用于到达运行通用协议或服务的设备组的单个地址。分配的组播地址用在特定的协议环境，例如 DHCPv6。</p>
+<p>这些是两种常见的 IPv6 分配组播组：</p>
+<ul>
+<li><strong>ff02:全节点组播组</strong> -这是一个包含所有支持 IPv6 的设备的组播组。发送到该组的数据包由该链路或网络上的所有 IPv6 接口接收和处理。这与 IPv4 中的广播地址具有相同的效果。图中显示使用全节点组播地址进行通信的示例。IPv6 路由器将ICMPv6 RA 消息发送给全节点组播组。</li>
+<li><strong>ff02:全路由器组播组</strong> - 这是所有IPv6路由器加入的组播组。当在IPv6路由器全局模式下启用ipv6 unicast-routing命令后，该路由器即成为该组的成员。发送到该组的数据包由该链路或网络上的所有 IPv6 路由器接收和处理。</li>
+</ul>
+<p><strong>IPv6全节点组播：RA消息</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN12.24.png"></p>
+<p>支持 IPv6 的设备将 ICMPv6 RS 消息发送到全路由器组播地址。RS 消息向 IPv6 路由器发出 RA 消息请求来协助设备的地址配置。IPv6路由器使用RA 消息作出响应，正如所示。</p>
+<h2 id="7-3、请求节点IPv6组播地址"><a href="#7-3、请求节点IPv6组播地址" class="headerlink" title="7.3、请求节点IPv6组播地址"></a>7.3、请求节点IPv6组播地址</h2><p>请求节点组播地址类似于全节点组播地址。请求节点组播地址的优势在于它被映射到特殊的以太网组播地址。这使得以太网网卡可以通过检查目的 MAC 地址过滤该帧，而不是将它发送给 IPv6 流程来判断该设备是否是 IPv6 数据包的既定目标。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN12.25.png"></p>
+<h1 id="8、IPv6网络的子网"><a href="#8、IPv6网络的子网" class="headerlink" title="8、IPv6网络的子网"></a>8、IPv6网络的子网</h1><h2 id="8-1、使用子网ID划分子网"><a href="#8-1、使用子网ID划分子网" class="headerlink" title="8.1、使用子网ID划分子网"></a>8.1、使用子网ID划分子网</h2><p>本模块的介绍提到了 IPv6 网络的子网划分。它还表示，您可能会发现它比 IPv4 网络的子网划分更容易一些。您马上就会知道了!</p>
+<p>回想一下，使用IPv4时，我们必须从主机部分借用位来创建子网。这是因为对IPv4来说，子网划分是事后才想到的。但是，IPv6 的设计考虑到了子网划分。IPv6 GUA中的一个单独的子网ID字段用于创建子网。如图所示，子网ID字段是全局路由前缀和接口ID之间的区域。</p>
+<p><strong>带有16位子网ID的GUA</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN12.26.png"></p>
+<p>128 位地址的好处在是，它可以为每个网络支持足够多的子网并为每个子网支持足够多的主机。地址保留不是问题。例如，如果全局路由前缀是a /48，并且使用一个典型的64位接口ID，这将创建一个16位子网ID:</p>
+<ul>
+<li><strong>16 位子网 ID</strong> -创建多达 65,536 个子网。</li>
+<li><strong>64 位子网 ID</strong> -每个子网支持多达 1800亿亿个主机 IPv6 地址（即 18,000,000,000,000,000,000）。</li>
+</ul>
+<p><strong>注意</strong>: 也可以将子网划分为 64 位接口 ID（或主机部分），但是很少这么要求。</p>
+<p>IPv6 子网划分也比 IPv4 容易实施，因为不需要转换为二进制。要确定下一个可用子网，只需要将十六进制数相加。</p>
+<h2 id="8-2、IPv6子网划分示例"><a href="#8-2、IPv6子网划分示例" class="headerlink" title="8.2、IPv6子网划分示例"></a>8.2、IPv6子网划分示例</h2><p>例如，假设一个组织分配了 2001:db8:acad::/48 全局路由前缀，并采用 16 位子网 ID。这将允许组织创建65,536个 /64 子网，如图所示。注意，所有子网的全局路由前缀是相同的。只为每个子网递增子网 ID 的十六位字节数（以十六进制形式）。</p>
+<p><strong>使用16位子网ID划分子网</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN12.27.png"></p>
+<h2 id="8-3、IPv6子网分配"><a href="#8-3、IPv6子网分配" class="headerlink" title="8.3、IPv6子网分配"></a>8.3、IPv6子网分配</h2><p>由于有 65,536 个子网可供选择，网络管理员的任务就变为设计一个逻辑方案来分配网络地址。</p>
+<p>如图所示，示例拓扑需要五个子网，每个局域网一个，以及R1和R2之间的串行链路一个。与IPv4的示例不同，IPv6的串行链路子网将具有与局域网相同的前缀长度。虽然这可能会“浪费”地址，但是使用 IPv6 时地址保留并不是问题。</p>
+<p><strong>示例拓扑</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN12.28.png"></p>
+<p>如下图所示，在本示例中 5 个 IPv6 子网的分配将使用 0001 到 0005 的子网 ID 字段。每个 /64 子网提供的地址都远多于所需要的地址。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN12.29.png"></p>
+<h2 id="8-4、配置了IPv6子网的路由器"><a href="#8-4、配置了IPv6子网的路由器" class="headerlink" title="8.4、配置了IPv6子网的路由器"></a>8.4、配置了IPv6子网的路由器</h2><p>与配置 IPv4 类似，示例显示了每个路由器接口都已经配置到不同的 IPv6 子网中。</p>
+<p><strong>路由器R1上的IPv6地址配置</strong></p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">R1(config)# interface gigabitethernet 0&#x2F;0&#x2F;0
+R1(config-if)# ipv6 address 2001:db8:acad:1::1&#x2F;64
+R1(config-if)# no shutdown
+R1(config-if)# exit
+R1(config)# interface gigabitethernet 0&#x2F;0&#x2F;1
+R1(config-if)# ipv6 address 2001:db8:acad:2::1&#x2F;64
+R1(config-if)# no shutdown
+R1(config-if)# exit
+R1(config)# interface serial 0&#x2F;1&#x2F;0
+R1(config-if)# ipv6 address 2001:db8:acad:3::1&#x2F;64
+R1(config-if)# no shutdown<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h1 id="9、单元检测"><a href="#9、单元检测" class="headerlink" title="9、单元检测"></a>9、单元检测</h1><p>1、当在接口上启用IPv6时，自动分配给接口的地址类型是<strong>链路本地</strong></p>
+<p>2、IPv6网络前缀<strong>FE80::/10</strong>只用于本地链接而不能被路由</p>
+<p>3、成功 ping 通::1 IPv6 地址表示<strong>IP已正确安装在主机上</strong></p>
+<p>4、在启用 IPv6 的接口上，至少需要<strong>本地链路</strong>地址</p>
+<p>5、IPv6全局单播地址的三个部分是：</p>
+<ul>
+<li><strong>用于标识本地企业站点内部网络的子网ID</strong></li>
+<li><strong>用于标识网络上本地主机的接口ID</strong></li>
+<li><strong>一种全局路由前缀，用于标识由ISP提供的地址的网络部分</strong></li>
+</ul>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">wck</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://example.com/2021/120157163.html">http://example.com/2021/120157163.html</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">wck</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E6%80%9D%E7%A7%91-%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/">
+                                    <span class="chip bg-color">思科 网络协议</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'yohIdjiNFr5gi9AMV8TPhv90-gzGzoHsz',
+        appKey: 'dpdaXreArfn9sbA5A5hGBlUG',
+        notify: 'false' === 'true',
+        verify: 'false' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'monsterid',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: '留下你想说的话吧~',
+        enableQQ: true,
+        emojiCDN: '//i0.hdslb.com/bfs/emote/', 
+        // 表情title和图片映射
+        emojiMaps: {
+        "tv_doge": "6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png",
+        "tv_亲亲": "a8111ad55953ef5e3be3327ef94eb4a39d535d06.png",
+        "tv_偷笑": "bb690d4107620f1c15cff29509db529a73aee261.png",
+        "tv_再见": "180129b8ea851044ce71caf55cc8ce44bd4a4fc8.png",
+        "tv_冷漠": "b9cbc755c2b3ee43be07ca13de84e5b699a3f101.png",
+        "tv_发怒": "34ba3cd204d5b05fec70ce08fa9fa0dd612409ff.png",
+        "tv_发财": "34db290afd2963723c6eb3c4560667db7253a21a.png",
+        "tv_可爱": "9e55fd9b500ac4b96613539f1ce2f9499e314ed9.png",
+        "tv_吐血": "09dd16a7aa59b77baa1155d47484409624470c77.png",
+        "tv_呆": "fe1179ebaa191569b0d31cecafe7a2cd1c951c9d.png",
+        "tv_呕吐": "9f996894a39e282ccf5e66856af49483f81870f3.png",
+        "tv_困": "241ee304e44c0af029adceb294399391e4737ef2.png",
+        "tv_坏笑": "1f0b87f731a671079842116e0991c91c2c88645a.png",
+        "tv_大佬": "093c1e2c490161aca397afc45573c877cdead616.png",
+        "tv_大哭": "23269aeb35f99daee28dda129676f6e9ea87934f.png",
+        "tv_委屈": "d04dba7b5465779e9755d2ab6f0a897b9b33bb77.png",
+        "tv_害羞": "a37683fb5642fa3ddfc7f4e5525fd13e42a2bdb1.png",
+        "tv_尴尬": "7cfa62dafc59798a3d3fb262d421eeeff166cfa4.png",
+        "tv_微笑": "70dc5c7b56f93eb61bddba11e28fb1d18fddcd4c.png",
+        "tv_思考": "90cf159733e558137ed20aa04d09964436f618a1.png",
+        "tv_惊吓": "0d15c7e2ee58e935adc6a7193ee042388adc22af.png",
+        "tv_打脸": "56ab10b624063e966bfcb76ea5dc4794d87dfd47.png",
+        "tv_抓狂": "fe31c08edad661d63762b04e17b8d5ae3c71a757.png",
+        "tv_抠鼻": "c666f55e88d471e51bbd9fab9bb308110824a6eb.png",
+        "tv_斜眼笑": "911f987aa8bc1bee12d52aafe62bc41ef4474e6c.png",
+        "tv_无奈": "ea8ed89ee9878f2fece2dda0ea8a5dbfe21b5751.png",
+        "tv_晕": "5443c22b4d07fb1907ccc610c8e6db254f2461b7.png",
+        "tv_流汗": "cead1c351ab8d79e9f369605beb90148db0fbed3.png",
+        "tv_流泪": "7e71cde7858f0cd50d74b0264aa26db612a8a167.png",
+        "tv_流鼻血": "c32d39db2737f89b904ca32700d140a9241b0767.png",
+        "tv_点赞": "f85c354995bd99e28fc76c869bfe42ba6438eff4.png",
+        "tv_生气": "26702dcafdab5e8225b43ffd23c94ac1ff932654.png",
+        "tv_生病": "8b0ec90e6b86771092a498c54f09fc94621c1900.png",
+        "tv_疑问": "0793d949b18d7be716078349c202c15ff166f314.png",
+        "tv_白眼": "c1d59f439e379ee50eef488bcb5e5378e5044ea4.png",
+        "tv_皱眉": "72ccad6679fea0d14cce648b4d818e09b8ffea2d.png",
+        "tv_目瞪口呆": "0b8cb81a68de5d5365212c99375e7ace3e7891b7.png",
+        "tv_睡着": "8b196675b53af58264f383c50ad0945048290b33.png",
+        "tv_笑哭": "1abc628f6d4f4caf9d0e7800878f4697abbc8273.png",
+        "tv_腼腆": "89712c0d4af73e67f89e35cbc518420380a7f6f4.png",
+        "tv_色": "61822c7e9aae5da76475e7892534545336b23a6f.png",
+        "tv_调侃": "4bc022533ef31544ca0d72c12c808cf4a1cce3e3.png",
+        "tv_调皮": "b9c41de8e82dd7a8515ae5e3cb63e898bf245186.png",
+        "tv_鄙视": "6e72339f346a692a495b123174b49e4e8e781303.png",
+        "tv_闭嘴": "c9e990da7f6e93975e25fd8b70e2e290aa4086ef.png",
+        "tv_难过": "87f46748d3f142ebc6586ff58860d0e2fc8263ba.png",
+        "tv_馋": "fc7e829b845c43c623c8b490ee3602b7f0e76a31.png",
+        "tv_鬼脸": "0ffbbddf8a94d124ca2f54b360bbc04feb6bbfea.png",
+        "tv_黑人问号": "45821a01f51bc867da9edbaa2e070410819a95b2.png",
+        "tv_鼓掌": "1d21793f96ef4e6f48b23e53e3b9e42da833a0f6.png"
+        },
+        requiredFields: ['nick','mail'],
+    });
+</script>
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2021/120348627.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="ITN网络课程笔记（十四）">
+                        
+                        <span class="card-title">ITN网络课程笔记（十四）</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            计网笔记（十四）传输层
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-03
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%BD%91%E7%BB%9C/" class="post-category">
+                                    网络
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%80%9D%E7%A7%91-%E7%BD%91%E7%BB%9C-tcp-ip-udp/">
+                        <span class="chip bg-color">思科 网络 tcp/ip udp</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/120154066.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="ITN网络课程笔记（十三）">
+                        
+                        <span class="card-title">ITN网络课程笔记（十三）</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            计网笔记（十三）ICMP
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-01
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%BD%91%E7%BB%9C/" class="post-category">
+                                    网络
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%80%9D%E7%A7%91-%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/">
+                        <span class="chip bg-color">思科 网络协议</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2023</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank">wck</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">352.5k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/rumor-sourse" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:2560428298@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2560428298" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2560428298" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+    <a href="https://weibo.com/u/7491101842/home" class="tooltipped" target="_blank" data-tooltip="关注我的微博: https://weibo.com/u/7491101842/home" data-position="top" data-delay="50">
+        <i class="fab fa-weibo"></i>
+    </a>
+
+
+
+    <a href="https://www.zhihu.com/people/chu-zi-hang-46-14" class="tooltipped" target="_blank" data-tooltip="关注我的知乎: https://www.zhihu.com/people/chu-zi-hang-46-14" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
+    </a>
+
+
+
+
+
+    <a href="https://space.bilibili.com/531340472" class="tooltipped" target="_blank" data-tooltip="在B站上关注我" " data-position="top" data-delay="50">
+        <i class="fas fa-play-circle"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <!-- <script type="text/javascript">
+        //只在桌面版网页启用特效
+        var windowWidth = $(window).width();
+        if (windowWidth > 768) {
+            document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+        }
+    </script> -->
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+ 
+</body>
+
+</html>
