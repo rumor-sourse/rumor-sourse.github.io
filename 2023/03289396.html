@@ -482,21 +482,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-04-11
+                    2023-05-28
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    8.7k
+                    9.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    50 分
+                    54 分
                 </div>
                 
 
@@ -519,7 +519,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="算法（一）基础算法"><a href="#算法（一）基础算法" class="headerlink" title="算法（一）基础算法"></a>算法（一）基础算法</h1><h2 id="1、快速排序"><a href="#1、快速排序" class="headerlink" title="1、快速排序"></a>1、快速排序</h2><p><strong>分治</strong></p>
+                <h1 id="算法（一）基础算法"><a href="#算法（一）基础算法" class="headerlink" title="算法（一）基础算法"></a>算法（一）基础算法</h1><h1 id="基础课"><a href="#基础课" class="headerlink" title="基础课"></a>基础课</h1><h2 id="1、快速排序"><a href="#1、快速排序" class="headerlink" title="1、快速排序"></a>1、快速排序</h2><p><strong>分治</strong></p>
 <ol>
 <li>确定分界点</li>
 <li>调整范围（重点）</li>
@@ -2241,6 +2241,148 @@ int main()
     <span class="token punctuation">&#125;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+<h1 id="提高课"><a href="#提高课" class="headerlink" title="提高课"></a>提高课</h1><h1 id="前缀和与差分"><a href="#前缀和与差分" class="headerlink" title="前缀和与差分"></a>前缀和与差分</h1><p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/description/101/">激光炸弹</a></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;algorithm&gt;
+#include&lt;cstring&gt;
+
+using namespace std;
+const int N &#x3D; 5010;
+
+int s[N][N];
+
+int main()
+&#123;
+    int n, R;
+    cin &gt;&gt; n &gt;&gt; R;
+    R &#x3D; min(R, 5001);
+    for(int i &#x3D; 0 ; i &lt; n ; i ++ )&#123;
+        int x, y, w;
+        cin &gt;&gt; x &gt;&gt; y &gt;&gt; w;
+        x ++, y ++ ;
+        s[x][y] +&#x3D; w;
+    &#125;
+    
+    for(int i &#x3D; 1 ; i &lt;&#x3D; 5001 ; i ++ )&#123;
+        for(int j &#x3D; 1 ; j &lt;&#x3D; 5001 ; j ++ )&#123;
+            s[i][j] +&#x3D; s[i - 1][j] + s[i][j - 1] - s[i - 1][j - 1];
+        &#125;
+    &#125;
+    int res &#x3D; 0;
+    for(int i &#x3D; R ; i &lt;&#x3D; 5001 ; i ++ )&#123;
+        for(int j &#x3D; R ; j &lt;&#x3D; 5001 ; j ++ )&#123;
+            res &#x3D; max(res, s[i][j] - s[i - R][j] - s[i][j - R] + s[i - R][j - R]);
+        &#125;
+    &#125;
+    cout &lt;&lt; res &lt;&lt; endl;
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/102/">增减序列</a></p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202305232233116.png"> </p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;cstring&gt;
+#include&lt;algorithm&gt;
+
+using namespace std;
+typedef long long ll;
+const int N &#x3D; 100010;
+
+int n;
+ll a[N], b[N];
+
+int main()
+&#123;
+    cin &gt;&gt; n ;
+    for(int i &#x3D; 1 ; i &lt;&#x3D; n ; i ++ ) cin &gt;&gt; a[i];
+    for(int i &#x3D; 1 ; i &lt;&#x3D; n ; i ++ ) b[i] &#x3D; a[i] - a[i - 1];
+    
+    ll p &#x3D; 0 , q &#x3D; 0;
+    for(int i &#x3D; 2 ; i &lt;&#x3D; n ; i ++ ) 
+    &#123;
+        if(b[i] &gt; 0 ) p +&#x3D; b[i];
+        else q -&#x3D; b[i];
+    &#125;
+    
+    cout &lt;&lt; max(p, q) &lt;&lt; endl;
+    cout &lt;&lt; abs(p - q) + 1 &lt;&lt; endl;
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/104/">最佳牛围栏</a></p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202305232317065.png"></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;cstring&gt;
+#include&lt;algorithm&gt;
+
+using namespace std;
+const int N &#x3D; 100010;
+
+int n, F;
+double a[N], s[N];
+
+bool check(double avg)
+&#123;
+    for(int i &#x3D; 1; i &lt;&#x3D; n ; i ++ ) s[i] &#x3D; s[i - 1] + a[i] - avg;
+    
+    double mins &#x3D; 0 ;
+    for(int k &#x3D; F ; k &lt;&#x3D; n ; k ++ )&#123;
+        mins &#x3D; min(mins, s[k - F]);
+        if(s[k] &gt;&#x3D; mins) return true;
+    &#125;
+    
+    return false;
+&#125;
+
+int main()
+&#123;
+    cin &gt;&gt; n &gt;&gt; F;
+    double l &#x3D; 0 , r &#x3D; 0 ;
+    for(int i &#x3D; 1 ; i &lt; n ; i ++ )&#123;
+        cin &gt;&gt; a[i];
+        r &#x3D; max(r, a[i]);
+    &#125; 
+    
+    while(r - l &gt; 1e-5)&#123;
+        double mid &#x3D; (l + r) &#x2F; 2;
+        if(check(mid)) l &#x3D; mid;
+        else r &#x3D; mid;
+    &#125;
+    
+    cout &lt;&lt; (int)(r * 1000) &lt;&lt; endl;
+    return 0;
+    
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/115/">特殊排序</a></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">&#x2F;&#x2F; Forward declaration of compare API.
+&#x2F;&#x2F; bool compare(int a, int b);
+&#x2F;&#x2F; return bool means whether a is less than b.
+
+class Solution &#123;
+public:
+    vector&lt;int&gt; specialSort(int N) &#123;
+        vector&lt;int&gt; res ;
+        res.push_back(1);
+        for(int i &#x3D; 2; i &lt;&#x3D; N ; i ++)
+        &#123;
+            int l &#x3D; 0, r &#x3D; res.size() - 1;
+            while(l &lt; r)
+            &#123;
+                int mid &#x3D; l + r + 1&gt;&gt; 1;
+                if(compare(res[mid], i)) l &#x3D; mid;
+                else r &#x3D; mid - 1;
+            &#125;
+            
+            res.push_back(i);
+            for(int j &#x3D; res.size() - 2; j &gt; r ; j -- ) swap(res[j], res[j + 1]);
+            if(compare(i, res[r])) swap(res[r], res[r + 1]);
+        &#125;
+        
+        return res;
+    &#125;
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 
                 
             </div>
@@ -3032,7 +3174,7 @@ int main()
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">352.5k</span>&nbsp;字
+                class="white-color">380.3k</span>&nbsp;字
             
             
             

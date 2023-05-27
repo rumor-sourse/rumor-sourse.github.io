@@ -482,21 +482,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-04-11
+                    2023-05-28
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    7.9k
+                    13.9k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    45 分
+                    80 分
                 </div>
                 
 
@@ -2118,6 +2118,1262 @@ int main()
 		out<span class="token punctuation">.</span><span class="token function">flush</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token punctuation">&#125;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h1 id="提高课"><a href="#提高课" class="headerlink" title="提高课"></a>提高课</h1><h2 id="数字三角形模型"><a href="#数字三角形模型" class="headerlink" title="数字三角形模型"></a>数字三角形模型</h2><p><a target="_blank" rel="noopener" href="https://www.acwing.com/activity/content/problem/content/1256/">摘花生</a></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;cstring&gt;
+#include&lt;algorithm&gt;
+using namespace std;
+const int N &#x3D; 110;
+
+int n,m;
+int f[N][N];
+int w[N][N];
+
+int main()
+&#123;
+    int T;
+    cin &gt;&gt; T;
+    while(T--)
+    &#123;
+        cin &gt;&gt; n &gt;&gt; m;
+        for(int i &#x3D; 1 ; i &lt;&#x3D; n ; i ++ )
+            for(int j &#x3D; 1 ; j &lt;&#x3D; m ; j ++ )
+                cin &gt;&gt; w[i][j];
+        
+        for(int i &#x3D; 1 ; i &lt;&#x3D; n ; i ++ )
+            for(int j &#x3D; 1 ; j &lt;&#x3D; m ; j ++ )
+                f[i][j] &#x3D; max(f[i-1][j], f[i][j-1]) + w[i][j];
+                
+        cout &lt;&lt; f[n][m] &lt;&lt; endl;
+    &#125;
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/1020/">最低通行费</a></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;algorithm&gt;
+using namespace std;
+const int N &#x3D; 110, INF &#x3D; 1e9;
+
+int n;
+int w[N][N];
+int f[N][N];
+
+int main()
+&#123;
+    cin &gt;&gt; n;
+    for(int i &#x3D; 1 ; i &lt;&#x3D; n ; i ++ )
+        for(int j &#x3D; 1 ; j &lt;&#x3D; n ; j ++ )
+            cin &gt;&gt; w[i][j];
+    for(int i &#x3D; 1 ; i &lt;&#x3D; n ; i ++ )
+        for(int j &#x3D; 1 ; j &lt;&#x3D; n ; j ++ )
+            if(i &#x3D;&#x3D; 1 &amp;&amp; j &#x3D;&#x3D; 1) f[i][j] &#x3D; w[i][j];
+            else 
+            &#123;
+                f[i][j] &#x3D; INF;
+                if(i &gt; 1) f[i][j] &#x3D; min(f[i][j],f[i-1][j] + w[i][j]);
+                if(j &gt; 1) f[i][j] &#x3D; min(f[i][j],f[i][j-1] + w[i][j]);
+            &#125;
+    cout &lt;&lt; f[n][n] &lt;&lt; endl;
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/1029/">方格取数</a></p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202211022200728.png"></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include &lt;iostream&gt;
+#include &lt;algorithm&gt;
+
+using namespace std;
+
+const int N &#x3D; 15;
+
+int n;
+int w[N][N];
+int f[N * 2][N][N];
+
+int main()
+&#123;
+    scanf(&quot;%d&quot;, &amp;n);
+
+    int a, b, c;
+    while (cin &gt;&gt; a &gt;&gt; b &gt;&gt; c, a || b || c) w[a][b] &#x3D; c;
+
+    for (int k &#x3D; 2; k &lt;&#x3D; n + n; k ++ )
+        for (int i1 &#x3D; 1; i1 &lt;&#x3D; n; i1 ++ )
+            for (int i2 &#x3D; 1; i2 &lt;&#x3D; n; i2 ++ )
+            &#123;
+                int j1 &#x3D; k - i1, j2 &#x3D; k - i2;
+                if (j1 &gt;&#x3D; 1 &amp;&amp; j1 &lt;&#x3D; n &amp;&amp; j2 &gt;&#x3D; 1 &amp;&amp; j2 &lt;&#x3D; n)
+                &#123;
+                    int t &#x3D; w[i1][j1];
+                    if (i1 !&#x3D; i2) t +&#x3D; w[i2][j2];
+                    int &amp;x &#x3D; f[k][i1][i2];
+                    x &#x3D; max(x, f[k - 1][i1 - 1][i2 - 1] + t);
+                    x &#x3D; max(x, f[k - 1][i1 - 1][i2] + t);
+                    x &#x3D; max(x, f[k - 1][i1][i2 - 1] + t);
+                    x &#x3D; max(x, f[k - 1][i1][i2] + t);
+                &#125;
+            &#125;
+
+    printf(&quot;%d\n&quot;, f[n + n][n][n]);
+    return 0;
+&#125;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="最长上升子序列模型"><a href="#最长上升子序列模型" class="headerlink" title="最长上升子序列模型"></a>最长上升子序列模型</h2><p><a target="_blank" rel="noopener" href="https://www.acwing.com/activity/content/code/content/112799/">怪盗基德的滑翔翼</a></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;algorithm&gt;
+using namespace std;
+const int N &#x3D; 110;
+int n;
+int f[N];
+int a[N];
+
+&#x2F;*
+	正反走各走一遍最长上升子序列
+*&#x2F;
+int main()
+&#123;
+    int T;
+    cin &gt;&gt; T;
+    while(T--)
+    &#123;
+        cin &gt;&gt; n;
+        for(int i &#x3D; 1 ; i &lt;&#x3D; n ; i ++ ) cin &gt;&gt; a[i];
+        
+        int res &#x3D; 0;
+        for(int i &#x3D; 1 ; i &lt;&#x3D; n ; i ++ )
+        &#123;
+            f[i] &#x3D; 1;
+            for(int j &#x3D; 1 ; j &lt; i ; j ++ )
+            &#123;
+                if(a[i] &gt; a[j])
+                    f[i] &#x3D; max(f[i] , f[j] + 1);
+            &#125;
+            res &#x3D; max(res, f[i]);            
+        &#125;
+        
+        for(int i &#x3D; n ; i ; i -- )
+        &#123;
+            f[i] &#x3D; 1;
+            for(int j &#x3D; n ; j &gt; i ; j -- )
+            &#123;
+                if(a[j] &lt; a[i])
+                    f[i] &#x3D; max(f[i] , f[j] + 1);
+            &#125;
+            res &#x3D; max(res, f[i]);            
+        &#125;
+        cout &lt;&lt; res &lt;&lt; endl;
+    &#125;
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/1016/">登山</a></p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202211032218275.png" alt="image-20221103221810191"></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;algorithm&gt;
+#include&lt;cstring&gt;
+using namespace std;
+
+const int N &#x3D; 1010;
+int n ;
+int a[N];
+int f[N],g[N];
+
+int main()
+&#123;
+    cin &gt;&gt; n;
+    for(int i &#x3D; 0 ; i &lt; n ; i ++ ) cin &gt;&gt; a[i];
+    
+    for(int i &#x3D; 0 ; i &lt; n ; i ++ )
+    &#123;
+        f[i] &#x3D; 1;
+        for(int j &#x3D; 0 ; j &lt; n ; j ++ )
+        &#123;
+            if(a[j] &lt; a[i])
+                f[i] &#x3D; max(f[i], f[j] + 1);
+        &#125;
+    &#125;
+    
+    for(int i &#x3D; n - 1; i &gt;&#x3D; 0; i -- )
+    &#123;
+        g[i] &#x3D; 1;
+        for(int j &#x3D; n - 1; j &gt; i ; j -- )
+        &#123;
+            if(a[j] &lt; a[i])
+                g[i] &#x3D; max(g[i], g[j] + 1);
+        &#125;
+    &#125;
+    
+    int res &#x3D; 0;
+    for(int i &#x3D; 0 ; i &lt; n  ; i ++ )
+    &#123;
+        res &#x3D; max(res , f[i] + g[i] - 1);
+    &#125;
+    
+    cout &lt;&lt; res &lt;&lt; endl;
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.acwing.com/activity/content/problem/content/1261/">合唱队形</a></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;algorithm&gt;
+#include&lt;cstring&gt;
+using namespace std;
+
+const int N &#x3D; 110;
+int n ;
+int a[N];
+int f[N],g[N];
+
+int main()
+&#123;
+    cin &gt;&gt; n;
+    for(int i &#x3D; 0 ; i &lt; n ; i ++ ) cin &gt;&gt; a[i];
+    
+    for(int i &#x3D; 0 ; i &lt; n ; i ++ )
+    &#123;
+        f[i] &#x3D; 1;
+        for(int j &#x3D; 0 ; j &lt; n ; j ++ )
+        &#123;
+            if(a[j] &lt; a[i])
+                f[i] &#x3D; max(f[i], f[j] + 1);
+        &#125;
+    &#125;
+    
+    for(int i &#x3D; n - 1; i &gt;&#x3D; 0; i -- )
+    &#123;
+        g[i] &#x3D; 1;
+        for(int j &#x3D; n - 1; j &gt; i ; j -- )
+        &#123;
+            if(a[j] &lt; a[i])
+                g[i] &#x3D; max(g[i], g[j] + 1);
+        &#125;
+    &#125;
+    
+    int res &#x3D; 0;
+    for(int i &#x3D; 0 ; i &lt; n  ; i ++ )
+    &#123;
+        res &#x3D; max(res , f[i] + g[i] - 1);
+    &#125;
+    
+    cout &lt;&lt; n - res &lt;&lt; endl;
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/1014/">友好城市</a></p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202211032159608.png" alt="image-20221103215916329"></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;algorithm&gt;
+#include&lt;cstring&gt;
+using namespace std;
+const int N &#x3D; 5010;
+typedef  pair&lt;int,int&gt; PII;
+
+int n;
+int f[N];
+PII a[N];
+int main()
+&#123;
+    cin &gt;&gt; n;
+    for(int i &#x3D; 0 ; i &lt; n ; i ++ ) cin &gt;&gt; a[i].first &gt;&gt; a[i].second;
+    
+    sort(a,a+n);
+    int res &#x3D; 0;
+    for(int i &#x3D; 0 ; i &lt; n ; i ++ )
+    &#123;
+        f[i] &#x3D; 1;
+        for(int j &#x3D; 0 ; j &lt; i ; j ++ )
+        &#123;
+            if(a[j].second &lt; a[i].second)
+            &#123;
+                f[i] &#x3D; max(f[i], f[j] + 1);
+            &#125;
+        &#125;
+        res &#x3D; max(res, f[i]);
+    &#125;
+    cout &lt;&lt; res &lt;&lt; endl;
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/1018/">最大上升子序列和</a></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;algorithm&gt;
+using namespace std;
+const int N &#x3D; 1010;
+int n;
+int a[N];
+int f[N];
+
+int main()
+&#123;
+    cin &gt;&gt; n;
+    for(int i &#x3D; 0 ; i &lt; n ; i ++ ) cin &gt;&gt; a[i];
+    int res &#x3D; 0;
+    for(int i &#x3D; 0 ; i &lt; n ; i ++ )
+    &#123;
+        f[i] &#x3D; a[i];
+        for(int j &#x3D; 0 ; j &lt; i ; j ++ )
+        &#123;
+            if(a[j] &lt; a[i])
+            f[i] &#x3D; max(f[i], f[j] + a[i]);
+        &#125;
+        
+        res &#x3D; max(res, f[i]);
+    &#125;
+    
+    cout &lt;&lt; res &lt;&lt; endl;
+    return 0;
+    
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.acwing.com/video/363/">拦截导弹</a></p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202211041708496.png" alt="image-20221104170817258"></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;algorithm&gt;
+using namespace std;
+const int N &#x3D; 1010;
+
+int n;
+int q[N];
+int f[N], g[N];
+
+int main()
+&#123;
+    while(cin &gt;&gt; q[n]) n ++ ;
+    
+    int res &#x3D; 0;
+    for(int i &#x3D; 0 ; i &lt; n ; i ++ )
+    &#123;
+        f[i] &#x3D; 1;
+        for(int j &#x3D; 0 ; j &lt; i ; j ++ )
+        &#123;
+            if(q[j] &gt;&#x3D; q[i])
+                f[i] &#x3D; max(f[i], f[j] + 1);
+        &#125;
+        res &#x3D; max(res, f[i]);
+    &#125;
+    cout &lt;&lt; res &lt;&lt; endl;
+    
+    int cnt &#x3D; 0;
+    for(int i &#x3D; 0 ; i &lt; n ; i ++ )
+    &#123;
+        int k &#x3D; 0 ;
+        while(k &lt; cnt &amp;&amp; g[k] &lt; q[i]) k ++ ;
+        g[k] &#x3D; q[i];
+        if(k &gt;&#x3D; cnt) cnt ++ ;
+    &#125;
+    cout &lt;&lt; cnt &lt;&lt; endl;
+    return 0;
+    
+    &#x2F;*
+        组一：389 207 155                65
+        组二：           300 299 170 158 
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/189/">导弹防御系统</a></p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202211041730638.png" alt="image-20221104173030186"></p>
+<p>1、用全局最优解并不断更新的方式得到最小值</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;algorithm&gt;
+using namespace std;
+const int N &#x3D; 55;
+int n;
+int h[N];
+int up[N],down[N]; &#x2F;&#x2F;up[N]存储的是每个上升子序列的结尾数，其本身是递减的，down[N]同理
+int res;
+&#x2F;&#x2F;dfs参数：u为枚举的当前数，su为上升子序列个数，sd为下降子序列个数
+void dfs(int u, int su, int sd)
+&#123;
+    if(su + sd &gt;&#x3D; res ) return ;
+    if(u &#x3D;&#x3D; n)
+    &#123;
+        res &#x3D; min(res , su + sd);
+        return;
+    &#125;
+    
+    int k &#x3D; 0;
+    while(k &lt; su &amp;&amp; up[k] &gt;&#x3D; h[u]) k ++ ;
+    if(k &lt; su)
+    &#123;
+        int t &#x3D; up[k];
+        up[k] &#x3D; h[u];
+        dfs(u+1, su, sd);
+        up[k] &#x3D; t;
+    &#125;
+    else 
+    &#123;
+        up[k] &#x3D; h[u];
+        dfs(u+1, su+1, sd);
+    &#125;
+    
+    k &#x3D; 0;
+    while(k &lt; sd &amp;&amp; down[k] &lt;&#x3D; h[u]) k ++ ;
+    if(k &lt; sd)
+    &#123;
+        int t &#x3D; down[k];
+        down[k] &#x3D; h[u];
+        dfs(u+1, su, sd);
+        down[k] &#x3D; t;
+    &#125;
+    else 
+    &#123;
+        down[k] &#x3D; h[u];
+        dfs(u+1, su, sd+1);
+    &#125;
+&#125;
+
+int main()
+&#123;
+    while(cin &gt;&gt; n , n)
+    &#123;
+        for(int i &#x3D; 0 ; i &lt; n ; i ++ ) cin &gt;&gt; h[i];
+        
+        res &#x3D; n;
+        dfs(0,0,0);
+        cout &lt;&lt; res &lt;&lt; endl;
+    &#125;
+    
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>2、迭代加深的方式得到最小值（有点没懂）</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include &lt;cstring&gt;
+#include &lt;iostream&gt;
+#include &lt;algorithm&gt;
+
+using namespace std;
+
+const int N &#x3D; 60;
+
+int n;
+int h[N];
+int up[N], down[N];
+
+bool dfs(int depth, int u, int su, int sd)
+&#123;
+    if (su + sd &gt; depth) return false;
+    if (u &#x3D;&#x3D; n) return true;
+
+    &#x2F;&#x2F; 枚举放到上升子序列中的情况
+    bool flag &#x3D; false;
+    for (int i &#x3D; 1; i &lt;&#x3D; su; i ++ )
+        if (up[i] &lt; h[u])
+        &#123;
+            int t &#x3D; up[i];
+            up[i] &#x3D; h[u];
+            if (dfs(depth, u + 1, su, sd)) return true;
+            up[i] &#x3D; t;
+            flag &#x3D; true;
+            break;
+        &#125;
+    if (!flag)
+    &#123;
+        up[su + 1] &#x3D; h[u];
+        if (dfs(depth, u + 1, su + 1, sd)) return true;
+    &#125;
+
+    &#x2F;&#x2F; 枚举放到下降子序列中的情况
+    flag &#x3D; false;
+    for (int i &#x3D; 1; i &lt;&#x3D; sd; i ++ )
+        if (down[i] &gt; h[u])
+        &#123;
+            int t &#x3D; down[i];
+            down[i] &#x3D; h[u];
+            if (dfs(depth, u + 1, su, sd)) return true;
+            down[i] &#x3D; t;
+            flag &#x3D; true;
+            break;
+        &#125;
+    if (!flag)
+    &#123;
+        down[sd + 1] &#x3D; h[u];
+        if (dfs(depth, u + 1, su, sd + 1)) return true;
+    &#125;
+
+    return false;
+&#125;
+
+int main()
+&#123;
+    while (cin &gt;&gt; n, n)
+    &#123;
+        for (int i &#x3D; 0; i &lt; n; i ++ ) cin &gt;&gt; h[i];
+
+        int depth &#x3D; 0;
+        while (!dfs(depth, 0, 0, 0)) depth ++ ;
+
+        cout &lt;&lt; depth &lt;&lt; endl;
+    &#125;
+
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.acwing.com/activity/content/problem/content/1266/">最长公共上升子序列</a></p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202211041740762.png" alt="image-20221104174053020"></p>
+<p>不加优化的n^3做法</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;algorithm&gt;
+using namespace std;
+const int N &#x3D; 3010;
+
+int n;
+int a[N], b[N];
+int f[N][N];
+int main()
+&#123;
+    cin &gt;&gt; n;
+    for(int i &#x3D; 1 ; i &lt;&#x3D; n ; i ++ ) cin &gt;&gt; a[i];
+    for(int i &#x3D; 1 ; i &lt;&#x3D; n ; i ++ ) cin &gt;&gt; b[i];
+    
+    for(int i &#x3D; 1 ; i &lt;&#x3D; n ; i ++ )
+    &#123;
+        for(int j &#x3D; 1 ; j &lt;&#x3D; n ; j ++ )
+        &#123;
+            f[i][j] &#x3D; f[i-1][j];
+            if(a[i] &#x3D;&#x3D; b[j])
+            &#123;
+                f[i][j] &#x3D; max(f[i][j], 1);
+                for(int k &#x3D; 1 ; k &lt; j ; k ++ )
+                &#123;
+                    if(b[k] &lt; b[j])
+                        f[i][j] &#x3D; max(f[i][j],f[i-1][k] + 1);
+                &#125;
+            &#125;
+        &#125;
+    &#125;
+    int res &#x3D; 0;
+    for(int i &#x3D; 1 ; i &lt;&#x3D; n ; i ++ ) res &#x3D; max(res, f[n][i]);
+    cout &lt;&lt; res &lt;&lt; endl;
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>加优化的做法</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;algorithm&gt;
+using namespace std;
+const int N &#x3D; 3010;
+
+int n;
+int a[N], b[N];
+int f[N][N];
+int main()
+&#123;
+    cin &gt;&gt; n;
+    for(int i &#x3D; 1 ; i &lt;&#x3D; n ; i ++ ) cin &gt;&gt; a[i];
+    for(int i &#x3D; 1 ; i &lt;&#x3D; n ; i ++ ) cin &gt;&gt; b[i];
+    
+    for(int i &#x3D; 1 ; i &lt;&#x3D; n ; i ++ )
+    &#123;
+        int maxv &#x3D; 1;
+        for(int j &#x3D; 1 ; j &lt;&#x3D; n ; j ++ )
+        &#123;
+            f[i][j] &#x3D; f[i-1][j];
+            if(a[i] &#x3D;&#x3D; b[j]) f[i][j] &#x3D; max(f[i][j], maxv);
+            if(b[j] &lt; a[i]) maxv &#x3D; max(maxv, f[i][j] + 1);
+        &#125;
+    &#125;
+    int res &#x3D; 0;
+    for(int i &#x3D; 1 ; i &lt;&#x3D; n ; i ++ ) res &#x3D; max(res, f[n][i]);
+    cout &lt;&lt; res &lt;&lt; endl;
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="背包模型"><a href="#背包模型" class="headerlink" title="背包模型"></a>背包模型</h2><h3 id="多重背包-1"><a href="#多重背包-1" class="headerlink" title="多重背包"></a>多重背包</h3><p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/1021/">庆功会</a></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+using namespace std;
+const int N &#x3D; 6010;
+int n,m;
+int f[N];
+int main()
+&#123;
+    cin &gt;&gt; n &gt;&gt; m;
+    for(int i &#x3D; 0 ; i &lt; n ; i ++ )
+    &#123;
+        int v,w,s;
+        cin &gt;&gt; v &gt;&gt; w &gt;&gt; s;
+        for(int j &#x3D; m ; j &gt;&#x3D; v ; j -- )
+        &#123;
+            for(int k &#x3D; 0 ; k &lt;&#x3D; s &amp;&amp; k * v &lt;&#x3D; j ; k ++ )
+            &#123;
+                f[j] &#x3D; max(f[j], f[j-k*v] + k*w);
+            &#125;
+        &#125;
+    &#125;
+    cout &lt;&lt; f[m] &lt;&lt; endl;
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="多重背包III"><a href="#多重背包III" class="headerlink" title="多重背包III"></a>多重背包III</h4><p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/6/">多重背包问题III</a></p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202211062204505.png" alt="image-20221106220432294"></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;cstring&gt;
+#include&lt;algorithm&gt;
+using namespace std;
+const int N &#x3D; 20010;
+
+int n,m;
+int f[N],g[N],q[N];
+
+int main()
+&#123;
+    cin &gt;&gt; n &gt;&gt; m; &#x2F;&#x2F;物品、背包
+    for(int i &#x3D; 0 ; i &lt; n ; i ++)
+    &#123;
+        int v,w,s;
+        cin &gt;&gt; v &gt;&gt; w &gt;&gt; s;
+        memcpy(g , f ,sizeof f);
+        for(int j &#x3D; 0 ; j &lt; v ; j ++ ) &#x2F;&#x2F;枚举余数r
+        &#123;
+            int hh &#x3D; 0 , tt &#x3D; -1;
+            for(int k &#x3D; j ; k &lt;&#x3D; m ; k +&#x3D; v) &#x2F;&#x2F; 枚举 r+?*v
+            &#123;
+                &#x2F;&#x2F; 去掉超出滑动窗口范围的元素
+                if (hh &lt;&#x3D; tt &amp;&amp; q[hh] &lt; k - s*v) hh ++;
+                
+                &#x2F;&#x2F;去掉单调队列末尾比当前元素小的, 根据两个元素相对j的位置算偏移量
+                &#x2F;&#x2F;同一窗口内, j, j+v, j+2v后面加的w数量依次递减，所以距离j越远，相对减去的w倍数越大
+                while (hh &lt;&#x3D; tt &amp;&amp; g[q[tt]] - (q[tt] - j) &#x2F; v * w &lt;&#x3D; g[k] - (k - j) &#x2F; v * w) tt --;
+        
+                q[ ++ tt] &#x3D; k;  &#x2F;&#x2F; 把当前元素下标插入单调队列
+        
+                &#x2F;&#x2F;计算f[k], max左边为不选,右边为单调队列最大值,加上相对k的偏移量
+                if (hh &lt;&#x3D; tt) f[k] &#x3D; max(f[k], g[q[hh]] + (k - q[hh]) &#x2F; v * w);  
+            &#125;
+        &#125;
+    &#125;
+    
+    cout &lt;&lt; f[m] &lt;&lt; endl;
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="01背包-1"><a href="#01背包-1" class="headerlink" title="01背包"></a>01背包</h3><p> <a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/425/">采药</a></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;cstring&gt;
+#include&lt;algorithm&gt;
+using namespace std;
+
+const int N &#x3D; 1010;
+
+int n,m;
+int f[N];
+
+int main()
+&#123;
+    cin &gt;&gt; m &gt;&gt; n;
+    for(int i &#x3D; 0 ; i &lt; n ; i ++ ) &#x2F;&#x2F;遍历物品
+    &#123;
+        int v,w;
+        cin &gt;&gt; v &gt;&gt; w;
+        for(int j &#x3D; m ; j &gt;&#x3D; v ; j -- ) &#x2F;&#x2F;遍历背包
+        &#123;
+            f[j] &#x3D; max(f[j], f[j-v] + w);
+        &#125;
+    &#125;
+    
+    cout &lt;&lt; f[m] &lt;&lt; endl;
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/1026/">装箱问题</a></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;cstring&gt;
+#include&lt;algorithm&gt;
+using namespace std;
+const int N &#x3D; 20010;
+int n,m;
+int f[N];
+int main()
+&#123;
+    cin &gt;&gt; m &gt;&gt; n;
+    for(int i &#x3D; 0 ; i &lt; n ;  i ++ )
+    &#123;
+        int v;
+        cin &gt;&gt; v;
+        for(int j &#x3D; m ; j &gt;&#x3D; v ; j -- )
+        &#123;
+            f[j] &#x3D; max(f[j], f[j-v] + v);
+        &#125;
+    &#125;
+    cout &lt;&lt; m - f[m] &lt;&lt;endl;
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/428/">开心的金明</a></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+using namespace std;
+const int N &#x3D; 30010;
+int n,m;
+int f[N];
+int main()
+&#123;
+    cin &gt;&gt; m &gt;&gt; n;
+    for(int i &#x3D; 1 ; i &lt;&#x3D; n ; i ++ )
+    &#123;
+        int v, q;
+        cin &gt;&gt; v &gt;&gt; q;
+        q *&#x3D; v;
+        for(int j &#x3D; m ; j &gt;&#x3D; v ; j -- )
+        &#123;
+            f[j] &#x3D; max(f[j], f[j-v] + q);
+        &#125;
+    &#125;
+    cout &lt;&lt; f[m] &lt;&lt; endl;
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="与贪心结合"><a href="#与贪心结合" class="headerlink" title="与贪心结合"></a>与贪心结合</h4><p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/736/">能量石</a></p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202211100029212.png" alt="image-20221110002959050"></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;cstring&gt;
+#include&lt;algorithm&gt;
+
+using namespace std;
+
+const int N &#x3D; 10010;
+
+int n;
+struct Stone
+&#123;
+    int s, e, l;
+    bool operator &lt;(const Stone &amp;W) const 
+    &#123;
+        return s * W.l &lt; l * W.s ;
+    &#125;
+&#125;stone[N];
+int f[N];
+
+int main()
+&#123;
+    int T;
+    cin &gt;&gt; T;
+    for(int C &#x3D; 1; C &lt;&#x3D; T ; C ++ )
+    &#123;
+        int m &#x3D; 0;
+        cin &gt;&gt; n;
+        for(int i &#x3D; 0 ; i &lt; n ; i ++ )
+        &#123;
+            int s,e,l;
+            cin &gt;&gt; s &gt;&gt; e &gt;&gt; l;
+            stone[i] &#x3D; &#123;s,e,l&#125;;
+            m +&#x3D; s;
+        &#125;
+        
+        sort(stone,stone + n);
+        
+        memset(f, -0x3f ,sizeof f);
+        f[0] &#x3D; 0;
+        
+        for(int i &#x3D; 0 ; i &lt; n ; i ++)
+        &#123;
+            int s &#x3D; stone[i].s, e &#x3D; stone[i].e, l &#x3D; stone[i].l;
+            for(int j &#x3D; m ; j &gt;&#x3D; s ; j -- )
+            &#123;
+                f[j] &#x3D; max(f[j], f[j-s] + e - (j - s) * l); 
+            &#125;
+        &#125;
+        
+        int res &#x3D; 0;
+        for(int i &#x3D; 0 ; i &lt;&#x3D; m ;i ++ ) res &#x3D; max(res, f[i]);
+        printf(&quot;Case #%d: %d\n&quot;, C ,res);
+    &#125;
+    
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="求方案数"><a href="#求方案数" class="headerlink" title="求方案数"></a>求方案数</h4><p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/11/">背包问题求方案数</a></p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202211092312892.png" alt="image-20221109231215618"></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;cstring&gt;
+using namespace std;
+
+const int N &#x3D; 1010, mod &#x3D; 1e9 + 7;
+
+int n,m;
+int f[N]; &#x2F;&#x2F;体积为j的背包价值最大
+int g[N]; &#x2F;&#x2F;f[j]取最大值的时候的方案数
+
+int main()
+&#123;
+    cin &gt;&gt; n &gt;&gt; m;
+    memset(f, -0x3f, sizeof f);
+    f[0] &#x3D; 0;
+    g[0] &#x3D; 1;
+    
+    for(int i &#x3D; 0 ; i &lt; n ; i ++ )
+    &#123;
+        int v,w;
+        cin &gt;&gt; v &gt;&gt; w;
+        for(int j &#x3D; m ; j &gt;&#x3D; v ; j -- )
+        &#123;
+            int maxv &#x3D; max(f[j], f[j - v] + w);
+            int cnt  &#x3D; 0 ;
+            if(maxv &#x3D;&#x3D; f[j]) cnt +&#x3D; g[j];
+            if(maxv &#x3D;&#x3D; f[j-v]+w) cnt +&#x3D; g[j - v];
+            g[j] &#x3D; cnt % mod;
+            f[j] &#x3D; maxv;
+        &#125;
+    &#125;
+    
+    int res &#x3D; 0;
+    for(int i &#x3D; 0 ; i &lt;&#x3D; m ; i ++ ) res &#x3D; max(res, f[i]);
+    int cnt &#x3D; 0 ;
+    for(int i &#x3D; 0 ; i &lt;&#x3D; m ; i ++ )
+        if(res &#x3D;&#x3D; f[i]) &#x2F;&#x2F;每种最优选法的方案数都应包含在内
+            cnt &#x3D; (cnt + g[i]) % mod;
+            
+    cout &lt;&lt; cnt &lt;&lt; endl;
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/280/">数字组合</a></p>
+<p>  <img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202211071744120.png" alt="image-20221107174432609"></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;algorithm&gt;
+using namespace std;
+
+const int N &#x3D; 10010;
+
+int n,m;
+int f[N];
+int main()
+&#123;
+    cin &gt;&gt; n &gt;&gt; m ;
+    f[0] &#x3D; 1;
+    for(int i &#x3D; 0 ; i &lt; n ; i ++ )
+    &#123;
+        int a;
+        cin &gt;&gt; a;
+        for(int j &#x3D; m ; j &gt;&#x3D; a ; j -- )
+        &#123;
+            f[j] +&#x3D; f[j-a];
+        &#125;
+    &#125;
+    cout &lt;&lt; f[m] &lt;&lt; endl;
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/1023/">货币系统1021</a></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;cstring&gt;
+#include&lt;algorithm&gt;
+using namespace std;
+const int N &#x3D; 3010;
+
+int n,m;
+int f[N];
+
+int main()
+&#123;
+    cin &gt;&gt; n &gt;&gt; m;
+    f[0] &#x3D; 1;
+    for(int i &#x3D; 0 ; i &lt; n ; i ++ )
+    &#123;
+        int v;
+        cin &gt;&gt; v;
+        for(int j &#x3D; v ; j &lt;&#x3D; m ; j ++ )
+        &#123;
+            f[j] +&#x3D; f[j - v];
+        &#125;
+    &#125;
+    
+    cout &lt;&lt; f[m] &lt;&lt; endl;
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/534/">货币系统532</a></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;cstring&gt;
+#include&lt;algorithm&gt;
+using namespace std;
+const int N &#x3D; 110, M &#x3D; 25010;
+int n;
+int a[N];
+int f[M];
+
+int main()
+&#123;
+    int T;
+    cin &gt;&gt; T;
+    while(T--)
+    &#123;
+        int n;
+        cin &gt;&gt; n;
+        for(int i &#x3D; 0 ;i &lt; n; i ++) cin &gt;&gt; a[i];
+        sort(a, a+n);
+        
+        int m &#x3D; a[n-1];
+        memset(f, 0, sizeof f);
+        f[0] &#x3D; 1;
+        
+        int res &#x3D; 0;
+        for(int i &#x3D; 0 ; i &lt; n ; i ++ )
+        &#123;
+            if(!f[a[i]]) res ++ ; &#x2F;&#x2F;当方案数为0的时候，说明不能由前面的面值组成
+            for(int j &#x3D; a[i]; j &lt;&#x3D; m ; j ++ )
+                f[j] +&#x3D; f[j - a[i]];
+        &#125;
+        
+        cout &lt;&lt; res &lt;&lt; endl;
+    &#125;
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="求具体方案"><a href="#求具体方案" class="headerlink" title="求具体方案"></a>求具体方案</h4><p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/12/">背包问题求具体方案</a></p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202211082114030.png" alt="image-20221108211423919"></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include &lt;iostream&gt;
+
+using namespace std;
+
+const int N &#x3D; 1010;
+
+int n, m;
+int v[N], w[N];
+int f[N][N];
+
+int main()
+&#123;
+    cin &gt;&gt; n &gt;&gt; m;
+    for (int i &#x3D; 1; i &lt;&#x3D; n; i ++ ) cin &gt;&gt; v[i] &gt;&gt; w[i];
+
+    for (int i &#x3D; n; i &gt;&#x3D; 1; i -- )
+        for (int j &#x3D; 0; j &lt;&#x3D; m; j ++ )
+        &#123;
+            f[i][j] &#x3D; f[i + 1][j];
+            if (j &gt;&#x3D; v[i]) f[i][j] &#x3D; max(f[i][j], f[i + 1][j - v[i]] + w[i]);
+        &#125;
+
+    int j &#x3D; m;
+    for (int i &#x3D; 1; i &lt;&#x3D; n; i ++ )
+        if (j &gt;&#x3D; v[i] &amp;&amp; f[i][j] &#x3D;&#x3D; f[i + 1][j - v[i]] + w[i])
+        &#123;
+            cout &lt;&lt; i &lt;&lt; &#39; &#39;;
+            j -&#x3D; v[i];
+        &#125;
+
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="二维费用背包"><a href="#二维费用背包" class="headerlink" title="二维费用背包"></a>二维费用背包</h3><p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/8/">二维费用的背包问题</a></p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202211072022211.png" alt="image-20221107202225014"></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;algorithm&gt;
+using namespace std;
+const int N &#x3D; 110;
+int n,M,V;
+int f[N][N];
+int main()
+&#123;
+    cin &gt;&gt; n &gt;&gt; V &gt;&gt; M;
+    for(int i &#x3D; 0 ; i &lt; n ; i ++ )
+    &#123;
+        int v,m,w;
+        cin &gt;&gt; v &gt;&gt; m &gt;&gt; w;
+        for(int j &#x3D; V ; j &gt;&#x3D; v ; j -- )
+        &#123;
+            for(int k &#x3D; M ; k &gt;&#x3D; m ; k -- )
+            &#123;
+                f[j][k] &#x3D; max(f[j][k], f[j-v][k-m] + w);
+            &#125;
+        &#125;
+    &#125;
+    cout &lt;&lt; f[V][M] &lt;&lt; endl;
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/1024/">宠物小精灵之收服</a></p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202211062153495.png" alt="image-20221106215339700"></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;cstring&gt;
+#include&lt;algorithm&gt;
+using namespace std;
+const int N &#x3D; 1010, M &#x3D; 510;
+int n,V1,V2;
+int f[N][M];
+
+int main()
+&#123;
+    cin &gt;&gt; V1 &gt;&gt; V2 &gt;&gt; n; &#x2F;&#x2F; 背包1 、背包2 、物品
+    for(int i &#x3D; 0 ; i &lt; n ; i ++ )
+    &#123;
+        int v1, v2;
+        cin &gt;&gt; v1 &gt;&gt; v2;
+        for(int j &#x3D; V1 ; j &gt;&#x3D; v1 ; j -- )
+        &#123;
+            for(int k &#x3D; V2 - 1 ; k &gt;&#x3D; v2 ; k -- ) &#x2F;&#x2F;V2 - 1是因为体力不能为0
+            &#123;
+                f[j][k] &#x3D; max(f[j][k], f[j - v1][k - v2] + 1);
+            &#125;
+        &#125;
+    &#125;
+    
+    cout &lt;&lt; f[V1][V2 - 1] &lt;&lt; &#39; &#39;; 
+    int k &#x3D; V2 - 1;
+    while(k &gt; 0 &amp;&amp; f[V1][k-1] &#x3D;&#x3D; f[V1][V2-1]) k -- ;
+    cout &lt;&lt; V2 - k &lt;&lt; endl;
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="完全背包-1"><a href="#完全背包-1" class="headerlink" title="完全背包"></a>完全背包</h3><h4 id="求方案数-1"><a href="#求方案数-1" class="headerlink" title="求方案数"></a>求方案数</h4><p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/1025/">买书</a></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;algorithm&gt;
+using namespace std;
+const int N &#x3D; 1010;
+int v[4] &#x3D; &#123;10,20,50,100&#125;;
+int m;
+int f[N];
+int main()
+&#123;
+    cin &gt;&gt; m;
+    f[0] &#x3D; 1;
+    for(int i &#x3D; 0 ; i &lt; 4 ;  i ++ )
+    &#123;
+        for(int j &#x3D; 0 ; j &lt;&#x3D; m ; j ++ )
+        &#123;
+            if(j&gt;&#x3D;v[i]) f[j] +&#x3D; f[j-v[i]];
+        &#125;
+    &#125;
+    cout &lt;&lt; f[m] &lt;&lt; endl;
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="特殊：至少"><a href="#特殊：至少" class="headerlink" title="特殊：至少"></a>特殊：至少</h4><p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202211082107303.png" alt="image-20221108210656031"><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/1022/">潜水员</a></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;cstring&gt;
+#include&lt;algorithm&gt;
+using namespace std;
+const int N &#x3D; 22 , M &#x3D; 80;
+int n,m,K;
+int f[N][M];
+int main()
+&#123;
+    cin &gt;&gt; n &gt;&gt; m &gt;&gt; K;
+    memset(f,0x3f,sizeof f);
+    f[0][0] &#x3D; 0;
+    while(K--)
+    &#123;
+        int v1, v2, w;
+        cin &gt;&gt; v1 &gt;&gt; v2 &gt;&gt; w;
+        for(int j &#x3D; n ; j &gt;&#x3D; 0 ; j -- )
+        &#123;
+            for(int k &#x3D; m ; k &gt;&#x3D; 0 ; k -- )
+            &#123;
+                f[j][k] &#x3D; min(f[j][k], f[max(0, j - v1)][max(0, k - v2)] + w);
+            &#125;
+        &#125;
+    &#125;
+    cout &lt;&lt; f[n][m] &lt;&lt; endl;
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="分组背包-1"><a href="#分组背包-1" class="headerlink" title="分组背包"></a>分组背包</h3><h4 id="求方案数-2"><a href="#求方案数-2" class="headerlink" title="求方案数"></a>求方案数</h4><p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/1015/">机器分配</a></p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202211082143561.png" alt="image-20221108214305452"></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;algorithm&gt;
+using namespace std;
+const int N &#x3D; 11 , M &#x3D; 16;
+int n,m;
+int w[N][M];
+int f[N][M];
+int way[N];
+
+int main()
+&#123;
+    cin &gt;&gt; n &gt;&gt; m;
+    for(int i &#x3D; 1; i &lt;&#x3D; n ; i ++ )
+        for(int j &#x3D; 1 ; j &lt;&#x3D; m ; j ++ ) 
+            cin &gt;&gt; w[i][j] ;
+            
+            
+    for(int i &#x3D; 1 ; i &lt;&#x3D; n ; i ++ ) &#x2F;&#x2F;遍历每组
+    &#123;
+        for(int j &#x3D; 1 ; j &lt;&#x3D; m ; j ++ )
+        &#123;
+            for(int k &#x3D; 0 ; k &lt;&#x3D; j ; k ++ ) &#x2F;&#x2F;遍历每组设备数
+                f[i][j] &#x3D; max(f[i][j], f[i-1][j-k] + w[i][k]);
+        &#125;
+    &#125;
+    
+    cout &lt;&lt; f[n][m] &lt;&lt; endl;
+    
+    int j &#x3D; m;
+    for(int i &#x3D; n ; i ; i -- )
+    &#123;
+        for(int k &#x3D; 0 ; k &lt;&#x3D; j ; k ++ )
+        &#123;
+            if(f[i][j] &#x3D;&#x3D; f[i-1][j-k] + w[i][k])
+            &#123;
+                way[i] &#x3D; k;
+                j -&#x3D; k;
+                break; &#x2F;&#x2F;因为每个组（公司）只会有一种情况，所以直接break
+            &#125;
+        &#125;
+    &#125;
+    
+    for(int i &#x3D; 1 ; i &lt;&#x3D; n ; i ++ ) cout &lt;&lt; i &lt;&lt;  &#39; &#39; &lt;&lt; way[i] &lt;&lt; endl;
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="状态压缩"><a href="#状态压缩" class="headerlink" title="状态压缩"></a>状态压缩</h4><p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/489/">金明的预算方案</a></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;algorithm&gt;
+#include&lt;cstring&gt;
+#include&lt;vector&gt;
+using namespace std;
+
+const int N &#x3D; 65, M &#x3D; 32010;
+typedef pair&lt;int,int&gt; PII;
+PII master[N]; &#x2F;&#x2F;主件
+vector&lt;PII&gt; servent[N]; &#x2F;&#x2F;附件
+int n,m;
+int f[M];
+int main()
+&#123;
+    cin &gt;&gt; m &gt;&gt; n;
+    for(int i &#x3D; 1 ; i &lt;&#x3D; n ; i ++ )
+    &#123;
+        int v,p,q;
+        cin &gt;&gt; v &gt;&gt; p &gt;&gt; q;
+        p*&#x3D;v; &#x2F;&#x2F;价格*重要度
+        if(!q) master[i] &#x3D; &#123;v,p&#125;;
+        else servent[q].push_back(&#123;v,p&#125;);
+    &#125;
+    
+    for(int i &#x3D; 1 ; i &lt;&#x3D; n ; i ++ ) &#x2F;&#x2F;遍历物品
+    &#123;
+        for(int u &#x3D; m ; u &gt;&#x3D; 0 ; u -&#x3D; 10 ) &#x2F;&#x2F;遍历背包（金钱）
+        &#123;
+            &#x2F;&#x2F;制做分组背包问题某类里每一个可选择的单元————打包
+            &#x2F;&#x2F;for循环里的servent[i].size()筛选了只有主件会进入循环，附件不能进入
+            &#x2F;&#x2F;二进制枚举物品组内的所有打包单元的状态，共2的n次方种，用j表示每一种，j的第k位1&#x2F;0表示第k个附件选&#x2F;不选
+            for(int j &#x3D; 0 ; j &lt; 1 &lt;&lt; servent[i].size() ; j ++ )
+            &#123;
+                &#x2F;&#x2F;当前这个打包单元的体积是v， 价值是w ，下面这几行代码就是在计算v和w
+                int v &#x3D; master[i].first, w &#x3D; master[i].second; &#x2F;&#x2F; 主件必选
+                for(int k &#x3D; 0 ; k &lt; servent[i].size() ; k ++ ) &#x2F;&#x2F;枚举状态j的每一位
+                    if(j &gt;&gt; k &amp; 1) &#x2F;&#x2F;如果j的第k位是i，说明包含第k个组件
+                    &#123;
+                        v +&#x3D; servent[i][k].first;
+                        w +&#x3D; servent[i][k].second;
+                    &#125;
+                    
+                &#x2F;&#x2F;已经计算出v和w，做分组背包问题的状态计算
+                if(u &gt;&#x3D; v) f[u] &#x3D; max(f[u], f[u - v] + w);
+            &#125;
+        &#125;
+    &#125;
+    cout &lt;&lt; f[m] &lt;&lt; endl;
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="混合背包"><a href="#混合背包" class="headerlink" title="混合背包"></a>混合背包</h3><p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/7/">混合背包问题</a></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;algorithm&gt;
+#include&lt;cstring&gt;
+using namespace std;
+const int N &#x3D; 1010;
+
+int n,m;
+int f[N];
+
+int main()
+&#123;
+    cin &gt;&gt; n &gt;&gt; m;
+    for(int i &#x3D; 0  ; i &lt; n ; i ++ )
+    &#123;
+        int v, w, s;
+        cin &gt;&gt; v &gt;&gt; w &gt;&gt; s;
+        if(s &#x3D;&#x3D; 0) &#x2F;&#x2F;完全背包
+        &#123;
+            for(int j &#x3D; v ; j &lt;&#x3D; m ; j ++ ) f[j] &#x3D; max(f[j], f[j - v] + w);
+        &#125;
+        else 
+        &#123;
+            if(s &#x3D;&#x3D; -1) s &#x3D; 1; &#x2F;&#x2F;将01背包看成多重背包
+            for(int k &#x3D; 1 ; k &lt;&#x3D; s ; k *&#x3D; 2)
+            &#123;
+                for(int j &#x3D; m; j &gt;&#x3D; k * v ; j -- )
+                    f[j] &#x3D; max(f[j], f[j - k * v] + k * w);
+                s -&#x3D; k;
+            &#125;
+            if(s)
+            &#123;
+                for(int j &#x3D; m ; j &gt;&#x3D; s * v ; j -- )
+                    f[j] &#x3D; max(f[j], f[j - s * v] + s * w);
+            &#125;
+        &#125;
+    &#125;
+    
+    cout &lt;&lt; f[m] &lt;&lt; endl;
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="有依赖的背包问题"><a href="#有依赖的背包问题" class="headerlink" title="有依赖的背包问题"></a>有依赖的背包问题</h3><p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202211100027719.png" alt="image-20221110002716521"></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;algorithm&gt;
+#include&lt;cstring&gt;
+using namespace std;
+const int N &#x3D; 110;
+int n,m;
+int v[N], w[N];
+int h[N], e[N], ne[N], idx;
+int f[N][N];
+
+void add(int a,int b)
+&#123;
+    e[idx] &#x3D; b,ne[idx] &#x3D; h[a], h[a] &#x3D; idx ++ ;
+&#125;
+
+void dfs(int u)
+&#123;
+    for(int i &#x3D; h[u]; ~i ; i &#x3D; ne[i]) &#x2F;&#x2F;循环物品组
+    &#123;
+        int son &#x3D; e[i];
+        dfs(e[i]);
+        &#x2F;&#x2F;遍历背包的容积，因为我们是要遍历其子节点，所以当前节点我们是默认选择的。
+        &#x2F;&#x2F;分组背包，当前节点看成分组背包中的一个组，子节点的每种选择看成组内的一种物品
+        &#x2F;&#x2F;我们每一次都默认选择当前结点，因为到最后根节点是必选的。 
+        for(int j &#x3D; m - v[u]; j &gt;&#x3D; 0 ; j -- ) &#x2F;&#x2F;循环体积
+            for(int k &#x3D; 0 ; k &lt;&#x3D; j ; k ++ ) &#x2F;&#x2F;循环决策
+                f[u][j] &#x3D; max(f[u][j], f[u][j-k] + f[son][k]);
+    &#125;
+    
+    &#x2F;&#x2F;加上刚刚默认选择的父节点价值
+    for(int i &#x3D; m  ; i &gt;&#x3D; v[u] ; i -- )
+    &#123;
+        f[u][i] &#x3D; f[u][i-v[u]] + w[u];
+    &#125;
+    
+    &#x2F;&#x2F;因为我们是从叶子结点开始往上做，所以如果背包容积不如当前物品的体积大，那就不能选择当前结点及其子节点，因此赋值为零 
+    for(int i &#x3D; 0 ; i &lt; v[u] ; i ++ )
+    &#123;
+        f[u][i] &#x3D; 0;
+    &#125;
+&#125;
+
+int main()
+&#123;
+    cin &gt;&gt; n &gt;&gt; m;
+    memset(h, -1, sizeof h);
+    int root;
+    for(int i &#x3D; 1 ; i &lt;&#x3D; n ; i ++ )
+    &#123;
+        int p;
+        cin &gt;&gt; v[i] &gt;&gt; w[i] &gt;&gt; p;
+        if(p &#x3D;&#x3D; -1) root &#x3D; i;
+        else add(p, i);
+    &#125;
+    
+    dfs(root);
+    
+    cout &lt;&lt; f[root][m] &lt;&lt; endl;
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
                 
             </div>
             <hr/>
@@ -2908,7 +4164,7 @@ int main()
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">352.5k</span>&nbsp;字
+                class="white-color">380.3k</span>&nbsp;字
             
             
             

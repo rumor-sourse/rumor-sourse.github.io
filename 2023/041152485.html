@@ -482,21 +482,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-04-11
+                    2023-05-28
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    8.2k
+                    10.5k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    43 分
+                    57 分
                 </div>
                 
 
@@ -519,7 +519,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="单链表"><a href="#单链表" class="headerlink" title="单链表"></a>单链表</h1><p>模板：</p>
+                <h1 id="算法基础课"><a href="#算法基础课" class="headerlink" title="算法基础课"></a>算法基础课</h1><h1 id="单链表"><a href="#单链表" class="headerlink" title="单链表"></a>单链表</h1><p>模板：</p>
 <pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">&#x2F;&#x2F; head存储链表头，e[]存储节点的值，ne[]存储节点的next指针，idx表示当前用到了哪个节点
 int head, e[N], ne[N], idx;
 
@@ -1619,7 +1619,7 @@ int main()
 
     &#x2F;&#x2F; 合并a和b所在的两个集合：
     p[find(a)] &#x3D; find(b);
-    d[find(a)] &#x3D; distance; &#x2F;&#x2F; 根据具体问题，初始化find(a)的偏移量<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    d[find(a)] &#x3D; distance; &#x2F;&#x2F; 根据具体问题，初始化find(a)的偏移量distance<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>原题链接：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/838/">合并集合</a></p>
 <pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
@@ -1692,6 +1692,107 @@ int main()
 		out<span class="token punctuation">.</span><span class="token function">flush</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token punctuation">&#125;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>原题链接：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/839/">连通块中点的数量</a></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;algorithm&gt;
+#include&lt;cstring&gt;
+
+using namespace std;
+const int N &#x3D; 1e5;
+
+int n, m;
+int p[N];
+int s[N];
+
+int find(int x)&#123;
+    if(p[x] !&#x3D; x) p[x] &#x3D; find(p[x]);
+    return p[x];
+&#125;
+
+int main()
+&#123;
+    cin &gt;&gt; n &gt;&gt; m;
+    for(int i &#x3D; 1 ; i &lt;&#x3D; n ; i ++ )&#123;
+        p[i] &#x3D; i;
+        s[i] &#x3D; 1;
+    &#125; 
+    for(int i &#x3D; 0 ; i &lt; m ; i ++ )&#123;
+        string op;
+        int a, b;
+        cin &gt;&gt; op;
+        if(op &#x3D;&#x3D; &quot;C&quot;)&#123;
+            cin &gt;&gt; a &gt;&gt; b;
+            if(find(a) &#x3D;&#x3D; find(b)) continue;
+            s[find(b)] +&#x3D; s[find(a)];
+            p[find(a)] &#x3D; find(b);            
+        &#125;else if(op &#x3D;&#x3D; &quot;Q1&quot;)&#123;
+            cin &gt;&gt; a &gt;&gt; b;
+            if(find(a) &#x3D;&#x3D; find(b)) cout &lt;&lt; &quot;Yes&quot; &lt;&lt; endl;
+            else cout &lt;&lt; &quot;No&quot; &lt;&lt; endl;
+        &#125;else &#123;
+            cin &gt;&gt; a;
+            cout &lt;&lt; s[find(a)] &lt;&lt; endl;
+        &#125;
+    &#125;
+    
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/242/">食物链</a></p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202305102147225.png"></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;algorithm&gt;
+#include&lt;cstring&gt;
+
+using namespace std;
+const int N &#x3D; 50010;
+
+int n, m;
+int d[N];
+int p[N];
+
+int find(int x)&#123;
+    if(p[x] !&#x3D; x) &#123;
+        int u &#x3D; find(p[x]);
+        d[x] +&#x3D; d[p[x]];
+        p[x] &#x3D; u;
+    &#125;
+    return p[x];
+&#125;
+
+int main()
+&#123;
+    cin &gt;&gt; n &gt;&gt; m ;
+    for(int i &#x3D; 1 ; i &lt;&#x3D; n ; i ++) p[i] &#x3D; i;
+    int res &#x3D; 0;
+    for(int i &#x3D; 0 ; i &lt; m ; i ++ )&#123;
+        int D, x, y;
+        cin &gt;&gt; D &gt;&gt; x &gt;&gt; y;
+        if(x &gt; n || y &gt; n) res ++ ;
+        else &#123;
+            int px &#x3D; find(x), py &#x3D; find(y);
+            if(D &#x3D;&#x3D; 1) &#123;
+                if(px &#x3D;&#x3D; py &amp;&amp; (d[x] - d[y]) % 3) res ++;
+                else if(px !&#x3D; py)&#123;
+                    p[px] &#x3D; py;
+                    d[px] &#x3D; d[y] - d[x]; &#x2F;&#x2F; (d[x] + ? - d[y]) mod 3 &#x3D;&#x3D; 0;
+                &#125;
+            &#125;
+            else &#123;
+                if(px &#x3D;&#x3D; py &amp;&amp; (d[x] - d[y] - 1) % 3) res ++;
+                else if(px !&#x3D; py)
+                &#123;
+                    p[px] &#x3D; py;
+                    d[px] &#x3D; d[y] + 1 - d[x]; &#x2F;&#x2F;(d[x] + ? - d[y] - 1) mod 3 &#x3D;&#x3D; 0;
+                &#125;
+            &#125;
+        &#125;
+    &#125;
+    
+    cout &lt;&lt; res &lt;&lt; endl;
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h1 id="堆"><a href="#堆" class="headerlink" title="堆"></a>堆</h1><p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202304021645655.png"></p>
 <p>模板：</p>
@@ -2181,6 +2282,432 @@ heap.push(-x);
 
 &#x2F;&#x2F;直接定义小根堆
 priority_queue&lt;int,vector&lt;int&gt;,greater&lt;int&gt;&gt; heap;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h1 id="算法提高课"><a href="#算法提高课" class="headerlink" title="算法提高课"></a>算法提高课</h1><h1 id="并查集-1"><a href="#并查集-1" class="headerlink" title="并查集"></a>并查集</h1><p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/1252/">格子游戏</a></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;cstring&gt;
+#include&lt;algorithm&gt;
+
+using namespace std;
+const int N &#x3D; 40010;
+int n, m;
+int p[N];
+
+int get(int a,int b)&#123;
+    return a * n + b;
+&#125;
+
+int find(int x)&#123;
+    if(p[x] !&#x3D; x) p[x] &#x3D; find(p[x]);
+    return p[x];
+&#125;
+
+int main()
+&#123;
+    cin &gt;&gt; n &gt;&gt; m ;
+    for(int i &#x3D; 0 ; i &lt; n * n ; i ++ ) p[i] &#x3D; i;
+    
+    int res &#x3D; 0;
+    for(int i &#x3D; 1 ; i &lt;&#x3D; m ; i ++ )&#123;
+        int x, y;
+        char d;
+        cin &gt;&gt; x &gt;&gt; y &gt;&gt; d;
+        x-- , y--;
+        int a &#x3D; get(x, y);
+        int b;
+        if(d &#x3D;&#x3D; &#39;D&#39;) b &#x3D; get(x + 1, y);
+        else b &#x3D; get(x, y + 1);
+        
+        int pa &#x3D; find(a), pb &#x3D; find(b);
+        if(pa &#x3D;&#x3D; pb)&#123;
+          res &#x3D; i;
+          break;
+        &#125; 
+        p[pa] &#x3D; pb;
+    &#125;
+    if(!res) cout &lt;&lt; &quot;draw&quot; &lt;&lt; endl;
+    else cout &lt;&lt; res &lt;&lt; endl;
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/1254/">搭配购买</a></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;cstring&gt;
+#include&lt;algorithm&gt;
+
+using namespace std;
+const int N &#x3D; 10010;
+
+int n, m, vol;
+int v[N], w[N];
+int p[N];
+int f[N];
+
+int find(int x)&#123;
+    if(p[x] !&#x3D; x) p[x] &#x3D; find(p[x]);
+    return p[x];
+&#125;
+
+int main()
+&#123;
+    cin &gt;&gt; n &gt;&gt; m &gt;&gt; vol;
+    for(int i &#x3D; 1 ; i &lt;&#x3D; n ; i ++ ) p[i] &#x3D; i;
+    for(int i &#x3D; 1 ; i &lt;&#x3D; n ; i ++ )&#123;
+        cin &gt;&gt; v[i] &gt;&gt; w[i];
+    &#125;
+    
+    for(int i &#x3D; 0 ; i &lt; m ; i ++ )&#123;
+        int a, b;
+        cin &gt;&gt; a &gt;&gt; b;
+        int pa &#x3D; find(a);
+        int pb &#x3D; find(b);
+        if(pa !&#x3D; pb)&#123;
+            v[pb] +&#x3D; v[pa];
+            w[pb] +&#x3D; w[pa];
+            p[pa] &#x3D; pb;
+        &#125;
+    &#125;
+    
+    &#x2F;&#x2F;01背包
+    for(int i &#x3D; 1 ; i &lt;&#x3D; n ; i++ )
+        if(p[i] &#x3D;&#x3D; i)
+        &#123;
+            for(int j &#x3D; vol; j &gt;&#x3D; v[i]; j -- )&#123;
+                f[j] &#x3D; max(f[j], f[j - v[i]] + w[i]);
+            &#125;
+        &#125;
+        
+    cout &lt;&lt; f[vol] &lt;&lt; endl;
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/239/">程序自动分析</a></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;algorithm&gt;
+#include&lt;cstring&gt;
+#include&lt;unordered_map&gt;
+
+using namespace std;
+const int N &#x3D; 200010;
+
+int n,m ;
+int p[N];
+unordered_map&lt;int,int&gt; S;
+
+struct Query&#123;
+    int x, y, e;
+&#125;query[N];
+
+int get(int x)&#123;
+    if(S.count(x) &#x3D;&#x3D; 0) S[x] &#x3D; ++n ;
+    return S[x];
+&#125;
+
+int find(int x)&#123;
+    if(p[x] !&#x3D; x) p[x] &#x3D; find(p[x]);
+    return p[x];
+&#125;
+
+int main()
+&#123;
+    int T;
+    cin &gt;&gt; T;
+    while(T --)&#123;
+        n &#x3D; 0;
+        cin &gt;&gt; m ;
+        S.clear();
+        for(int i &#x3D; 0 ; i &lt; m ; i ++ )&#123;
+            int x, y, e;
+            cin &gt;&gt; x &gt;&gt; y &gt;&gt; e;
+            query[i] &#x3D; &#123;get(x), get(y), e&#125;;
+        &#125;
+        
+        for(int i &#x3D; 1; i &lt;&#x3D; n ; i ++ ) p[i] &#x3D; i;
+        
+        for(int i &#x3D; 0 ; i &lt; m ; i ++ )&#123;
+            if(query[i].e &#x3D;&#x3D; 1)&#123;
+                int pa &#x3D; find(query[i].x);
+                int pb &#x3D; find(query[i].y);
+                p[pa] &#x3D; pb;
+            &#125;
+        &#125;
+        
+        bool flag &#x3D; false;
+        for(int i &#x3D; 0 ; i &lt; m ; i ++ )&#123;
+            if(query[i].e &#x3D;&#x3D; 0)&#123;
+                int pa &#x3D; find(query[i].x);
+                int pb &#x3D; find(query[i].y);
+                if(pa &#x3D;&#x3D; pb)&#123;
+                    flag &#x3D; true;
+                    break;
+                &#125;
+            &#125;
+        &#125;
+        
+        if(flag) cout &lt;&lt; &quot;NO&quot; &lt;&lt; endl;
+        else cout &lt;&lt; &quot;YES&quot; &lt;&lt; endl;
+    &#125; 
+    
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/240/">银河英雄传说</a></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;algorithm&gt;
+
+using namespace std;
+const int N &#x3D; 30010;
+
+int m;
+int p[N], sz[N], d[N];
+
+int find(int x)&#123;
+    if(p[x] !&#x3D; x)&#123;
+        int u &#x3D; find(p[x]);
+        d[x] +&#x3D; d[p[x]];
+        p[x] &#x3D; u;
+    &#125;
+    return p[x];
+&#125;
+
+int main()
+&#123;
+    cin &gt;&gt; m ;
+    
+    for(int i &#x3D; 1 ; i &lt; N ; i ++ )&#123;
+        p[i] &#x3D; i;
+        sz[i] &#x3D; 1;
+    &#125;
+    for(int i &#x3D; 0 ; i &lt; m ; i ++ )&#123;
+        char op[2];
+        int a, b;
+        cin &gt;&gt; op &gt;&gt; a &gt;&gt; b;
+        if(op[0] &#x3D;&#x3D; &#39;M&#39;)&#123;
+            int pa &#x3D; find(a), pb &#x3D; find(b);
+            if(pa !&#x3D; pb)&#123;
+                d[pa] &#x3D; sz[pb];
+                sz[pb] +&#x3D; sz[pa];
+                p[pa] &#x3D; pb;                
+            &#125;
+        &#125;else &#123;
+            int pa &#x3D; find(a), pb &#x3D; find(b);
+            if(pa !&#x3D; pb) cout &lt;&lt; &quot;-1&quot; &lt;&lt; endl;
+            else cout &lt;&lt; max(abs(d[a] - d[b]) - 1 , 0) &lt;&lt; endl;
+        &#125;
+    &#125;
+    
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/241/">奇偶游戏</a></p>
+<p>带边权写法</p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202305222204679.png"></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;cstring&gt;
+#include&lt;algorithm&gt;
+
+using namespace std;
+const int N &#x3D; 20010;
+
+int n, m;
+int p[N], d[N];
+unordered_map&lt;int,int&gt; S;
+
+int get(int x)&#123;
+    if(S.count(x) &#x3D;&#x3D; 0) S[x] &#x3D; ++ n;
+    return S[x];
+&#125;
+
+int find(int x)&#123;
+    if(p[x] !&#x3D; x)&#123;
+        int u &#x3D; find(p[x]);
+        d[x] +&#x3D; d[p[x]];
+        p[x] &#x3D; u;
+    &#125;
+    
+    return p[x];
+&#125;
+
+int main()
+&#123;
+    cin &gt;&gt; n &gt;&gt; m;
+    n &#x3D; 0;
+    for(int i &#x3D; 0 ; i &lt; N ; i++ ) p[i] &#x3D; i;
+    int res &#x3D; m;
+    for(int i &#x3D; 1 ; i &lt;&#x3D; m ; i ++ )&#123;
+        int a, b;
+        string type;
+        cin &gt;&gt; a &gt;&gt; b &gt;&gt; type;
+        a &#x3D; get(a - 1), b &#x3D; get(b);
+        
+        int t &#x3D; 0;
+        if(type &#x3D;&#x3D; &quot;odd&quot;) t &#x3D; 1;
+        int pa &#x3D; find(a), pb &#x3D; find(b);
+        if(pa &#x3D;&#x3D; pb)&#123;
+            if(((d[a] + d[b]) % 2 + 2) % 2 !&#x3D; t)
+            &#123;
+                res &#x3D; i - 1 ;
+                break;
+            &#125;
+        &#125;
+        else &#123;
+            p[pa] &#x3D; pb;
+            d[pa] &#x3D; d[a] ^ d[b] ^ t;
+        &#125;
+    &#125;
+    
+    cout &lt;&lt; res &lt;&lt; endl;
+    
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>扩展域写法</p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202305222212339.png"></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include &lt;cstring&gt;
+#include &lt;iostream&gt;
+#include &lt;algorithm&gt;
+#include &lt;unordered_map&gt;
+
+using namespace std;
+
+const int N &#x3D; 40010, Base &#x3D; N &#x2F; 2;
+
+int n, m;
+int p[N];
+unordered_map&lt;int, int&gt; S;
+
+int get(int x)
+&#123;
+    if (S.count(x) &#x3D;&#x3D; 0) S[x] &#x3D; ++ n;
+    return S[x];
+&#125;
+
+int find(int x)
+&#123;
+    if (p[x] !&#x3D; x) p[x] &#x3D; find(p[x]);
+    return p[x];
+&#125;
+
+int main()
+&#123;
+    cin &gt;&gt; n &gt;&gt; m;
+    n &#x3D; 0;
+
+    for (int i &#x3D; 0; i &lt; N; i ++ ) p[i] &#x3D; i;
+
+    int res &#x3D; m;
+    for (int i &#x3D; 1; i &lt;&#x3D; m; i ++ )
+    &#123;
+        int a, b;
+        string type;
+        cin &gt;&gt; a &gt;&gt; b &gt;&gt; type;
+        a &#x3D; get(a - 1), b &#x3D; get(b);
+
+        if (type &#x3D;&#x3D; &quot;even&quot;)
+        &#123;
+            if (find(a + Base) &#x3D;&#x3D; find(b))
+            &#123;
+                res &#x3D; i - 1;
+                break;
+            &#125;
+            p[find(a)] &#x3D; find(b);
+            p[find(a + Base)] &#x3D; find(b + Base);
+        &#125;
+        else
+        &#123;
+            if (find(a) &#x3D;&#x3D; find(b))
+            &#123;
+                res &#x3D; i - 1;
+                break;
+            &#125;
+
+            p[find(a + Base)] &#x3D; find(b);
+            p[find(a)] &#x3D; find(b + Base);
+        &#125;
+    &#125;
+
+    cout &lt;&lt; res &lt;&lt; endl;
+
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h1 id="树状数组"><a href="#树状数组" class="headerlink" title="树状数组"></a>树状数组</h1><p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/243/">楼兰图腾</a></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include &lt;iostream&gt;
+#include &lt;cstdio&gt;
+#include &lt;cstring&gt;
+
+using namespace std;
+
+const int N &#x3D; 2000010;
+
+typedef long long LL;
+
+int n;
+&#x2F;&#x2F;t[i]表示树状数组i结点覆盖的范围和
+int a[N], t[N];
+&#x2F;&#x2F;Lower[i]表示左边比第i个位置小的数的个数
+&#x2F;&#x2F;Greater[i]表示左边比第i个位置大的数的个数
+int Lower[N], Greater[N];
+
+&#x2F;&#x2F;返回非负整数x在二进制表示下最低位1及其后面的0构成的数值
+int lowbit(int x)
+&#123;
+    return x &amp; -x;
+&#125;
+
+&#x2F;&#x2F;将序列中第x个数加上k。
+void add(int x, int k)
+&#123;
+    for(int i &#x3D; x; i &lt;&#x3D; n; i +&#x3D; lowbit(i)) t[i] +&#x3D; k;
+&#125;
+&#x2F;&#x2F;查询序列前x个数的和
+int ask(int x)
+&#123;
+    int sum &#x3D; 0;
+    for(int i &#x3D; x; i; i -&#x3D; lowbit(i)) sum +&#x3D; t[i];
+    return sum;
+&#125;
+
+int main()
+&#123;
+
+    scanf(&quot;%d&quot;, &amp;n);
+    for(int i &#x3D; 1; i &lt;&#x3D; n; i++) scanf(&quot;%d&quot;, &amp;a[i]);
+
+    &#x2F;&#x2F;从左向右，依次统计每个位置左边比第i个数y小的数的个数、以及大的数的个数
+    for(int i &#x3D; 1; i &lt;&#x3D; n; i++)
+    &#123;
+        int y &#x3D; a[i]; &#x2F;&#x2F;第i个数
+
+        &#x2F;&#x2F;在前面已加入树状数组的所有数中统计在区间[1, y - 1]的数字的出现次数
+        Lower[i] &#x3D; ask(y - 1); 
+
+        &#x2F;&#x2F;在前面已加入树状数组的所有数中统计在区间[y + 1, n]的数字的出现次数
+        Greater[i] &#x3D; ask(n) - ask(y);
+
+        &#x2F;&#x2F;将y加入树状数组，即数字y出现1次
+        add(y, 1);
+    &#125;
+
+    &#x2F;&#x2F;清空树状数组，从右往左统计每个位置右边比第i个数y小的数的个数、以及大的数的个数
+    memset(t, 0, sizeof t);
+
+    LL resA &#x3D; 0, resV &#x3D; 0;
+    &#x2F;&#x2F;从右往左统计
+    for(int i &#x3D; n; i &gt;&#x3D; 1; i--)
+    &#123;
+        int y &#x3D; a[i];
+        resA +&#x3D; (LL)Lower[i] * ask(y - 1);
+        resV +&#x3D; (LL)Greater[i] * (ask(n) - ask(y));
+
+        &#x2F;&#x2F;将y加入树状数组，即数字y出现1次
+        add(y, 1);
+    &#125;
+
+    printf(&quot;%lld %lld\n&quot;, resV, resA);
+
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
                 
@@ -2973,7 +3500,7 @@ priority_queue&lt;int,vector&lt;int&gt;,greater&lt;int&gt;&gt; heap;<span aria-h
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">352.5k</span>&nbsp;字
+                class="white-color">380.3k</span>&nbsp;字
             
             
             

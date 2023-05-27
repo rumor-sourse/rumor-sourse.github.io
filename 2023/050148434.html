@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="ITN网络课程笔记（十六）, charminghacker">
+    <meta name="keywords" content="zookeeper, charminghacker">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>ITN网络课程笔记（十六） | charminghacker</title>
+    <title>zookeeper | charminghacker</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -329,12 +329,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">ITN网络课程笔记（十六）</h1>
+                    <h1 class="description center-align post-title">zookeeper</h1>
                 </div>
             </div>
         </div>
@@ -450,8 +450,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/web%E5%AE%89%E5%85%A8-%E5%AE%89%E5%85%A8%E6%9E%B6%E6%9E%84-%E6%80%9D%E7%A7%91-%E7%BD%91%E7%BB%9C/">
-                                <span class="chip bg-color">web安全 安全架构 思科 网络</span>
+                            <a href="/tags/zookeeper/">
+                                <span class="chip bg-color">zookeeper</span>
                             </a>
                         
                     </div>
@@ -462,8 +462,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E7%BD%91%E7%BB%9C/" class="post-category">
-                                网络
+                            <a href="/categories/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" class="post-category">
+                                论文阅读
                             </a>
                         
                     </div>
@@ -475,28 +475,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-12-03
+                    2023-05-01
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-03-01
+                    2023-05-01
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    8.3k
+                    0
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    29 分
+                    1 分
                 </div>
                 
 
@@ -519,402 +519,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="十六、网络安全基础知识"><a href="#十六、网络安全基础知识" class="headerlink" title="十六、网络安全基础知识"></a>十六、网络安全基础知识</h1><p>您可能已经建立了一个网络，或者您正准备那样做。这里有一些东西值得思考。建立一个没有安全保护的网络就像打开了所有到你家的门和窗户，然后去度假。任何人都可以短暂拜访，获得进入，窃取或破坏物品，或者只是制造一片混乱。正如你在新闻中看到的，任何网络都有可能被入侵! 作为网络管理员，让威胁发起者难以访问您的网络是您工作的一部分。本模块将概述网络攻击的类型，以及如何减少威胁发起者成功的机会。</p>
-<p><strong>模块目标</strong>: 配置交换机和路由器的设备强化功能，提升安全性。</p>
-<table>
-<thead>
-<tr>
-<th align="left"><strong>主题标题</strong></th>
-<th align="left"><strong>主题目标</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><strong>安全威胁和漏洞</strong></td>
-<td align="left">说明基本安全措施对于网络设备的必要性。</td>
-</tr>
-<tr>
-<td align="left"><strong>网络攻击</strong></td>
-<td align="left">明确安全漏洞。</td>
-</tr>
-<tr>
-<td align="left"><strong>网络攻击缓解</strong></td>
-<td align="left">明确常用的威胁缓解措施。</td>
-</tr>
-<tr>
-<td align="left"><strong>设备安全</strong></td>
-<td align="left">配置网络设备的设备强化功能，缓解 安全威胁。</td>
-</tr>
-</tbody></table>
-<h1 id="1、安全威胁和漏洞"><a href="#1、安全威胁和漏洞" class="headerlink" title="1、安全威胁和漏洞"></a>1、安全威胁和漏洞</h1><h2 id="1-1、威胁类型"><a href="#1-1、威胁类型" class="headerlink" title="1.1、威胁类型"></a>1.1、威胁类型</h2><p>有线和无线计算机网络是人们日常活动中不可或缺的一部分。个人和组织都同样依赖其计算机和网络。不速之客的入侵可能导致代价高昂的网络中断和工作成果的丢失。针对网络的攻击有时具有相当的破坏性，可能造成重要信息或资产的损坏或失窃，导致时间上和金钱上的损失。</p>
-<p>入侵者会通过软件漏洞、硬件攻击或通过猜测某人的用户名和密码来获取网络访问。通过修改或利用软件漏洞来获取访问权的入侵者通常被称为威胁发起者。</p>
-<p>一旦威胁发起者取得网络的访问权，就可能给网络带来四种威胁。</p>
-<h3 id="信息盗窃"><a href="#信息盗窃" class="headerlink" title="信息盗窃"></a>信息盗窃</h3><p>指侵入计算机以获取机密信息。信息可以用于各种目的或出售。例子: 盗窃组织的专有信息，例如研究和开发数据。</p>
-<h3 id="数据丢失"><a href="#数据丢失" class="headerlink" title="数据丢失"></a>数据丢失</h3><p>是指闯入计算机破坏或更改数据记录。数据丢失的示例是：一个威胁发起者发送可重新格式化计算机硬盘的病毒。数据操纵示例是：闯入记录系统来更改信息（例如物品价格）。</p>
-<h3 id="身份盗窃"><a href="#身份盗窃" class="headerlink" title="身份盗窃"></a>身份盗窃</h3><p>是一种信息盗窃形式，以冒用他人的身份为目的窃取个人信息。利用此类信息，威胁发起者便可以非法获取文件、申请信用贷款或者进行未经授权的在线购物。身份盗窃案件日渐增多，每年造成的损失达数十亿之多。</p>
-<h3 id="服务中断"><a href="#服务中断" class="headerlink" title="服务中断"></a>服务中断</h3><p>阻止合法用户访问他们有权访问的服务。例如: 对服务器、网络设备或网络通信链路发起的拒绝服务 (DoS) 攻击。</p>
-<h2 id="1-2、漏洞分类"><a href="#1-2、漏洞分类" class="headerlink" title="1.2、漏洞分类"></a>1.2、漏洞分类</h2><p>漏洞是指网络或设备的薄弱程度。路由器、交换机、桌面、服务器、甚至安全设备都存在一定程度的漏洞。一般而言，受到攻击的网络设备都是端点设备，例如服务器和台式计算机。</p>
-<p>有三种主要的漏洞或弱点：技术、配置和安全策略。所有这三种漏洞源都会让网络或设备对各种攻击保持开放状态，包括恶意代码攻击和网络攻击。</p>
-<h3 id="技术漏洞"><a href="#技术漏洞" class="headerlink" title="技术漏洞"></a>技术漏洞</h3><table>
-<thead>
-<tr>
-<th>TCP/IP 协议缺陷</th>
-<th>超文本传输协议 (HTTP)，文件传输协议(FTP)， 和互联网控制消息协议 (ICMP)本质上是 不安全的。简单网络管理协议 (SNMP)和简单邮件传输 协议 (SMTP) 与TCP设计时所基于的固有的 不安全结构有关。</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>操作系统缺陷</td>
-<td>每个操作系统都有必须解决的安全问题。UNIX、Linux、Mac OS、Mac OS X、Windows Server 2012、Windows 7、 Windows 8它们记录在计算机应急响应小组 (CERT) 档案中， 网址为 <a target="_blank" rel="noopener" href="http://www.cert.org./">http://www.cert.org。</a></td>
-</tr>
-<tr>
-<td>网络设备缺陷</td>
-<td>各种类型的网络设备，例如路由器，防火墙和 交换机都具有安全弱点，必须识别并加以 保护。他们的弱点包括密码保护，缺乏 身份验证、路由协议和防火墙漏洞。</td>
-</tr>
-</tbody></table>
-<h3 id="配置漏洞"><a href="#配置漏洞" class="headerlink" title="配置漏洞"></a>配置漏洞</h3><table>
-<thead>
-<tr>
-<th align="left">漏洞</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">不安全的用户帐户</td>
-<td align="left">用户帐户信息可能不安全地通过网络传输， 将用户名和密码暴露给威胁发起者。</td>
-</tr>
-<tr>
-<td align="left">系统帐户的密码容易被猜到</td>
-<td align="left">用户密码创建不当造成了这种常见问题。</td>
-</tr>
-<tr>
-<td align="left">互联网服务配置错误</td>
-<td align="left">在Web浏览器中打开JavaScript可以在访问不受信任的站点时 通过由威胁发起者控制的JavaScript进行攻击。 其他潜在的弱点来源包括配置错误的终端 服务、FTP 或 Web 服务器（例如微软互联网信息 服务 IIS) 和 Apache HTTP 服务器。</td>
-</tr>
-<tr>
-<td align="left">产品的默认设置不安全</td>
-<td align="left">许多产品的默认设置容易带来 安全漏洞。</td>
-</tr>
-<tr>
-<td align="left">网络设备配置错误</td>
-<td align="left">设备本身配置错误会带来严重的安全 问题。例如，错误配置的访问列表、路由协议或 SNMP 社区字符串可以造成或开启安全漏洞。</td>
-</tr>
-</tbody></table>
-<h3 id="策略漏洞"><a href="#策略漏洞" class="headerlink" title="策略漏洞"></a>策略漏洞</h3><table>
-<thead>
-<tr>
-<th align="left">漏洞</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">缺乏书面的安全策略</td>
-<td align="left">未以书面形式记录的安全策略无法得到长久有效的 应用和执行。</td>
-</tr>
-<tr>
-<td align="left">政治</td>
-<td align="left">政治斗争和争权夺利可能导致难以长期执行 相同的安全策略。</td>
-</tr>
-<tr>
-<td align="left">缺乏身份验证持续性</td>
-<td align="left">如果密码选择不当、易于破解或甚至是默认密码，会导致 对网络的未经授权的访问。</td>
-</tr>
-<tr>
-<td align="left">没有实行逻辑访问控制</td>
-<td align="left">监控和审计力度不够，导致攻击和未授权使用不断发生， 浪费公司资源。这可能会导致法律诉讼 或针对IT技术人员、IT管理人员、 甚至允许这些不安全条件持续存在的公司领导层的解雇。</td>
-</tr>
-<tr>
-<td align="left">软件和硬件的安装与更改没有遵循策略执行</td>
-<td align="left">未经授权更改网络拓扑或安装 未经批准的应用程序会造成或开启安全漏洞。</td>
-</tr>
-<tr>
-<td align="left">没有设计灾难恢复计划</td>
-<td align="left">缺乏灾难恢复计划可能在发生自然灾害或 企业在遭到威胁发起者攻击时造成恐慌和 混乱。</td>
-</tr>
-</tbody></table>
-<h2 id="1-3、物理安全"><a href="#1-3、物理安全" class="headerlink" title="1.3、物理安全"></a>1.3、物理安全</h2><p>络中一个同样重要的漏洞区域是设备的物理安全性。如果网络资源可以被物理性破坏，攻击发起者便可借此拒绝对网络资源的使用。</p>
-<p>物理威胁分为四类：</p>
-<ul>
-<li><strong>硬件威胁</strong> － 这包括对服务器、路由器、交换机、布线间和工作站的物理破坏</li>
-<li><strong>环境威胁</strong> －这包括极端温度（过热或过冷）或极端湿度（过湿或过干）</li>
-<li><strong>电气威胁</strong> － 这包括电压过高、电源电压不足（电气管制）、不合格电源（噪音），以及断电</li>
-<li><strong>维护威胁</strong> － 这包括关键电气组件处理不佳（静电放电），缺少关键备用组件、布线混乱和标识不明</li>
-</ul>
-<p>必须创建和实现一个良好的物理安全计划来解决这些问题。该图显示了物理安全计划的一个示例。</p>
-<p><strong>制定物理安全规划，限制对设备的破坏</strong></p>
-<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN16.1.png"></p>
-<ul>
-<li>保护机房。</li>
-<li>实现物理安全，限制对设备的破坏</li>
-</ul>
-<p><strong>步骤 1.</strong> 将设备锁定，并防止未经授权的人员经门窗、天花板、架空地板、管道和通风孔进行访问。</p>
-<p><strong>步骤 2.</strong> 使用电子日志监控配线间。</p>
-<p><strong>步骤 3.</strong> 使用安全摄像头。</p>
-<h1 id="2、网络攻击"><a href="#2、网络攻击" class="headerlink" title="2、网络攻击"></a>2、网络攻击</h1><h2 id="2-1、恶意软件的类型"><a href="#2-1、恶意软件的类型" class="headerlink" title="2.1、恶意软件的类型"></a>2.1、恶意软件的类型</h2><p>上一主题介绍了网络威胁的类型以及使威胁成为可能的漏洞。本主题将详细介绍威胁发起者如何获得网络的访问权限或限制授权用户的访问权限。</p>
-<p>恶意软件是“有恶意的软件”的简称。是专门用来损坏、破坏、窃取数据、主机或网络或对数据、主机或网络进行“坏的”或者非法操作的代码或软件。恶意软件的类型包括病毒、蠕虫和特洛伊木马</p>
-<p><strong>病毒</strong></p>
-<p>计算机病毒是一种通过将自身副本插入另一个程序并成为其一部分来传播的恶意软件类型。它在计算机之间传播，感染所到之处。病毒从严重程度上来讲包括从导致轻度恼人影响到损坏数据或软件和导致拒绝服务 (DoS) 条件。几乎所有的病毒都是附加到一个可执行文件中，这意味着病毒可能在系统上存在，但在用户运行或打开恶意主机文件或程序前不会处于活跃状态也不会传播。执行主机代码后，也就执行了病毒代码。通常情况下，主机程序在感染了病毒后仍继续运行。但是，一些病毒用其自身副本覆盖其他程序，这就完全破坏了主机程序。当病毒附加的软件或文档通过网络、磁盘、文件共享或被感染的电子邮件附件从一台计算机传输到另一台计算机时，也传播了病毒。</p>
-<p><strong>蠕虫</strong></p>
-<p>计算机蠕虫与病毒相似，它们均可复制自身的功能副本，并造成相同类型的损坏。与病毒相比，病毒需要通过感染的主机文件来传播，而蠕虫属于独立软件，无需借助主机程序或人工帮助即可传播。蠕虫不需要附加在程序中来感染主机并通过系统漏洞进入计算机。蠕虫无需帮助便可利用系统功能在网络中传输。</p>
-<p><strong>特洛伊木马</strong></p>
-<p>特洛伊木马是另一种类型的恶意软件，以希腊人用来潜入特洛伊的木马来命名。它是看起来合法的有害软件。用户通常是被骗加载特洛伊木马并在他们的系统上执行。特洛伊木马激活后，可以在主机上进行任意数量的攻击，从激怒用户（过多的弹窗或改变桌面）到破坏主机（删除文件、窃取数据或激活和传播病毒等其他恶意软件）。众所周知，特洛伊木马为恶意用户访问系统创建后门。</p>
-<p>不同于病毒和蠕虫，特洛伊木马不通过感染其他文件进行复制。它们也不自我复制。特洛伊木马必须通过用户交互传播，如打开电子邮件附件或从互联网下载并运行文件。</p>
-<h2 id="2-2、侦查攻击"><a href="#2-2、侦查攻击" class="headerlink" title="2.2、侦查攻击"></a>2.2、侦查攻击</h2><p>除了恶意代码攻击外，网络还可能遭受各种网络攻击。网络攻击可分为三大类别：</p>
-<ul>
-<li><strong>侦察攻击</strong> – 搜索和映射系统、服务或漏洞</li>
-<li><strong>访问攻击</strong> – 数据、系统或用户访问权限的未授权控制</li>
-<li><strong>拒绝服务</strong> – 网络、系统或服务的禁用或损坏</li>
-</ul>
-<p>对于侦察攻击，外部威胁发起者可以使用互联网工具（如<strong>nslookup</strong>和<strong>whois</strong>实用程序）轻松地确定分配给公司或实体的 IP 地址空间。确定 IP 地址空间后，威胁发起者可以 ping 这些公有 IP 地址以确定哪些地址正在使用。为帮助自动执行此步骤，威胁发起者可能会使用 ping 扫描工具，例如<strong>fping</strong>或<strong>gping</strong>。它系统地向给定范围或子网中的所有网络地址执行 ping 操作。这类似于浏览电话簿的某一部分，拨打其中列出的每个号码，看哪些号码有人接听。</p>
-<p><strong>侦查攻击</strong></p>
-<ol>
-<li>互联网查询</li>
-<li>Ping扫描</li>
-<li>端口扫描</li>
-</ol>
-<h2 id="2-3、访问攻击"><a href="#2-3、访问攻击" class="headerlink" title="2.3、访问攻击"></a>2.3、访问攻击</h2><p>访问攻击利用身份验证服务、FTP 服务和 Web 服务的已知漏洞，获取对 Web 帐户、机密数据库和其他敏感信息的访问。访问攻击使个人能够对他们无权查阅的信息进行未经授权访问。访问攻击可分为四种类型：密码攻击、信任利用、端口重定向和中间人攻击。</p>
-<h3 id="密码攻击"><a href="#密码攻击" class="headerlink" title="密码攻击"></a>密码攻击</h3><p>威胁发起者可以使用多种方法实施密码攻击：</p>
-<ul>
-<li>暴力攻击</li>
-<li>特洛伊木马攻击</li>
-<li>数据包嗅探</li>
-</ul>
-<h3 id="信任利用"><a href="#信任利用" class="headerlink" title="信任利用"></a>信任利用</h3><p>在信任利用攻击中，威胁发起者会使用未经授权的特权来访问系统，可能还会进一步攻陷目标。</p>
-<h3 id="端口重定向"><a href="#端口重定向" class="headerlink" title="端口重定向"></a>端口重定向</h3><p>在端口重定向攻击中，威胁发起者会把攻陷的系统作为攻击其他目标的大本营。图中的示例显示出威胁发起者使用 SSH（端口22）连接受攻击主机 A 的威胁发起者。主机 B 信任主机 A；因此，允许威胁发起者使用 Telnet 访问主机 B。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN16.2.png"></p>
-<h3 id="中间人"><a href="#中间人" class="headerlink" title="中间人"></a>中间人</h3><p>在中间人攻击中，威胁发起者会置身于两个合法实体之间，以便读取或修改双方之间传输的数据。图中显示了中间人攻击的示例。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN16.3.png"></p>
-<p><strong>步骤 1</strong>. 受害者请求网页时，该请求将被定向到威胁发起者的计算机。</p>
-<p><strong>步骤 2</strong>. 威胁发起者的计算机接收到请求，从合法网站获取实际页面。</p>
-<p><strong>步骤 3</strong>. 威胁发起者可以更改合法的网页并对数据进行更改。</p>
-<p><strong>步骤 4</strong>. 威胁发起者随后将所请求的网页转发给受害者。</p>
-<h2 id="2-4、拒绝服务攻击"><a href="#2-4、拒绝服务攻击" class="headerlink" title="2.4、拒绝服务攻击"></a>2.4、拒绝服务攻击</h2><p>拒绝服务 (DoS) 攻击是知名度最高的攻击，并且是最难防范的攻击。然而，由于其实施简单、破坏力强大，安全管理员需要特别关注 DoS 攻击。</p>
-<p>DoS 攻击的方式多种多样。不过其目的都是通过消耗系统资源使授权用户无法正常使用服务。为了帮助防止 DoS 攻击，必须使操作系统和应用程序与最新的安全更新保持同步。</p>
-<h3 id="DoS攻击"><a href="#DoS攻击" class="headerlink" title="DoS攻击"></a>DoS攻击</h3><p>DoS 攻击属于重大风险，因为它们可以中断通信，并在时间和财务上造成大量损失。这些攻击执行起来相对简单，即使是缺乏技能的威胁发起者也可以执行。</p>
-<p>例如：发送大量ping命令，让该服务器没办法响应其他人的请求</p>
-<h3 id="DDoS攻击"><a href="#DDoS攻击" class="headerlink" title="DDoS攻击"></a>DDoS攻击</h3><p>分布式 DoS 攻击 (DDoS) 与 DoS 攻击类似，但是它从多个协同攻击源发起攻击。举例来说，威胁发起者建立了一个受感染主机的网络，受感染的主机称为僵尸主机。受感染主机（僵尸）的网络称为僵尸网络。威胁发起者使用命令和控制(CnC)程序来指示僵尸网络进行DDoS攻击。</p>
-<h1 id="3、网络攻击缓解"><a href="#3、网络攻击缓解" class="headerlink" title="3、网络攻击缓解"></a>3、网络攻击缓解</h1><h2 id="3-1、纵深防御方法"><a href="#3-1、纵深防御方法" class="headerlink" title="3.1、纵深防御方法"></a>3.1、纵深防御方法</h2><p>现在您已经了解了更多有关威胁发起者如何入侵网络的信息，您需要了解如何防止这种未经授权的访问。本主题详细介绍了为使您的网络更加安全可以采取的一些措施。</p>
-<p>要缓解网络攻击，必须首先保护设备，包括路由器、交换机、服务器和主机。大多数组织机构使用纵深防御法（也称为分层方法）来确保安全性。这需要网络设备和服务相互配套以协同工作。</p>
-<p>思考图中的网络。已经实施了若干安全设备和服务来保护用户和资产免受 TCP/IP 威胁的侵害。</p>
-<p>通过所有网络设备（包括路由器和交换机）各自图标上显示的密码组合锁判断，这些网络设备也经过了强化。这表示这些设备已受到保护，以防止威胁发起者对其获取访问权和进行篡改。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN16.4.png"></p>
-<p>这个环境中部署了一些安全设备和服务，来保护组织机构的用户、资产，免遭TCP/IP威胁的侵害。</p>
-<ul>
-<li><strong>VPN</strong> - 为公司站点提供安全 VPN 服务的路由器，并使用安全加密隧道为远程用户提供远程访问支持。</li>
-<li><strong>ASA防火墙</strong> - 用来提供状态化防火墙服务的专用设备。它可确保内部流量可以流出并返回，但外部流量无法发起与内部主机的连接。</li>
-<li><strong>IPS</strong> - 入侵防御系统，负责监测入站和出站流量，查找恶意软件、网络攻击特征等。如果识别到威胁，它会立即阻止此威胁。</li>
-<li><strong>ESA/WSA</strong> - 电子邮件安全设备（ESA）负责过滤垃圾邮件和可疑邮件。网络安全设备会过滤已知和可疑的互联网恶意软件站点。</li>
-<li><strong>AAA服务器</strong> - AAA服务器中包含一个安全数据库，其中记录了谁有权访问和管理网络设备。网络设备使用此数据库对管理用户进行认证。</li>
-</ul>
-<h2 id="3-2、保留备份"><a href="#3-2、保留备份" class="headerlink" title="3.2、保留备份"></a>3.2、保留备份</h2><p>备份设备配置和数据是防止数据丢失的最有效方式之一。数据备份可将计算机上的信息副本存储到可放在安全地方的可移动备份介质中。基础设施设备应该在FTP或类似的文件服务器上备份配置文件和IOS映像。如果计算机或路由器硬件发生故障，可以使用备份副本恢复数据或配置。</p>
-<p>应根据安全策略中的规定定期执行备份。数据备份通常存储在非现场位置，在主要设施发生任何问题时能保护备份介质。Windows 主机提供了备份和还原实用程序。对用户来说，将数据备份到其他驱动器或基于云的存储提供商非常重要。</p>
-<p>该表显示了备份考虑事项及其描述。</p>
-<table>
-<thead>
-<tr>
-<th align="left"><strong>考虑事项</strong></th>
-<th align="left"><strong>描述</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">频率</td>
-<td align="left">根据安全策略中的标识定期执行 备份。完全备份可能非常耗时，因此需要每月或 或每周执行一次备份，并经常对更改的文件进行部分备份。</td>
-</tr>
-<tr>
-<td align="left">存储容量</td>
-<td align="left">务必对备份进行验证，以确保数据的完整性并验证文件恢复程序。 验证文件恢复程序。</td>
-</tr>
-<tr>
-<td align="left">安全</td>
-<td align="left">应按照安全策略的要求，每天， 每周或每月轮流将备份转移到批准的异地 存储位置。</td>
-</tr>
-<tr>
-<td align="left">验证</td>
-<td align="left">应使用强密码保护备份。恢复数据 需要提供密码。</td>
-</tr>
-</tbody></table>
-<h2 id="3-3、升级、更新和补丁"><a href="#3-3、升级、更新和补丁" class="headerlink" title="3.3、升级、更新和补丁"></a>3.3、升级、更新和补丁</h2><p>保持与最新进展同步会使对网络攻击的防御更加有效。随着新的恶意软件不断涌现，企业必须保持当前的防病毒软件为最新版本。</p>
-<p>缓解蠕虫攻击的最有效方法是从操作系统厂商处下载安全更新，并为所有存在漏洞的系统应用补丁。管理大量系统时，会牵涉到创建用于部署在新系统或升级系统上的标准软件映像（经授权可在客户端系统中使用的操作系统和可信任的应用程序）。但是，安全要求不断变化，而且已部署系统也可能需要安装安全更新补丁。</p>
-<p>管理关键安全补丁的一个解决方案是确保所有终端系统自动下载更新，如图中Windows 10所示。安全补丁会自动下载并安装，无需用户干预。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN16.5.png"></p>
-<h2 id="3-4、认证、授权和记账"><a href="#3-4、认证、授权和记账" class="headerlink" title="3.4、认证、授权和记账"></a>3.4、认证、授权和记账</h2><p>所有网络设备都应该进行安全配置，只允许经过授权的个人访问。认证、授权和记账（AAA 或“三 A”）网络安全服务提供了设置网络设备访问控制的主要框架。</p>
-<p>AAA 方法用于控制可以访问网络的用户（认证）、用户访问网络时可以执行的操作（授权），以及把他们在那里时所做的事记录下来（记账）。</p>
-<p>AAA 的概念类似于信用卡的使用。信用卡会确定谁可以使用它、消费限额是多少，并记录使用者的消费项目。</p>
-<h2 id="3-5、防火墙"><a href="#3-5、防火墙" class="headerlink" title="3.5、防火墙"></a>3.5、防火墙</h2><p>防火墙是保护用户远离外部威胁的最为有效的安全工具之一。防火墙可通过防止不必要的流量进入内部网络来保护计算机和网络。</p>
-<p>防火墙驻留在两个或多个网络之间，控制其间的流量并帮助阻止未授权的访问。例如，图中上面的拓扑说明防火墙如何使来自内部网络主机的流量离开并返回到内部网络。底部拓扑说明系统如何拒绝外部网络（即 Internet）发起的流量访问内部网络。</p>
-<p><strong>防火墙操作</strong></p>
-<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN16.6.png"></p>
-<p>防火墙可以允许外部用户控制对特定服务的访问。例如，外部用户可访问的服务器通常位于称为隔离区 (DMZ) 的特殊网络中，如图所示。DMZ 使网络管理员能够为连接到该网络的主机应用特定策略。</p>
-<p><strong>带有DMZ的防火墙拓扑</strong></p>
-<p><img src="https://cdn.jsdelivr.net/gh/rumor-sourse/cdn/ITN16.7.png"></p>
-<h2 id="3-6、防火墙的类型"><a href="#3-6、防火墙的类型" class="headerlink" title="3.6、防火墙的类型"></a>3.6、防火墙的类型</h2><p>防火墙产品可以打包成各种形式。这些产品使用不同技术来区分应禁止和应允许的网络访问。其包括以下内容：</p>
-<ul>
-<li><strong>数据包过滤</strong> - 根据 IP 或 MAC 地址阻止或允许访问</li>
-<li><strong>应用程序过滤</strong> - 根据端口号阻止或允许访问特定类型的应用程序</li>
-<li><strong>URL 过滤</strong> - 根据特定的 URL 或关键字阻止或允许访问网站</li>
-<li><strong>状态包侦测 (SPI)</strong> - 传入数据包必须是对内部主机所发出请求的合法响应。除非得到特别允许，否则未经请求的数据包会被拦截。状态包侦测还可具有识别和过滤特定类型攻击，例如拒绝服务 (DoS) 的能力。</li>
-</ul>
-<h2 id="3-7、终端安全"><a href="#3-7、终端安全" class="headerlink" title="3.7、终端安全"></a>3.7、终端安全</h2><p>端点，或主机，是充当网络客户端的单个计算机系统或设备。常见终端包括笔记本电脑、台式机、服务器、智能手机和平板电脑。保护端点设备是网络管理员最具挑战性的工作之一，因为它牵涉到人类本性。公司必须制定适当的有明确记录的策略，并且员工必须了解这些规则。需要培训员工正确使用网络。策略通常包括使用<strong>防病毒软件和主机入侵防御</strong>。更全面的终端安全解决方案依赖网络访问控制。</p>
-<h1 id="4、设备安全"><a href="#4、设备安全" class="headerlink" title="4、设备安全"></a>4、设备安全</h1><h2 id="4-1、思科AutoSecure"><a href="#4-1、思科AutoSecure" class="headerlink" title="4.1、思科AutoSecure"></a>4.1、思科AutoSecure</h2><p>在网路中有很多区域需要格外提供安全防护，设备本身就是其中之一。您可能已经有了计算机、智能手机或平板电脑的密码。它是否足够坚固？您是否使用其他工具来增强设备的安全性? 本主题会告诉您怎么做。</p>
-<p>当在设备上安装新的操作系统时，安全设置保留为默认值。在大多数情况下，这种安全级别并不够。对于思科路由器，思科AutoSecure 功能可用于协助保护系统，如示例所示。</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">Router# auto secure
-                --- AutoSecure Configuration ---
-*** AutoSecure configuration enhances the security of
-the router but it will not make router absolutely secure
-from all security attacks ***<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>此外，还有以下适用于大部分操作系统的一些简单步骤：</p>
-<ul>
-<li>立即更换默认用户名和密码。</li>
-<li>限制对系统资源的访问，只有授权用户才可以访问。</li>
-<li>尽可能关闭和卸载任何不必要的服务和应用程序。</li>
-</ul>
-<p>通常，制造商提供的设备已经在仓库中存放了一段时间，并没有安装最新补丁。必须在实施之前更新所有软件并安装所有安全补丁。</p>
-<h2 id="4-2、密码"><a href="#4-2、密码" class="headerlink" title="4.2、密码"></a>4.2、密码</h2><p>为了保护网络设备，使用强密码非常重要。以下是需要遵循的标准原则：</p>
-<ul>
-<li>使用的密码长度至少为 8 个字符，最好是 10 个或更多字符。密码越长越安全。</li>
-<li>使用复杂密码。如果条件允许，密码中混合使用大写和小写字母、数字、符号和空格。</li>
-<li>密码中避免使用重复的常用字词、字母或数字顺序、用户名、亲属或宠物的名字、个人传记信息（例如出生日期、身份证号码、祖先的名字）或其他易于识别的信息。</li>
-<li>故意将口令中的词拼错。例如，Smith = Smyth = 5mYth 或 Security = 5ecur1ty。</li>
-<li>定期更改密码。如果密码不知不觉地遭到破坏，那么威胁发起者使用该密码的机会就会受到限制。</li>
-<li>请勿将密码写出来并放在显眼位置上，比如桌面上或显示屏上。</li>
-</ul>
-<p>表中显示强密码和弱密码的示例。</p>
-<h3 id="Weak-Passwords"><a href="#Weak-Passwords" class="headerlink" title="Weak Passwords"></a>Weak Passwords</h3><table>
-<thead>
-<tr>
-<th align="left">弱密码</th>
-<th align="left">密码薄弱的原因</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">secret</td>
-<td align="left">简单词典密码</td>
-</tr>
-<tr>
-<td align="left">smith</td>
-<td align="left">母亲姓氏</td>
-</tr>
-<tr>
-<td align="left">toyota</td>
-<td align="left">汽车品牌</td>
-</tr>
-<tr>
-<td align="left">bob1967</td>
-<td align="left">用户的姓名和生日</td>
-</tr>
-<tr>
-<td align="left">Blueleaf23</td>
-<td align="left">简单的单词和数字</td>
-</tr>
-</tbody></table>
-<h3 id="Strong-Passwords"><a href="#Strong-Passwords" class="headerlink" title="Strong Passwords"></a>Strong Passwords</h3><table>
-<thead>
-<tr>
-<th align="left">强密码</th>
-<th align="left">它为何强</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">b67n42d39c</td>
-<td align="left">组合使用字母数字字符</td>
-</tr>
-<tr>
-<td align="left">12^h u4@1p7</td>
-<td align="left">组合使用字母数字字符和特殊符号，并包括空格</td>
-</tr>
-</tbody></table>
-<p>思科路由器会忽略密码中的前置空格，但第一个字符之后的空格不会忽略。因此，创建强密码的一种方法就是使用空格键和创建一个由多个词组成的短语。这就是所谓的密码短语。密码短语通常比简单密码更易记忆。而且猜到它所用时间更长，也更难猜到。</p>
-<h2 id="4-3、其他密码安全性"><a href="#4-3、其他密码安全性" class="headerlink" title="4.3、其他密码安全性"></a>4.3、其他密码安全性</h2><p>强密码只有在保持其机密性才是有用的。在思科路由器和交换机上可以采取以下几个步骤来帮助确保密码的机密性：</p>
-<ul>
-<li>加密所有的明文密码</li>
-<li>设置可接受的最小密码长度</li>
-<li>阻止暴力密码猜测攻击</li>
-<li>在指定时间后 禁用非活动的特权 EXEC 模式访问。</li>
-</ul>
-<p>如图中的示例配置所示，<strong>service password-encryption</strong>全局配置命令防止未经授权的个人在配置文件中查看明文形式的密码。哪个命令可加密所有的明文密码？请注意在示例中，密码 “cisco” 已加密为 “03095A0F034F”。</p>
-<p>为了确保配置的所有密码至少为指定的最小长度，请在全局配置模式下使用 <strong>security passwords min-length</strong>命令。在图中，任何新配置的密码都必须至少有8个字符。</p>
-<p>威胁发起者可以使用密码破解软件对网络设备进行暴力攻击。这种攻击不断尝试猜测有效的密码，直到其中一个成功为止。使用 <strong>login block-for *#* attempts *#* within *#*</strong> 全局配置命令来阻止此类攻击。如图中示例，<strong>login block-for 120 attempts 3 within 60</strong>命令是在 60 秒内有 3 次登录尝试失败时阻止vty登录尝试 120 秒。</p>
-<p>网络管理员可能会分心，意外地在终端上打开一个特权执行模式会话。这可能使内部威胁发起者能够更改或删除设备配置。</p>
-<p>默认情况下，思科路由器将在 10 分钟不活动后注销 EXEC 会话。但是，您可以使用 <strong>exec-timeout</strong> <em>分 秒</em> 线路配置命令减少此设置。此命令可应用于在线控制台、辅助线路和 vty 线路。在图中，我们告诉思科设备在用户闲置 5 分 30 秒后自动断开 vty 线上的非活动用户。</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">R1(config)# service password-encryption 
-R1(config)# security passwords min-length 8 
-R1(config)# login block-for 120 attempts 3 within 60
-R1(config)# line vty 0 4 
-R1(config-line)# password cisco 
-R1(config-line)# exec-timeout 5 30 
-R1(config-line)# transport input ssh 
-R1(config-line)# end 
-R1# 
-R1# show running-config | section line vty
-line vty 0 4
- password 7 094F471A1A0A
- exec-timeout 5 30
- login
- transport input ssh
-R1#<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="4-4、启用SSH"><a href="#4-4、启用SSH" class="headerlink" title="4.4、启用SSH"></a>4.4、启用SSH</h2><p>Telnet简化了远程设备访问，但并不安全。Telnet 数据包中包含的数据以未加密形式传输。因此，强烈建议在设备上启用安全外壳 (SSH) 以进行安全远程访问。</p>
-<p>可以通过下列六个步骤来配置思科设备以支持 SSH。</p>
-<p><strong>步骤 1.</strong> <strong>配置唯一的主机名</strong>。设备必须有一个唯一的主机名，而不是默认主机名。</p>
-<p><strong>步骤 2. 配置 IP 域名</strong>. 使用全局配置命令<strong>ip-domain name</strong>配置网络的 IP 域名。</p>
-<p><strong>步骤 3. 生成密钥来加密 SSH 流量</strong>. SSH 加密源和目的地之间的流量。但是，要这样做，必须使用全局配置命令 <strong>crypto key generate rsa general-keys modulus</strong> <em>位数</em> 生成唯一的身份验证密钥。该模数<em>位数</em>确定密钥大小并且可配置为 360 位至 2048 位。位值越大，密钥越安全。然而，较大的位值也需要较长的时间来加密和解密信息。最小建议系数长度为 1024 位。</p>
-<p><strong>步骤 4.</strong> <strong>验证或创建一个本地数据库条目</strong>。使用<strong>username</strong>全局配置命令来创建本地数据库用户名条目。在示例中，使用了参数<strong>secret</strong>，因此密码将使用MD5加密。</p>
-<p><strong>步骤 5.</strong> <strong>向本地数据库认证身份</strong>。使用 <strong>login local</strong> 线路配置命令对本地数据库的vty线路进行身份验证。</p>
-<p><strong>步骤 6. 启用 vty inbound SSH 会话</strong>. 默认情况下，在vty线路上不允许输入会话。您可以使用**transport input [ssh | telnet]**命令指定多个输入协议，包括 Telnet 和 SSH。</p>
-<p>如示例所示，路由器R1配置在span.com域中。此信息与<strong>crypto key generate rsa general-keys modulus</strong>命令中指定的位值一起使用，用于创建加密密钥。</p>
-<p>接下来，为名为 Bob 的用户创建本地数据库条目。最后，将vty线路配置为根据本地数据库进行身份验证，并且只接受传入的SSH会话。</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">Router# configure terminal
-Router(config)# hostname R1
-R1(config)# ip domain name span.com
-R1(config)# crypto key generate rsa general-keys modulus 1024
-The name for the keys will be: Rl.span.com % The key modulus size is 1024 bits
-% Generating 1024 bit RSA keys, keys will be non-exportable...[OK]
-Dec 13 16:19:12.079: %SSH-5-ENABLED: SSH 1.99 has been enabled
-R1(config)#
-R1(config)# username Bob secret cisco
-R1(config)# line vty 0 4
-R1(config-line)# login local
-R1(config-line)# transport input ssh
-R1(config-line)# exit
-R1(config)#<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="4-5、禁止未使用的服务"><a href="#4-5、禁止未使用的服务" class="headerlink" title="4.5、禁止未使用的服务"></a>4.5、禁止未使用的服务</h2><p>思科路由器和交换机启动时会有一列活动服务，这些活动在您的网络中可能需要或不需要。禁用任何未使用的服务以保留系统资源，如CPU周期和RAM，并防止威胁发起者利用这些服务。默认打开的服务类型将根据IOS版本而有所不同。例如，IOS-XE 通常只打开 HTTPS 和 DHCP 端口。您可以使用 <strong>show ip ports all</strong> 命令来验证这一点，如示例所示。</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">Router# show ip ports all
-Proto Local Address               Foreign Address             State       PID&#x2F;Program Name
-TCB       Local Address               Foreign Address             (state)
-tcp   :::443                     :::*                        LISTEN      309&#x2F;[IOS]HTTP CORE
-tcp   *:443                      *:*                         LISTEN      309&#x2F;[IOS]HTTP CORE
-udp   *:67                        0.0.0.0:0                               387&#x2F;[IOS]DHCPD Receive
-Router#<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>IOS-XE 之前的 IOS 版本使用 <strong>show control-plane host open-ports</strong> 命令。我们提到此命令，因为您可能会在旧设备上看到它。输出是相似的。但是，请注意，这个较旧的路由器有不安全的 HTTP 服务器和 Telnet 正在运行。这两种服务都应该被禁用。如示例所示，使用 <strong>no ip http server</strong> 全局配置命令禁用 HTTP。通过在行配置命令<strong>transport input ssh</strong>中指定仅 SSH 来禁用 Telnet 。</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">Router# show control-plane host open-ports 
-Active internet connections (servers and established)
-Prot        Local Address      Foreign Address                  Service    State
- tcp                 *:23                  *:0                   Telnet   LISTEN
- tcp                 *:80                  *:0                HTTP CORE   LISTEN
- udp                 *:67                  *:0            DHCPD Receive   LISTEN
-Router# configure terminal
-Router(config)# no ip http server
-Router(config)# line vty 0 15
-Router(config-line)# transport input ssh<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="4-6、Packet-Tracer-配置安全密码和SSH"><a href="#4-6、Packet-Tracer-配置安全密码和SSH" class="headerlink" title="4.6、Packet Tracer-配置安全密码和SSH"></a>4.6、Packet Tracer-配置安全密码和SSH</h2><p>略</p>
-<h2 id="4-7、实验-使用SSH配置网络设备"><a href="#4-7、实验-使用SSH配置网络设备" class="headerlink" title="4.7、实验-使用SSH配置网络设备"></a>4.7、实验-使用SSH配置网络设备</h2><p>略</p>
-<h1 id="单元检测"><a href="#单元检测" class="headerlink" title="单元检测"></a>单元检测</h1><p>1、要在路由器上实施 SSH，需要执行以下步骤：</p>
-<ul>
-<li><p>配置唯一的主机名。 </p>
-</li>
-<li><p>配置网络域名。 </p>
-</li>
-<li><p>配置用户账户以使用 AAA 或本地数据库进行认证。 </p>
-</li>
-<li><p>生成 RSA 密钥。 </p>
-</li>
-<li><p>启用 VTY SSH 会话。</p>
-</li>
-</ul>
-<p>2、SSH 通过虚拟接口提供安全的远程登录。SSH 提供了比 Telnet 更强的密码身份验证。SSH 还会在会话期间加密数据。</p>
-
+                
                 
             </div>
             <hr/>
@@ -940,7 +545,7 @@ Router(config-line)# transport input ssh<span aria-hidden="true" class="line-num
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/120314164.html">http://example.com/2021/120314164.html</a>
+                    <a href="http://example.com/2023/050148434.html">http://example.com/2023/050148434.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -978,8 +583,8 @@ Router(config-line)# transport input ssh<span aria-hidden="true" class="line-num
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/web%E5%AE%89%E5%85%A8-%E5%AE%89%E5%85%A8%E6%9E%B6%E6%9E%84-%E6%80%9D%E7%A7%91-%E7%BD%91%E7%BB%9C/">
-                                    <span class="chip bg-color">web安全 安全架构 思科 网络</span>
+                                <a href="/tags/zookeeper/">
+                                    <span class="chip bg-color">zookeeper</span>
                                 </a>
                             
                         </div>
@@ -1468,46 +1073,48 @@ Router(config-line)# transport input ssh<span aria-hidden="true" class="line-num
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/120353702.html">
+                <a href="/2023/050148434.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="ITN网络课程笔记（十七）（完）">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="zookeeper">
                         
-                        <span class="card-title">ITN网络课程笔记（十七）（完）</span>
+                        <span class="card-title">zookeeper</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            计网笔记（十七）构建小型网络
+                            这是论文ZooKeeper:Wait-free coordination for Internet-scale systems翻译及研读笔记
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-03
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-05-01
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%BD%91%E7%BB%9C/" class="post-category">
-                                    网络
+                            <a href="/categories/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" class="post-category">
+                                    论文阅读
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%80%9D%E7%A7%91-%E7%BD%91%E7%BB%9C/">
-                        <span class="chip bg-color">思科 网络</span>
+                    <a href="/tags/zookeeper/">
+                        <span class="chip bg-color">zookeeper</span>
                     </a>
                     
                 </div>
@@ -1521,31 +1128,31 @@ Router(config-line)# transport input ssh<span aria-hidden="true" class="line-num
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/120332589.html">
+                <a href="/2023/042259758.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="ITN网络课程笔记（十五）">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="vm-ft">
                         
-                        <span class="card-title">ITN网络课程笔记（十五）</span>
+                        <span class="card-title">vm-ft</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            计网笔记（十五）应用层
+                            这是论文The Design of a Practical System for Fault-Tolerant Virtual Machines翻译及研读笔记
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-03
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-22
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%BD%91%E7%BB%9C/" class="post-category">
-                                    网络
+                            <a href="/categories/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" class="post-category">
+                                    论文阅读
                                 </a>
                             
                             
@@ -1555,8 +1162,8 @@ Router(config-line)# transport input ssh<span aria-hidden="true" class="line-num
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%80%9D%E7%A7%91-%E7%BD%91%E7%BB%9C-http/">
-                        <span class="chip bg-color">思科 网络 http</span>
+                    <a href="/tags/vm-ft/">
+                        <span class="chip bg-color">vm-ft</span>
                     </a>
                     
                 </div>
