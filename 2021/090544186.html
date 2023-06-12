@@ -1458,8 +1458,8 @@ select deptno,avg(sal) from emp group by deptno having avg(sal) &gt; 2500;<span 
             tocSelector: '#toc-content',
             contentSelector: '#articleContent',
             headingsOffset: -($(window).height() * 0.4 - 45),
-            collapseDepth: Number('0'),
-            headingSelector: 'h2, h3, h4'
+            collapseDepth: Number('2'),
+            headingSelector: 'h1, h2, h3, h4, h5, h6'
         });
 
         // modify the toc link href to support Chinese.
@@ -1471,7 +1471,7 @@ select deptno,avg(sal) from emp group by deptno having avg(sal) &gt; 2500;<span 
 
         // modify the heading title id to support Chinese.
         i = 0;
-        $('#articleContent').children('h2, h3, h4').each(function () {
+        $('#articleContent').children('h1, h2, h3, h4, h5, h6').each(function () {
             $(this).attr('id', tocHeading + (++i));
         });
 
@@ -1549,7 +1549,7 @@ select deptno,avg(sal) from emp group by deptno having avg(sal) &gt; 2500;<span 
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">380.3k</span>&nbsp;字
+                class="white-color">397.1k</span>&nbsp;字
             
             
             
