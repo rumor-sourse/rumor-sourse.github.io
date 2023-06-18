@@ -482,7 +482,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-05-10
+                    2023-06-18
                 </div>
                 
 
@@ -525,7 +525,7 @@
 <blockquote>
 <p>Cluster computing frameworks是一种分布式计算框架，它允许在大规模数据分析中使用并行计算。这些系统让用户使用一组高级操作符编写并行计算，而无需担心工作分配和容错</p>
 </blockquote>
-<p>虽然现有框架为访问集群计算资源提供了大量抽象，但是他们缺少利用分布式<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E5%86%85%E5%AD%98&spm=1001.2101.3001.7020">内存</a>的抽象。这使得它们对那些跨多个计算重用中间结果的新兴应用效率不高。数据重用普遍存在于很多迭代的机器学习和图像算法中，包括PageRank，K-means聚类和logistic回归。另一个引人注目的用例是交互式数据挖掘，即用户在同样的数据子集上运行多个即时查询。不幸的是，大多数现有框架中，在计算之间（比如在两个MapReduce作业之间）重用数据的唯一方式是把它写到外部稳定存储系统（如分布式文件系统）。这种方式会因为数据复制，磁盘I/O和序列化而带来巨大开销，这直接影响了应用的执行时间。</p>
+<p>虽然现有框架为访问集群计算资源提供了大量抽象，但是他们缺少利用分布式内存的抽象。这使得它们对那些跨多个计算重用中间结果的新兴应用效率不高。数据重用普遍存在于很多迭代的机器学习和图像算法中，包括PageRank，K-means聚类和logistic回归。另一个引人注目的用例是交互式数据挖掘，即用户在同样的数据子集上运行多个即时查询。不幸的是，大多数现有框架中，在计算之间（比如在两个MapReduce作业之间）重用数据的唯一方式是把它写到外部稳定存储系统（如分布式文件系统）。这种方式会因为数据复制，磁盘I/O和序列化而带来巨大开销，这直接影响了应用的执行时间。</p>
 <p>由于认识到这个问题，研究人员为一些需要数据重用的应用开发出了专门的框架。例如，Pregel是为迭代的图像计算而在内存中保存中间数据的系统；而HaLoop则提供一个迭代的MapReduce接口。但这些框架只提供了特定的计算模型，并对这些模式隐式地进行数据共享。它们没有为更普遍的重用提供抽象，如让用户把几个数据集加载到内存中，在它们上运行即时查询。</p>
 <p>这篇论文中，我们提出一个新的抽象，叫弹性分布式数据集（RDDs），它让数据重用在广泛的应用上都是高效的。RDDs是容错的并行数据结构，它让用户显示地在内存中保存中间结果，控制它们的分区以优化数据布局，用丰富的算子去操作它们。</p>
 <p> 在设计RDDs时主要的挑战是：设计一个能有效提供容错性的编程接口。现有的对集群上基于内存存储的抽象（如分布式共享内存、key-value stores、数据库、Piccolo）提供了基于细粒度更新可变状态（比如表中的元素）的接口。这个接口提供容错的仅有的方式是跨机器复制数据或跨机器记录更新。这两个方法对数据密集型工作负载代价很大，因为它们需要在集群网络上拷贝大量数据，它的带宽远比RAM的要小，并且导致严重的存储开销。</p>
@@ -710,7 +710,7 @@ rdd.map(_ + x)<span aria-hidden="true" class="line-numbers-rows"><span></span><s
 <p><em><strong>join</strong></em>：join两个RDD可能会产生两个窄依赖（如果他们具有相同的hash/range分区），可能是两个宽依赖，也可能都有（如果一个父RDD有分区，另一个没有）。</p>
 <h1 id="5、实现（Implementation）"><a href="#5、实现（Implementation）" class="headerlink" title="5、实现（Implementation）"></a>5、实现（Implementation）</h1><p>我们用大约14000行Scala代码实现了Spark。系统运行在Mesos集群管理器上，使其能够与Hadoop、MPI和其他应用程序共享资源。每个Spark程序都作为独立的Mesos应用运行，它有自己驱动程序（master）和workers，并且在这些被Mesos处理的应用中共享资源。<br>    Spark可以从任何Hadoop输入源读取数据（比如HDFS、HBase），只需要使用Hadoop已存在的插件的API，在Scala的未修改版本上运行。<br>    我们大致说几个该系统技术上比较有趣的部分：任务调度（5.1节），Spark解释器允许交互式使用（5.2节），内存管理（5.3节），支持检查点（5.4节）。</p>
 <h2 id="5-1、任务调度（Job-Scheduling）"><a href="#5-1、任务调度（Job-Scheduling）" class="headerlink" title="5.1、任务调度（Job Scheduling）"></a>5.1、任务调度（Job Scheduling）</h2><p>Spark的调度器使用了RDDs的表示，在第4节已经描述过了。</p>
-<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202305101056213.png" alt="="></p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202305101056213.png"></p>
 <p>​    总而言之，我们的调度器与Dryad的类似，但它另外还考虑了持久化的RDDs的哪些分区在内存中可用。无论何时用户运行在RDD上运行action，调度器都会检查RDD的血缘图，建立由stages组成的DAG，然后执行，如图5的插图。每个阶段（stage）包含尽可能多的窄依赖流水线转换（transformations）。stages的边界是宽依赖shuffle操作，或者任何已经计算过的分区，它可以截断父RDD的计算。然后，调度器在每个stage中运行任务去计算丢失的分区，知道计算出想要的RDD。</p>
 <blockquote>
 <p>DAG是指有向无环图（Directed Acyclic Graph），它是一种数据结构，用于表示计算任务之间的依赖关系。在RDD中，每个RDD都可以被看作是一个DAG中的一个节点。DAG的每个边表示一个转换操作，例如map或reduce。由于DAG是无环的，因此可以保证计算任务按正确的顺序执行，避免了循环依赖和死锁等问题。RDD使用DAG来跟踪数据集之间的依赖关系，并在需要时重新计算丢失的数据分区。这种机制使得RDD具有容错性和高效性。</p>
