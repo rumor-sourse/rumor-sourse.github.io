@@ -489,14 +489,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.5k
+                    2.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    18 分
+                    10 分
                 </div>
                 
 
@@ -536,247 +536,247 @@
 <h2 id="2、vim配置"><a href="#2、vim配置" class="headerlink" title="2、vim配置"></a>2、vim配置</h2><p>下载安装vim  <code>sudo apt-get install vim</code></p>
 <p>打开vim配置文件  <code>sudo vim /etc/vim/vimrc</code></p>
 <p>添加以下代码到文件尾：</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
-&quot; 显示相关  
-&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
-set shortmess&#x3D;atI   &quot; 启动的时候不显示那个援助乌干达儿童的提示  
-winpos 5 5         &quot; 设定窗口位置  
-set lines&#x3D;30 columns&#x3D;85    &quot; 设定窗口大小  
-set nu              &quot; 显示行号  
-set go&#x3D;             &quot; 不要图形按钮  
-&quot;color asmanian2     &quot; 设置背景主题  
-set guifont&#x3D;Courier_New:h10:cANSI   &quot; 设置字体  
-syntax on           &quot; 语法高亮  
-autocmd InsertLeave * se nocul  &quot; 用浅色高亮当前行  
-autocmd InsertEnter * se cul    &quot; 用浅色高亮当前行  
-set ruler           &quot; 显示标尺  
-set showcmd         &quot; 输入的命令显示出来，看的清楚些  
-set cmdheight&#x3D;1     &quot; 命令行（在状态行下）的高度，设置为1  
-&quot;set whichwrap+&#x3D;&lt;,&gt;,h,l   &quot; 允许backspace和光标键跨越行边界(不建议)  
-set scrolloff&#x3D;3     &quot; 光标移动到buffer的顶部和底部时保持3行距离  
-set novisualbell    &quot; 不要闪烁(不明白)  
-set statusline&#x3D;%F%m%r%h%w\ [FORMAT&#x3D;%&#123;&amp;ff&#125;]\ [TYPE&#x3D;%Y]\ [POS&#x3D;%l,%v][%p%%]\ %&#123;strftime(\&quot;%d&#x2F;%m&#x2F;%y\ -\ %H:%M\&quot;)&#125;   &quot;状态行显示的内容  
-set laststatus&#x3D;1    &quot; 启动显示状态行(1),总是显示状态行(2)  
-set foldenable      &quot; 允许折叠  
-set foldmethod&#x3D;manual   &quot; 手动折叠  
-set background&#x3D;dark &quot;背景使用黑色 
-set nocompatible  &quot;去掉讨厌的有关vi一致性模式，避免以前版本的一些bug和局限  
-&quot; 显示中文帮助
-if version &gt;&#x3D; 603
-    set helplang&#x3D;cn
-    set encoding&#x3D;utf-8
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"
+<span class="token string">" 显示相关  
+"</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">"
+set shortmess=atI   "</span> 启动的时候不显示那个援助乌干达儿童的提示  
+winpos <span class="token number">5</span> <span class="token number">5</span>         <span class="token string">" 设定窗口位置  
+set lines=30 columns=85    "</span> 设定窗口大小  
+<span class="token builtin class-name">set</span> nu              <span class="token string">" 显示行号  
+set go=             "</span> 不要图形按钮  
+<span class="token string">"color asmanian2     "</span> 设置背景主题  
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">guifont</span><span class="token operator">=</span>Courier_New:h10:cANSI   <span class="token string">" 设置字体  
+syntax on           "</span> 语法高亮  
+autocmd InsertLeave * se nocul  <span class="token string">" 用浅色高亮当前行  
+autocmd InsertEnter * se cul    "</span> 用浅色高亮当前行  
+<span class="token builtin class-name">set</span> ruler           <span class="token string">" 显示标尺  
+set showcmd         "</span> 输入的命令显示出来，看的清楚些  
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">cmdheight</span><span class="token operator">=</span><span class="token number">1</span>     <span class="token string">" 命令行（在状态行下）的高度，设置为1  
+"</span><span class="token builtin class-name">set</span> <span class="token assign-left variable">whichwrap</span><span class="token operator">+=</span><span class="token operator">&lt;</span>,<span class="token operator">></span>,h,l   <span class="token string">" 允许backspace和光标键跨越行边界(不建议)  
+set scrolloff=3     "</span> 光标移动到buffer的顶部和底部时保持3行距离  
+<span class="token builtin class-name">set</span> novisualbell    <span class="token string">" 不要闪烁(不明白)  
+set statusline=%F%m%r%h%w\ [FORMAT=%&#123;&amp;ff&#125;]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %&#123;strftime(<span class="token entity" title="\&quot;">\"</span>%d/%m/%y\ -\ %H:%M<span class="token entity" title="\&quot;">\"</span>)&#125;   "</span>状态行显示的内容  
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">laststatus</span><span class="token operator">=</span><span class="token number">1</span>    <span class="token string">" 启动显示状态行(1),总是显示状态行(2)  
+set foldenable      "</span> 允许折叠  
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">foldmethod</span><span class="token operator">=</span>manual   <span class="token string">" 手动折叠  
+set background=dark "</span>背景使用黑色 
+<span class="token builtin class-name">set</span> nocompatible  <span class="token string">"去掉讨厌的有关vi一致性模式，避免以前版本的一些bug和局限  
+"</span> 显示中文帮助
+<span class="token keyword">if</span> version <span class="token operator">>=</span> <span class="token number">603</span>
+    <span class="token builtin class-name">set</span> <span class="token assign-left variable">helplang</span><span class="token operator">=</span>cn
+    <span class="token builtin class-name">set</span> <span class="token assign-left variable">encoding</span><span class="token operator">=</span>utf-8
 endif
-&quot; 设置配色方案
-&quot;colorscheme murphy
-&quot;字体 
-&quot;if (has(&quot;gui_running&quot;)) 
-&quot;   set guifont&#x3D;Bitstream\ Vera\ Sans\ Mono\ 10 
-&quot;endif 
+<span class="token string">" 设置配色方案
+"</span>colorscheme murphy
+<span class="token string">"字体 
+"</span><span class="token keyword">if</span> <span class="token punctuation">(</span>has<span class="token punctuation">(</span><span class="token string">"gui_running"</span><span class="token punctuation">))</span> 
+<span class="token string">"   set guifont=Bitstream\ Vera\ Sans\ Mono\ 10 
+"</span>endif 
 
 
-set fencs&#x3D;utf-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936
-set termencoding&#x3D;utf-8
-set encoding&#x3D;utf-8
-set fileencodings&#x3D;ucs-bom,utf-8,cp936
-set fileencoding&#x3D;utf-8
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">fencs</span><span class="token operator">=</span>utf-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">termencoding</span><span class="token operator">=</span>utf-8
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">encoding</span><span class="token operator">=</span>utf-8
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">fileencodings</span><span class="token operator">=</span>ucs-bom,utf-8,cp936
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">fileencoding</span><span class="token operator">=</span>utf-8
 
-&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
-&quot;&quot;&quot;&quot;&quot;新文件标题&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
-&quot;新建.c,.h,.sh,.java文件，自动插入文件头 
-autocmd BufNewFile *.cpp,*.[ch],*.sh,*.java exec &quot;:call SetTitle()&quot; 
-&quot;&quot;定义函数SetTitle，自动插入文件头 
-func SetTitle() 
-    &quot;如果文件类型为.sh文件 
-    if &amp;filetype &#x3D;&#x3D; &#39;sh&#39; 
-        call setline(1,&quot;\#########################################################################&quot;) 
-        call append(line(&quot;.&quot;), &quot;\# File Name     : &quot;.expand(&quot;%&quot;)) 
-        call append(line(&quot;.&quot;)+1, &quot;\# Author        : enjoy5512&quot;) 
-        call append(line(&quot;.&quot;)+2, &quot;\# mail          : enjoy5512@163.com&quot;) 
-        call append(line(&quot;.&quot;)+3, &quot;\# Created Time  : &quot;.strftime(&quot;%c&quot;)) 
-        call append(line(&quot;.&quot;)+4, &quot;\#########################################################################&quot;) 
-        call append(line(&quot;.&quot;)+5, &quot;&quot;) 
-        call append(line(&quot;.&quot;)+6, &quot;\#!&#x2F;bin&#x2F;bash&quot;) 
-    call append(line(&quot;.&quot;)+7, &quot;&quot;)
-    call append(line(&quot;.&quot;)+8, &quot;&quot;)
-    else 
-        call setline(1, &quot;&#x2F;*************************************************************************&quot;) 
-        call append(line(&quot;.&quot;), &quot;    &gt; File Name       : &quot;.expand(&quot;%&quot;)) 
-        call append(line(&quot;.&quot;)+1, &quot;    &gt; Author          : enjoy5512&quot;) 
-        call append(line(&quot;.&quot;)+2, &quot;    &gt; Mail            : enjoy5512@163.com &quot;) 
-        call append(line(&quot;.&quot;)+3, &quot;    &gt; Created Time    : &quot;.strftime(&quot;%c&quot;)) 
-        call append(line(&quot;.&quot;)+4, &quot; ************************************************************************&#x2F;&quot;) 
-        call append(line(&quot;.&quot;)+5, &quot;&quot;)
+<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">"
+"</span>"<span class="token string">""</span>"新文件标题<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"
+<span class="token string">"新建.c,.h,.sh,.java文件，自动插入文件头 
+autocmd BufNewFile *.cpp,*.[ch],*.sh,*.java exec "</span>:call SetTitle<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token string">" 
+"</span>"定义函数SetTitle，自动插入文件头 
+func SetTitle<span class="token punctuation">(</span><span class="token punctuation">)</span> 
+    <span class="token string">"如果文件类型为.sh文件 
+    if &amp;filetype == 'sh' 
+        call setline(1,"</span><span class="token punctuation">\</span>#<span class="token comment">########################################################################") </span>
+        call append<span class="token punctuation">(</span>line<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span>, <span class="token string">"\# File Name     : "</span>.expand<span class="token punctuation">(</span><span class="token string">"%"</span><span class="token punctuation">))</span> 
+        call append<span class="token punctuation">(</span>line<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span>+1, <span class="token string">"\# Author        : enjoy5512"</span><span class="token punctuation">)</span> 
+        call append<span class="token punctuation">(</span>line<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span>+2, <span class="token string">"\# mail          : enjoy5512@163.com"</span><span class="token punctuation">)</span> 
+        call append<span class="token punctuation">(</span>line<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span>+3, <span class="token string">"\# Created Time  : "</span>.strftime<span class="token punctuation">(</span><span class="token string">"%c"</span><span class="token punctuation">))</span> 
+        call append<span class="token punctuation">(</span>line<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span>+4, <span class="token string">"\#########################################################################"</span><span class="token punctuation">)</span> 
+        call append<span class="token punctuation">(</span>line<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span>+5, <span class="token string">""</span><span class="token punctuation">)</span> 
+        call append<span class="token punctuation">(</span>line<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span>+6, <span class="token string">"\#!/bin/bash"</span><span class="token punctuation">)</span> 
+    call append<span class="token punctuation">(</span>line<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span>+7, <span class="token string">""</span><span class="token punctuation">)</span>
+    call append<span class="token punctuation">(</span>line<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span>+8, <span class="token string">""</span><span class="token punctuation">)</span>
+    <span class="token keyword">else</span> 
+        call setline<span class="token punctuation">(</span><span class="token number">1</span>, <span class="token string">"/*************************************************************************"</span><span class="token punctuation">)</span> 
+        call append<span class="token punctuation">(</span>line<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span>, <span class="token string">"    > File Name       : "</span>.expand<span class="token punctuation">(</span><span class="token string">"%"</span><span class="token punctuation">))</span> 
+        call append<span class="token punctuation">(</span>line<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span>+1, <span class="token string">"    > Author          : enjoy5512"</span><span class="token punctuation">)</span> 
+        call append<span class="token punctuation">(</span>line<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span>+2, <span class="token string">"    > Mail            : enjoy5512@163.com "</span><span class="token punctuation">)</span> 
+        call append<span class="token punctuation">(</span>line<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span>+3, <span class="token string">"    > Created Time    : "</span>.strftime<span class="token punctuation">(</span><span class="token string">"%c"</span><span class="token punctuation">))</span> 
+        call append<span class="token punctuation">(</span>line<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span>+4, <span class="token string">" ************************************************************************/"</span><span class="token punctuation">)</span> 
+        call append<span class="token punctuation">(</span>line<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span>+5, <span class="token string">""</span><span class="token punctuation">)</span>
     endif
-    if &amp;filetype &#x3D;&#x3D; &#39;cpp&#39;
-        call append(line(&quot;.&quot;)+6, &quot;#include&lt;iostream&gt;&quot;)
-    call append(line(&quot;.&quot;)+7, &quot;&quot;)
-        call append(line(&quot;.&quot;)+8, &quot;using namespace std;&quot;)
-        call append(line(&quot;.&quot;)+9, &quot;&quot;)
-        call append(line(&quot;.&quot;)+10, &quot;int main(int argc,char *argv[])&quot;)
-        call append(line(&quot;.&quot;)+11, &quot;&#123;&quot;)
-        call append(line(&quot;.&quot;)+12, &quot;     &quot;)
-        call append(line(&quot;.&quot;)+13, &quot;    return 0;&quot;)
-        call append(line(&quot;.&quot;)+14, &quot;&#125;&quot;)
+    <span class="token keyword">if</span> <span class="token operator">&amp;</span>filetype <span class="token operator">==</span> <span class="token string">'cpp'</span>
+        call append<span class="token punctuation">(</span>line<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span>+6, <span class="token string">"#include&lt;iostream>"</span><span class="token punctuation">)</span>
+    call append<span class="token punctuation">(</span>line<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span>+7, <span class="token string">""</span><span class="token punctuation">)</span>
+        call append<span class="token punctuation">(</span>line<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span>+8, <span class="token string">"using namespace std;"</span><span class="token punctuation">)</span>
+        call append<span class="token punctuation">(</span>line<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span>+9, <span class="token string">""</span><span class="token punctuation">)</span>
+        call append<span class="token punctuation">(</span>line<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span>+10, <span class="token string">"int main(int argc,char *argv[])"</span><span class="token punctuation">)</span>
+        call append<span class="token punctuation">(</span>line<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span>+11, <span class="token string">"&#123;"</span><span class="token punctuation">)</span>
+        call append<span class="token punctuation">(</span>line<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span>+12, <span class="token string">"     "</span><span class="token punctuation">)</span>
+        call append<span class="token punctuation">(</span>line<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span>+13, <span class="token string">"    return 0;"</span><span class="token punctuation">)</span>
+        call append<span class="token punctuation">(</span>line<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span>+14, <span class="token string">"&#125;"</span><span class="token punctuation">)</span>
     endif
-    if &amp;filetype &#x3D;&#x3D; &#39;c&#39;
-        call append(line(&quot;.&quot;)+6, &quot;#include&lt;stdio.h&gt;&quot;)
-        call append(line(&quot;.&quot;)+7, &quot;&quot;)
-        call append(line(&quot;.&quot;)+8, &quot;int main(int argc,char *argv[])&quot;)
-        call append(line(&quot;.&quot;)+9, &quot;&#123;&quot;)
-        call append(line(&quot;.&quot;)+10, &quot;     &quot;)
-        call append(line(&quot;.&quot;)+11, &quot;    return 0;&quot;)
-        call append(line(&quot;.&quot;)+12, &quot;&#125;&quot;)
-    autocmd BufNewFile * 12 j
+    <span class="token keyword">if</span> <span class="token operator">&amp;</span>filetype <span class="token operator">==</span> <span class="token string">'c'</span>
+        call append<span class="token punctuation">(</span>line<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span>+6, <span class="token string">"#include&lt;stdio.h>"</span><span class="token punctuation">)</span>
+        call append<span class="token punctuation">(</span>line<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span>+7, <span class="token string">""</span><span class="token punctuation">)</span>
+        call append<span class="token punctuation">(</span>line<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span>+8, <span class="token string">"int main(int argc,char *argv[])"</span><span class="token punctuation">)</span>
+        call append<span class="token punctuation">(</span>line<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span>+9, <span class="token string">"&#123;"</span><span class="token punctuation">)</span>
+        call append<span class="token punctuation">(</span>line<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span>+10, <span class="token string">"     "</span><span class="token punctuation">)</span>
+        call append<span class="token punctuation">(</span>line<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span>+11, <span class="token string">"    return 0;"</span><span class="token punctuation">)</span>
+        call append<span class="token punctuation">(</span>line<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span>+12, <span class="token string">"&#125;"</span><span class="token punctuation">)</span>
+    autocmd BufNewFile * <span class="token number">12</span> j
     endif
 endfunc
-&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
-&quot;键盘命令
-&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
-&quot;C，C++ 按F5编译运行
-map &lt;F5&gt; :call CompileRunGcc()&lt;CR&gt;
-func! CompileRunGcc()
-    exec &quot;w&quot;
-    if &amp;filetype &#x3D;&#x3D; &#39;c&#39;
-        exec &quot;!gcc % -o %&lt;&quot;
-        exec &quot;! .&#x2F;%&lt;&quot;
-    elseif &amp;filetype &#x3D;&#x3D; &#39;cpp&#39;
-        exec &quot;!g++ % -o %&lt;&quot;
-        exec &quot;! .&#x2F;%&lt;&quot;
-    elseif &amp;filetype &#x3D;&#x3D; &#39;sh&#39;
-        :!.&#x2F;%
+<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"
+<span class="token string">"键盘命令
+"</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">"
+"</span>C，C++ 按F5编译运行
+map <span class="token operator">&lt;</span>F<span class="token operator"><span class="token file-descriptor important">5</span>></span> :call CompileRunGcc<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&lt;</span>CR<span class="token operator">></span>
+func<span class="token operator">!</span> CompileRunGcc<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token builtin class-name">exec</span> <span class="token string">"w"</span>
+    <span class="token keyword">if</span> <span class="token operator">&amp;</span>filetype <span class="token operator">==</span> <span class="token string">'c'</span>
+        <span class="token builtin class-name">exec</span> <span class="token string">"!gcc % -o %&lt;"</span>
+        <span class="token builtin class-name">exec</span> <span class="token string">"! ./%&lt;"</span>
+    elseif <span class="token operator">&amp;</span>filetype <span class="token operator">==</span> <span class="token string">'cpp'</span>
+        <span class="token builtin class-name">exec</span> <span class="token string">"!g++ % -o %&lt;"</span>
+        <span class="token builtin class-name">exec</span> <span class="token string">"! ./%&lt;"</span>
+    elseif <span class="token operator">&amp;</span>filetype <span class="token operator">==</span> <span class="token string">'sh'</span>
+        :<span class="token operator">!</span>./%
     endif
 endfunc
-&quot;C,C++的调试
-map &lt;C-F5&gt; :call Rungdb()&lt;CR&gt;
+<span class="token string">"C,C++的调试
+map &lt;C-F5> :call Rungdb()&lt;CR>
 func! Rungdb()
-    exec &quot;w&quot;
-    if &amp;filetype &#x3D;&#x3D; &#39;c&#39;
-        exec &quot;!gcc % -g -o %&lt;&quot;
-        exec &quot;!gdb -tui .&#x2F;%&lt;&quot;
-    elseif &amp;filetype &#x3D;&#x3D; &#39;cpp&#39;
-        exec &quot;!g++ % -g -o %&lt;&quot;
-        exec &quot;!gdb -tui .&#x2F;%&lt;&quot;
+    exec "</span>w<span class="token string">"
+    if &amp;filetype == 'c'
+        exec "</span><span class="token operator">!</span>gcc % -g -o %<span class="token operator">&lt;</span><span class="token string">"
+        exec "</span><span class="token operator">!</span>gdb -tui ./%<span class="token operator">&lt;</span><span class="token string">"
+    elseif &amp;filetype == 'cpp'
+        exec "</span><span class="token operator">!</span>g++ % -g -o %<span class="token operator">&lt;</span><span class="token string">"
+        exec "</span><span class="token operator">!</span>gdb -tui ./%<span class="token operator">&lt;</span><span class="token string">"
     endif
 endfunc
-&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
-&quot;&quot;实用设置
-&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
-&quot; 设置当文件被改动时自动载入
+"</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">"
+"</span>"实用设置
+<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>"<span class="token string">""</span>
+<span class="token string">" 设置当文件被改动时自动载入
 set autoread
-&quot; quickfix模式
-autocmd FileType c,cpp map &lt;buffer&gt; &lt;leader&gt;&lt;space&gt; :w&lt;cr&gt;:make&lt;cr&gt;
-&quot;代码补全 
-set completeopt&#x3D;preview,menu 
-&quot;允许插件  
+"</span> quickfix模式
+autocmd FileType c,cpp map <span class="token operator">&lt;</span>buffer<span class="token operator">></span> <span class="token operator">&lt;</span>leader<span class="token operator">></span><span class="token operator">&lt;</span>space<span class="token operator">></span> :w<span class="token operator">&lt;</span>cr<span class="token operator">></span>:make<span class="token operator">&lt;</span>cr<span class="token operator">></span>
+<span class="token string">"代码补全 
+set completeopt=preview,menu 
+"</span>允许插件  
 filetype plugin on
-&quot;共享剪贴板  
-set clipboard+&#x3D;unnamed 
-&quot;从不备份  
-set nobackup
-&quot;自动保存
+<span class="token string">"共享剪贴板  
+set clipboard+=unnamed 
+"</span>从不备份  
+<span class="token builtin class-name">set</span> nobackup
+<span class="token string">"自动保存
 set autowrite
-set ruler                   &quot; 打开状态栏标尺
-set cursorline              &quot; 突出显示当前行
-set magic                   &quot; 设置魔术
-set guioptions-&#x3D;T           &quot; 隐藏工具栏
-set guioptions-&#x3D;m           &quot; 隐藏菜单栏
-set foldcolumn&#x3D;0
-set foldmethod&#x3D;indent 
-set foldlevel&#x3D;3 
-set foldenable              &quot; 开始折叠
-&quot; 不要使用vi的键盘模式，而是vim自己的
-set nocompatible
-&quot; 语法高亮
-set syntax&#x3D;on
-&quot; 去掉输入错误的提示声音
-set noeb
-&quot; 在处理未保存或只读文件的时候，弹出确认
+set ruler                   "</span> 打开状态栏标尺
+<span class="token builtin class-name">set</span> cursorline              <span class="token string">" 突出显示当前行
+set magic                   "</span> 设置魔术
+<span class="token builtin class-name">set</span> guioptions-<span class="token operator">=</span>T           <span class="token string">" 隐藏工具栏
+set guioptions-=m           "</span> 隐藏菜单栏
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">foldcolumn</span><span class="token operator">=</span><span class="token number">0</span>
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">foldmethod</span><span class="token operator">=</span>indent 
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">foldlevel</span><span class="token operator">=</span><span class="token number">3</span> 
+<span class="token builtin class-name">set</span> foldenable              <span class="token string">" 开始折叠
+"</span> 不要使用vi的键盘模式，而是vim自己的
+<span class="token builtin class-name">set</span> nocompatible
+<span class="token string">" 语法高亮
+set syntax=on
+"</span> 去掉输入错误的提示声音
+<span class="token builtin class-name">set</span> noeb
+<span class="token string">" 在处理未保存或只读文件的时候，弹出确认
 set confirm
-&quot; 自动缩进
-set autoindent
-set cindent
-&quot; Tab键的宽度
-set tabstop&#x3D;4
-&quot; 统一缩进为4
-set softtabstop&#x3D;4
-set shiftwidth&#x3D;4
-&quot;禁止生成临时文件
+"</span> 自动缩进
+<span class="token builtin class-name">set</span> autoindent
+<span class="token builtin class-name">set</span> cindent
+<span class="token string">" Tab键的宽度
+set tabstop=4
+"</span> 统一缩进为4
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">softtabstop</span><span class="token operator">=</span><span class="token number">4</span>
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">shiftwidth</span><span class="token operator">=</span><span class="token number">4</span>
+<span class="token string">"禁止生成临时文件
 set nobackup
 set noswapfile
-&quot;搜索忽略大小写
-set ignorecase
-&quot;搜索逐字符高亮
+"</span>搜索忽略大小写
+<span class="token builtin class-name">set</span> ignorecase
+<span class="token string">"搜索逐字符高亮
 set hlsearch
 set incsearch
-&quot;行内替换
-set gdefault
-&quot;编码设置
-set enc&#x3D;utf-8
-set fencs&#x3D;utf-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936
-&quot;语言设置
-set langmenu&#x3D;zh_CN.UTF-8
-set helplang&#x3D;cn
-&quot; 我的状态行显示的内容（包括文件类型和解码）
-set statusline&#x3D;%F%m%r%h%w\ [FORMAT&#x3D;%&#123;&amp;ff&#125;]\ [TYPE&#x3D;%Y]\ [POS&#x3D;%l,%v][%p%%]\ %&#123;strftime(\&quot;%d&#x2F;%m&#x2F;%y\ -\ %H:%M\&quot;)&#125;
-&quot;set statusline&#x3D;[%F]%y%r%m%*%&#x3D;[Line:%l&#x2F;%L,Column:%c][%p%%]
-&quot;set statusline&#x3D;\ %&lt;%F[%1*%M%*%n%R%H]%&#x3D;\ %y\ %0(%&#123;&amp;fileformat&#125;\ %&#123;&amp;encoding&#125;\ %c:%l&#x2F;%L%)\
-&quot; 总是显示状态行
-set laststatus&#x3D;2
-&quot; 命令行（在状态行下）的高度，默认为1，这里是2
-set cmdheight&#x3D;2
-&quot; 侦测文件类型
+"</span>行内替换
+<span class="token builtin class-name">set</span> gdefault
+<span class="token string">"编码设置
+set enc=utf-8
+set fencs=utf-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936
+"</span>语言设置
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">langmenu</span><span class="token operator">=</span>zh_CN.UTF-8
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">helplang</span><span class="token operator">=</span>cn
+<span class="token string">" 我的状态行显示的内容（包括文件类型和解码）
+set statusline=%F%m%r%h%w\ [FORMAT=%&#123;&amp;ff&#125;]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %&#123;strftime(<span class="token entity" title="\&quot;">\"</span>%d/%m/%y\ -\ %H:%M<span class="token entity" title="\&quot;">\"</span>)&#125;
+"</span><span class="token builtin class-name">set</span> <span class="token assign-left variable">statusline</span><span class="token operator">=</span><span class="token punctuation">[</span>%F<span class="token punctuation">]</span>%y%r%m%*%<span class="token operator">=</span><span class="token punctuation">[</span>Line:%l/%L,Column:%c<span class="token punctuation">]</span><span class="token punctuation">[</span>%p%%<span class="token punctuation">]</span>
+<span class="token string">"set statusline=\ %&lt;%F[%1*%M%*%n%R%H]%=\ %y\ %0(%&#123;&amp;fileformat&#125;\ %&#123;&amp;encoding&#125;\ %c:%l/%L%)\
+"</span> 总是显示状态行
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">laststatus</span><span class="token operator">=</span><span class="token number">2</span>
+<span class="token string">" 命令行（在状态行下）的高度，默认为1，这里是2
+set cmdheight=2
+"</span> 侦测文件类型
 filetype on
-&quot; 载入文件类型插件
+<span class="token string">" 载入文件类型插件
 filetype plugin on
-&quot; 为特定文件类型载入相关缩进文件
+"</span> 为特定文件类型载入相关缩进文件
 filetype indent on
-&quot; 保存全局变量
-set viminfo+&#x3D;!
-&quot; 在被分割的窗口间显示空白，便于阅读
-set fillchars&#x3D;vert:\ ,stl:\ ,stlnc:\
-&quot; 高亮显示匹配的括号
+<span class="token string">" 保存全局变量
+set viminfo+=!
+"</span> 在被分割的窗口间显示空白，便于阅读
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">fillchars</span><span class="token operator">=</span>vert:<span class="token punctuation">\</span> ,stl:<span class="token punctuation">\</span> ,stlnc:<span class="token punctuation">\</span>
+<span class="token string">" 高亮显示匹配的括号
 set showmatch
-&quot; 匹配括号高亮的时间（单位是十分之一秒）
-set matchtime&#x3D;1
-&quot; 光标移动到buffer的顶部和底部时保持3行距离
-set scrolloff&#x3D;3
-&quot; 为C程序提供自动缩进
-set smartindent
-&quot; 高亮显示普通txt文件（需要txt.vim脚本）
+"</span> 匹配括号高亮的时间（单位是十分之一秒）
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">matchtime</span><span class="token operator">=</span><span class="token number">1</span>
+<span class="token string">" 光标移动到buffer的顶部和底部时保持3行距离
+set scrolloff=3
+"</span> 为C程序提供自动缩进
+<span class="token builtin class-name">set</span> smartindent
+<span class="token string">" 高亮显示普通txt文件（需要txt.vim脚本）
 au BufRead,BufNewFile *  setfiletype txt
-&quot;自动补全
-&quot;:inoremap ( ()&lt;ESC&gt;i
-&quot;:inoremap ) &lt;c-r&gt;&#x3D;ClosePair(&#39;)&#39;)&lt;CR&gt;
-:inoremap &#123; &#123;&lt;CR&gt;&#125;&lt;ESC&gt;O
-:inoremap &#125; &lt;c-r&gt;&#x3D;ClosePair(&#39;&#125;&#39;)&lt;CR&gt;
-&quot;:inoremap [ []&lt;ESC&gt;i
-&quot;:inoremap ] &lt;c-r&gt;&#x3D;ClosePair(&#39;]&#39;)&lt;CR&gt;
-&quot;:inoremap &quot; &quot;&quot;&lt;ESC&gt;i
-&quot;:inoremap &#39; &#39;&#39;&lt;ESC&gt;i
+"</span>自动补全
+<span class="token string">":inoremap ( ()&lt;ESC>i
+"</span>:inoremap <span class="token punctuation">)</span> <span class="token operator">&lt;</span>c-r<span class="token operator">>=</span>ClosePair<span class="token punctuation">(</span><span class="token string">')'</span><span class="token punctuation">)</span><span class="token operator">&lt;</span>CR<span class="token operator">></span>
+:inoremap <span class="token punctuation">&#123;</span> <span class="token punctuation">&#123;</span><span class="token operator">&lt;</span>CR<span class="token operator">></span><span class="token punctuation">&#125;</span><span class="token operator">&lt;</span>ESC<span class="token operator">></span>O
+:inoremap <span class="token punctuation">&#125;</span> <span class="token operator">&lt;</span>c-r<span class="token operator">>=</span>ClosePair<span class="token punctuation">(</span><span class="token string">'&#125;'</span><span class="token punctuation">)</span><span class="token operator">&lt;</span>CR<span class="token operator">></span>
+<span class="token string">":inoremap [ []&lt;ESC>i
+"</span>:inoremap <span class="token punctuation">]</span> <span class="token operator">&lt;</span>c-r<span class="token operator">>=</span>ClosePair<span class="token punctuation">(</span><span class="token string">']'</span><span class="token punctuation">)</span><span class="token operator">&lt;</span>CR<span class="token operator">></span>
+<span class="token string">":inoremap "</span> <span class="token string">""</span><span class="token operator">&lt;</span>ESC<span class="token operator">></span>i
+<span class="token string">":inoremap ' ''&lt;ESC>i
 function! ClosePair(char)
-    if getline(&#39;.&#39;)[col(&#39;.&#39;) - 1] &#x3D;&#x3D; a:char
-        return &quot;\&lt;Right&gt;&quot;
+    if getline('.')[col('.') - 1] == a:char
+        return "</span><span class="token punctuation">\</span><span class="token operator">&lt;</span>Right<span class="token operator">></span><span class="token string">"
     else
         return a:char
     endif
 endfunction
 filetype plugin indent on 
-&quot;打开文件类型检测, 加了这句才可以用智能补全
-set completeopt&#x3D;longest,menu
+"</span>打开文件类型检测, 加了这句才可以用智能补全
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">completeopt</span><span class="token operator">=</span>longest,menu
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h2 id="3、菜单栏位置"><a href="#3、菜单栏位置" class="headerlink" title="3、菜单栏位置"></a>3、菜单栏位置</h2><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">放到底部（终端输入以下）：
-gsettings set com.canonical.Unity.Launcher launcher-position Bottom<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+gsettings <span class="token builtin class-name">set</span> com.canonical.Unity.Launcher launcher-position Bottom<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">放到左侧（终端输入以下）：
-gsettings set com.canonical.Unity.Launcher launcher-position Left<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+gsettings <span class="token builtin class-name">set</span> com.canonical.Unity.Launcher launcher-position Left<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h1 id="二、美化Ubuntu"><a href="#二、美化Ubuntu" class="headerlink" title="二、美化Ubuntu"></a>二、美化Ubuntu</h1><h2 id="1、主题"><a href="#1、主题" class="headerlink" title="1、主题"></a>1、主题</h2><h3 id="1-1、安装unity-tweak-tool"><a href="#1-1、安装unity-tweak-tool" class="headerlink" title="1.1、安装unity-tweak-tool:"></a>1.1、安装unity-tweak-tool:</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">sudo apt-get install unity-tweak-tool<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h1 id="二、美化Ubuntu"><a href="#二、美化Ubuntu" class="headerlink" title="二、美化Ubuntu"></a>二、美化Ubuntu</h1><h2 id="1、主题"><a href="#1、主题" class="headerlink" title="1、主题"></a>1、主题</h2><h3 id="1-1、安装unity-tweak-tool"><a href="#1-1、安装unity-tweak-tool" class="headerlink" title="1.1、安装unity-tweak-tool:"></a>1.1、安装unity-tweak-tool:</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> unity-tweak-tool<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>调整 Unity 桌面环境，还是推荐使用Unity Tweak Tool，这是一个非常好用的 Unity 图形化管理工具，可以修改工作区数量、热区等。</p>
 <p>在安装后，输入unity-tweak-tool，遇到一直报错打不开的问题，解决方法：</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">sudo apt-get install unity-lens-applications 
-sudo apt-get install unity-lens-files<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> unity-lens-applications 
+<span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> unity-lens-files<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <h3 id="1-2-、Flatabulous主题"><a href="#1-2-、Flatabulous主题" class="headerlink" title="1.2 、Flatabulous主题"></a>1.2 、Flatabulous主题</h3><p>通过源码安装时，一直报错类似于仓库没有release文件，于是放弃源码安装</p>
 <p><em>若遇到该问题，解决方法：</em></p>
@@ -788,11 +788,11 @@ sudo apt-get install unity-lens-files<span aria-hidden="true" class="line-number
 <p><code>wget https://github.com/anmoljagetia/Flatabulous/releases/download/16.04.1/Flatabulous-Theme.deb</code>下载flatabulous主题</p>
 <p><code>sudo dpkg -i Flatabulous-Theme.deb</code>安装</p>
 <p>安装完成后，打开unity-tweak-tool软件，进入主题 ，修改为Flatabulous </p>
-<h2 id="2、终端"><a href="#2、终端" class="headerlink" title="2、终端"></a>2、终端</h2><h3 id="2-1、安装zsh"><a href="#2-1、安装zsh" class="headerlink" title="2.1、安装zsh"></a>2.1、安装zsh</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">sudo apt install zsh  #安装zsh
-chsh -s &#x2F;bin&#x2F;zsh      #将zsh设置默认为shell<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h2 id="2、终端"><a href="#2、终端" class="headerlink" title="2、终端"></a>2、终端</h2><h3 id="2-1、安装zsh"><a href="#2-1、安装zsh" class="headerlink" title="2.1、安装zsh"></a>2.1、安装zsh</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> <span class="token function">zsh</span>  <span class="token comment">#安装zsh</span>
+chsh -s /bin/zsh      <span class="token comment">#将zsh设置默认为shell</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h3 id="2-2、安装oh-my-zsh"><a href="#2-2、安装oh-my-zsh" class="headerlink" title="2.2、安装oh my zsh"></a>2.2、安装oh my zsh</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">sudo apt install git #git的安装
-sh -c $(curl -fsSL https:&#x2F;&#x2F;gitee.com&#x2F;shmhlsy&#x2F;oh-my-zsh-install.sh&#x2F;raw&#x2F;master&#x2F;install.sh) #oh my zsh的安装<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="2-2、安装oh-my-zsh"><a href="#2-2、安装oh-my-zsh" class="headerlink" title="2.2、安装oh my zsh"></a>2.2、安装oh my zsh</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> <span class="token function">git</span> <span class="token comment">#git的安装</span>
+<span class="token function">sh</span> -c <span class="token variable"><span class="token variable">$(</span><span class="token function">curl</span> -fsSL https://gitee.com/shmhlsy/oh-my-zsh-install.sh/raw/master/install.sh<span class="token variable">)</span></span> <span class="token comment">#oh my zsh的安装</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p>重启即可</p>
 <h3 id="2-3、更换主题"><a href="#2-3、更换主题" class="headerlink" title="2.3、更换主题"></a>2.3、更换主题</h3><p>进入theme官网 <a target="_blank" rel="noopener" href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes">https://github.com/ohmyzsh/ohmyzsh/wiki/Themes</a>选择你想要的主题，以avit为例</p>
@@ -805,13 +805,13 @@ sh -c $(curl -fsSL https:&#x2F;&#x2F;gitee.com&#x2F;shmhlsy&#x2F;oh-my-zsh-insta
 <h4 id="文件修改"><a href="#文件修改" class="headerlink" title="文件修改"></a>文件修改</h4><p><code>ls -a</code>   #查看文件</p>
 <p><code>vim .zshrc</code> #编辑.zshrc配置文件</p>
 <p>#输入i进入编辑模式</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># 使用的zsh 主题
-ZSH_THEME&#x3D;&quot;avit&quot;
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token comment"># 使用的zsh 主题</span>
+<span class="token assign-left variable">ZSH_THEME</span><span class="token operator">=</span><span class="token string">"avit"</span>
 
-# 启用已安装的插件
-plugins&#x3D;(
-  git zsh-autosuggestions zsh-syntax-highlighting
-)
+<span class="token comment"># 启用已安装的插件</span>
+<span class="token assign-left variable">plugins</span><span class="token operator">=</span><span class="token punctuation">(</span>
+  <span class="token function">git</span> zsh-autosuggestions zsh-syntax-highlighting
+<span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>#esc退出编辑模式，:wq退出vim</p>
@@ -1611,7 +1611,7 @@ plugins&#x3D;(
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">397.1k</span>&nbsp;字
+                class="white-color">495.7k</span>&nbsp;字
             
             
             

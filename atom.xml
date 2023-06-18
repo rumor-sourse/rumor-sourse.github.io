@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-06-12T14:32:02.446Z</updated>
+  <updated>2023-05-10T06:27:15.106Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,158 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Spark</title>
+    <link href="http://example.com/2023/051023978.html"/>
+    <id>http://example.com/2023/051023978.html</id>
+    <published>2023-05-10T06:23:38.000Z</published>
+    <updated>2023-05-10T06:27:15.106Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;弹性分布式数据集：基于内存集群计算的容错抽象&lt;/p&gt;
+&lt;h1 id=&quot;摘要（Abstract）&quot;&gt;&lt;a href=&quot;#摘要（Abstract）&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="论文翻译" scheme="http://example.com/categories/%E8%AE%BA%E6%96%87%E7%BF%BB%E8%AF%91/"/>
+    
+    
+    <category term="Spark" scheme="http://example.com/tags/Spark/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>FaRM</title>
+    <link href="http://example.com/2023/051050105.html"/>
+    <id>http://example.com/2023/051050105.html</id>
+    <published>2023-05-10T06:23:23.000Z</published>
+    <updated>2023-05-10T06:27:15.098Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;毫不妥协:具有一致性、可用性和性能的分布式事务&lt;/p&gt;
+&lt;h1 id=&quot;摘要（Abstract）&quot;&gt;&lt;a href=&quot;#摘要（Abstract）&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="论文阅读" scheme="http://example.com/categories/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/"/>
+    
+    
+    <category term="FaRM" scheme="http://example.com/tags/FaRM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>spanner</title>
+    <link href="http://example.com/2023/050732546.html"/>
+    <id>http://example.com/2023/050732546.html</id>
+    <published>2023-05-07T13:13:00.000Z</published>
+    <updated>2023-05-07T13:16:31.747Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;摘要（Abstract）&quot;&gt;&lt;a href=&quot;#摘要（Abstract）&quot; class=&quot;headerlink&quot; title=&quot;摘要（Abstract）&quot;&gt;&lt;/a&gt;摘要（Abstract）&lt;/h1&gt;&lt;p&gt;Spanner</summary>
+        
+      
+    
+    
+    
+    <category term="论文阅读" scheme="http://example.com/categories/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/"/>
+    
+    
+    <category term="spanner" scheme="http://example.com/tags/spanner/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Frangipani</title>
+    <link href="http://example.com/2023/05071317.html"/>
+    <id>http://example.com/2023/05071317.html</id>
+    <published>2023-05-07T13:12:47.000Z</published>
+    <updated>2023-05-07T13:16:31.740Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;摘要（Abstract）&quot;&gt;&lt;a href=&quot;#摘要（Abstract）&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="论文阅读" scheme="http://example.com/categories/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/"/>
+    
+    
+    <category term="Frangipani" scheme="http://example.com/tags/Frangipani/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Aurora</title>
+    <link href="http://example.com/2023/050563308.html"/>
+    <id>http://example.com/2023/050563308.html</id>
+    <published>2023-05-05T09:10:59.000Z</published>
+    <updated>2023-05-05T09:12:20.279Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;摘要（Abstract）&quot;&gt;&lt;a href=&quot;#摘要（Abstract）&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="论文阅读" scheme="http://example.com/categories/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/"/>
+    
+    
+    <category term="Aurora" scheme="http://example.com/tags/Aurora/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CRAQ</title>
+    <link href="http://example.com/2023/050563813.html"/>
+    <id>http://example.com/2023/050563813.html</id>
+    <published>2023-05-05T09:09:01.000Z</published>
+    <updated>2023-05-05T09:12:20.284Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;摘要（Abstract）&quot;&gt;&lt;a href=&quot;#摘要（Abstract）&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="论文阅读" scheme="http://example.com/categories/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/"/>
+    
+    
+    <category term="CRAQ" scheme="http://example.com/tags/CRAQ/"/>
+    
+  </entry>
   
   <entry>
     <title>zookeeper</title>
@@ -366,156 +518,6 @@
     
     
     <category term="马原" scheme="http://example.com/tags/%E9%A9%AC%E5%8E%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>毛概</title>
-    <link href="http://example.com/2023/02283319.html"/>
-    <id>http://example.com/2023/02283319.html</id>
-    <published>2023-02-28T14:16:18.000Z</published>
-    <updated>2023-02-28T16:06:28.409Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;导论&quot;&gt;&lt;a href=&quot;#导论&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="期末复习" scheme="http://example.com/categories/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/"/>
-    
-    
-    <category term="毛概" scheme="http://example.com/tags/%E6%AF%9B%E6%A6%82/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数据库</title>
-    <link href="http://example.com/2023/022863394.html"/>
-    <id>http://example.com/2023/022863394.html</id>
-    <published>2023-02-28T14:15:14.000Z</published>
-    <updated>2023-02-28T16:06:28.403Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;一、数据库系统基础&quot;&gt;&lt;a href=&quot;#一、数据库系统基础&quot; class=&quot;headerlink&quot; title=&quot;一、数据库系统基础&quot;&gt;&lt;/a&gt;一、数据库系统基础&lt;/h1&gt;&lt;h2 id=&quot;1、数据库及系统基本概念&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="期末复习" scheme="http://example.com/categories/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/"/>
-    
-    
-    <category term="数据库" scheme="http://example.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>操作系统</title>
-    <link href="http://example.com/2023/02281079.html"/>
-    <id>http://example.com/2023/02281079.html</id>
-    <published>2023-02-28T14:13:37.000Z</published>
-    <updated>2023-02-28T16:06:28.413Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Linux结构&quot;&gt;&lt;a href=&quot;#Linux结构&quot; class=&quot;headerlink&quot; title=&quot;Linux结构&quot;&gt;&lt;/a&gt;Linux结构&lt;/h1&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="期末复习" scheme="http://example.com/categories/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/"/>
-    
-    
-    <category term="操作系统" scheme="http://example.com/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>计算机网络</title>
-    <link href="http://example.com/2023/022828758.html"/>
-    <id>http://example.com/2023/022828758.html</id>
-    <published>2023-02-28T14:11:50.000Z</published>
-    <updated>2023-02-28T16:06:28.435Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;一、计算机网络和因特网&quot;&gt;&lt;a href=&quot;#一、计算机网络和因特网&quot; class=&quot;headerlink&quot; title=&quot;一、计算机网络和因特网&quot;&gt;&lt;/a&gt;一、计算机网络和因特网&lt;/h1&gt;&lt;h2 id=&quot;1、Internet&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="期末复习" scheme="http://example.com/categories/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/"/>
-    
-    
-    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ITN网络课程笔记（十七）（完）</title>
-    <link href="http://example.com/2021/120353702.html"/>
-    <id>http://example.com/2021/120353702.html</id>
-    <published>2021-12-03T07:55:48.000Z</published>
-    <updated>2023-02-28T16:06:28.315Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;十七、构建小型网络&quot;&gt;&lt;a href=&quot;#十七、构建小型网络&quot; class=&quot;headerlink&quot; title=&quot;十七、构建小型网络&quot;&gt;&lt;/a&gt;十七、构建小型网络&lt;/h1&gt;&lt;p&gt;您已经来到了网络简介 v7.0</summary>
-        
-      
-    
-    
-    
-    <category term="网络" scheme="http://example.com/categories/%E7%BD%91%E7%BB%9C/"/>
-    
-    
-    <category term="思科 网络" scheme="http://example.com/tags/%E6%80%9D%E7%A7%91-%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ITN网络课程笔记（十六）</title>
-    <link href="http://example.com/2021/120314164.html"/>
-    <id>http://example.com/2021/120314164.html</id>
-    <published>2021-12-03T07:55:26.000Z</published>
-    <updated>2023-02-28T16:06:28.332Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;十六、网络安全基础知识&quot;&gt;&lt;a href=&quot;#十六、网络安全基础知识&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="网络" scheme="http://example.com/categories/%E7%BD%91%E7%BB%9C/"/>
-    
-    
-    <category term="web安全 安全架构 思科 网络" scheme="http://example.com/tags/web%E5%AE%89%E5%85%A8-%E5%AE%89%E5%85%A8%E6%9E%B6%E6%9E%84-%E6%80%9D%E7%A7%91-%E7%BD%91%E7%BB%9C/"/>
     
   </entry>
   

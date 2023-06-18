@@ -1,0 +1,1840 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Spark, charminghacker">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Spark | charminghacker</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="charminghacker" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">charminghacker</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">charminghacker</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/rumor-sourse" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        <!-- 
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/rumor-sourse" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+         -->
+    </nav>
+     <!-- <div class="weather">
+        
+        <div id="tp-weather-widget"></div>
+        <script>
+            (function (a, h, g, f, e, d, c, b) { b = function () { d = h.createElement(g); c = h.getElementsByTagName(g)[0]; d.src = e; d.charset = "utf-8"; d.async = 1; c.parentNode.insertBefore(d, c) }; a["SeniverseWeatherWidgetObject"] = f; a[f] || (a[f] = function () { (a[f].q = a[f].q || []).push(arguments) }); a[f].l = +new Date(); if (a.attachEvent) { a.attachEvent("onload", b) } else { a.addEventListener("load", b, false) } }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+            window.SeniverseWeatherWidget('show', {
+                flavor: "bubble",
+                location: "WW92M43YCQG0",
+                geolocation: true,
+                language: "zh-Hans",
+                unit: "c",
+                theme: "auto",
+                token: "2ee46d07-e99c-4227-925e-461574e6469c",
+                hover: "enabled",
+                container: "tp-weather-widget"
+            })
+        </script>
+    </div>   -->
+    
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">Spark</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Spark/">
+                                <span class="chip bg-color">Spark</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E8%AE%BA%E6%96%87%E7%BF%BB%E8%AF%91/" class="post-category">
+                                论文翻译
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-05-10
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2023-05-10
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    14.6k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    52 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p>弹性分布式数据集：基于内存集群计算的容错抽象</p>
+<h1 id="摘要（Abstract）"><a href="#摘要（Abstract）" class="headerlink" title="摘要（Abstract）"></a>摘要（Abstract）</h1><p>我们提出的弹性分布式数据集（RDDs），是一个让程序员在大型集群上以容错的方式执行基于内存计算的分布式内存抽象。RDDs受启发于两类使用当前计算框架处理不高效的应用：迭代算法和交互式数据挖掘工具。这二者在内存中保存数据性能能够提高一个数量级。为了有效容错，RDDs提供一种受限的共享内存，基于粗粒度转换（transformations）而非细粒度地更新共享状态。尽管如此，RDDs仍足以表达许多类型的计算，包括最近专门用于迭代作业的编程模型（如Pregel）以及这些模型无法表示的新应用。我们在一个名为Spark的系统中实现了RDDs，我们通过各种用户应用程序和基准测试来评估该系统。</p>
+<h1 id="1、介绍（Introduction）"><a href="#1、介绍（Introduction）" class="headerlink" title="1、介绍（Introduction）"></a>1、介绍（Introduction）</h1><p>像MapReduce和Dryad这样的集群计算框架已经广泛应用于大规模数据分析。这些系统让用户使用一系列高级算子编写并行计算，而不用担心工作分配和容错。</p>
+<blockquote>
+<p>Cluster computing frameworks是一种分布式计算框架，它允许在大规模数据分析中使用并行计算。这些系统让用户使用一组高级操作符编写并行计算，而无需担心工作分配和容错</p>
+</blockquote>
+<p>虽然现有框架为访问集群计算资源提供了大量抽象，但是他们缺少利用分布式<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E5%86%85%E5%AD%98&spm=1001.2101.3001.7020">内存</a>的抽象。这使得它们对那些跨多个计算重用中间结果的新兴应用效率不高。数据重用普遍存在于很多迭代的机器学习和图像算法中，包括PageRank，K-means聚类和logistic回归。另一个引人注目的用例是交互式数据挖掘，即用户在同样的数据子集上运行多个即时查询。不幸的是，大多数现有框架中，在计算之间（比如在两个MapReduce作业之间）重用数据的唯一方式是把它写到外部稳定存储系统（如分布式文件系统）。这种方式会因为数据复制，磁盘I/O和序列化而带来巨大开销，这直接影响了应用的执行时间。</p>
+<p>由于认识到这个问题，研究人员为一些需要数据重用的应用开发出了专门的框架。例如，Pregel是为迭代的图像计算而在内存中保存中间数据的系统；而HaLoop则提供一个迭代的MapReduce接口。但这些框架只提供了特定的计算模型，并对这些模式隐式地进行数据共享。它们没有为更普遍的重用提供抽象，如让用户把几个数据集加载到内存中，在它们上运行即时查询。</p>
+<p>这篇论文中，我们提出一个新的抽象，叫弹性分布式数据集（RDDs），它让数据重用在广泛的应用上都是高效的。RDDs是容错的并行数据结构，它让用户显示地在内存中保存中间结果，控制它们的分区以优化数据布局，用丰富的算子去操作它们。</p>
+<p> 在设计RDDs时主要的挑战是：设计一个能有效提供容错性的编程接口。现有的对集群上基于内存存储的抽象（如分布式共享内存、key-value stores、数据库、Piccolo）提供了基于细粒度更新可变状态（比如表中的元素）的接口。这个接口提供容错的仅有的方式是跨机器复制数据或跨机器记录更新。这两个方法对数据密集型工作负载代价很大，因为它们需要在集群网络上拷贝大量数据，它的带宽远比RAM的要小，并且导致严重的存储开销。</p>
+<p>和这些系统对比，RDDs提供基于粗粒度转换（map、filter和join等）的接口。这允许它们通过记录用于构建数据集（它的<em>lineage</em>）的转换（<em>transformations</em>）去有效地提供容错性。如果RDD的分区丢失了，那个RDD会有足够的信息从其他RDDs衍生去重新计算刚才那个分区。从而，丢失的数据通常可以很快被恢复，且不需要花销很大的复制。</p>
+<blockquote>
+<p>粗粒度是应用于整个数据集，如上述map、filter；细粒度是指应用于单行，如get(index)和set(index)。</p>
+</blockquote>
+<p>即便是基于粗粒度转换的接口在最初也会受限，RDDs很适合很多并行化应用，因为这些应用天然适合在多个数据项上应用相同的操作。RDDs能高效地表示很多已经提出的作为独立系统的集群编程模型，包括MapReduce、Haloop等，也包括这些系统不能很好地应用的新应用程序，如交互式数据挖掘。<br>    我们已经在Spark的系统中实现了RDDs，Spark系统在UC Berkeley和个别公司被用于研究、生产应用。Spark提供一个方便语言集成的编程接口，接口是Scala语言编写的。另外，Spark可以用来从Scala解释器上交互式地查询大数据集。Spark允许通用编程语言以交互式速度用于集群上基于内存的数据挖掘，我们相信Spark是第一个这样的系统。<br>    我们通过微基准和用户应用程序的测试评估RDDs。发现，对于迭代应用，Spark比Hadoop快20倍；实际数据分析类报表速度提升40倍；Spark用于交互式查询1TB的数据集只有5至7秒的延迟。为了说明RDDs的普适性，我们已经在Spark之上实现了Pregel和HaLoop编程模型，包括以相对较小的库的形式提供了它们使用的位置优化策略（每个200行代码）。<br>    本文先分别在2和3节概述RDDs和Spark。然后，在第4节讨论RDDs的内部表示，第5节是RDDs内部的实现，第6节是实验结果。最后，在第7节讨论RDDs是怎样引起几个现有的集群编程模型兴趣的，第8节研究相关工作，最后是结论。</p>
+<h1 id="2、弹性分布式数据集（Resilient-Distributed-Datasets-RDDs）"><a href="#2、弹性分布式数据集（Resilient-Distributed-Datasets-RDDs）" class="headerlink" title="2、弹性分布式数据集（Resilient Distributed Datasets RDDs）"></a>2、弹性分布式数据集（Resilient Distributed Datasets RDDs）</h1><p>这节对RDDs进行概述。先在2.1节给RDDs下定义，2.2节阐述Spark中RDDs的编程接口，然后在2.3节比较RDDs和细粒度共享内存抽象，最后在2.4节讨论RDD模型的局限性。</p>
+<h2 id="2-1、RDD抽象（RDD-Abstraction）"><a href="#2-1、RDD抽象（RDD-Abstraction）" class="headerlink" title="2.1、RDD抽象（RDD Abstraction）"></a>2.1、RDD抽象（RDD Abstraction）</h2><p>RDD是一个只读的、分区记录的集合。RDDs能通过通过以下两种方式创建：（1）稳定存储中的数据 （2）其他RDDs</p>
+<p>我们称这些操作为转换（<em>transformations</em>），以把它们和其他RDDs上的操作（<em>actions</em>）区分开。map、filter、join都属于transformations。</p>
+<p>RDDs任何时候都不需要物化（<em>真正执行操作后存入稳定存储</em>）。相反，一个RDD有足够多的关于它是怎样从其他数据集衍生出（它的Lineage）的信息，据此从稳定存储中的数据计算出它的分区。这是一个强有力的特性：从本质上说，如果故障后无法重建RDD，程序就不能引用该RDD。（<em>有点绕，其实就是说<strong>RDD能够被重建是个很重要的特性，RDD有很强大的容错机制</strong></em>）</p>
+<p> 最终，用户能控制RDDs的两个其他方面：持久化和分区。用户可以表明他们将重用那个RDDs并为它们选择存储策略（如in-memory 存储）。他们也可以让一个RDD的元素基于每个记录的key跨机器分区。这对位置优化是有用的，如确定两个将要join的数据集是以相同方式进行哈希分区的。</p>
+<h2 id="2-2、Spark编程接口（Spark-Programming-Interface）"><a href="#2-2、Spark编程接口（Spark-Programming-Interface）" class="headerlink" title="2.2、Spark编程接口（Spark Programming Interface）"></a>2.2、Spark编程接口（Spark Programming Interface）</h2><p>Spark通过一个语言集成API暴露RDD，API中每个数据集被表示为一个对象，在这些对象上transformations被使用方法调用。<br>    程序员编程的第一步是通过在稳定存储中的数据调用transformations来定义RDDs（如map和filter）。然后他们可以对这些RDDs调用actions，actions是给应用程序返回值或者把数据导出到存储系统的操作。count、collect、save都属于actions。Spark只有在第一次调用action时才会真正计算RDDs，在此之前进行的transformations都是惰性计算，这样能对transformations进行并行流水线化（<em>pipeline</em>）。<br>    另外，程序员可以调用persist方法表明在以后的操作中他们想用哪个RDDs。Spark默认在内存中持久化RDDs，但是如果没有足够的RAM将会把多余的存入磁盘。用户也可以请求其它的持久化策略，如只在磁盘上存储RDD，或跨集群复制RDD，通过flags进行persist。最后，用户可以在每个RDD上设置持久化优先级去指定哪些内存的数据应该优先被存入磁盘。</p>
+<h3 id="2-2-1、示例：控制台日志挖掘（Example-Console-Log-Mining）"><a href="#2-2-1、示例：控制台日志挖掘（Example-Console-Log-Mining）" class="headerlink" title="2.2.1、示例：控制台日志挖掘（Example: Console Log Mining）"></a>2.2.1、示例：控制台日志挖掘（Example: Console Log Mining）</h3><p>假设有一个web服务出错了，操作员想从保存在HDFS中的TB级的日志中找出原因。通过使用Spark，操作员只需从日志中把刚才那个错误的信息加载到一组节点的RAM，并交互式地查询它们。她将先写出下面的Scala代码：</p>
+<pre class="line-numbers language-scala" data-language="scala"><code class="language-scala">lines <span class="token operator">=</span>spark<span class="token punctuation">.</span>textFile<span class="token punctuation">(</span><span class="token string">"hdfs://..."</span><span class="token punctuation">)</span>
+errors <span class="token operator">=</span> lines<span class="token punctuation">.</span>filter<span class="token punctuation">(</span>_<span class="token punctuation">.</span>startWith<span class="token punctuation">(</span><span class="token string">"ERROR"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+errors<span class="token punctuation">.</span>persist<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>第一行通过HDFS文件定义了一个RDD（即是文本形式的lines的集合），第二行对lines进行过滤得到一个过滤后的RDD，第三行将errors存入内存以便查询中共享。值得注意的是，在Scala语法中<em>filter</em>的参数是一个闭包。<br>    此时，集群上并没有执行任何工作。但是，用户可以对该RDD执行动作（<em>actions</em>），如统计信息条数：</p>
+<pre class="line-numbers language-scala" data-language="scala"><code class="language-scala">errors<span class="token punctuation">.</span>count<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p> 用户也可以在该RDD上进一步执行transformations，并使用转换后的结果，如下：</p>
+<pre class="line-numbers language-scala" data-language="scala"><code class="language-scala"><span class="token comment">//统计errors中涉及MySQL的行数:</span>
+errors<span class="token punctuation">.</span>filter<span class="token punctuation">(</span>_<span class="token punctuation">.</span>contains<span class="token punctuation">(</span><span class="token string">"MySQL"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span>count<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">//以数组的形式返回errors中涉及HDFS的时间字段</span>
+<span class="token comment">//（假设时间是'\t'分隔的number为3的字段）</span>
+errors<span class="token punctuation">.</span>filter<span class="token punctuation">(</span>_<span class="token punctuation">.</span>contains<span class="token punctuation">(</span><span class="token string">"HDFS"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span>map<span class="token punctuation">(</span>_split<span class="token punctuation">(</span><span class="token string">'\t'</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span>collect<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>在errors的第一个action运行后，Spark将在内存中保存errors的分区，极大地加速了后续计算。值得注意的是，最初的RDD（<em>lines</em>）没有被缓存。这很合理，因为错误信息可能只是数据的一小部分（小到足以存入内存）。</p>
+<p>最后，为了说明我们的模型怎样容错，我们在图1中展示了第三次查询中的RDDs的血缘（lineage）图。这次查询，在lines上进行filter得到errors，然后在errors上进一步应用filter和map，之后是<em>collect</em>。Spark调度器将并行流水线化后两个transformations，给拥有errors的分区缓存的节点发送任务集去计算。另外，如果errors的一个分区丢失了，Spark可以仅在lines相应的分区上应用过滤器来重建该分区。</p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202305101011145.png"></p>
+<h2 id="2-3、RDD模型的优势（Advantages-of-the-RDD-Model）"><a href="#2-3、RDD模型的优势（Advantages-of-the-RDD-Model）" class="headerlink" title="2.3、RDD模型的优势（Advantages of the RDD Model）"></a>2.3、RDD模型的优势（Advantages of the RDD Model）</h2><p>为了明白RDDs作为分布式内存抽象的好处，我们在表1中列出了RDDs与分布式共享内存（DSM）的对比。DSM系统中，应用在全局地址空间任意位置读写。值得注意的是，在这种定义下，DSM不仅包括传统的共享内存系统，还包括其他采用细粒度写共享状态的系统，提供共享的DHT的Piccolo和分布式数据库。DSM是非常通用的抽象，这种通用性使它难以在商业集群上实现高效率和容错性。</p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202305101017761.png" alt="image-20230510101717901"></p>
+<table>
+<thead>
+<tr>
+<th>方面</th>
+<th>RDDs</th>
+<th>分布式共享内存</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>读</td>
+<td>粗/细粒度</td>
+<td>细粒度</td>
+</tr>
+<tr>
+<td>写</td>
+<td>粗粒度</td>
+<td>细粒度</td>
+</tr>
+<tr>
+<td>一致性</td>
+<td>不重要（不可变）</td>
+<td>取决于app/运行时</td>
+</tr>
+<tr>
+<td>故障恢复</td>
+<td>细粒度，使用Lineage的的开销</td>
+<td>需要检查点和程序回滚</td>
+</tr>
+<tr>
+<td>落后任务降灾</td>
+<td>可以使用任务备份</td>
+<td>难以实现</td>
+</tr>
+<tr>
+<td>任务安排</td>
+<td>基于数据本地化自动分配</td>
+<td>取决于app（运行时实现透明性）</td>
+</tr>
+<tr>
+<td>内存不足时行为</td>
+<td>类似于已有数据流系统</td>
+<td>性能差（交换？）</td>
+</tr>
+</tbody></table>
+<p>表1：RDDs与DSM的对比</p>
+<p>RDDs和DSM主要的区别在于RDDs只能通过粗粒度transformations创建（“written”），而DSM允许读写每个存储单元。这虽然限制了RDDs只读，但允许RDDs有更高效的容错。尤其，RDDs不需要检查点的开销，因为它们可以使用lineage恢复。此外，只有RDD丢失的分区才需要重新计算，并且它们可以在不同节点上并行计算，而不用回滚整个程序。<br>    RDDs的第二个好处是它们的不可变性使系统能够运行类似MapReduce的备份任务来缓和慢节点。用DSM难以实现备份任务，因为一个任务的两个副本将访问相同的内存位置，相互干扰更新。<br>    RDDs相比于DSM还提供了另外两个好处。第一， 在对RDDs的批量操作中，运行时会基于数据本地化去调度任务以提高性能。第二，仅仅当它们用于基于扫描的操作时，RDDs在内存不足以存储它们时会优雅降级，内存存不下的分区会存在磁盘中，此时与现有的数据并行系统性能相当。</p>
+<h2 id="2-4、不适合RDDs的应用（Applications-Not-Suitable-for-RDDs）"><a href="#2-4、不适合RDDs的应用（Applications-Not-Suitable-for-RDDs）" class="headerlink" title="2.4、不适合RDDs的应用（Applications Not Suitable for RDDs）"></a>2.4、不适合RDDs的应用（Applications Not Suitable for RDDs）</h2><p>就像引言中讨论的，RDDs最适合批处理应用，批处理应用就是对一个数据集的所有元素运行相同的操作。这种情况下，RDDs能够有效地记住每个transformation，每个transformation是lineage图中的一个步骤，并且，不需要记录大量数据就能够恢复丢失分区。RDDs不太适合那些对共享状态进行异步的细粒度的更新，如web应用的存储系统或web爬虫增量抓取器。对于这些应用，执行传统的更新日志和数据检查点操作更加高效，例如数据库等。我们的目标是给批处理分析提供高效编程模型，把这些异步应用程序留给专门的系统。</p>
+<h1 id="3、Spark编程接口（Spark-Programming-Interface）"><a href="#3、Spark编程接口（Spark-Programming-Interface）" class="headerlink" title="3、Spark编程接口（Spark Programming Interface）"></a>3、Spark编程接口（Spark Programming Interface）</h1><p>Spark给RDD抽象提供了一个用Scala编写了语言集成API。Scala是在JVM上的静态类型函数式编程语言。我们选择Scala是因为它简洁的组合（便于交互式使用）和效率（由于静态类型）。然而，RDD抽象并不是一定要用函数式语言。<br>    为了使用Spark，开发者写一个驱动程序（<em>driver program</em>）连接wokers集群，如图2所示。driver定义一或多个RDDs，并在RDDs上调用action。在driver上的Spark代码还会追踪这些RDDs的lineage。wokers是长期运行的进程，能在内存中存储RDD分区。</p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202305101023972.png" alt="image-20230510102301902"></p>
+<p>Figure2：Spark运行态。用户的驱动程序启动多个worker，worker从分布式文件系统读取数据块，并在内存中保存已计算的RDD分区</p>
+<p>就像在2.2.1节日志挖掘实例中所展现的，用户给RDD操作（如map）传参是传递闭包（字面函数）。Scala用一个java对象代表每个闭包，这些对象可以被序列化，可以通过网络中传递闭包加载到另一个节点上。Scala也把闭包中的变量约束保存为Java对象中的字段。例如，一个人可以写下面的代码去对RDD中每个元素加5。</p>
+<pre class="line-numbers language-none"><code class="language-none">var x &#x3D; 5
+rdd.map(_ + x)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p> RDDs本身是元素类型参数化的静态类型对象。例如，RDD[Int]是整数的RDD。由于Scala支持类型推断，所以大多数例子中都省略了类型。<br>    虽然用Scala实现RDDs在概念上很简单，但是我们必须使用反射解决Scala闭包对象的问题。通过Scala解释器去使用用Spark，我们还需要做很多的工作，我们将在5.2节讨论。但我们并不需要去修改Scala编译器。</p>
+<h2 id="3-1、Spark中的RDD操作（RDD-Operations-in-Spark）"><a href="#3-1、Spark中的RDD操作（RDD-Operations-in-Spark）" class="headerlink" title="3.1、Spark中的RDD操作（RDD Operations in Spark）"></a>3.1、Spark中的RDD操作（RDD Operations in Spark）</h2><p>表2列出了Spark中主要的RDD的transformations和actions操作。每个操作都给出了表示，中括号表示类型参数。前面说过<em>transformations</em>是定义新RDD的惰性操作，而<em>actions</em>开始真正的计算并返回一个值给程序或是把数据写到外部存储。</p>
+<p>请注意，一些操作（例如join）仅在键值对的 RDD 上可用。此外，我们选择我们的功能名称来匹配 Scala 和其他功能语言中的其他 API；例如，map 是一个一对一的映射，而 flatMap 将每个输入值映射到一个或多个输出（类似于 MapReduce 中的映射）。</p>
+<p>除了这些运算符之外，用户可以要求 RDD 持久化存储。此外，用户可以获得 RDD 的分区顺序，由分区类表示，并根据其划分另一个数据集。groupByKey、reduceByKey等操作自动排序导致哈希或范围分区RDD。</p>
+<h2 id="3-2、应用实例（Example-Applications"><a href="#3-2、应用实例（Example-Applications" class="headerlink" title="3.2、应用实例（Example Applications)"></a>3.2、应用实例（Example Applications)</h2><p> 我们对2.2.1节中的数据挖掘示例补充两个迭代应用：logistic回归和网页排名。之后说明怎样控制RDDs的分区能提高性能。</p>
+<h3 id="3-2-1、logistic回归"><a href="#3-2-1、logistic回归" class="headerlink" title="3.2.1、logistic回归"></a>3.2.1、logistic回归</h3><p>很多机器学习算法都具有迭代特性，因为他们需要运行迭代优化程序去最大化一个函数，如梯度下降法。它们的数据保存在内存中会让它们运行更快。<br>    下面的程序实现了logistic回归。logistic回归是一个常见的用于寻找一个能最佳分割两组点（如垃圾邮件和非垃圾邮件）的超平面w的经典算法。算法使用梯度下降法：w开始时是随机值，每一次迭代，对w的函数求和，使w朝着优化的方向移动。</p>
+<pre class="line-numbers language-scala" data-language="scala"><code class="language-scala"><span class="token keyword">val</span> points <span class="token operator">=</span> spark<span class="token punctuation">.</span>textFile<span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span>
+                  <span class="token punctuation">.</span>map<span class="token punctuation">(</span>parsePoint<span class="token punctuation">)</span><span class="token punctuation">.</span>persist<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">var</span> w <span class="token operator">=</span> <span class="token comment">//随机初始向量</span>
+<span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token keyword">&lt;-</span> <span class="token number">1</span>to ITERATIONS<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+  <span class="token keyword">val</span> gradient <span class="token operator">=</span> points<span class="token punctuation">.</span>map<span class="token punctuation">&#123;</span>p <span class="token keyword">=></span>
+    p<span class="token punctuation">.</span>x <span class="token operator">*</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">/</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">+</span>exp<span class="token punctuation">(</span><span class="token operator">-</span>p<span class="token punctuation">.</span>y<span class="token operator">*</span><span class="token punctuation">(</span>w dot p<span class="token punctuation">.</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">*</span>p<span class="token punctuation">.</span>y
+  <span class="token punctuation">&#125;</span><span class="token punctuation">.</span>reduce<span class="token punctuation">(</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span> <span class="token keyword">=></span> a<span class="token operator">+</span>b<span class="token punctuation">)</span>
+  w <span class="token operator">-=</span> gradient
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>我们一开始定义了一个缓存RDD——points，作为在一个文本文件上调用map转换的结果，即把文本的每行都解析为Point对象。然后在points上运行<em>map</em>和<em>reduce</em>来计算梯度，在每一步对当前w的函数求和。把points保存在内存中迭代能提高20倍的速度，我们将在6.1节可以看到。</p>
+<h3 id="3-2-2、网页排名（PageRank）"><a href="#3-2-2、网页排名（PageRank）" class="headerlink" title="3.2.2、网页排名（PageRank）"></a>3.2.2、网页排名（PageRank）</h3><p>在网页排名中会出现更加复杂的数据共享模式。算法通过把链向每个页面的所有页面的贡献值（<em>contributions</em>）加起来，迭代地更新每个页面的<em>rank</em>。在每次迭代过程中，每个页面给周围页面发送r/n个contribution，这里r是它的排名，n是周围文件的个数。接下来，它把它的排名更新为$\alpha/N+(1-\alpha)\sum{c_{i}}$，其中求和是对它接收到的贡献值，N是页面个数。在Spark中我们可以把网页排名写成如下代码：</p>
+<pre class="line-numbers language-scala" data-language="scala"><code class="language-scala"><span class="token keyword">val</span> links <span class="token operator">=</span> spark<span class="token punctuation">.</span>textFile<span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">.</span>map<span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">.</span>persist<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">var</span> ranks <span class="token operator">=</span> <span class="token comment">//(URL, rank)对的RDD</span>
+<span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token keyword">&lt;-</span> <span class="token number">1</span> to ITERATIONS<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+<span class="token comment">//根据每个页面发送过来的贡献值创建(targetURL, float)对的RDD，</span>
+<span class="token keyword">val</span> contibs <span class="token operator">=</span> links<span class="token punctuation">.</span>join<span class="token punctuation">(</span>ranks<span class="token punctuation">)</span><span class="token punctuation">.</span>flatMap<span class="token punctuation">&#123;</span>
+  <span class="token punctuation">(</span>url<span class="token punctuation">,</span> <span class="token punctuation">(</span>links<span class="token punctuation">,</span> rank<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">=></span>
+  links<span class="token punctuation">.</span>map<span class="token punctuation">(</span>dest <span class="token keyword">=></span> <span class="token punctuation">(</span>dest<span class="token punctuation">,</span> rank<span class="token operator">/</span>links<span class="token punctuation">.</span>size<span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token punctuation">&#125;</span>
+  <span class="token comment">//根据URL对贡献值求和，并获取新的排名</span>
+  ranks <span class="token operator">=</span> contibs<span class="token punctuation">.</span>reduceByKey<span class="token punctuation">(</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span> <span class="token keyword">=></span> x<span class="token operator">+</span>y<span class="token punctuation">)</span>
+                 <span class="token punctuation">.</span>mapValues<span class="token punctuation">(</span>sum <span class="token keyword">=></span> a<span class="token operator">/</span>N<span class="token operator">+</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">-</span>a<span class="token punctuation">)</span><span class="token operator">*</span>sum<span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202305101040376.png"></p>
+<p>这个程序会生成如图3中的RDD血缘图。每一步迭代过程，我们都会基于上一个迭代器的contribs、ranks和静态的links集合创建一个新排名集合（排名更新了）。这个图有一个特征：随着迭代次数的增加，图会变得越来越长。因此，在一个拥有很多迭代步骤的作业中，有必要可靠复制ranks的一些版本以减少故障恢复次数。用户可以调用带可靠标识的 <em>persist</em>来达到目的。值得注意的是，links集合不需要被复制，因为它的分区可以通过在输入文件块上重新运行 <em>map</em>操作来重建。这个数据集将比ranks大，因为每个文件有很多链接但只有一定数量会作为它的排名，以致于在系统上使用lineage比检查点检查程序整个内存状态来恢复要更快。</p>
+<p> 最后，我们可以通过控制RDDs的分区来优化网页排名中的通信。如果我们为links指定一个分区方式（如根据URL对link列表跨节点哈希分区），我们则可以以相同的方式对ranks分区，并确保links和ranks的join操作不需要通信（因为每个URL的排名将会与它的link列表在相同的机器上）。我们也可以写一个Partitioner类把相互连接的页面聚在一起（比如按域名对URL分区）。这两种优化可以表示为在定义links时调用partitionBy：</p>
+<pre class="line-numbers language-none"><code class="language-none">links &#x3D; spark.textFile(...).map(...)
+             .partitionBy(myPartFunc).persist()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>该初始化调用后，links和ranks的join操作将自动把每个URL的贡献值聚合到它link列表所在的机器上，在那计算它的新排名，并join它和它的links。这类多次迭代的一致性分区是指定框架（Pregel）中主要优化方式之一。RDDs让用户直接表达他的目的。</p>
+<h1 id="4、表示RDDs（Representing-RDDs）"><a href="#4、表示RDDs（Representing-RDDs）" class="headerlink" title="4、表示RDDs（Representing RDDs）"></a>4、表示RDDs（Representing RDDs）</h1><p>把RDDs作为一个抽象会有一个问题：为它们选择一个代表在广泛的transformations中能追踪血缘。理想情况下，一个实现RDDs的系统应该提供尽可能丰富的转换算子，并让用户以任意方式组合它们。我们为RDDs提出一个简单的基于图的代表以达到这些目的。我们已经在Spark中使用这个代表去支持广泛的transformations，而且不会为任何transformation去给调度器添加特殊逻辑，这极大地简化了系统设计。<br>    简而言之，我们了一个通用接口去代表每个RDD，该接口表达五种信息:</p>
+<ul>
+<li>一组分区（<em>partitons</em>），数据集的原子组成</li>
+<li>一组父RDDs上的依赖（<em>dependencies</em>）</li>
+<li>一个基于父数据集计算的函数</li>
+<li>分区策略的元数据</li>
+<li>数据位置策略</li>
+</ul>
+<p>例如，一个RDD表示一个HDFS文件的每个块都有一个分区，并且知道每个块在哪台机器上。同时，在这个RDD上执行<em>map</em>操作后的结果分区不变。我们把这个接口总结在表3中。</p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202305101044377.png"></p>
+<table>
+<thead>
+<tr>
+<th>操作</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>partitions()</td>
+<td>返回Partiton对象的列表</td>
+</tr>
+<tr>
+<td>preferredLocations(<em>p</em>)</td>
+<td>列出<em>p</em>分区由于数据局部性可以被快速访问的节点</td>
+</tr>
+<tr>
+<td>dependencies()</td>
+<td>返回依赖列表</td>
+</tr>
+<tr>
+<td>iterator(<em>p, parentIters</em>)</td>
+<td>根据为父分区指定的迭代器，逐个计算<em>p</em>分区的元素</td>
+</tr>
+<tr>
+<td>partitioner()</td>
+<td>返回RDD是否是hash/range分区的元数据信息</td>
+</tr>
+</tbody></table>
+<p>表3：Spark中用于表示RDDs的接口</p>
+<p>在设计这个接口时最有趣的问题是怎样在RDDs间表示依赖。我们发现把依赖分成两类足够了，并且很有用。</p>
+<ul>
+<li>一类是窄依赖。父RDD的每个分区被子RDD的至多一个分区使用。</li>
+<li>一类是宽依赖。多个子分区依赖于一个父分区。</li>
+</ul>
+<p>例如，<em>map</em>操作会发生窄依赖，<em>join</em>操作发生宽依赖（除非父RDD是哈希分区）。图4显示了其他例子。</p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202305101045133.png"></p>
+<p>Figure4：宽窄依赖的例子。每个空心框代表一个RDD，里面的阴影矩阵代表分区。</p>
+<p> 这个区别是有用的，有两个原因。第一，窄依赖考虑到了一个节点上的流水线执行。例如，在一个个元素上先应用filter然后map。相反，宽依赖需要父分区的所有数据可用，并用一个类似于MapReduce的操作在节点间重排（shuffle）。第二，窄依赖使节点故障后恢复更有效，因为只有丢失的父分区需要被重新计算，并且可能在不同节点上并行计算。相反，在宽依赖的血缘图中，单一的故障节点可能导致一个RDD所有祖先的一些分区丢失，需要一个完全的重新执行。<br>    这个RDDs通用接口在Spark中实现的大部分transformations都少于20行代码。甚至Spark新用户在不知道调度器的细节的情况下都能够实现新的transformations（如sampling和各种join）。下面写了一些RDD实现。</p>
+<p><strong>HDFS files</strong>：我们采样的输入RDDs都是来自于HDFS中的文件。对于这些RDDs，<em>partitions</em>返回文件每个块的分区（块的偏移量存在于每个Partition对象中）。<em>preferredLocations</em>给出块所在节点和读块的迭代器。</p>
+<p><em><strong>map</strong></em>：在任何RDD上调用<em>map</em>都会返回MappedRDD对象。这个对象和它的父RDD有相同的分区和首选位置。<em>map</em>的参数是一个函数，对于父RDD中的所有记录，将以<em>iterator</em>方法的方式执行这个函数。</p>
+<p><em><strong>union</strong>：对两个RDD调用</em>union会返回一个分区为父RDD分区的联合的RDD。每个子分区都是在相应的父分区上进行窄依赖计算得到的。</p>
+<p><em><strong>sample</strong></em>：采样类似于映射，除了RDD会为每个分区保存一个随机数生成种子以确定性地采样父分区记录。</p>
+<p><em><strong>join</strong></em>：join两个RDD可能会产生两个窄依赖（如果他们具有相同的hash/range分区），可能是两个宽依赖，也可能都有（如果一个父RDD有分区，另一个没有）。</p>
+<h1 id="5、实现（Implementation）"><a href="#5、实现（Implementation）" class="headerlink" title="5、实现（Implementation）"></a>5、实现（Implementation）</h1><p>我们用大约14000行Scala代码实现了Spark。系统运行在Mesos集群管理器上，使其能够与Hadoop、MPI和其他应用程序共享资源。每个Spark程序都作为独立的Mesos应用运行，它有自己驱动程序（master）和workers，并且在这些被Mesos处理的应用中共享资源。<br>    Spark可以从任何Hadoop输入源读取数据（比如HDFS、HBase），只需要使用Hadoop已存在的插件的API，在Scala的未修改版本上运行。<br>    我们大致说几个该系统技术上比较有趣的部分：任务调度（5.1节），Spark解释器允许交互式使用（5.2节），内存管理（5.3节），支持检查点（5.4节）。</p>
+<h2 id="5-1、任务调度（Job-Scheduling）"><a href="#5-1、任务调度（Job-Scheduling）" class="headerlink" title="5.1、任务调度（Job Scheduling）"></a>5.1、任务调度（Job Scheduling）</h2><p>Spark的调度器使用了RDDs的表示，在第4节已经描述过了。</p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202305101056213.png" alt="="></p>
+<p>​    总而言之，我们的调度器与Dryad的类似，但它另外还考虑了持久化的RDDs的哪些分区在内存中可用。无论何时用户运行在RDD上运行action，调度器都会检查RDD的血缘图，建立由stages组成的DAG，然后执行，如图5的插图。每个阶段（stage）包含尽可能多的窄依赖流水线转换（transformations）。stages的边界是宽依赖shuffle操作，或者任何已经计算过的分区，它可以截断父RDD的计算。然后，调度器在每个stage中运行任务去计算丢失的分区，知道计算出想要的RDD。</p>
+<blockquote>
+<p>DAG是指有向无环图（Directed Acyclic Graph），它是一种数据结构，用于表示计算任务之间的依赖关系。在RDD中，每个RDD都可以被看作是一个DAG中的一个节点。DAG的每个边表示一个转换操作，例如map或reduce。由于DAG是无环的，因此可以保证计算任务按正确的顺序执行，避免了循环依赖和死锁等问题。RDD使用DAG来跟踪数据集之间的依赖关系，并在需要时重新计算丢失的数据分区。这种机制使得RDD具有容错性和高效性。</p>
+</blockquote>
+<p>​    调度器基于数据存放位置使用延迟调度给机器指派任务。如果一个任务需要处理节点内存中可用的分区，我们就把它发送给那个节点。但是，如果处理的分区位于多个可能的位置（如HDFS文件），则把任务发送给这些节点。</p>
+<p>​    对于宽依赖（即shuffle依赖），我们一般把中间结果具体化在持有父分区的节点上，以简化故障恢复，很像MapReduce物化map的输出结果。</p>
+<p>​    如果一个任务失败，只要它的stage的父分区还可用，我们将在另一个节点上重新运行它。如果一些stages已经不可用（例如，由于一个shuffle的map输出结果丢失了），我们会重新提交任务去并行地计算丢失分区。我们还不能对调度器故障容错，但是复制RDD血缘图是直截了当的做法。</p>
+<p>​    最后，虽然Spark中所有当前运行的计算都对驱动程序中调用的actions响应，我们也会试验让集群上的任务（如maps）调用<em>lookup</em>操作，该操作允许按关键字随机访问哈希分区的RDDs的元素。在这种情况下，任务需要告诉调度器去计算哪些丢失的分区。</p>
+<h2 id="5-2、解释器的集成（Interpreter-Integration）"><a href="#5-2、解释器的集成（Interpreter-Integration）" class="headerlink" title="5.2、解释器的集成（Interpreter Integration）"></a>5.2、解释器的集成（Interpreter Integration）</h2><p> Scala包含一个类似于Ruby和Python的交互式shell。考虑到实现内存中数据带来的低延迟，我们希望让用户在解释器上交互式地运行Spark，查询大数据集。<br>    Scala解释器通常把用户输入的代码行编译成一个类，然后加载到JVM，之后调用类的函数。这个类包括一个单例对象（单例对象包含那行代码的变量或方法），并且在一个初始化函数中运行那行代码。例如，如果用户写入<code>var x = 5</code>，接下来<code>println(x)</code>，解释器会定义包含x的Line1类，并让第二行编译成<code>println(Line1.getInstance().x)</code>。<br>    我们对Spark中的编译器做了两点改变：</p>
+<ul>
+<li>类传输：为了让工作节点获取每行代码上创建的类的字节码，我们使解释器基于HTTP传输这些类。</li>
+<li>改进的代码生成逻辑：一般地，每行代码生成的单例对象是通过相应的类上的一个静态方法去访问的。这意味着当我们序列化一个引用了前一行定义的变量的闭包时（如上面例子中的<code>Line1.x</code>），Java将不会通过对象图跟踪而传输包装<code>x</code>的<code>Line1</code>实例。因此，工作节点将不接受<code>x</code>。我们把代码生成逻辑改成了直接引用每行对象的实例。</li>
+</ul>
+<p> 图6显示在做了上面两个改变后，解释器怎样把用户写的一系列代码行翻译成Java对象。</p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202305101106530.png"></p>
+<p>Figure6：显示解释器怎样把用户输入的两行代码翻译成Java对象</p>
+<p>我们发现Spark解释器便于处理大量跟踪关系，也便于研究HDFS中保存的数据集。我们也计划交互式地运行更高级的查询语言，如SQL。</p>
+<h2 id="5-3、内存管理（Memory-Management"><a href="#5-3、内存管理（Memory-Management" class="headerlink" title="5.3、内存管理（Memory Management)"></a>5.3、内存管理（Memory Management)</h2><p>Spark对于持久化RDDs提供了三个选项：</p>
+<ul>
+<li>序列化成Java对象存储在内存中</li>
+<li>作为序列化数据存储在内存中</li>
+<li>存储在磁盘上</li>
+</ul>
+<p>第一个选项性能最快，因为JVM能在本机访问每个RDD元素。第二个选项让用户在内存空间有限时，选择比Java对象图更加有效的存储方式，性能会差一点。第三个选项对于那些太大而无法存入内存的RDDs是有用的，但是每次使用都需要重新计算，这很耗时。<br>    为了管理有限的可用内存，我们基于RDDs的级别使用LRU淘汰策略。当计算一个新的RDD分区，而又没有足够的空间存储它时，我们淘汰一个最近最少访问RDD的分区，除非这个RDD和新分区的一样。在这种情况下，我们把旧分区存入内存以防止相同RDD的分区循环读入和写出。这很重要，因为大多数操作将在整个RDD上运行任务，所以很可能以后会需要用到一直在内存中的分区。我们发现，目前为止这个默认的策略在我们的应用中很好地工作，我们通过每个RDD的“持久化优先级“，让用户进一步控制RDD。<br>    目前，集群上Spark的每个实例都有自己独立的内存空间。未来，我们打算研究通过统一的内存管理实现在Spark实例间共享RDDs。</p>
+<h2 id="5-4、支持检查点（Checkpointing）"><a href="#5-4、支持检查点（Checkpointing）" class="headerlink" title="5.4、支持检查点（Checkpointing）"></a>5.4、支持检查点（Checkpointing）</h2><p> 虽然血缘图总是被用于在故障后恢复RDDs，但这样的恢复在血lineage链很长的时候会很耗时。因此，把一些RDD执行检查点操作存入稳定内存十分有用。<br>    一般地，检查点对于Lineage图长、宽依赖的RDDs很有用，如3.2.2节中PageRank例子中的rank集合。在这些情况下，集群中节点故障可能导致会每个父RDD的一些数据分片丢失，这就需要完全重新计算，<strong>检查点操作在这里就可以避免完全重新计算</strong>。相反，对于稳定存储数据上的窄依赖RDDs，检查点没什么价值。如果节点故障，这些RDDs丢失的分区可以并行地在其他节点上计算，成本比复制整个RDD要少得多。<br>    Spark目前为检查点提供了一个API（给<em>persist</em>传入REPLICATE标识），把checkpoint哪个数据的决定权留给了用户。然而，我们也研究了怎样实现自动的检查点。因为我们的调度器知道每个数据集的大小，也知道第一次计算花费的时间，所以它应该能选择一个优化的RDDs集合执行检查点操作，最小化系统恢复时间。<br>    最后，值得注意的是RDDs的只读属性使检查点操作比常见的共享内存更简单。因为不需要关注一致性，RDDs可以在不需要程序中断或分布式快照方案的情况下在后台写出。</p>
+<h1 id="6、测评（Evaluation）"><a href="#6、测评（Evaluation）" class="headerlink" title="6、测评（Evaluation）"></a>6、测评（Evaluation）</h1><p>我们再Amazon EC2上做了一系列实验，以此来评估Spark和RDDs，并与其他用户应用程序的基准做了对比。总之，我们的结果如下：</p>
+<ul>
+<li>Spark在迭代机器学习和图像应用方面性能比Hadoop高20倍。速度的提升的原因是，把数据作为Java对象存入内存中避免了I/O和反序列化的成本。</li>
+<li>用户所写应用执行效果好。我们使用Spark对原来在Hadoop上运行的分析报告提升了40倍。</li>
+<li>当节点故障，Spark可以通过只重建丢失的RDD分区来快速恢复。</li>
+<li>Spark用于交互式地查询1TB数据集，只有5-7s的延迟。</li>
+</ul>
+<p> 我们将在6.1节呈现与Hadoop对比的迭代机器学习应用的基准，6.2节呈现对比后的PageRank。然后，6.3节评估Spark中故障恢复，6.4节呈现数据集在内存不足时的行为。最后，6.5节讨论用户应用程序的结果，6.6节交互式数据挖掘。<br>    除非另有说明，我们的测试使用m1.xlarge EC2节点，4核，15G内存。我们使用HDFS存储，块大小256M。在每个测试之前，为了准确地测量IO成本，我们清理了操作系统缓存。</p>
+<h2 id="6-1、迭代机器学习应用（Iterative-Machine-Learning-Applications）"><a href="#6-1、迭代机器学习应用（Iterative-Machine-Learning-Applications）" class="headerlink" title="6.1、迭代机器学习应用（Iterative Machine Learning Applications）"></a>6.1、迭代机器学习应用（Iterative Machine Learning Applications）</h2><p>我们实现了两个迭代机器学习应用，逻辑回归和k-means，为了比较下面系统的性能：</p>
+<ul>
+<li><em>Hadoop</em>：Hadoop 0.20.0稳定版本</li>
+<li><em>HadoopBinMem</em>：一个Hadoop部署。第一次迭代时，把输入数据转换成低开销二进制格式，以消除在之后迭代过程的文本解析，并把它存入内存中的HDFS实例。</li>
+<li><em>Spark</em>：RDDs的实现。</li>
+</ul>
+<p>我们用25-100台机器在100GB的数据集上对这两个算法进行了10次迭代。两个应用程序的主要区别在于他们执行数据每个字节的计算的数量。k-means的迭代时间主要取决于计算，但逻辑回归不是计算密集型的，因此时间更多地花费在反序列化和I/O上。<br>    由于经典的学习算法需要几十次迭代才能收敛，所以我们在报告时间时，把首轮迭代的时间与后续迭代的时间分开。我们发现经RDDs共享数据极大地加快了后面的迭代。</p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202305101117076.png"></p>
+<p>Figure7：图表示了逻辑回归和k-means两种算法分别在Hadoop、HadoopBinMem和Spark三种集群中的首轮迭代和后续迭代的时长。实验是在有100个节点的集群上对100GB数据进行的。<br>Figure：Hadoop、HadoopBinMem和Spark上后续迭代的运行时间。</p>
+<p><strong>首轮迭代</strong> 三个系统在首轮迭代时都从HDFS中读取文本输入。如图7中的浅色长方形所示，实验中Spark比Hadoop更快。这个不同是因为在Hadoop的master和workers之间的心跳协议中的通信开销。HadoopBinMem是最慢的，因为它运行了一个额外的MapReduce工作去把数据转成二进制的，它必须通过网络把这个数据写向一个复制的内存HDFS实例。</p>
+<p><strong>后续迭代</strong> 图7也显示了后续迭代的平均运行时间，图8显示了随着集群大小的变化是运行时间的分布情况。对于logistic回归，在100台机器上，Spark比Hadoop快25.3倍，比HadoopBinMem快20.7倍。对于更加计算密集型的k-means应用，Spark有1.9到3.2倍的提速。</p>
+<p><strong>理解速度</strong> 我们惊讶地发现，Spark甚至都超过了基于内存存储二进制数据的Hadoop（HadoopBinMem）20多倍。在HadoopBinMem中，我们使用了Hadoop的标准二进制格式（SequenceFile）和256MB大的块，我们还强制HDFS的数据直接存放在内存文件系统。然而Hadoop仍然运行缓慢，有以下几个因素：</p>
+<ol>
+<li>Hadoop软件栈的最小开销</li>
+<li>提供数据时HDFS的开销</li>
+<li>把二进制记录转换成可用的内存Java对象的反序列化成本</li>
+</ol>
+<p>我们来依次研究这几个因素。为了衡量（1），我们运行没有操作的Hadoop作业，然后发现，仅仅完成作业设置，启动任何和清理工作的最小需求就需要花费至少25s的开销。对于（2），我们发现HDFS为每个块提供多次内存拷贝和计算校验和的操作。</p>
+<p>最后，为了测量（3），我们在单机上运行微基准程序，在256MB多种格式的输入上运行逻辑回归计算。尤其，我们比较了来源于HDFS（这里将体现出HDFS栈的开销）和内存本地文件（内核能够非常有效地把数据传递给程序）的文本输入和二进制输入的处理时间。</p>
+<p>我们在图9中展示了这些实验的结果。内存中的HDFS和本地文件的区别显示，从HDFS读取数据会多花费2s的开销，甚至数据就在本地机器的内存中。文本输入和二进制输入的区别表明，解析的开销相差7s。甚至当从内存文件读取数据时，把预解析的二进制数据转成Java对象都要花费3s，这几乎和逻辑回归本身的成本一样。而Spark通过在内存中把RDD元素直接存成Java对象，避免了以上所有开销。</p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202305101121293.png"></p>
+<h2 id="6-2、网页排名（PageRank）"><a href="#6-2、网页排名（PageRank）" class="headerlink" title="6.2、网页排名（PageRank）"></a>6.2、网页排名（PageRank）</h2><p>我们使用了54GB维基百科数据，比较分别在Spark和Hadoop上实现PageRank的性能。我们运行10轮PageRank算法去处理大约4百万文章的链接图。图10显示在30台节点上，只基于内存存储时，Spark比Hadoop快2.4倍。另外，控制RDDs的分区方式使整个迭代过程保持一致，如3.2.2节所讨论的，提升速度至7.4倍。扩展到60台机器，结果也随之近于线性地减少。</p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202305101128569.png"></p>
+<p>Figure10： 在Hadoop和Spark上PageRank的性能</p>
+<p>我们也评估了PageRank的两一个版本——用Pregel在Spark上实现，我们再7.1节进行描述。迭代时间与图10类似，但是长了4s，因为Pregel会在每次迭代额外运行一个操作，这个操作让顶点“投票”是否结束作业。</p>
+<h2 id="6-3、故障恢复（Fault-Recovery）"><a href="#6-3、故障恢复（Fault-Recovery）" class="headerlink" title="6.3、故障恢复（Fault Recovery）"></a>6.3、故障恢复（Fault Recovery）</h2><p>我们对k-means应用评估了其在单点故障后，使用lineage重建RDD分区的成本。图11比较了在75个节点的集群上k-means10轮迭代在正常情况下和一个节点在第六轮迭代的开始时故障的情况下的运行时间。没有任何故障，每轮迭代会运行400各任务处理100GB数据。</p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202305101129802.png"></p>
+<p>Figure11：k-means存在故障时的迭代时间。在第六轮迭代开始时kill掉一台机器导致使用lineage部分重构RDD</p>
+<p>直到第五轮迭代结束，迭代时间都是大约58s。在第六轮迭代，一台机器被kill掉，导致运行在该机器上的任务和存储该机器上的RDD分区的丢失。Spark在其他机器上并行地重新运行这些任务，他们在这些机器上重新读取相应的输入数据并通过lineage重构RDDs，这会让迭代时间增至80s。一旦丢失的RDD分区被重建，迭代时间将降回到58s。<br>    值得注意的是，基于检查点的故障恢复机制，恢复将可能需要运行至少几轮迭代，取决于检查点操作的频率。更进一步说，系统将需要通过网络复制应用的100GB工作集（文本输入数据转成二进制），要么消费两次Spark内存去复制它到内存中，要么将不得不等到100GB写入磁盘。相反地，我们例子中RDDs的血缘图都是小于10KB的。</p>
+<h2 id="6-4、内存不足时的行为（Behavior-with-Insufficient-Memory）"><a href="#6-4、内存不足时的行为（Behavior-with-Insufficient-Memory）" class="headerlink" title="6.4、内存不足时的行为（Behavior with Insufficient Memory）"></a>6.4、内存不足时的行为（Behavior with Insufficient Memory）</h2><p>目前为止，我们确保每个集群中每台机器有足够内存存储迭代中所有的RDDs。一个自然的问题是，如果没有足够的内存去存储作业的数据时Spark怎样运行。在这个实验中，我们配置Spark在每台机器上不是用超过一定百分比的内存去存储RDDs。我们在图12中展示逻辑回归在多种百分比内存空间下的运行结果。我们看见随着空间变小性能缓慢下降。</p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202305101131292.png"></p>
+<h2 id="6-5、基于Spark建立的用户应用（User-Applications-Built-with-Spark）"><a href="#6-5、基于Spark建立的用户应用（User-Applications-Built-with-Spark）" class="headerlink" title="6.5、基于Spark建立的用户应用（User Applications Built with Spark）"></a>6.5、基于Spark建立的用户应用（User Applications Built with Spark）</h2><p><strong>内存分析（In-Memory Analytics）</strong> Conviva Inc（一家视频发行公司）使用Spark加快了数据分析报告的数据，以前是基于Hadoop上运行的。举个例子，一个报告被作为一系列Hive查询运行为客户计算多种统计。这些查询全都是基于数据的相同子集（记录匹配用户提供的过滤器），但在不同分组的字段上执行聚合（averages, precentiles和COUNT DISTINCT）操作需要独立的MapReduce作业。在Spark中实现上述查询，并把数据子集一次加载到RDD中，该公司能够对报告提速40倍。一个基于200G压缩数据的报告在Hadoop集群上运行要花费20小时，现在仅仅只需要2台Spark机器就可以运行在30分钟以内。更进一步，Spark程序只需要96GB的RAM，因为它只把匹配用户过滤器的行和列存入RDD，而不是所有解压文件。<br><strong>交通建模（Traffic Modeling）</strong> 在Berkeley的Mobile Millennium项目中，研究人员基于分散的汽车GPS测量，并行化一个学习算法去预测道路交通阻塞情况。源数据是城市的10000个互联的道路网，还有600,000由装备GPS的汽车采集到的点到点的行驶时间的样本（每条路线的形式时间可能包括多条互联的道路）。使用交通模型，系统可以估计跨交通网花费的时间。研究人员用一个期望最大化算法训练这个模型，这个算法迭代地重复两次<em>map</em>和<em>reduceByKey</em>步骤。这个应用近乎线性地从20个节点扩展到80个节点，每个节点4核，如图13(a)所示。</p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202305101132533.png"></p>
+<p>图13：用Spark实现的两个用户应用程序每次运行时间。错误条显示标准差。</p>
+<p><strong>Twitter垃圾分类（Twitter Spam Classification）</strong> 伯克利的Monarch项目用Spark识别Twitter信息中的垃圾链接。他们在Spark之上实现了一个逻辑回归分类器，和6.1节中例子类似，但他们使用分布式的 <em>reduceByKey</em>对并行的梯度向量求和。在图13(b)中，我们展示了在超过50GB数据上训练一个分类器的扩展结果，数据包括250000URLs和10^7与网络相关的特征/维度和在每个URL的页面的内容属性。缩放不是接近线性的原因是每次迭代都会有更高的固定通信成本。</p>
+<h2 id="6-6、交互式数据挖掘（Interactive-Data-Mining）"><a href="#6-6、交互式数据挖掘（Interactive-Data-Mining）" class="headerlink" title="6.6、交互式数据挖掘（Interactive Data Mining）"></a>6.6、交互式数据挖掘（Interactive Data Mining）</h2><p>为了证明Spark在交互查询大数据集方面的能力，我们用它去分析1TB的维基百科页面访问日志（2年的数据）。这个实验，我们用8核、68GB内存的100m2.3xlarge EC2实例。我们运行查询以获得以下内容总访问次数（1）所有页面，（2）标题能精确匹配给定关键字的页面，（3）标题部分匹配关键字的页面。每个查询会扫描整个输入数据。<br>    图14显示的是在整个数据集、一半数据和十分之一数据的查询响应时间。甚至在1TB的数据上，Spark上的查询只需要花费5-7s。这比查询磁盘上的数据的速度快一个数量级以上。例如，从磁盘上查询1TB的文件花费了170s。这证明了RDDs使Spark更适用于交互式数据挖掘。</p>
+<p><img src="https://charminghacker-blog-pic.oss-cn-chengdu.aliyuncs.com/202305101138110.png"></p>
+<p>Figure14：在Spark上交互式查询的响应时间，在100台机器上扫描持续增大的输入数据集</p>
+<h1 id="7、讨论（Discussion）"><a href="#7、讨论（Discussion）" class="headerlink" title="7、讨论（Discussion）"></a>7、讨论（Discussion）</h1><p>虽然，由于RDDs的不可变的性质和粗粒度转换，它们提供了一个限制的编程接口，但我们发现它们适用于广泛类别的应用。尤其，RDDs可以表达的集群编程模型数量惊人，这些集群编程模型目前为止都被作为独立框架提出，允许用户在一个项目（例如，运行一个MapReduce操作图建立一个图，然后在其上运行Pregel）中<em>compose</em>这些模型，并在他们之间分享数据。在这一节，我们将在7.1小节讨论RDDs可以表达哪些编程模型和为什么它们应用这么广泛。另外，我们在7.2小节讨论RDDs中lineage信息的另一个好处，即为了方便在这些模型上调试。</p>
+<h2 id="7-1、表达已有的编程模型（Expressing-Existing-Programming-Models）"><a href="#7-1、表达已有的编程模型（Expressing-Existing-Programming-Models）" class="headerlink" title="7.1、表达已有的编程模型（Expressing Existing Programming Models）"></a>7.1、表达已有的编程模型（Expressing Existing Programming Models）</h2><p>RDDs可以<em>有效地</em>表达一些目前已经独立提出的集群编程模型。这里说<em>有效地</em>，我们的意思是RDDs不仅可以产生和这些模型相同的结果，还可以捕获这些框架执行的优化，如把指定的数据保存在内存中，对它进行分区以最小化通信并且高效地从故障中恢复。可以使用RDDs表达的模型包括：</p>
+<p><strong>MapReduce</strong>：这个模型可以通过在Spark使用<em>flatMap</em>和<em>groupByKey</em>操作，或者在有结合器时使用<em>reduceByKey</em>操作来表达。</p>
+<p><strong>DryadLINQ</strong>：DryadLINQ系统提供了比在更普通的Dryad运行时的MapReduce更广泛的算子。但是这些是直接对应于Spark中可用的RDD转换的所有大型算子（如map, groupByKey,join,etc）。</p>
+<p><strong>SQL</strong>：类似于DryadLINQ表达式，SQL需要在记录集上执行数据并行化操作。</p>
+<p><strong>Pregel</strong>：Google 的 Pregel [22] 是专门用于迭代图像应用的模型，它最初与其他系统中的面向集合的编程模型有很大不同。在Pregel中，程序运行为一系列协调的“superstep”。在每个superstep中，图中的每个顶点运行一个用户函数，可以更新与顶点相关的状态，改变图拓扑，并将消息发送给其他顶点，以便在下一个superstep中使用。该模型可以表达许多图算法，包括最短路径、二部匹配和PageRank。</p>
+<p>让我们用 RDD 实现这个模型的关键观察是 Pregel 在每次迭代中将相同的用户函数应用于所有顶点。因此，我们可以在 RDD 中存储每次迭代的顶点状态并执行批量转换 (flatMap) 来应用该函数并生成消息的 RDD。然后，我们可以将这个 RDD 与顶点状态连接起来以执行消息交换。同样重要的是，RDD 允许我们像 Pregel 那样在内存中保留顶点状态，通过控制它们的分区来最小化通信，并支持对故障的部分恢复。我们在Spark之上实现了Pregel作为200行库，并请读者参考[33]了解更多细节。</p>
+<p><strong>Iterative MapReduce</strong>：最近提出的几个系统，包括 HaLoop [7] 和 Twister [11]，提供了一个迭代 MapReduce 模型，其中用户向系统提供一系列 MapReduce 作业以循环。系统保持数据在迭代之间始终分区，Twister 还可以将其保存在内存中。这两个优化都很容易用 RDD 表达，我们能够使用 Spark 将 HaLoop 实现为 200 行库。</p>
+<p><strong>批处理流处理（Batched Stream Processing）</strong>：研究人员最近提出了几种增量处理系统，用于周期性地用新数据更新结果[21,15,4]。例如，每15分钟更新一次广告点击统计信息的应用程序应该能够将前15分钟窗口的中间状态与来自新日志的数据结合起来。这些系统执行与Dryad类似的批量操作，但将应用程序状态存储在分布式文件系统中。将中间状态放在RDD中可以加快它们的处理速度。</p>
+<p><strong>解释RDD的表达能力（Explaining the Expressivity of RDDs）</strong>：</p>
+<p>为什么 RDD 能够表达这些不同的编程模型？原因是 RDD 的限制在许多并行应用程序中几乎没有影响。特别是，虽然 RDD 只能通过批量转换创建，但许多并行程序自然会对许多记录应用相同的操作，这使得它们易于表达。类似地，RDD 的不变性不是障碍，因为人们可以创建多个 RDD 来表示相同数据集的版本。事实上，今天的许多MapReduce应用程序运行在不允许更新文件的文件系统上，如HDFS。</p>
+<p>最后一个问题是为什么以前的框架没有提供相同的通用性水平。我们认为这是因为这些系统探索了 MapReduce 和 Dryad 不能很好地处理的特定问题，例如迭代，而不观察这些问题的共同原因是缺乏数据共享抽象。</p>
+<h2 id="7-2、利用RDDs进行调试（Leveraging-RDDs-for-Debugging）"><a href="#7-2、利用RDDs进行调试（Leveraging-RDDs-for-Debugging）" class="headerlink" title="7.2、利用RDDs进行调试（Leveraging RDDs for Debugging）"></a>7.2、利用RDDs进行调试（Leveraging RDDs for Debugging）</h2><p>虽然我们最初将rdd设计为可确定性地重新计算以实现容错性，但该属性也有助于调试。特别是，通过记录作业期间创建的RDD的沿行，可以(1)稍后重建这些RDD，并让用户以交互方式查询它们;(2)通过重新计算作业所依赖的RDD分区，在单进程调试器中重新运行作业中的任何任务。与传统的用于一般分布式系统的重播调试器[13]不同，它必须捕获或推断跨多个节点的事件顺序，这种方法实际上增加了零记录开销，因为只需要记录RDD血缘图。我们目前正在基于这些想法开发一个Spark调试器[33]。</p>
+<h1 id="8、相关工作（Related-Work）"><a href="#8、相关工作（Related-Work）" class="headerlink" title="8、相关工作（Related Work）"></a>8、相关工作（Related Work）</h1><p><strong>集群编程模型</strong>：集群编程模型相关工作主要有几类。</p>
+<p> 第一，数据流模型，如MapReduce、Drayad和Ciel，支持丰富的算子去处理数据，但通过稳定外部系统共享数据。RDDs表示的是一个比稳定存储更高效的数据共享抽象，因为它们避免了数据复制、I/O和序列化的成本。<br>    第二，数据流系统的高级别编程接口，包括DryadLINQ和FlumeJava，提供语言集成APIs，它们可以让用户通过像<em>map</em>和<em>join</em>的算子操作“并行的集合”。然而，在这些系统，并行的集合要么代表磁盘上的文件，要么代表用来表达查询计划的临时数据集。即使，系统将在相同的查询中的算子间流水线化数据（如一个<em>map</em>接着另一个<em>map</em>），它们不能在查询间高效地共享数据。我们把Spark的API基于并行集合模型是因为它的便利，并且不主张新奇的语言集成接口，但是通过这个接口的背后提供RDDs作为存储抽象，我们允许它支持更广泛类型的应用。<br>    第三类系统为需要数据共享的特别类型的应用提供高级别接口。例如，Pregel支持迭代图像应用，而Twister和HaLoop支持迭代MapReduce的运行。然而，这些框架对它们支持的计算类型隐式地执行数据共享，也不提供一个普遍地抽象让用户可以在他选择的操作间去共享他们选择的数据。例如，一个用户不能用Pregel或者Twister去把数据集加载到内存中，然后决定在它上面运行去查询什么。RDDs显示地提供一个分布式存储抽象，并可以支持这些特定系统不包括的应用，如交互式数据挖掘。</p>
+<p>最后，一些系统暴露出共享可变状态以允许用户执行内存中的计算。例如，Picco让用户运行变形的函数读和更新分布式哈希表中的单元分布式共享。分布式共享内存系统和键值存储提供相似的模型。RDDs以两种方式区别这些系统。第一：RDDs提供一个高级别编程接口，接口基于如map/sort这些算子。而Piccolo和DSM中的接口仅仅是读和更新到表的单元中。第二，Piccolo和DSM系统通过检查点和回滚实现恢复，这比RDDs基于lineage的策略更耗费性能。最终，如2.3节所讨论的，RDDs也提供其他优点。</p>
+<p><strong>缓存系统</strong>：Nectar能够通过识别带有程序分析的子表达式，在DryadLINQ作业间重用中间结果。把这种功能添加到基于RDD的系统将是引人入胜的。然而，Nectar不提供内存缓存（它把数据存放在分布是文件系统中），也不让用户显示地控制持久化哪些数据集和怎样对数据集分区。Ciel和FlumeJava同样可以缓存任务结果，但是却不提供内存缓存和显示控制缓存数据。<br>    Ananthanarayanan et al.提出给分布式文件系统添加一个内存缓存，以利用数据访问的时空本地化。虽然这个解决方案能够更快地访问在文件系统中的数据，但是它不像RDDs那样可以高效地在应用中共享中间结果，因为在stage间它仍然需要应用去把这些结果写到文件系统。</p>
+<p><strong>Lineage</strong> ：对于一些应用，如需要说明结果的、允许其他应用复制的、如果在工作流中发现bug或者数据及丢失而导致的重新计算数据的，获取数据的血缘或出处信息一直都是科学计算和数据库的研究主题。RDDs提供了并行化编程模型，它的细粒度血缘较容易获取，所以它可以被用于故障恢复。<br>    我们的基于lineage恢复机制类似于MapReduce和Dryad中计算（作业）内使用的恢复机制，它在任务的DAG中追踪依赖。但在这些系统中，血缘信息在作业结束时被丢弃，需要使用备份存储系统跨计算分享数据。相反，RDDs把血缘应用于跨计算持久化内存中的数据，没有复制和磁盘I/O的开销。<br><strong>关系型数据库</strong>：RDDs概念上类似于数据库中的试图，持久化RDDs类似于物化试图。但，像DSM系统，数据库一般允许对所有的记录进行细粒度的读写访问，需要记录操作和数据来容错，并需要保持一致性的额外开销。</p>
+<h1 id="9、结语"><a href="#9、结语" class="headerlink" title="9、结语"></a>9、结语</h1><p>我们已经介绍了RDDs，一个用于在集群应用中共享数据的高效的、普遍用途的、容错的抽象。RDDs能表达广发的并行应用，包括很多特殊的编程模型，已经提出用于迭代计算和这些模型不包含的新应用。已存在的集群存储抽象需要为容错而复制数据，而RDDs与此不同，RDDs提供一个基于粗粒度转换的API，让它们用lineage高效地恢复数据。我们已经在Spark中实现RDDs，运行迭代应用速度提升20X，可以用于交互式查询几百GB数据。我们已经开源Spark。</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">wck</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://example.com/2023/051023978.html">http://example.com/2023/051023978.html</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">wck</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Spark/">
+                                    <span class="chip bg-color">Spark</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'yohIdjiNFr5gi9AMV8TPhv90-gzGzoHsz',
+        appKey: 'dpdaXreArfn9sbA5A5hGBlUG',
+        notify: 'false' === 'true',
+        verify: 'false' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'monsterid',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: '留下你想说的话吧~',
+        enableQQ: true,
+        emojiCDN: '//i0.hdslb.com/bfs/emote/', 
+        // 表情title和图片映射
+        emojiMaps: {
+        "tv_doge": "6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png",
+        "tv_亲亲": "a8111ad55953ef5e3be3327ef94eb4a39d535d06.png",
+        "tv_偷笑": "bb690d4107620f1c15cff29509db529a73aee261.png",
+        "tv_再见": "180129b8ea851044ce71caf55cc8ce44bd4a4fc8.png",
+        "tv_冷漠": "b9cbc755c2b3ee43be07ca13de84e5b699a3f101.png",
+        "tv_发怒": "34ba3cd204d5b05fec70ce08fa9fa0dd612409ff.png",
+        "tv_发财": "34db290afd2963723c6eb3c4560667db7253a21a.png",
+        "tv_可爱": "9e55fd9b500ac4b96613539f1ce2f9499e314ed9.png",
+        "tv_吐血": "09dd16a7aa59b77baa1155d47484409624470c77.png",
+        "tv_呆": "fe1179ebaa191569b0d31cecafe7a2cd1c951c9d.png",
+        "tv_呕吐": "9f996894a39e282ccf5e66856af49483f81870f3.png",
+        "tv_困": "241ee304e44c0af029adceb294399391e4737ef2.png",
+        "tv_坏笑": "1f0b87f731a671079842116e0991c91c2c88645a.png",
+        "tv_大佬": "093c1e2c490161aca397afc45573c877cdead616.png",
+        "tv_大哭": "23269aeb35f99daee28dda129676f6e9ea87934f.png",
+        "tv_委屈": "d04dba7b5465779e9755d2ab6f0a897b9b33bb77.png",
+        "tv_害羞": "a37683fb5642fa3ddfc7f4e5525fd13e42a2bdb1.png",
+        "tv_尴尬": "7cfa62dafc59798a3d3fb262d421eeeff166cfa4.png",
+        "tv_微笑": "70dc5c7b56f93eb61bddba11e28fb1d18fddcd4c.png",
+        "tv_思考": "90cf159733e558137ed20aa04d09964436f618a1.png",
+        "tv_惊吓": "0d15c7e2ee58e935adc6a7193ee042388adc22af.png",
+        "tv_打脸": "56ab10b624063e966bfcb76ea5dc4794d87dfd47.png",
+        "tv_抓狂": "fe31c08edad661d63762b04e17b8d5ae3c71a757.png",
+        "tv_抠鼻": "c666f55e88d471e51bbd9fab9bb308110824a6eb.png",
+        "tv_斜眼笑": "911f987aa8bc1bee12d52aafe62bc41ef4474e6c.png",
+        "tv_无奈": "ea8ed89ee9878f2fece2dda0ea8a5dbfe21b5751.png",
+        "tv_晕": "5443c22b4d07fb1907ccc610c8e6db254f2461b7.png",
+        "tv_流汗": "cead1c351ab8d79e9f369605beb90148db0fbed3.png",
+        "tv_流泪": "7e71cde7858f0cd50d74b0264aa26db612a8a167.png",
+        "tv_流鼻血": "c32d39db2737f89b904ca32700d140a9241b0767.png",
+        "tv_点赞": "f85c354995bd99e28fc76c869bfe42ba6438eff4.png",
+        "tv_生气": "26702dcafdab5e8225b43ffd23c94ac1ff932654.png",
+        "tv_生病": "8b0ec90e6b86771092a498c54f09fc94621c1900.png",
+        "tv_疑问": "0793d949b18d7be716078349c202c15ff166f314.png",
+        "tv_白眼": "c1d59f439e379ee50eef488bcb5e5378e5044ea4.png",
+        "tv_皱眉": "72ccad6679fea0d14cce648b4d818e09b8ffea2d.png",
+        "tv_目瞪口呆": "0b8cb81a68de5d5365212c99375e7ace3e7891b7.png",
+        "tv_睡着": "8b196675b53af58264f383c50ad0945048290b33.png",
+        "tv_笑哭": "1abc628f6d4f4caf9d0e7800878f4697abbc8273.png",
+        "tv_腼腆": "89712c0d4af73e67f89e35cbc518420380a7f6f4.png",
+        "tv_色": "61822c7e9aae5da76475e7892534545336b23a6f.png",
+        "tv_调侃": "4bc022533ef31544ca0d72c12c808cf4a1cce3e3.png",
+        "tv_调皮": "b9c41de8e82dd7a8515ae5e3cb63e898bf245186.png",
+        "tv_鄙视": "6e72339f346a692a495b123174b49e4e8e781303.png",
+        "tv_闭嘴": "c9e990da7f6e93975e25fd8b70e2e290aa4086ef.png",
+        "tv_难过": "87f46748d3f142ebc6586ff58860d0e2fc8263ba.png",
+        "tv_馋": "fc7e829b845c43c623c8b490ee3602b7f0e76a31.png",
+        "tv_鬼脸": "0ffbbddf8a94d124ca2f54b360bbc04feb6bbfea.png",
+        "tv_黑人问号": "45821a01f51bc867da9edbaa2e070410819a95b2.png",
+        "tv_鼓掌": "1d21793f96ef4e6f48b23e53e3b9e42da833a0f6.png"
+        },
+        requiredFields: ['nick','mail'],
+    });
+</script>
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2023/051023978.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="Spark">
+                        
+                        <span class="card-title">Spark</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            这是论文Resilient Distributed Datasets:A Fault-Tolerant Abstraction for In-Memory Cluster Computing翻译及研读笔记
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-05-10
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%AE%BA%E6%96%87%E7%BF%BB%E8%AF%91/" class="post-category">
+                                    论文翻译
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Spark/">
+                        <span class="chip bg-color">Spark</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/051050105.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="FaRM">
+                        
+                        <span class="card-title">FaRM</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            这是论文No compromises:distributed transactions withconsistency, availability, and performance翻译及研读笔记
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-05-10
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" class="post-category">
+                                    论文阅读
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/FaRM/">
+                        <span class="chip bg-color">FaRM</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('2'),
+            headingSelector: 'h1, h2, h3, h4, h5, h6'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4, h5, h6').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2023</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank">wck</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">495.7k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/rumor-sourse" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:2560428298@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2560428298" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2560428298" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+    <a href="https://weibo.com/u/7491101842/home" class="tooltipped" target="_blank" data-tooltip="关注我的微博: https://weibo.com/u/7491101842/home" data-position="top" data-delay="50">
+        <i class="fab fa-weibo"></i>
+    </a>
+
+
+
+    <a href="https://www.zhihu.com/people/chu-zi-hang-46-14" class="tooltipped" target="_blank" data-tooltip="关注我的知乎: https://www.zhihu.com/people/chu-zi-hang-46-14" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
+    </a>
+
+
+
+
+
+    <a href="https://space.bilibili.com/531340472" class="tooltipped" target="_blank" data-tooltip="在B站上关注我" " data-position="top" data-delay="50">
+        <i class="fas fa-play-circle"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <!-- <script type="text/javascript">
+        //只在桌面版网页启用特效
+        var windowWidth = $(window).width();
+        if (windowWidth > 768) {
+            document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+        }
+    </script> -->
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+ 
+</body>
+
+</html>
